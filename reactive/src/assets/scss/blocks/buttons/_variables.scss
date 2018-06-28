@@ -1,0 +1,16 @@
+/* Labeled Button */
+$btn-labeled-icon-margin: 0 !default;
+$btn-labeled-icon-background-color: rgba(0, 30, 40, 0.08) !default;
+$btn-labeled-icon-border: transparent !default;
+$btn-labeled-icon-width-xs: $font-size-8 + ($input-btn-padding-y-xs * 2) + $btn-line-height / 3 !default;
+$btn-labeled-icon-padding-xs: ($input-btn-padding-x-xs + $btn-labeled-icon-width-xs) !default;
+$btn-labeled-icon-line-height-xs: $font-size-8 + ($input-btn-padding-y-xs * 2) + $btn-line-height / 4 !default;
+$btn-labeled-icon-width-sm: $font-size-7 + ($input-btn-padding-y-sm * 2) + $btn-line-height / 3 !default;
+$btn-labeled-icon-padding-sm: ($input-btn-padding-x-sm + $btn-labeled-icon-width-sm) !default;
+$btn-labeled-icon-line-height-sm: $font-size-7 + ($input-btn-padding-y-sm * 2) + $btn-line-height / 4 !default;
+$btn-labeled-icon-width: 1rem + ($input-btn-padding-y * 2) + $btn-line-height / 3 !default;
+$btn-labeled-icon-padding: ($input-btn-padding-x + $btn-labeled-icon-width) !default;
+$btn-labeled-icon-line-height: 1rem + ($input-btn-padding-y * 2) + $btn-line-height / 4 !default;
+$btn-labeled-icon-width-lg: $font-size-5 + ($input-btn-padding-y-lg * 2) + $btn-line-height / 3 !default;
+$btn-labeled-icon-padding-lg: ($input-btn-padding-x-lg + $btn-labeled-icon-width-lg) !default;
+$btn-labeled-icon-line-height-lg: $font-size-5 + ($input-btn-padding-y-lg * 2) + $btn-line-height / 4 !default;

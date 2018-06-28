@@ -1,0 +1,730 @@
+{{#extend "layout-1" current="nestable"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Nestable Full Default
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="nestable dd js-nestable-default">
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="1">
+                                        <div class="dd-handle dd-item-handle">Item 1</div>
+                                    </li>
+                                    <li class="dd-item" data-id="2">
+                                        <div class="dd-handle dd-item-handle">Item 2</div>
+                                    </li>
+                                    <li class="dd-item" data-id="3">
+                                        <div class="dd-handle dd-item-handle">Item 3</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="4">
+                                                <div class="dd-handle dd-item-handle">Item 4</div>
+                                            </li>
+
+                                            <li class="dd-item" data-id="6">
+                                                <div class="dd-handle dd-item-handle">Item 6</div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="7">
+                                                        <div class="dd-handle dd-item-handle">Item 7</div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="8">
+                                                        <div class="dd-handle dd-item-handle">Item 8</div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="9">
+                                        <div class="dd-handle dd-item-handle">Item 9</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="10">
+                                                <div class="dd-handle dd-item-handle">Item 10</div>
+                                            </li>
+                                            <li class="dd-item" data-id="11">
+                                                <div class="dd-handle dd-item-handle">Item 11</div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="12">
+                                                        <div class="dd-handle dd-item-handle">Item 12</div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Nestable With DropDowns
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="nestable dd js-nestable-default">
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="1">
+                                        <div class="dd-handle dd-item-handle"><span>Item 1 (synced)</span>
+                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropDefault1" aria-expanded="false" aria-controls="nestableDropDefault1">
+                                                Drop Down
+                                            </a>
+                                        </div>
+                                        <div class="collapse dd-drop-menu" id="nestableDropDefault1">
+                                            <div class="card card-body">
+                                                <div class="form-group mb-4">
+                                                    <label for="examplelink1">Link Name</label>
+                                                    <input class="form-control form-control-name" id="examplelink1" value="Item 1 (synced)">
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label for="exampleUrlLink1">Link URL</label>
+                                                    <input class="form-control" id="exampleUrlLink1" aria-describedby="exampleLinkHelp1" placeholder="Enter URL">
+                                                    <small id="exampleLinkHelp1" class="form-text text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                    </small>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="2">
+                                        <div class="dd-handle dd-item-handle"><span>Item 2 (synced)</span>
+                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropDefault2" aria-expanded="true" aria-controls="nestableDropDefault2">
+                                                Drop Down
+                                            </a>
+                                        </div>
+                                        <div class="collapse dd-drop-menu show" id="nestableDropDefault2">
+                                            <div class="card card-body">
+                                                <div class="form-group mb-4">
+                                                    <label for="examplelink2">Link Name</label>
+                                                    <input class="form-control form-control-name" id="examplelink2" value="Item 2 (synced)">
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label for="exampleUrlLink2">Link URL</label>
+                                                    <input class="form-control" id="exampleUrlLink2" aria-describedby="exampleLinkHelp2" placeholder="Enter URL">
+                                                    <small id="exampleLinkHelp2" class="form-text text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                    </small>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="3">
+                                        <div class="dd-handle dd-item-handle"><span>Item 3 (synced)</span>
+                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropDefault3" aria-expanded="false" aria-controls="nestableDropDefault3">
+                                                Drop Down
+                                            </a>
+                                        </div>
+                                        <div class="collapse dd-drop-menu" id="nestableDropDefault3">
+                                            <div class="card card-body">
+                                                <div class="form-group mb-4">
+                                                    <label for="examplelink3">Link Name</label>
+                                                    <input class="form-control form-control-name" id="examplelink3" value="Item 3 (synced)">
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label for="exampleUrlLink3">Link URL</label>
+                                                    <input class="form-control" id="exampleUrlLink3" aria-describedby="exampleLinkHelp3" placeholder="Enter URL">
+                                                    <small id="exampleLinkHelp3" class="form-text text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                    </small>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="4">
+                                                <div class="dd-handle dd-item-handle"><span>Item 4 (synced)</span>
+                                                    <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropDefault4" aria-expanded="false" aria-controls="nestableDropDefault4">
+                                                        Drop Down
+                                                    </a>
+                                                </div>
+                                                <div class="collapse dd-drop-menu" id="nestableDropDefault4">
+                                                    <div class="card card-body">
+                                                        <div class="form-group mb-4">
+                                                            <label for="examplelink4">Link Name</label>
+                                                            <input class="form-control form-control-name" id="examplelink4" value="Item 4 (synced)">
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <label for="exampleUrlLink4">Link URL</label>
+                                                            <input class="form-control" id="exampleUrlLink4" aria-describedby="exampleLinkHelp4" placeholder="Enter URL">
+                                                            <small id="exampleLinkHelp4" class="form-text text-muted">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                            </small>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <a href="" class="c-danger mr-1">Remove</a>
+                                                            <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                            <a href="" class="btn btn-sm btn-default">Save</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="dd-item" data-id="5">
+                                                <div class="dd-handle dd-item-handle"><span>Item 5 (synced)</span>
+                                                    <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropDefault5" aria-expanded="false" aria-controls="nestableDropDefault5">
+                                                        Drop Down
+                                                    </a>
+                                                </div>
+                                                <div class="collapse dd-drop-menu" id="nestableDropDefault5">
+                                                    <div class="card card-body">
+                                                        <div class="form-group mb-4">
+                                                            <label for="examplelink5">Link Name</label>
+                                                            <input class="form-control form-control-name" id="examplelink5" value="Item 5 (synced)">
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <label for="exampleUrlLink5">Link URL</label>
+                                                            <input class="form-control" id="exampleUrlLink5" aria-describedby="exampleLinkHelp5" placeholder="Enter URL">
+                                                            <small id="exampleLinkHelp5" class="form-text text-muted">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                            </small>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <a href="" class="c-danger mr-1">Remove</a>
+                                                            <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                            <a href="" class="btn btn-sm btn-default">Save</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="6">
+                                                        <div class="dd-handle dd-item-handle"><span>Item 6 (synced)</span>
+                                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropDefault6" aria-expanded="false" aria-controls="nestableDropDefault6">
+                                                                Drop Down
+                                                            </a>
+                                                        </div>
+                                                        <div class="collapse dd-drop-menu" id="nestableDropDefault6">
+                                                            <div class="card card-body">
+                                                                <div class="form-group mb-4">
+                                                                    <label for="examplelink6">Link Name</label>
+                                                                    <input class="form-control form-control-name" id="examplelink6" value="Item 6 (synced)">
+                                                                </div>
+                                                                <div class="form-group mb-4">
+                                                                    <label for="exampleUrlLink6">Link URL</label>
+                                                                    <input class="form-control" id="exampleUrlLink6" aria-describedby="exampleLinkHelp6" placeholder="Enter URL">
+                                                                    <small id="exampleLinkHelp6" class="form-text text-muted">
+                                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                                    </small>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="7">
+                                                        <div class="dd-handle dd-item-handle"><span>Item 7 (synced)</span>
+                                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropDefault7" aria-expanded="false" aria-controls="nestableDropDefault7">
+                                                                Drop Down
+                                                            </a>
+                                                        </div>
+                                                        <div class="collapse dd-drop-menu" id="nestableDropDefault7">
+                                                            <div class="card card-body">
+                                                                <div class="form-group mb-4">
+                                                                    <label for="examplelink7">Link Name</label>
+                                                                    <input class="form-control form-control-name" id="examplelink7" value="Item 7 (synced)">
+                                                                </div>
+                                                                <div class="form-group mb-4">
+                                                                    <label for="exampleUrlLink7">Link URL</label>
+                                                                    <input class="form-control" id="exampleUrlLink7" aria-describedby="exampleLinkHelp7" placeholder="Enter URL">
+                                                                    <small id="exampleLinkHelp7" class="form-text text-muted">
+                                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                                    </small>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="8">
+                                        <div class="dd-handle dd-item-handle"><span>Item 8 (synced)</span>
+                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropDefault8" aria-expanded="false" aria-controls="nestableDropDefault8">
+                                                Drop Down
+                                            </a>
+                                        </div>
+                                        <div class="collapse dd-drop-menu" id="nestableDropDefault8">
+                                            <div class="card card-body">
+                                                <div class="form-group mb-4">
+                                                    <label for="examplelink8">Link Name</label>
+                                                    <input class="form-control form-control-name" id="examplelink8" value="Item 8 (synced)">
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label for="exampleUrlLink8">Link URL</label>
+                                                    <input class="form-control" id="exampleUrlLink8" aria-describedby="exampleLinkHelp8" placeholder="Enter URL">
+                                                    <small id="exampleLinkHelp8" class="form-text text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                    </small>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Nestable Full Default Handles
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="nestable dd nestable-handles js-nestable-handles">
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="1">
+                                        <div class="dd-handle">
+                                            <div class="dd-item-handle"></div>
+                                            <span>Item 1</span>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="2">
+                                        <div class="dd-handle">
+                                            <div class="dd-item-handle"></div>
+                                            <span>Item 2</span>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="3">
+                                        <div class="dd-handle">
+                                            <div class="dd-item-handle"></div>
+                                            <span>Item 3</span>
+                                        </div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="4">
+                                                <div class="dd-handle">
+                                                    <div class="dd-item-handle"></div>
+                                                    <span>Item 4</span>
+                                                </div>
+                                            </li>
+
+                                            <li class="dd-item" data-id="6">
+                                                <div class="dd-handle">
+                                                    <div class="dd-item-handle"></div>
+                                                    <span>Item 6</span>
+                                                </div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="7">
+                                                        <div class="dd-handle">
+                                                            <div class="dd-item-handle"></div>
+                                                            <span>Item 7</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="8">
+                                                        <div class="dd-handle">
+                                                            <div class="dd-item-handle"></div>
+                                                            <span>Item 8</span>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="9">
+                                        <div class="dd-handle">
+                                            <div class="dd-item-handle"></div>
+                                            <span>Item 9</span>
+                                        </div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="10">
+                                                <div class="dd-handle">
+                                                    <div class="dd-item-handle"></div>
+                                                    <span>Item 10</span>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="11">
+                                                <div class="dd-handle">
+                                                    <div class="dd-item-handle"></div>
+                                                    <span>Item 11</span>
+                                                </div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="12">
+                                                        <div class="dd-handle">
+                                                            <div class="dd-item-handle"></div>
+                                                            <span>Item 12</span>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Nestable With DropDowns
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="nestable dd nestable-handles js-nestable-handles">
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="1">
+                                        <div class="dd-handle"><div class="dd-item-handle"></div><span>Item 1 (synced)</span>
+                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropHandles1" aria-expanded="false" aria-controls="nestableDropHandles1">
+                                                Drop Down
+                                            </a>
+                                        </div>
+                                        <div class="collapse dd-drop-menu" id="nestableDropHandles1">
+                                            <div class="card card-body">
+                                                <div class="form-group mb-4">
+                                                    <label for="examplelink9">Link Name</label>
+                                                    <input class="form-control form-control-name" id="examplelink9" value="Item 1 (synced)">
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label for="exampleUrlLink9">Link URL</label>
+                                                    <input class="form-control" id="exampleUrlLink9" aria-describedby="exampleLinkHelp9" placeholder="Enter URL">
+                                                    <small id="exampleLinkHelp9" class="form-text text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                    </small>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="2">
+                                        <div class="dd-handle"><div class="dd-item-handle"></div><span>Item 2 (synced)</span>
+                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropHandles2" aria-expanded="true" aria-controls="nestableDropHandles2">
+                                                Drop Down
+                                            </a>
+                                        </div>
+                                        <div class="collapse dd-drop-menu show" id="nestableDropHandles2">
+                                            <div class="card card-body">
+                                                <div class="form-group mb-4">
+                                                    <label for="examplelink10">Link Name</label>
+                                                    <input class="form-control form-control-name" id="examplelink10" value="Item 2 (synced)">
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label for="exampleUrlLink10">Link URL</label>
+                                                    <input class="form-control" id="exampleUrlLink10" aria-describedby="exampleLinkHelp10" placeholder="Enter URL">
+                                                    <small id="exampleLinkHelp10" class="form-text text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                    </small>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="3">
+                                        <div class="dd-handle"><div class="dd-item-handle"></div><span>Item 3 (synced)</span>
+                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropHandles3" aria-expanded="false" aria-controls="nestableDropHandles3">
+                                                Drop Down
+                                            </a>
+                                        </div>
+                                        <div class="collapse dd-drop-menu" id="nestableDropHandles3">
+                                            <div class="card card-body">
+                                                <div class="form-group mb-4">
+                                                    <label for="examplelink11">Link Name</label>
+                                                    <input class="form-control form-control-name" id="examplelink11" value="Item 3 (synced)">
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label for="exampleUrlLink11">Link URL</label>
+                                                    <input class="form-control" id="exampleUrlLink11" aria-describedby="exampleLinkHelp11" placeholder="Enter URL">
+                                                    <small id="exampleLinkHelp11" class="form-text text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                    </small>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="4">
+                                                <div class="dd-handle"><div class="dd-item-handle"></div><span>Item 4 (synced)</span>
+                                                    <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropHandles4" aria-expanded="false" aria-controls="nestableDropHandles4">
+                                                        Drop Down
+                                                    </a>
+                                                </div>
+                                                <div class="collapse dd-drop-menu" id="nestableDropHandles4">
+                                                    <div class="card card-body">
+                                                        <div class="form-group mb-4">
+                                                            <label for="examplelink12">Link Name</label>
+                                                            <input class="form-control form-control-name" id="examplelink12" value="Item 4 (synced)">
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <label for="exampleUrlLink12">Link URL</label>
+                                                            <input class="form-control" id="exampleUrlLink12" aria-describedby="exampleLinkHelp12" placeholder="Enter URL">
+                                                            <small id="exampleLinkHelp12" class="form-text text-muted">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                            </small>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <a href="" class="c-danger mr-1">Remove</a>
+                                                            <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                            <a href="" class="btn btn-sm btn-default">Save</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="dd-item" data-id="5">
+                                                <div class="dd-handle"><div class="dd-item-handle"></div><span>Item 5 (synced)</span>
+                                                    <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropHandles5" aria-expanded="false" aria-controls="nestableDropHandles5">
+                                                        Drop Down
+                                                    </a>
+                                                </div>
+                                                <div class="collapse dd-drop-menu" id="nestableDropHandles5">
+                                                    <div class="card card-body">
+                                                        <div class="form-group mb-4">
+                                                            <label for="examplelink13">Link Name</label>
+                                                            <input class="form-control form-control-name" id="examplelink13" value="Item 5 (synced)">
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <label for="exampleUrlLink13">Link URL</label>
+                                                            <input class="form-control" id="exampleUrlLink13" aria-describedby="exampleLinkHelp13" placeholder="Enter URL">
+                                                            <small id="exampleLinkHelp13" class="form-text text-muted">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                            </small>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <a href="" class="c-danger mr-1">Remove</a>
+                                                            <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                            <a href="" class="btn btn-sm btn-default">Save</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="6">
+                                                        <div class="dd-handle"><div class="dd-item-handle"></div><span>Item 6 (synced)</span>
+                                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropHandles6" aria-expanded="false" aria-controls="nestableDropHandles6">
+                                                                Drop Down
+                                                            </a>
+                                                        </div>
+                                                        <div class="collapse dd-drop-menu" id="nestableDropHandles6">
+                                                            <div class="card card-body">
+                                                                <div class="form-group mb-4">
+                                                                    <label for="examplelink14">Link Name</label>
+                                                                    <input class="form-control form-control-name" id="examplelink14" value="Item 6 (synced)">
+                                                                </div>
+                                                                <div class="form-group mb-4">
+                                                                    <label for="exampleUrlLink14">Link URL</label>
+                                                                    <input class="form-control" id="exampleUrlLink14" aria-describedby="exampleLinkHelp14" placeholder="Enter URL">
+                                                                    <small id="exampleLinkHelp14" class="form-text text-muted">
+                                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                                    </small>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="7">
+                                                        <div class="dd-handle"><div class="dd-item-handle"></div><span>Item 7 (synced)</span>
+                                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropHandles7" aria-expanded="false" aria-controls="nestableDropHandles7">
+                                                                Drop Down
+                                                            </a>
+                                                        </div>
+                                                        <div class="collapse dd-drop-menu" id="nestableDropHandles7">
+                                                            <div class="card card-body">
+                                                                <div class="form-group mb-4">
+                                                                    <label for="examplelink15">Link Name</label>
+                                                                    <input class="form-control form-control-name" id="examplelink15" value="Item 7 (synced)">
+                                                                </div>
+                                                                <div class="form-group mb-4">
+                                                                    <label for="exampleUrlLink15">Link URL</label>
+                                                                    <input class="form-control" id="exampleUrlLink15" aria-describedby="exampleLinkHelp15" placeholder="Enter URL">
+                                                                    <small id="exampleLinkHelp15" class="form-text text-muted">
+                                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                                    </small>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="8">
+                                        <div class="dd-handle"><div class="dd-item-handle"></div><span>Item 8 (synced)</span>
+                                            <a class="c-gray-dark dd-drop collapsed" data-toggle="collapse" data-target="#nestableDropHandles8" aria-expanded="false" aria-controls="nestableDropHandles8">
+                                                Drop Down
+                                            </a>
+                                        </div>
+                                        <div class="collapse dd-drop-menu" id="nestableDropHandles8">
+                                            <div class="card card-body">
+                                                <div class="form-group mb-4">
+                                                    <label for="examplelink16">Link Name</label>
+                                                    <input class="form-control form-control-name" id="examplelink16" value="Item 8 (synced)">
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <label for="exampleUrlLink16">Link URL</label>
+                                                    <input class="form-control" id="exampleUrlLink16" aria-describedby="exampleLinkHelp16" placeholder="Enter URL">
+                                                    <small id="exampleLinkHelp16" class="form-text text-muted">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos esse id laborum quasi. Aut earum molestias non numquam!
+                                                    </small>
+                                                </div>
+                                                <div class="text-right">
+                                                    <a href="" class="c-danger mr-1">Remove</a>
+                                                    <a href="" class="btn btn-sm btn-default">Hide</a>
+                                                    <a href="" class="btn btn-sm btn-default">Save</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Drag & Drop Between Nestables
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div id="nestable-menu" class="mb-5">
+                                <button type="button" class="btn btn-default" data-action="expand-all">Expand All</button>
+                                <button type="button" class="btn btn-default" data-action="collapse-all">Collapse All</button>
+                                <button type="button" class="btn btn-default" data-action="add-item">Add new item</button>
+                                <button type="button" class="btn btn-default" data-action="replace-item">Replace item 10</button>
+                            </div>
+                            <div class="row">
+                                <section class="col-sm-6">
+                                    <h5>Nestable 1</h5>
+                                    <p class="fs-6-plus">Nestable with <strong>JSON</strong> Data</p>
+                                    <div class="dd nestable mb-5" id="nestable1"></div>
+                                    <h6 class="mb-3">Serialized Output</h6>
+                                    <textarea id="nestable1-output" class="form-control" rows="3"></textarea>
+                                </section>
+                                <section class="col-sm-6">
+                                    <h5>Nestable 2</h5>
+                                    <p class="fs-6-plus">Nestable with <strong>HTML</strong> data</p>
+                                    <div class="dd nestable mb-5" id="nestable2">
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="1">
+                                                <div class="dd-handle dd-item-handle">Item 1</div>
+                                            </li>
+                                            <li class="dd-item" data-id="2">
+                                                <div class="dd-handle dd-item-handle">Item 2</div>
+                                            </li>
+                                            <li class="dd-item" data-id="3">
+                                                <div class="dd-handle dd-item-handle">Item 3</div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="4">
+                                                        <div class="dd-handle dd-item-handle">Item 4</div>
+                                                    </li>
+
+                                                    <li class="dd-item" data-id="6">
+                                                        <div class="dd-handle dd-item-handle">Item 6</div>
+                                                        <ol class="dd-list">
+                                                            <li class="dd-item" data-id="7">
+                                                                <div class="dd-handle dd-item-handle">Item 7</div>
+                                                            </li>
+                                                            <li class="dd-item" data-id="8">
+                                                                <div class="dd-handle dd-item-handle">Item 8</div>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li class="dd-item" data-id="9">
+                                                <div class="dd-handle dd-item-handle">Item 9</div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="10">
+                                                        <div class="dd-handle dd-item-handle">Item 10</div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="11">
+                                                        <div class="dd-handle dd-item-handle">Item 11</div>
+                                                        <ol class="dd-list">
+                                                            <li class="dd-item" data-id="12">
+                                                                <div class="dd-handle dd-item-handle">Item 12</div>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </li>
+
+                                        </ol>
+                                    </div>
+                                    <h6 class="mb-3">Serialized Output</h6>
+                                    <textarea id="nestable2-output" class="form-control" rows="3"></textarea>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/nestable');
+        </script>
+    {{/content}}
+{{/extend}}

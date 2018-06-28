@@ -1,0 +1,27 @@
+$emoji-css-prefix: emojionearea !default;
+
+$emoji-text-color: $gray-dark !default;
+$emoji-placeholder-color: $gray !default;
+$emoji-bg-color: $input-bg !default;
+$emoji-bg-focus-color: $input-focus-bg !default;
+$emoji-border-color: $input-border-color !default;
+$emoji-border-radius: $input-border-radius !default;
+$emoji-box-shadow-inset: $input-box-shadow;
+$emoji-box-shadow-focused: $input-focus-box-shadow;
+$emoji-border-color-focused: $input-focus-border-color !default;
+$emoji-font-size: inherit !default;
+$emoji-z-index: 115 !default;
+$emoji-sprite: '../img/emoji/sprite.png' !default;
+$emoji-standalone-placeholder: '../img/emoji/placeholder.png' !default;
+
+$emoji-picker-border-radius: $border-radius !default;
+$emoji-picker-bg: $white-dark !default;
+$emoji-picker-btn-hover: darken($white-dark, 7) !default;
+$emoji-picker-width: (9 * 32px + 15px) !default;
+$emoji-picker-height: 236px !default;
+
+$emoji-filters-bg: $white-darkest !default;
+$emoji-filters-bg-hover: $white-darkest !default;
+$emoji-filters-bg-active: darken($white-darkest, 7) !default;
+$emoji-filters-height: 40px !default;
+$emoji-inline-height: 34px !default;

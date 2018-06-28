@@ -1,0 +1,142 @@
+/*!
+ * @version: 1.1.1
+ * @name: Styles
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ *
+ *
+ * CSS Structure
+ *
+ * Colors
+ * Fonts
+ * Adapted Bootstrap Framework
+ * Adapted X-Editable plugin
+ * Common elements style
+ * Adapted transition plugin
+ * Brand Icons
+ * Adapted rating plugin
+ * Grid
+ * Panels
+ * Adapted checkbox plugin
+ * list-plus
+ * Adapted list plugin
+ * buttons
+ * scroll
+ * Adapted dropdown plugin
+ * Adapted flags plugin
+ *
+ *
+ * Components
+ *
+ * Adapted datepicker plugin
+ * Adapted wizard plugin
+ * Adapted ionrangeslider plugin
+ * Adapted nouislider plugin
+ * Adapted colorpicker plugin
+ * Adapted touchspin plugin
+ * Adapted timepicker plugin
+ * Adapted calendar plugin
+ * Adapted emoji plugin
+ * photoeditor
+ * weather
+ * upload
+ * project
+ * tables
+ * Adapted fullcalendar plugin
+ * comment
+ * reviews
+ * timeline
+ * chart
+ * mail
+ * editor
+ * product
+ * contacts
+ * tasks
+ * todo
+ * chat
+ * Adapted imageupload plugin
+ * Adapted datetimepicker plugin
+ *
+ *
+ * Main Blocks
+ *
+ * app
+ * sidebar
+ * header
+ * footer
+ * aside
+ *
+ *
+ * Page Specific
+ *
+ * starter_page
+ *
+ */
+
+// Base Styles
+@import 'custom';
+@import 'base/colors';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/fonts';
+
+// Plugins
+@import 'bootstrap/framework';
+
+// Builder Blocks
+@import 'blocks/elements';
+@import 'blocks/transitions';
+@import 'blocks/icons';
+@import 'blocks/rating/theme';
+@import 'blocks/grid/theme';
+@import 'blocks/panel/theme';
+@import 'blocks/checkbox/theme';
+@import 'blocks/list-plus/theme';
+@import 'blocks/list/theme';
+@import 'blocks/buttons/theme';
+@import 'blocks/scroll/theme';
+@import 'blocks/dropdown/theme';
+@import 'blocks/dropdown/mega';
+@import 'blocks/flags/theme';
+
+// Components
+@import 'components/datepicker';
+@import 'components/wizard';
+@import 'components/ionrangeslider';
+@import 'components/nouislider';
+@import 'components/colorpicker';
+@import 'components/touchspin';
+@import 'components/timepicker';
+@import 'components/calendar/theme';
+@import 'components/emoji/theme';
+@import 'components/photoeditor';
+@import 'components/weather/theme';
+@import 'components/upload/theme';
+@import 'components/project';
+@import 'components/tables';
+@import 'components/fullcalendar';
+@import 'components/comment';
+@import 'components/reviews';
+@import 'components/timeline';
+@import 'components/chart';
+@import 'components/mail';
+@import 'components/editor';
+@import 'components/product';
+@import 'components/contacts';
+@import 'components/tasks';
+@import 'components/todo';
+@import 'components/chat';
+@import 'components/imageupload';
+@import 'components/datetimepicker';
+@import 'components/editable';
+@import 'components/nestable';
+
+// Main Blocks
+@import 'app';
+@import 'sidebars/themes';
+@import 'header';
+@import 'footer';
+@import 'aside';
+
+// Page Specific
+@import "pages/starter_pages";

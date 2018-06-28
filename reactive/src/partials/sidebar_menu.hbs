@@ -1,0 +1,21 @@
+{{#each menu}}
+    {{isActive ../current}}
+    {{#if header}}
+<!-- Menu header-->
+<li class="header">{{header}}</li>
+<!-- #Menu header-->
+    {{else}}
+<!-- Menu item-->
+<li class="menu-item{{#ifc ../current '==' href}} current{{/ifc}}{{#if active}} active active-icon{{/if}}{{#if class}} {{class}}{{/if}}">
+    <a href="{{href}}{{#unless anchor}}{{#if href}}.html{{/if}}{{/unless}}"{{#if linkClass}} class="{{linkClass}}"{{/if}}{{#if dataAside}} data-aside="{{dataAside}}"{{/if}}{{#if dataToggle}} data-toggle="{{dataToggle}}"{{/if}}>{{#if icon}}<i class="menu-icon {{icon}}"></i>{{/if}}<span>{{{name}}}</span>{{#if menu}}<i class="fa fa-angle-left pull-right toggle"></i>{{/if}}{{#if label}}<small class="badge badge-pill pull-right badge-{{labelColor}}">{{label}}</small>{{/if}}</a>
+    {{#if menu}}
+    <!-- Sub menu-->
+    <ul class="sub-menu{{#if active}} menu-open{{/if}}">
+        {{#embed "sidebar_menu" current=../current}}{{/embed}} {{! Recursively render the partial }}
+    </ul>
+    <!-- #Sub menu-->
+    {{/if}}
+</li>
+<!-- #Menu item-->
+    {{/if}}
+{{/each}}

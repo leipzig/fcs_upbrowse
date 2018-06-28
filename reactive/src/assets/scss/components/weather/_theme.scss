@@ -1,0 +1,49 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: weather
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+@import "variables";
+
+.weather-lg { margin: $weather-lg-margin; overflow: hidden;
+    // static background
+    // background: url('../img/skylg.jpg') center right;  background-size: cover;
+
+    /*-------------------
+          body
+    --------------------*/
+    canvas.weather-bg { @include border-radius(3px); position: absolute; left: 0; top: 0; }
+    .panel-body { background: $weather-lg-body-background; position: relative; }
+    .today { padding: $weather-lg-today-padding;
+        .day i { font-size: $weather-lg-today-day-font; }
+        .night i { font-size: $weather-lg-today-night-font; }
+        .weather-details { padding-top: 23px;
+            i { text-align: center; margin-right: 2em; width: 1em;}
+        }
+    }
+    .week-weather { padding: $weather-lg-week-weather-padding; position: absolute; width: 100%; bottom: 0;;
+        i { text-align: center; margin-right: 1em; width: 1em; }
+    }
+}
+
+
+.weather-single { margin: $weather-single-margin; max-width: $weather-single-max-width;
+    // static background
+    background: url('../img/skysingle.jpg') center left;  background-size: cover;
+
+    /*-------------------
+          body
+    --------------------*/
+    canvas.weather-bg { position: absolute; left: 0; top: 0; }
+    .panel-body { background: $weather-single-body-background; position: relative; }
+    .today { padding: $weather-single-today-padding;
+        .day i { font-size: $weather-single-today-day-font; }
+        .weather-details { position: absolute; bottom: 5px;
+            i { text-align: center; margin-right: 1em; width: 1em;}
+        }
+    }
+}
+
+

@@ -1,0 +1,75 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: mail
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.mail-members { position: relative;
+    .item { position: relative; cursor: pointer;
+        .content { width: calc( 100% - 100px - 2rem);
+            .description { white-space: nowrap; text-overflow: ellipsis; overflow: hidden }
+        }
+    }
+    .message-count { display: inline-block; width: $font-size-5; height: $font-size-5; background: $white-darkest; position: absolute;
+        left: 36px; top: 36px; border-radius: 5rem; text-align: center; line-height: $font-size-5; font-size: $font-size-7;
+        &.on-line { background: $brand-primary; color: $white-dark; }
+    }
+    .new-message { position: absolute; right: 0;}
+}
+
+.mail-folders {
+    a { color: $gray-dark; display: block;
+        i { transition: .2s}
+        &.collapsed i { transform: rotate(90deg);}
+    }
+
+    .list .item { padding-bottom: .5rem !important;
+        .icon { padding-top: 0; display: inline-block; float: left; }
+        .content { line-height: 1; width: 100%; display: block !important; padding-left: 2.5rem !important; }
+    }
+}
+
+.mail-inbox {
+    .item { cursor: pointer; }
+    .icon-control { width: 1em; display: inline-block;
+        i { width: 1em; display: inline-block; text-align: center; }
+    }
+    .mail-text { text-overflow: ellipsis; white-space: nowrap; overflow: hidden }
+    .checked-list-details { margin-left: 61px;}
+    .mail-detail { text-overflow: ellipsis; overflow: hidden; white-space: nowrap;
+        &.mail-star { text-overflow: clip; }
+    }
+    .checked-list-checkbox.master { height: 60px; }
+}
+
+.mail-reply-area { display: none;
+    .note-editor.note-frame .note-editing-area .note-editable { height: 31em; }
+}
+
+@include media-breakpoint-down(sm) {
+    .mail-inbox {
+        .mail-date { position: absolute; right: 0; top: 18px; font-size: $font-size-7; }
+        .checked-list-checkbox { padding-left: 0; width: auto; }
+        .checked-list-details { margin-left: 45px; }
+        .actions .text,
+        .mail-tags:empty { display: none; }
+    }
+}
+
+.panel-wrap[max-width~="732px"] {
+    .mail-compose {
+        .panel-header-link { padding: 0 16px !important;
+            i.icon-mr { margin-right: 0 }
+            .text { display: none; }
+        }
+    }
+}
+.mail-compose {
+    .mail-to {
+        .select-dropdown.icon { right: .5rem !important; top: .4em !important;
+            &:before { display: none !important; }
+        }
+        .ui.selection.multiple.select-dropdown, select.multiple.ui.select-dropdown { padding-right: 100px; }
+    }
+}

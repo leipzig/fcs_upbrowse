@@ -1,0 +1,35 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: Reviews
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+.reviews { @include list-plus($list-plus-theme-default); @include clearfix;
+    &.threaded { @include list-plus-threaded('.review', $list-plus-threaded-theme-default); }
+    .review { @include list-plus-item($list-plus-elements-theme-default);
+        .avatar { @include list-plus-avatar($list-plus-avatar-theme-default); }
+        .content { @include list-plus-content($list-plus-content-theme-default);
+            .author { @include list-plus-author($list-plus-author-theme-default); }
+            &.metadata { @include list-plus-metadata($list-plus-metadata-theme-default); }
+            &.text { @include list-plus-text($list-plus-text-theme-default); }
+        }
+        .reviews {
+            @include list-plus-nested-list('.review', $list-plus-nested-list-theme-default);
+        }
+    }
+    .new-review { @include list-plus-reply(map_merge($list-plus-reply-theme-default, (height: 5em))); }
+}
+.panel-wrap[max-width~="561px"] {
+    .reviews {
+        .review .content { margin-left: 70px!important; }
+        .review .content.text,
+        .review .content.metadata {
+            margin-left: 0 !important;
+        }
+        .review .content.text { margin-top: 1rem; }
+        .new-review { margin-left: 0; }
+    }
+
+}

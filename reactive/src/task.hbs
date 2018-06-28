@@ -1,0 +1,452 @@
+{{#extend "layout-1" current="task"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap bgc-white-dark">
+            <div class="row panel-grid grid-stack" id="panel-grid">
+                <section data-gs-height="80" class="col-sm-12 col-md-12 col-lg-6 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-darkest pb-0 b-shadow-none">
+                        <div class="panel-header grid-stack-handle bgc-white-darkest panel-header-p panel-header-md">
+                            <h2 class="pull-left">
+                                To Do
+                            </h2>
+                            <button class="btn btn-primary btn-sm">New</button>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body px-4 sortable-containment">
+                            <div class="sortable-columns">
+                                <div class="pt-1"></div>
+                                <div class="sortable-column py-4">
+                                    <section class="task blw-3 bc-primary bgc-white-dark">
+                                        <header class="author">
+                                            <a href="" class="name clear-style">Ann</a>
+                                            <div class="image" style="background-image: url('assets/img/avatar/avatar2.png')"></div>
+                                        </header>
+                                        <div class="description">
+                                            <span class="text c-gray-dark">At vero eos et accusamus et iusto odio dignissimos ducimus dolor sit amet</span>
+                                            <div class="tags">
+                                                <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                                <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                            </div>
+                                        </div>
+                                        <footer class="btw-1 bc-gray-lighter">
+                                            <div class="metadata pull-right">
+                                                <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>1</a>
+                                                <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                                <div class="ui action right pointing hide-select select-dropdown">
+                                                    <span class="text"><i class="icon-options-vertical"></i></span>
+                                                    <div class="menu">
+                                                        <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                        <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="date pull-left">today</span>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="sortable-column py-4">
+                                    <section class="task blw-3 bc-success bgc-white-dark">
+                                        <header class="author">
+                                            <a href="" class="name clear-style">Dariel</a>
+                                            <div class="image" style="background-image: url('assets/img/avatar/avatar5.png')"></div>
+                                        </header>
+                                        <div class="description">
+                                            <span class="text c-gray-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                            <div class="tags">
+                                                <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                                <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                            </div>
+                                        </div>
+                                        <footer class="btw-1 bc-gray-lighter">
+                                            <div class="metadata pull-right">
+                                                <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>1</a>
+                                                <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                                <div class="ui action right pointing hide-select select-dropdown">
+                                                    <span class="text"><i class="icon-options-vertical"></i></span>
+                                                    <div class="menu">
+                                                        <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                        <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="date pull-left">today</span>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="sortable-column py-4">
+                                    <section class="task blw-3 bc-success bgc-white-dark">
+                                        <header class="author">
+                                            <a href="" class="name clear-style">Dariel</a>
+                                            <div class="image" style="background-image: url('assets/img/avatar/avatar5.png')"></div>
+                                        </header>
+                                        <div class="description">
+                                            <span class="text c-gray-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                            <div class="tags">
+                                                <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                                <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                            </div>
+                                        </div>
+                                        <footer class="btw-1 bc-gray-lighter">
+                                            <div class="metadata pull-right">
+                                                <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>1</a>
+                                                <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                                <div class="ui action right pointing hide-select select-dropdown">
+                                                    <span class="text"><i class="icon-options-vertical"></i></span>
+                                                    <div class="menu">
+                                                        <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                        <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="date pull-left">today</span>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="sortable-column py-4">
+                                    <section class="task blw-3 bc-success bgc-white-dark">
+                                        <header class="author">
+                                            <a href="" class="name clear-style">Dariel</a>
+                                            <div class="image" style="background-image: url('assets/img/avatar/avatar5.png')"></div>
+                                        </header>
+                                        <div class="description">
+                                            <span class="text c-gray-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                            <div class="tags">
+                                                <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                                <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                            </div>
+                                        </div>
+                                        <footer class="btw-1 bc-gray-lighter">
+                                            <div class="metadata pull-right">
+                                                <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>1</a>
+                                                <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                                <div class="ui action right pointing hide-select select-dropdown">
+                                                    <span class="text"><i class="icon-options-vertical"></i></span>
+                                                    <div class="menu">
+                                                        <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                        <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="date pull-left">today</span>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="pb-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="80" class="col-sm-12 col-md-12 col-lg-6 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-darkest pb-0 b-shadow-none">
+                        <div class="panel-header grid-stack-handle bgc-white-darkest panel-header-p panel-header-md">
+                            <h2 class="pull-left">
+                                In Progress
+                            </h2>
+                            <button class="btn btn-primary btn-sm">New</button>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-3 px-4">
+                            <section class="new-task pb-4">
+                                <div class="content mb-3">
+                                    <textarea class="form-control">At vero eos et accusamus et iusto odio dignissimosducimus</textarea>
+                                    <div class="ui fluid multiple search selection tags-allow-select select-dropdown mt-3">
+                                        <input name="tags" type="hidden">
+                                        <i class="select-dropdown icon"></i>
+                                        <div class="default text">Tags</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="angular">Angular</div>
+                                            <div class="item" data-value="css">CSS</div>
+                                            <div class="item" data-value="design">Graphic Design</div>
+                                            <div class="item" data-value="ember">Ember</div>
+                                            <div class="item" data-value="html">HTML</div>
+                                            <div class="item" data-value="ia">Information Architecture</div>
+                                            <div class="item" data-value="javascript">Javascript</div>
+                                            <div class="item" data-value="mech">Mechanical Engineering</div>
+                                            <div class="item" data-value="meteor">Meteor</div>
+                                            <div class="item" data-value="node">NodeJS</div>
+                                            <div class="item" data-value="plumbing">Plumbing</div>
+                                            <div class="item" data-value="python">Python</div>
+                                            <div class="item" data-value="rails">Rails</div>
+                                            <div class="item" data-value="react">React</div>
+                                            <div class="item" data-value="repair">Kitchen Repair</div>
+                                            <div class="item" data-value="ruby">Ruby</div>
+                                            <div class="item" data-value="ui">UI Design</div>
+                                            <div class="item" data-value="ux">User Experience</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="clearfix">
+                                    <input class="form-control color-picker picker-only-palette">
+                                    <a href="" class="btn btn-default btn-sm pull-right">Save</a>
+                                </footer>
+                            </section>
+                            <div class="btw-1 bc-gray-lighter"></div>
+                            <div class="sortable-columns mt-3">
+                                <div class="pt-1"></div>
+                                <div class="sortable-column py-4">
+                                    <section class="task blw-3 bc-warning bgc-white-dark">
+                                        <header class="author">
+                                            <a href="" class="name clear-style">Tailor</a>
+                                            <div class="image" style="background-image: url('assets/img/avatar/avatar3.png')"></div>
+                                        </header>
+                                        <div class="description">
+                                            <span class="text c-gray-dark">Officiis quaerat quam quas quibusdam rerum temporibus voluptate!</span>
+                                            <div class="tags">
+                                                <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                                <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                            </div>
+                                        </div>
+                                        <footer class="btw-1 bc-gray-lighter">
+                                            <div class="metadata pull-right">
+                                                <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>1</a>
+                                                <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                                <div class="ui action right pointing hide-select select-dropdown">
+                                                    <span class="text"><i class="icon-options-vertical"></i></span>
+                                                    <div class="menu">
+                                                        <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                        <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="date pull-left">today</span>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="sortable-column py-4">
+                                    <section class="task blw-3 bc-info bgc-white-dark">
+                                        <header class="author">
+                                            <a href="" class="name clear-style">Jenny</a>
+                                            <div class="image" style="background-image: url('assets/img/avatar/avatar4.png')"></div>
+                                        </header>
+                                        <div class="description">
+                                            <span class="text c-gray-dark">Asperiores fugit minus quibusdam reiciendis sapiente nino?</span>
+                                            <div class="tags">
+                                                <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                                <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                            </div>
+                                        </div>
+                                        <footer class="btw-1 bc-gray-lighter">
+                                            <div class="metadata pull-right">
+                                                <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>1</a>
+                                                <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                                <div class="ui action right pointing hide-select select-dropdown">
+                                                    <span class="text"><i class="icon-options-vertical"></i></span>
+                                                    <div class="menu">
+                                                        <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                        <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="date pull-left">today</span>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="pb-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="80" class="col-sm-12 col-md-12 col-lg-6 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-darkest pb-0 b-shadow-none">
+                        <div class="panel-header grid-stack-handle bgc-white-darkest panel-header-p panel-header-md">
+                            <h2 class="pull-left">
+                                Tests
+                            </h2>
+                            <button class="btn btn-primary btn-sm">New</button>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-3 px-4">
+                            <section class="task blw-3 bc-primary bgc-white-dark">
+                                <header class="author">
+                                    <a href="" class="name clear-style">Ann</a>
+                                    <div class="image" style="background-image: url('assets/img/avatar/avatar2.png')"></div>
+                                </header>
+                                <div class="description">
+                                    <span class="text c-gray-dark">At vero eos et accusamus et iusto odio dignissimos ducimus dolor sit amet</span>
+                                    <div class="tags">
+                                        <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                        <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                    </div>
+
+                                </div>
+                                <footer class="btw-1 bc-gray-lighter">
+                                    <span class="date pull-left">today</span>
+                                    <div class="metadata pull-right">
+                                        <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>3</a>
+                                        <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                        <div class="ui action right pointing hide-select select-dropdown">
+                                            <span class="text"><i class="icon-options-vertical"></i></span>
+                                            <div class="menu">
+                                                <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </section>
+                            <h5 class="c-gray mt-3">Comments</h5>
+                            <section class="new-comment mt-2 bbw-1 bc-gray-lighter pb-3">
+                                <div class="content mb-3">
+                                    <textarea class="form-control">At vero eos et accusamus et iusto odio dignissimosducimus</textarea>
+                                </div>
+                                <footer class="clearfix">
+                                    <a href="" class="btn btn-default btn-sm pull-right">Add</a>
+                                </footer>
+                            </section>
+                            <div class="comments pt-1 pb-4">
+                                <section class="task-comment mt-3 bgc-white-dark">
+                                    <header class="author">
+                                        <a href="" class="name clear-style">Jack</a>
+                                        <div class="image" style="background-image: url('assets/img/avatar/avatar1.png')"></div>
+                                    </header>
+                                    <div class="description">
+                                        <span class="text c-gray-dark">Facere, facilis, odio? Animi aut magni maiores minus modi.</span>
+                                    </div>
+                                    <footer>
+                                        <span class="date pull-left">today</span>
+                                        <div class="metadata">
+                                            <a href="" class="action clear-style"><i class="fa fa-thumbs-o-up icon-mr-ch"></i>1</a>
+                                            <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                        </div>
+                                    </footer>
+                                </section>
+                                <section class="task-comment mt-3 bgc-white-dark">
+                                    <header class="author">
+                                        <a href="" class="name clear-style">Tailor</a>
+                                        <div class="image" style="background-image: url('assets/img/avatar/avatar3.png')"></div>
+                                    </header>
+                                    <div class="description">
+                                        <span class="text c-gray-dark">Officiis quaerat quam quas quibusdam rerum temporibus voluptate!</span>
+                                    </div>
+                                    <footer>
+                                        <span class="date pull-left">today</span>
+                                        <div class="metadata">
+                                            <a href="" class="action clear-style"><i class="fa fa-thumbs-o-up icon-mr-ch"></i>1</a>
+                                            <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                        </div>
+                                    </footer>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="80" class="col-sm-12 col-md-12 col-lg-6 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-darkest pb-0 b-shadow-none">
+                        <div class="panel-header grid-stack-handle bgc-white-darkest panel-header-p panel-header-md">
+                            <h2 class="pull-left">
+                                Complete
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body px-4">
+                            <div class="sortable-columns">
+                                <div class="pt-1"></div>
+                                <div class="sortable-column py-4">
+                                    <section class="task blw-3 bc-danger bgc-white-dark">
+                                        <header class="author">
+                                            <a href="" class="name clear-style">Jack</a>
+                                            <div class="image" style="background-image: url('assets/img/avatar/avatar1.png')"></div>
+                                        </header>
+                                        <div class="description">
+                                            <span class="text c-gray-dark">Facere, facilis, odio? Animi aut magni maiores minus modi.</span>
+                                            <div class="tags">
+                                                <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                                <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                            </div>
+                                        </div>
+                                        <footer class="btw-1 bc-gray-lighter">
+                                            <div class="metadata pull-right">
+                                                <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>1</a>
+                                                <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                                <div class="ui action right pointing hide-select select-dropdown">
+                                                    <span class="text"><i class="icon-options-vertical"></i></span>
+                                                    <div class="menu">
+                                                        <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                        <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="date pull-left">today</span>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="sortable-column py-4">
+                                    <section class="task blw-3 bc-warning bgc-white-dark">
+                                        <header class="author">
+                                            <a href="" class="name clear-style">Tailor</a>
+                                            <div class="image" style="background-image: url('assets/img/avatar/avatar3.png')"></div>
+                                        </header>
+                                        <div class="description">
+                                            <span class="text c-gray-dark">Officiis quaerat quam quas quibusdam rerum temporibus voluptate!</span>
+                                            <div class="tags">
+                                                <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                                <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                            </div>
+                                        </div>
+                                        <footer class="btw-1 bc-gray-lighter">
+                                            <div class="metadata pull-right">
+                                                <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>1</a>
+                                                <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                                <div class="ui action right pointing hide-select select-dropdown">
+                                                    <span class="text"><i class="icon-options-vertical"></i></span>
+                                                    <div class="menu">
+                                                        <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                        <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="date pull-left">today</span>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="sortable-column py-4">
+                                    <section class="task blw-3 bc-info bgc-white-dark">
+                                        <header class="author">
+                                            <a href="" class="name clear-style">Jenny</a>
+                                            <div class="image" style="background-image: url('assets/img/avatar/avatar4.png')"></div>
+                                        </header>
+                                        <div class="description">
+                                            <span class="text c-gray-dark">Asperiores fugit minus quibusdam reiciendis sapiente nino?</span>
+                                            <div class="tags">
+                                                <span class="badge badge-default badge-pill fs-7">prompt<i class="fa fa-close icon-ml-ch"></i></span>
+                                                <span class="badge badge-default badge-pill fs-7">neatly<i class="fa fa-close icon-ml-ch"></i></span>
+                                            </div>
+                                        </div>
+                                        <footer class="btw-1 bc-gray-lighter">
+                                            <div class="metadata pull-right">
+                                                <a href="" class="action clear-style"><i class="fa fa-comment-o icon-mr-ch"></i>1</a>
+                                                <a href="" class="action clear-style"><i class="fa fa-edit"></i></a>
+                                                <div class="ui action right pointing hide-select select-dropdown">
+                                                    <span class="text"><i class="icon-options-vertical"></i></span>
+                                                    <div class="menu">
+                                                        <div class="item"><i class="icon-share icon-mr"></i>Share</div>
+                                                        <div class="item"><i class="fa fa-folder-o icon-mr"></i>Move</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="date pull-left">today</span>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="pb-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/task');
+        </script>
+    {{/content}}
+{{/extend}}

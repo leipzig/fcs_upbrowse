@@ -1,0 +1,330 @@
+{{#extend "layout-1" current="contacts"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack" id="panel-grid">
+                <section data-gs-height="84" class="col-sm-12 col-md-12 col-lg-12 col-xl-7 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-md">
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-0 mb-4">
+                            <div class="contacts">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="rounded-circle image float-sm-right mr-3" style="background-image: url('assets/img/contacts/pic4.jpg')"></div>
+                                    </div>
+                                    <div class="col-sm-7 contact-name mt-3 mt-sm-0">
+                                        <h4>Rhys Brooks</h4>
+                                        <div class="mt-1">Lead Developer <a href="">@Design Company</a></div>
+                                        <a href="" class="btn btn-success mt-3">Pin Contact</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-6">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">Phone Number:</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <span>562 56481 5464</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">Office Number:</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <span>0555 4522 542</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">Mail:</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <a href="">brooks@example.com</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">Address:</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <span>New York, Brooklyn</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-6">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">About:</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <p class="text-indent mb-0">
+                                            It is a long established fact that a reader will be distracted<br> by the
+                                            readable content of a page when looking at its layout. <br>The point of using
+                                            Lorem Ipsum is that it has a more-or-less<br> normal distribution of letters.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">Tags:</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <span>brooks@example.com</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-6">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">Website</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <a href="">https://www.johndoe.me</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">Twitter</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <a href="">https://www.twiiter.com/sdfsdf</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">Linkedin</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <a href="">https://www.ln.com/dsfsdfdsfs</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-5 text-sm-right">
+                                        <span class="c-gray mr-3">Github</span>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <a href="">https://www.github.com/erewr</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="84" class="col-sm-12 col-md-12 col-lg-12 col-xl-5 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel chat-profile-about bgc-white-dark">
+                        <div class="panel-header bbw-1 bc-gray-lighter grid-stack-handle bgc-white-dark panel-header-p panel-header-md">
+                            <div class="panel-input pull-left">
+                                <input class="form-control form-control-sm search-control" data-list=".chat-members-list" type="text" placeholder="Search" >
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="row flex-column-reverse flex-sm-row">
+                                <div class="col-sm-8 brw-sm-1 pr-sm-0 bc-gray-lighter">
+                                    <section class="chat-members contact-list pt-3 px-4 pb-2 bbw-1 bc-gray-lighter">
+                                        <h6 class="c-gray mb-3">Pinned Contacts</h6>
+                                        <div class="list chat-members-list">
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Jamie Jones</span>
+                                                        <div class="description">Product Manager</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic2.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Jamie Jones</span>
+                                                        <div class="description">Developer</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header c-gray-dark font-weight-bold">Rhys Brooks</span>
+                                                        <div class="description">Lead Developer</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Hunter Atkins</span>
+                                                        <div class="description">Team Member</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="chat-members contact-list pt-3 px-4">
+                                        <h6 class="c-gray mb-3">Contact List</h6>
+                                        <div class="list chat-members-list">
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Jamie Jones</span>
+                                                        <div class="description">Product Manager</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic2.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Jamie Jones</span>
+                                                        <div class="description">Developer</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Taylor Fletcher</span>
+                                                        <div class="description">Developer</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic5.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Jamie Jones</span>
+                                                        <div class="description">QA Tester</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic6.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Brock Giles</span>
+                                                        <div class="description">Support Manager</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Dariel Wallace</span>
+                                                        <div class="description">Team Member</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic2.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Jared Allison</span>
+                                                        <div class="description">Team Member</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-5 p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Jamie Jones</span>
+                                                        <div class="description">Team Member</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="item p-0">
+                                                <a href="contacts.html">
+                                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                                                    <div class="content pl-3">
+                                                        <span class="header">Hunter Atkins</span>
+                                                        <div class="description">Team Member</div>
+                                                    </div>
+                                                </a>
+                                                <div class="pull-right edit-btns">
+                                                    <a href=""><i class="fa fa-edit"></i></a>
+                                                    <a href=""><i class="fa fa-close"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="col-sm-4 pr-2 pr-sm-4 pt-3 pb-1 pb-sm-3 pl-2 bbw-xs-1 bbw-sm-0 bc-gray-lighter">
+                                    <ul class="list list-unstyled contact-categories">
+                                        <li><a href="" class="btn active">All Contacts</a></li>
+                                        <li><a href="" class="btn">Team Members</a></li>
+                                        <li><a href="" class="btn">Project Members</a></li>
+                                        <li><a href="" class="btn">Friends</a></li>
+                                        <li><a href="" class="btn">Clients</a></li>
+                                        <li><a href="" class="btn">Support Team</a></li>
+                                        <li><a href="" class="btn">Customers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/app');
+        </script>
+    {{/content}}
+{{/extend}}

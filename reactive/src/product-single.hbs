@@ -1,0 +1,933 @@
+{{#extend "layout-1" current="product-single"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack">
+                <section class="col-sm-12 col-md-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Current Status
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="#" class="panel-header-link" id="panelDropdownMenuStat" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>Last working day</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu lh-5" aria-labelledby="panelDropdownMenuStat">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="spark-widget bgc-white-darkest">
+                                        <div class="pull-left pl-3 py-5">
+                                            <h3 class="display-4 text-center"><i class="icon-screen-desktop c-primary"></i></h3>
+                                            <h6>Page Views</h6>
+                                        </div>
+                                        <!--suppress HtmlUnknownAttribute -->
+                                        <span class="spark-line spark-line-full panel-body-bottom-right" sparkWidth="240" sparkHeight="80"
+                                              sparkType="bar" sparkBarColor="#498033" sparkBarWidth="5" sparkBarSpacing="10"
+                                              values="0,6,9,3,5,5,7,1,4,6,4,3,7,4,5"></span>
+                                        <span class="display-4 pull-right pr-3 pt-3">1044</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-md-0 mt-3">
+                                    <div class="spark-widget bgc-white-darkest">
+                                        <div class="pull-left pl-3 py-5">
+                                            <h3 class="display-4 text-center"><i class="fa fa-shopping-cart c-success"></i></h3>
+                                            <h6>Already Sold</h6>
+                                        </div>
+                                        <span class="spark-line spark-line-full panel-body-bottom-right" sparkWidth="240" sparkHeight="80"
+                                              sparkFillColor="#31457a" sparkSpotRadius="0" sparkType="line"
+                                              values="2,3,5,4,6,5"></span>
+                                        <span class="display-4 pull-right pr-3 pt-3">305</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <div class="spark-widget bgc-warning">
+                                        <div class="pull-left p-3">
+                                            <h3 class="display-4 text-center"><i class="icon-organization"></i></h3>
+                                            <h6>In Stock</h6>
+                                        </div>
+                                        <span class="display-4 pull-right px-3 py-5">158</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="spark-widget bgc-danger">
+                                        <div class="pull-left p-3">
+                                            <h3 class="display-4 text-center"><i class="fa fa-book"></i></h3>
+                                            <h6>Ordered</h6>
+                                        </div>
+                                        <span class="display-4 pull-right px-3 py-5">34</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-sm">
+                            <ul class="nav nav-tabs nav-semi-border" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link panel-header-link active" data-toggle="tab" href="#chartSales" role="tab">Sales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link panel-header-link" data-toggle="tab" href="#chartOrders" role="tab">Orders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link panel-header-link" data-toggle="tab" href="#chartReturns" role="tab">Returns</a>
+                                </li>
+                            </ul>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-3">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane" id="chartOrders" role="tabpanel">
+                                    <div class="chart-wrap">
+                                        <canvas class="chart-js" data-options="statistic" height="300"></canvas>
+                                    </div>
+                                    <div class="clearfix mt-4">
+                                        <div class="list horizontal chart-labels">
+                                            <div class="item"><span class="badge badge-empty mr-1 bg-warning"></span>Orders</div>
+                                            <div class="item"><span class="badge badge-empty mr-1 bg-danger"></span>Sold</div>
+                                            <div class="item"><span class="badge badge-empty mr-1 bgc-body"></span>Returned</div>
+                                        </div>
+                                        <div class="btn-group pull-right">
+                                            <button type="button" class="btn btn-default">Action</button>
+                                            <button type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="">Action</a>
+                                                <a class="dropdown-item" href="">Another action</a>
+                                                <a class="dropdown-item" href="">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane active" id="chartSales" role="tabpanel">
+                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'Lorem ipsum' will uncover many web sites still in their infancy.</p>
+                                    <div class="clearfix py-3 fs-7">
+                                        <span>Comes from sections 1.10.32 and 1.10.33! </span>
+                                        <div class="list horizontal chart-labels pull-right">
+                                            <div class="item"><span class="badge badge-empty mr-1 bg-primary"></span><span id="min"></span></div>
+                                            <div class="item"><span class="badge badge-empty mr-1 bg-danger"></span><span id="max"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="chart-wrap">
+                                        <canvas class="chart-js" data-options="productStatistic" height="240"></canvas>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="chartReturns" role="tabpanel">
+                                    <p class="text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.</p>
+                                    <div class="chart-wrap">
+                                        <canvas class="chart-js" data-options="soldProds" height="240"></canvas>
+                                    </div>
+                                    <div class="clearfix mt-4">
+                                        <div class="list horizontal chart-labels">
+                                            <div class="item"><span class="badge badge-empty mr-1 bg-warning"></span>Returned</div>
+                                            <div class="item"><span class="badge badge-empty mr-1 bg-danger"></span>Sold</div>
+                                        </div>
+                                        <div class="btn-group pull-right">
+                                            <button type="button" class="btn btn-default">Action</button>
+                                            <button type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="">Action</a>
+                                                <a class="dropdown-item" href="">Another action</a>
+                                                <a class="dropdown-item" href="">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Description
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="#" class="panel-header-link" id="panelDropdownMenuDesc" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>Last day</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu lh-5" aria-labelledby="panelDropdownMenuDesc">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="form-control" id="product-description">
+                                <p class="text-indent mb-0">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when
+                                    looking at its layout. The point of using this text is that it has a more-or-less normal distribution of
+                                    letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                </p>
+                                <p class="text-indent">
+                                    <i>There are many variations of passages</i> of this text available, but the majority have suffered
+                                    alteration in some form, by injected humor, or randomised words which don't look even slightly
+                                    believable.
+                                </p>
+                                <blockquote class="blockquote mb-3 ml-7 bc-gray">
+                                    <p class="mb-0">It is a long established fact that a reader will be ...</p>
+                                    <footer class="blockquote-footer c-gray">Someone famous in <cite title="Source Title">Source
+                                        Title</cite></footer>
+                                </blockquote>
+                                <p class="text-indent">
+                                    <a href="">Widgets</a> are easily editable rich content units that can be freely reused and moved around the
+                                    WYSIWYG area without breaking any of the surrounding content. They can have independent styles and
+                                    formatting from the rest of the text. They can even be given <u>distinct user permissions.</u></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="75" class="col-sm-12 col-md-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Latest Activity
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="#" class="panel-header-link" id="panelDropdownMenuAct" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>Last day</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu lh-5" aria-labelledby="panelDropdownMenuAct">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div id="accordion" class="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="card mb-1">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <a class="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <i class="fa fa-heartbeat icon-mr"></i>Reviews
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="card-body">
+                                            <div class="reviews">
+                                                <div class="review clearfix">
+                                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                                    <div class="content">
+                                                        <a class="author" href="">Reece Collins</a>
+                                                        <div class="star rating rating-disable fs-5 float-sm-right" data-rating="3"
+                                                             data-max-rating="5"></div>
+                                                    </div>
+                                                    <div class="content text text-indent">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry.
+                                                    </div>
+                                                    <div class="content metadata">
+                                                        <span class="date">Sep 15, 2020</span>
+                                                        <span class="hour">10:28 Am</span>
+                                                    </div>
+                                                </div>
+                                                <div class="review clearfix">
+                                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                                    <div class="content">
+                                                        <a class="author" href="">James Foster</a>
+                                                        <div class="star rating rating-disable fs-5 float-sm-right" data-rating="4"
+                                                             data-max-rating="5"></div>
+                                                    </div>
+                                                    <div class="content text text-indent">
+                                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                                                        Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry.
+                                                    </div>
+                                                    <div class="content metadata">
+                                                        <span class="date">Sep 14, 2020</span>
+                                                        <span class="hour">13:21 Am</span>
+                                                    </div>
+                                                </div>
+                                                <form class="new-review clearfix">
+                                                    <div class="mb-3">
+                                                        <div class="star rating rating-enable small mb-2" data-max-rating="5"></div>
+                                                        <textarea class="form-control"></textarea>
+                                                    </div>
+                                                    <a href="" class="btn btn-default pull-right">Add Review</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-1">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <span class="fa fa-life-bouy icon-mr"></span>Questions<span
+                                                class="badge badge-pill badge-danger ml-1">+ 1</span>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="card-body p-0 table-responsive">
+                                            <table class="table m-0">
+                                                <thead>
+                                                <tr class="fs-7">
+                                                    <th class="text-center">Source</th>
+                                                    <th>Subject<i class="fa fa-angle-down icon-ml"></i></th>
+                                                    <th>Status</th>
+                                                    <th>Message</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-center"><i style="color: #1da1f2" class="fa fa-twitter-square"></i></td>
+                                                    <td>Sed ut perspiciatis unde omnis iste natus?</td>
+                                                    <td>Open</td>
+                                                    <td>1</td>
+                                                    <td>Today</td>
+                                                </tr>
+                                                <tr class="text-muted">
+                                                    <td class="text-center"><i style="color: #3b5998" class="fa fa-facebook-square"></i></td>
+                                                    <td>Nemo enim ipsam?</td>
+                                                    <td>Closed</td>
+                                                    <td>3</td>
+                                                    <td>1 day ago</td>
+                                                </tr>
+                                                <tr class="text-muted">
+                                                    <td class="text-center"><i style="color: #dd4b39" class="fa fa-envelope"></i></td>
+                                                    <td>Nisi ut aliquid ex ea.</td>
+                                                    <td>Closed</td>
+                                                    <td>13</td>
+                                                    <td>2 day ago</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="fa icon-mr fa-history"></i>Revisions
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="card-body">
+                                            <div class="time-line threaded">
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-primary"><i class="fa fa-envelope"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Today</span>
+                                                            <span class="hour">10:30 PM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-danger"><i class="fa fa-exclamation-circle"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Yesterday</span>
+                                                            <span class="hour">23:33 AM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Consectetur adipiscing elit.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-warning"><i class="fa fa-life-bouy"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Sep 2, 2016</span>
+                                                            <span class="hour">13:20 PM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                                            doloremque laudantium
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-info"><i class="fa fa-bitbucket"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Aug 25, 2016</span>
+                                                            <span class="hour">05:56 PM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-primary"><i class="fa fa-shopping-bag"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Jul 5, 2016</span>
+                                                            <span class="hour">11:10 AM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Sed quia non numquam eius
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Photo Editor
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="#" class="panel-header-link" id="panelDropdownMenuEditor" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>Last day</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu lh-5" aria-labelledby="panelDropdownMenuEditor">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <section class="photo-editor mb-6">
+                                <div class="photo-editor-erea">
+                                    <div class="photo-editor-upload photo-editor-upload-trigger">
+                                        <p>Drop image here or Select from list or
+                                            <label class="browse">browse...<input id="file" type="file" accept="image/*" class="sr-only"></label>
+                                        </p>
+                                    </div>
+                                    <div class="canvas photo-editor-editable">
+                                        <div class="editor">
+                                            <img src="assets/img/empty.png" alt="">
+                                        </div>
+                                        <div class="photo-editor-toolbar">
+                                            <button data-action="move" title="Move (M)" class="toolbar__button">
+                                                <span class="fa fa-arrows"></span>
+                                            </button>
+                                            <button data-action="crop" title="Crop (C)" class="toolbar__button">
+                                                <span class="fa fa-crop"></span>
+                                            </button>
+                                            <button data-action="zoom-in" title="Zoom In (I)" class="toolbar__button">
+                                                <span class="fa fa-search-plus"></span>
+                                            </button>
+                                            <button data-action="zoom-out" title="Zoom Out (O)" class="toolbar__button">
+                                                <span class="fa fa-search-minus"></span>
+                                            </button>
+                                            <button data-action="rotate-left" title="Rotate Left (L)" class="toolbar__button">
+                                                <span class="fa fa-rotate-left"></span>
+                                            </button>
+                                            <button data-action="rotate-right" title="Rotate Right (R)" class="toolbar__button">
+                                                <span class="fa fa-rotate-right"></span>
+                                            </button>
+                                            <button data-action="flip-horizontal" title="Flip Horizontal (H)" class="toolbar__button">
+                                                <span class="fa fa-arrows-h"></span>
+                                            </button>
+                                            <button data-action="flip-vertical" title="Flip Vertical (V)" class="toolbar__button">
+                                                <span class="fa fa-arrows-v"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="footer">
+                                    <span class="pl-2 croping-size"></span>
+                                    <div class="menu photo-editor-buttons">
+                                        <label for="file" title="Upload" class="menu__button photo-editor-upload-trigger">
+                                            <span class="fa fa-upload"></span>
+                                        </label>
+
+                                        <button data-action="restore" title="Undo (Ctrl + Z)" class="menu__button">
+                                            <span class="fa fa-undo"></span>
+                                        </button>
+
+                                        <button data-action="remove" title="Delete (Delete)" class="menu__button menu__button--danger">
+                                            <span class="fa fa-trash"></span>
+                                        </button>
+
+                                        <button data-action="clear" title="Cancel (Esc)" class="menu__button menu__button--danger">
+                                            <span class="fa fa-ban"></span>
+                                        </button>
+
+                                        <button data-action="crop" title="OK (Enter)" class="menu__button menu__button--success">
+                                            <span class="fa fa-check"></span>
+                                        </button>
+                                        <button data-action="download" title="Save" class="menu__button product-save-image">
+                                            <span class="fa fa-save"></span>
+                                        </button>
+                                    </div>
+                                </footer>
+                            </section>
+                            <div class="product-images">
+                                <ul class="nav nav-pills  mb-3 " role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#this-prod-images" role="tab">This Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#all-images" role="tab">All Images</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content bc-primary pb-3">
+                                    <div class="tab-pane active" id="this-prod-images" role="tabpanel">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p3-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p3-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p3-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                    </div>
+                                    <div class="tab-pane" id="all-images" role="tabpanel">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p3-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Product Features
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="#" class="panel-header-link" id="panelDropdownMenuFeatures" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>Last day</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu lh-5" aria-labelledby="panelDropdownMenuFeatures">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="vertical-tabs bbw-sm-1 bc-gray-lighter d-sm-flex">
+                                <ul class="nav nav-pills flex-column brw-sm-1 bbw-2 bbw-sm-0 px-0 px-sm-2 bc-gray-lighter" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#general" role="tab"><i
+                                            class="fa fa-list-alt icon-mr icon-width"></i>General</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#shipping" role="tab"><i
+                                            class="fa fa-truck icon-mr icon-width"></i>Shipping</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#inventory" role="tab"><i
+                                            class="fa fa-sitemap icon-mr icon-width"></i>Inventory</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#meta-fields" role="tab"><i
+                                            class="fa fa-tags icon-mr icon-width"></i>Meta fields</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#cross-sells" role="tab"><i
+                                            class="fa fa-exchange icon-mr icon-width"></i>Cross Sells</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#up-sells" role="tab"><i
+                                            class="fa fa-bolt icon-mr icon-width"></i>Up Sells</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content pl-3 py-3 blw-sm-1 bc-gray-lighter">
+                                    <div class="tab-pane active" id="general" role="tabpanel">
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-price">Price</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-price" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-qty">Qty</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-qty" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-enable-increments">Enable Increments</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="product-enable-increments" class="ui simple-select select-dropdown">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-max-qty">Max Qty in the Cart</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-max-qty" class="spin form-control" value="14"
+                                                       placeholder="Enter Number">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-min-qty">Min Qty in the Cart</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-min-qty" class="form-control spin" value="0"
+                                                       placeholder="Enter Number">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <strong><i class="fa fa-warning icon-mr fs-5"></i></strong>Contrary to
+                                            popular belief this is just random text.
+                                        </div>
+                                        <small><b>Note:</b> Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                        </small>
+                                    </div>
+                                    <div class="tab-pane" id="shipping" role="tabpanel">
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-weight">Weight</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-weight" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-length">Length</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-length" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-width">Width</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-width" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-height">Height</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-height" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                    </div>
+                                    <div class="tab-pane" id="inventory" role="tabpanel">
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-sku">SKU</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-sku" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-enable-stock">Stock Availability</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="product-enable-stock" class="ui simple-select select-dropdown">
+                                                    <option value="1">In Stock</option>
+                                                    <option value="0">Empty</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-qty-2">Qty</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-qty-2" class="spin form-control" value="30" placeholder="Enter Number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="meta-fields" role="tabpanel">
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="custom-input">Custom Input</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="custom-input" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group mb-4">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-3 text-right">
+                                                    <label for="custom-textarea">Custom Text Area</label>
+                                                </div>
+                                                <div class="col-xs-12 col-9">
+                                                    <textarea id="custom-textarea" class="form-control" placeholder=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4 bbw-1 bc-gray-lighter"></div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="custom-select">Custom Select</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="custom-select" class="ui simple-select select-dropdown">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group mb-4">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-3 text-right">
+                                                    <label for="custom-textarea-2">Custom Text Area</label>
+                                                </div>
+                                                <div class="col-xs-12 col-9">
+                                                    <textarea id="custom-textarea-2" class="form-control" placeholder=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-3 text-right">
+                                                    <label for="custom-spin">Custom Spin</label>
+                                                </div>
+                                                <div class="col-xs-12 col-9">
+                                                    <input id="custom-spin" class="spin form-control" value="" placeholder="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                    </div>
+                                    <div class="tab-pane" id="cross-sells" role="tabpanel">
+                                        <p class="m-5 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. <br>
+                                            The point ofusing Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.
+                                        </p>
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label>Cross Sells</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <div class="ui fluid multiple search selection tags-allow-select select-dropdown">
+                                                    <input name="tags" type="hidden" id="cross-select">
+                                                    <i class="select-dropdown icon"></i>
+                                                    <div class="default text">Skills</div>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="angular">Angular</div>
+                                                        <div class="item" data-value="css">CSS</div>
+                                                        <div class="item" data-value="design">Graphic Design</div>
+                                                        <div class="item" data-value="ember">Ember</div>
+                                                        <div class="item" data-value="html">HTML</div>
+                                                        <div class="item" data-value="ia">Information Architecture</div>
+                                                        <div class="item" data-value="javascript">Javascript</div>
+                                                        <div class="item" data-value="mech">Mechanical Engineering</div>
+                                                        <div class="item" data-value="meteor">Meteor</div>
+                                                        <div class="item" data-value="node">NodeJS</div>
+                                                        <div class="item" data-value="plumbing">Plumbing</div>
+                                                        <div class="item" data-value="python">Python</div>
+                                                        <div class="item" data-value="rails">Rails</div>
+                                                        <div class="item" data-value="react">React</div>
+                                                        <div class="item" data-value="repair">Kitchen Repair</div>
+                                                        <div class="item" data-value="ruby">Ruby</div>
+                                                        <div class="item" data-value="ui">UI Design</div>
+                                                        <div class="item" data-value="ux">User Experience</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="custom-select-cross">Custom Select</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="custom-select-cross" class="form-control ui simple-select select-dropdown">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                    </div>
+                                    <div class="tab-pane" id="up-sells" role="tabpanel">
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label>Up Sells</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <div class="ui fluid multiple search selection tags-allow-select select-dropdown">
+                                                    <input name="tags" type="hidden" id="up-sells-input">
+                                                    <i class="select-dropdown icon"></i>
+                                                    <div class="default text">Skills</div>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="angular">Angular</div>
+                                                        <div class="item" data-value="css">CSS</div>
+                                                        <div class="item" data-value="design">Graphic Design</div>
+                                                        <div class="item" data-value="ember">Ember</div>
+                                                        <div class="item" data-value="html">HTML</div>
+                                                        <div class="item" data-value="ia">Information Architecture</div>
+                                                        <div class="item" data-value="javascript">Javascript</div>
+                                                        <div class="item" data-value="mech">Mechanical Engineering</div>
+                                                        <div class="item" data-value="meteor">Meteor</div>
+                                                        <div class="item" data-value="node">NodeJS</div>
+                                                        <div class="item" data-value="plumbing">Plumbing</div>
+                                                        <div class="item" data-value="python">Python</div>
+                                                        <div class="item" data-value="rails">Rails</div>
+                                                        <div class="item" data-value="react">React</div>
+                                                        <div class="item" data-value="repair">Kitchen Repair</div>
+                                                        <div class="item" data-value="ruby">Ruby</div>
+                                                        <div class="item" data-value="ui">UI Design</div>
+                                                        <div class="item" data-value="ux">User Experience</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="custom-select-up">Custom Select</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="custom-select-up" class="ui simple-select select-dropdown">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <p class="m-5 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. <br>
+                                            The point ofusing Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/prod');
+        </script>
+    {{/content}}
+{{/extend}}

@@ -1,0 +1,586 @@
+{{#extend "layout-1" current="dashboard-1"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack" id="panel-grid">
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Monthly Earnings
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-2">
+                            <div class="h-md pos-r panel-body-p py-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class=""><span class="fs-1 fw-light">20154</span></h3>
+                                        <h6 class="c-info lh-5">+ 15% this week</h6>
+                                    </div>
+                                    <span class="col-7 p-0 spark-line spark-line-full panel-body-bottom-right" sparkHeight="80"
+                                          sparkFillColor="#eff5f6" sparkSpotRadius="0" sparkType="line" sparkLineWidth="2"
+                                          sparkLineColor="#2d6f70" values="2,3,5,4,6,5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Visits
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-2">
+                            <div class="h-md pos-r panel-body-p py-0">
+                                <h3 class=""><span class="fs-1 fw-light">85600</span></h3>
+                                <h6 class="c-info lh-5 fs-7">+ 15% this week</h6>
+                                <h6 class="c-danger lh-0 fs-7">- 5% previous week</h6>
+
+                                <span class="col-7 p-0 spark-line spark-line-full panel-body-bottom-right" sparkHeight="80"
+                                      sparkFillColor="#e6eff2" sparkSpotRadius="0" sparkType="line" sparkLineWidth="2"
+                                      sparkLineColor="#50555d" values="1,4,5,2,8,7"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Reviews
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-2">
+                            <div class="h-md pos-r panel-body-p py-0">
+                                <h3 class="lh-0 fs-1 fw-light">20154</h3>
+                                <h6 class="c-gray">Today</h6>
+                                <span class="col-7 p-0 spark-line spark-line-full panel-body-bottom-right" sparkHeight="80"
+                                      sparkFillColor="#3a5190" sparkSpotRadius="0" sparkType="line" values="2,3,5,4,6,5"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Daily Page Views
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-2">
+                            <div class="h-md pos-r panel-body-p py-0">
+                                <div class="row">
+                                    <div class="col-5 text-center">
+                                        <h3 class="display-4"><i class="icon-screen-desktop c-danger"></i></h3>
+                                        <h6><span class="counter" data-counter="2301">Counting ...</span> <i class="fa fa-level-down icon-ml-ch c-danger"></i></h6>
+                                    </div>
+                                    <span class="spark-line spark-line-full panel-body-bottom-right" sparkWidth="240" sparkHeight="80"
+                                          sparkType="bar" sparkBarColor="#ba9d2b" sparkBarWidth="5" sparkBarSpacing="10"
+                                          values="0,6,9,3,5,5,7,1,4,6,4,3,7,4,5">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+
+                <section data-gs-min-width="7" class="col-sm-12 col-md-12 col-lg-12 col-xl-7 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Income
+                            </h2>
+                            <div class="list horizontal chart-labels pull-right mr-7">
+                                <div class="item fs-6-plus"><span class="badge badge-empty mr-1 bg-success"></span>Affiliates</div>
+                                <div class="item fs-6-plus"><span class="badge badge-empty mr-1 bg-primary"></span>Store</div>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="storeAffiliate" height="300"></canvas>
+                            </div>
+                            <p class="text-indent fs-6-plus mt-3 mb-0">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'Lorem ipsum' will uncover many web sites still in their infancy.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="5" class="col-sm-12 col-md-12 col-lg-12 col-xl-5 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-2">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm bbw-1 bc-gray-lighter">
+                            <h2 class="pull-left">
+                                Summary
+                            </h2>
+                            <div class="dropdown pull-left">
+                                <a href="" class="panel-header-link" id="panelDropdownSum" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>This Week</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right lh-5" aria-labelledby="panelDropdownSum">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="">Action</a>
+                                        <a class="dropdown-item" href="">Another action</a>
+                                        <a class="dropdown-item" href="">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="text-indent mb-0 fs-6-plus pt-1">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and 'Lorem ipsum' will uncover many web sites still in their infancy.</p>
+                            <div class="btw-1 bc-gray-lighter pt-3 mt-3">
+                                <div class="row">
+                                    <div class="col-sm-6 pr-2">
+                                        <div class="pb-3">
+                                            <div class="clearfix mb-3">
+                                                <h5 class="pull-left">Store Total</h5>
+                                                <a href="" class="badge badge-primary badge-pill fs-7 pull-right">+ 15.3 %</a>
+                                            </div>
+
+                                            <span class="fs-2 fw-light d-block text-center">$ 201470</span>
+                                            <a href="" class="d-block fs-7 text-center">187000 in the last week</a>
+                                            <div class="chart-wrap mt-6">
+                                                <canvas class="chart-js" data-options="totalStore" height="110"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 blw-1 bc-gray-lighter income-first-c pl-2">
+                                        <div class="pb-3">
+                                            <div class="clearfix mb-3">
+                                                <h5 class="pull-left">Affiliates</h5>
+                                                <a href="" class="badge badge-primary badge-pill fs-7 pull-right">+ 5.3 %</a>
+                                            </div>
+                                            <span class="fs-2 d-block fw-light text-center">$ 40354</span>
+                                            <a href="" class="d-block fs-7 text-center">38024 in the last week</a>
+                                            <div class="chart-wrap mt-6">
+                                                <canvas class="chart-js" data-options="totalAffiliate" height="110"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="6" class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Finances
+                            </h2>
+                            <div class="dropdown pull-left">
+                                <a href="" class="panel-header-link" id="panelDropdownMenu3" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>This Week</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right lh-5" aria-labelledby="panelDropdownMenu3">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="">Action</a>
+                                        <a class="dropdown-item" href="">Another action</a>
+                                        <a class="dropdown-item" href="">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="dash-finance-row row">
+                                <div class="col-4 text-center">
+                                    <span class="nowrap fs-7 c-gray">Payment</span>
+                                    <h2 class="fw-light nowrap">$ 10430</h2>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <span class="nowrap fs-7 c-gray">Taxes</span>
+                                    <h2 class="fw-light nowrap">$ 36340</h2>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <span class="nowrap fs-7 c-gray">Net Income</span>
+                                    <h2 class="fw-light nowrap">$ 190620</h2>
+                                </div>
+                            </div>
+                            <div class="chart-wrap pt-2 pb-3 pb-sm-5">
+                                <canvas height="140" class="chart-js" data-options="financesChart"></canvas>
+                            </div>
+                            <div class="dash-finance-row row">
+                                <div class="col-4 text-center">
+                                    <a href="" class="fs-6 badge badge-pill badge-warning">+ $ 3200</a>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <a href="" class="fs-6 badge badge-pill badge-info">+ 2 %</a>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <a href="" class="fs-6 badge badge-pill badge-primary">+ 13 %</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="6" data-gs-height="39" class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Top Referrals
+                            </h2>
+                            <div class="panel-input pull-left hidden-xs-down">
+                                <input class="form-control form-control-sm search-control" data-list=".referral-list" type="text" placeholder="Search">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="table-responsive">
+                                <table class="table mb-0 bbw-1 bc-gray-lighter nowrap">
+                                    <thead>
+                                    <tr>
+                                        <th class="btw-0"></th>
+                                        <th class="btw-0">Visits</th>
+                                        <th class="btw-0">Percent</th>
+                                        <th class="text-right btw-0">Income</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="referral-list">
+                                    <tr>
+                                        <td><a href=""><i class="fa fa-google c-google icon-mr"></i>google.com</a></td>
+                                        <td>75003</td>
+                                        <td>
+                                        <span class="pr-2 spark-line spark-line-inline" sparkHeight="16" sparkType="pie"
+                                              sparkOffset="-90" sparkSliceColors="[#498033,#f1f4f4]" values="30, 40"></span>
+                                            <span class="fs-7">% 30</span>
+                                        </td>
+                                        <td class="text-right">$ 45200</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><i class="fa fa-facebook c-facebook icon-mr"></i>facebook.com</a></td>
+                                        <td>45245</td>
+                                        <td>
+                                        <span class="pr-2 spark-line spark-line-inline" sparkHeight="16" sparkType="pie"
+                                              sparkOffset="-90" sparkSliceColors="[#498033,#f1f4f4]" values="20, 40"></span>
+                                            <span class="fs-7">% 20</span>
+                                        </td>
+                                        <td class="text-right">$ 78400</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><i class="fa fa-twitter c-twitter icon-mr"></i>twitter.com</a></td>
+                                        <td>15642</td>
+                                        <td>
+                                        <span class="pr-2 spark-line spark-line-inline" sparkHeight="16" sparkType="pie"
+                                              sparkOffset="-90" sparkSliceColors="[#498033,#f1f4f4]" values="50, 40"></span>
+                                            <span class="fs-7">% 50</span>
+                                        </td>
+                                        <td class="text-right">$ 45200</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><i class="fa fa-google-plus c-google-plus icon-mr"></i>plus.google.com</a></td>
+                                        <td>8757</td>
+                                        <td>
+                                        <span class="pr-2 spark-line spark-line-inline" sparkHeight="16" sparkType="pie"
+                                              sparkOffset="-90" sparkSliceColors="[#498033,#f1f4f4]" values="60, 40"></span>
+                                            <span class="fs-7">% 60</span>
+                                        </td>
+                                        <td class="text-right">$ 45200</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><i class="fa fa-pinterest c-pinterest icon-mr"></i>pinterest.com</a></td>
+                                        <td>5321</td>
+                                        <td>
+                                        <span class="pr-2 spark-line spark-line-inline" sparkHeight="16" sparkType="pie"
+                                              sparkOffset="-90" sparkSliceColors="[#498033,#f1f4f4]" values="45, 40"></span>
+                                            <span class="fs-7">% 45</span>
+                                        </td>
+                                        <td class="text-right">$ 4550</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><i class="fa fa-behance c-behance-square icon-mr"></i>behance.com</a></td>
+                                        <td>1254</td>
+                                        <td>
+                                        <span class="pr-2 spark-line spark-line-inline" sparkHeight="16" sparkType="pie"
+                                              sparkOffset="-90" sparkSliceColors="[#498033,#f1f4f4]" values="80, 40"></span>
+                                            <span class="fs-7">% 80</span>
+                                        </td>
+                                        <td class="text-right">$ 4520</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><i class="fa fa-yahoo c-yahoo icon-mr"></i>yahoo.com</a></td>
+                                        <td>1254</td>
+                                        <td>
+                                        <span class="pr-2 spark-line spark-line-inline" sparkHeight="16" sparkType="pie"
+                                              sparkOffset="-90" sparkSliceColors="[#498033,#f1f4f4]" values="32, 40"></span>
+                                            <span class="fs-7">% 80</span>
+                                        </td>
+                                        <td class="text-right">$ 1530</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><i class="fa fa-amazon c-amazon icon-mr"></i>amazon.com</a></td>
+                                        <td>1254</td>
+                                        <td>
+                                        <span class="pr-2 spark-line spark-line-inline" sparkHeight="16" sparkType="pie"
+                                              sparkOffset="-90" sparkSliceColors="[#498033,#f1f4f4]" values="75, 40"></span>
+                                            <span class="fs-7">% 80</span>
+                                        </td>
+                                        <td class="text-right">$ 6500</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><i class="fa fa-github c-github icon-mr"></i>gihub.com</a></td>
+                                        <td>1254</td>
+                                        <td>
+                                        <span class="pr-2 spark-line spark-line-inline" sparkHeight="16" sparkType="pie"
+                                              sparkOffset="-90" sparkSliceColors="[#498033,#f1f4f4]" values="30, 40"></span>
+                                            <span class="fs-7">% 80</span>
+                                        </td>
+                                        <td class="text-right">$ 520</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="5" data-gs-height="31" class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Last Orders
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="table-responsive">
+                                <table class="table mb-0 bbw-1 bc-gray-lighter nowrap fs-6-plus">
+                                    <thead>
+                                    <tr>
+                                        <th class="btw-0">Name</th>
+                                        <th class="btw-0">Items</th>
+                                        <th class="text-right btw-0">Total</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Bandage - Fexible 1x3</a></td>
+                                        <td>543</td>
+                                        <td class="text-right">$ 5700</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">The Pop Shoppe - Root Beer</a></td>
+                                        <td>454</td>
+                                        <td class="text-right">$ 8400</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Pastry - Carrot Muffin</a></td>
+                                        <td>324</td>
+                                        <td class="text-right">$ 5200</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Cabbage - Savoy</a></td>
+                                        <td>322</td>
+                                        <td class="text-right">$ 5200</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Creme De Banane - Marie</a></td>
+                                        <td>280</td>
+                                        <td class="text-right">$ 4450</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Shrimp - Black Tiger 16/20</a></td>
+                                        <td>255</td>
+                                        <td class="text-right">$ 4230</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Ice Cream Bar - Oreo Sandwich</a></td>
+                                        <td>230</td>
+                                        <td class="text-right">$ 3330</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Liqueur - Melon</a></td>
+                                        <td>210</td>
+                                        <td class="text-right">$ 3250</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Bread Base - Toscano</a></td>
+                                        <td>205</td>
+                                        <td class="text-right">$ 3440</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Creme De Banane - Marie</a></td>
+                                        <td>280</td>
+                                        <td class="text-right">$ 2880</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Shrimp - Black Tiger 16/20</a></td>
+                                        <td>255</td>
+                                        <td class="text-right">$ 1980</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Ice Cream Bar - Oreo Sandwich</a></td>
+                                        <td>230</td>
+                                        <td class="text-right">$ 530</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Liqueur - Melon</a></td>
+                                        <td>210</td>
+                                        <td class="text-right">$ 500</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="5" data-gs-height="31" class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Last Search Terms
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="table-responsive">
+                                <table class="table mb-0 bbw-1 bc-gray-lighter nowrap fs-6-plus">
+                                    <thead>
+                                    <tr>
+                                        <th class="btw-0">Query</th>
+                                        <th class="btw-0">Results</th>
+                                        <th class="text-right btw-0">Hits</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Fexible</a></td>
+                                        <td>543</td>
+                                        <td class="text-right">70</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Beer</a></td>
+                                        <td>454</td>
+                                        <td class="text-right">40</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Carrot Muffin</a></td>
+                                        <td>324</td>
+                                        <td class="text-right">20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Savoy</a></td>
+                                        <td>322</td>
+                                        <td class="text-right">52</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Marie</a></td>
+                                        <td>280</td>
+                                        <td class="text-right">45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Shrimp</a></td>
+                                        <td>255</td>
+                                        <td class="text-right">42</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Ice Cream </a></td>
+                                        <td>230</td>
+                                        <td class="text-right">33</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Melon</a></td>
+                                        <td>210</td>
+                                        <td class="text-right">25</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Bread</a></td>
+                                        <td>205</td>
+                                        <td class="text-right">44</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Creme De Banane</a></td>
+                                        <td>280</td>
+                                        <td class="text-right">88</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Tiger</a></td>
+                                        <td>255</td>
+                                        <td class="text-right">98</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Ice Cream</a></td>
+                                        <td>230</td>
+                                        <td class="text-right">30</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="product-single.html" class="c-gray">Liqueur</a></td>
+                                        <td>210</td>
+                                        <td class="text-right">5</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="7" data-gs-height="62" class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-sm">
+                            <ul class="nav nav-tabs nav-semi-border" role="tablist" id="product-table">
+                                <li class="nav-item">
+                                    <a class="nav-link panel-header-link active" data-toggle="tab" href="#top-prod" role="tab">Top Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link panel-header-link" data-toggle="tab" href="#new-prod" role="tab">New products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link panel-header-link" data-toggle="tab" href="#top-custom" role="tab">Top Customers</a>
+                                </li>
+                            </ul>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <!-- Tab panes -->
+                            <div class="tab-content fs-6-plus">
+                                <div class="tab-pane active" id="top-prod" role="tabpanel">
+                                    <table id="top-prod-table" class="card-view-no-edit"></table>
+                                </div>
+                                <div class="tab-pane" id="new-prod" role="tabpanel">
+                                    <table id="new-prod-table" class="card-view-no-edit"></table>
+                                </div>
+                                <div class="tab-pane" id="top-custom" role="tabpanel">
+                                    <table id="top-custom-table" class="card-view-no-edit"></table>
+                                </div>
+                            </div>
+                            <!--End Panel-->
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/dash1');
+        </script>
+    {{/content}}
+{{/extend}}

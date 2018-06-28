@@ -1,0 +1,24 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: time-line
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.time-line { @include list-plus($list-plus-theme-default);
+    &.threaded { @include list-plus-threaded('.tm-line-item', map_merge($list-plus-threaded-theme-default, (width: 45px))); max-width: $list-plus-container-max-width - 22.5px; }
+    .tm-line-item { @include list-plus-item($list-plus-elements-theme-default);
+        .tm-icon { @include list-plus-avatar(map_merge($list-plus-avatar-theme-default, (height: 45px, width: 45px, font-size: $font-size-5))); }
+        .tm-icon-empty { width: 12px; height: 12px; margin: 4px 16px; float: left; border-radius: 10rem; }
+        .content { @include list-plus-content($list-plus-content-theme-default);
+            .metadata { @include list-plus-metadata( map_merge($list-plus-metadata-theme-default, (font-size: $font-size-7))); }
+            .text { @include list-plus-text($list-plus-text-theme-default); }
+        }
+    }
+    .reply { @include list-plus-reply($list-plus-reply-theme-default); }
+    &[max-width~="550px"] {
+        .tm-line-item .content { margin-left: 65px!important; }
+    }
+    .emojionearea .emojionearea-editor,
+    .chat-room .chat-reply .chat-reply-area { min-height: 2.8rem }
+}

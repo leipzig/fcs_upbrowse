@@ -1,0 +1,2228 @@
+{{#extend "layout-1" current="forms"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Simple Form
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation">
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone else.
+                                    </small>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputFile">File input</label>
+                                    <div class="file-upload">
+                                        <span class="btn btn-default file-upload-btn mr-2">
+                                            Browse
+                                            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                        </span>
+                                        <span>No File Chosen</span>
+                                    </div>
+
+                                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level
+                                        help text for the above input. It's a bit lighter and easily wraps to a new line.
+                                    </small>
+                                </div>
+                                <div class="form-check mb-4">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description ml-2">Check me out</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Form Layouts
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="pb-5">
+                                <h4 class="lh-0 pb-1">Inline Forms</h4>
+                                <p class="fs-6-plus mb-2">Use the <code>.form-inline</code> class to display form elements on a single horizontal row.</p>
+                                <form class="form-inline">
+                                    <label class="sr-only" for="inlineFormInput">Name</label>
+                                    <input type="text" class="form-control mb-1 mr-sm-2" id="inlineFormInput" placeholder="Name">
+                                    <label class="sr-only" for="inlineFormInputGroup">Password</label>
+                                    <div class="input-group mb-1 mr-sm-2">
+                                        <div class="input-group-addon">@</div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Password">
+                                    </div>
+                                    <div class="form-check mr-sm-2">
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description ml-2">Remember me</span>
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default mb-1">Sign In</button>
+                                </form>
+                            </div>
+                            <div>
+                                <h4 class="lh-0 pb-1">Horizontal Forms</h4>
+                                <p class="fs-6-plus mb-2">Add the <code>.row</code> and <code>.col-*-*</code> classes to create horizontal forms </p>
+                                <form>
+                                    <div class="form-group row mb-4">
+                                        <label for="inputEmail3" class="col-sm-3 col-form-label text-right">Email
+                                            Address</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-4">
+                                        <label for="inputPassword3" class="col-sm-3 col-form-label text-right">Password</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-2">
+                                        <div class="col-sm-9 offset-sm-3">
+                                            <div class="form-check">
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description ml-2">Remember me</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-0">
+                                        <div class="offset-sm-3 col-sm-9">
+                                            <button type="submit" class="btn btn-default">Sign in</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Selects
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <h4 class="lh-0 pb-1">Selection</h4>
+                            <p class="fs-6-plus mb-2">Selections may be initialized directly on a <code>select</code> element or with the matching HTML and a hidden <code>input</code> element.</p>
+                            <div class="ui selection simple-select select-dropdown mb-4 mr-4">
+                                <input type="hidden" name="gender">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Profession</div>
+                                <div class="menu">
+                                    <div class="item" data-value="2">Manager</div>
+                                    <div class="item" data-value="1">Designer</div>
+                                    <div class="item" data-value="0">Architecture</div>
+                                </div>
+                            </div>
+                            <div class="ui selection simple-select select-dropdown mb-4 mr-4">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Analysis type</div>
+                                <div class="menu">
+                                    <div class="item" data-value="2">Titration</div>
+                                    <div class="item" data-value="1">Voltage</div>
+                                    <div class="item" data-value="0">Case-control EV Analysis</div>
+                                </div>
+                            </div>
+                            <div class="modal show transition scale in" id="bt-table-modal" style="display: block;">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Queue analysis</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                            <div class="ui selection simple-select select-dropdown mb-4 mr-4"><i class="select-dropdown icon"></i><div class="default text">Analysis type</div><div class="menu"><div class="item" data-value="2">Titration</div><div class="item" data-value="1">Voltage</div><div class="item" data-value="0">Case-control EV Analysis</div></div></div></div>
+                                            <div class="modal-footer">
+                                                <label class="custom-control custom-checkbox pl-5 mr-4">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">Leave Open</span>
+                                                </label>
+                                                <button type="button" class="btn btn-primary add-data">Add</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <select class="ui simple-select select-dropdown mb-4">
+                                <option value="">Gender</option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                            </select>
+                            <div class="ui fluid selection simple-select select-dropdown">
+                                <input type="hidden" name="user">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Select Team Member</div>
+                                <div class="menu">
+                                    <div class="item" data-value="jenny">
+                                        <img class="image" alt="" src="assets/img/avatar/avatar1.png">
+                                        Juo Fu
+                                    </div>
+                                    <div class="item" data-value="elliot">
+                                        <img class="image" alt="" src="assets/img/avatar/avatar2.png">
+                                        Jenny Hess
+                                    </div>
+                                    <div class="item" data-value="stevie">
+                                        <img class="image" alt="" src="assets/img/avatar/avatar3.png">
+                                        Marry Douglas
+                                    </div>
+                                    <div class="item" data-value="christian">
+                                        <img class="image" alt="" src="assets/img/avatar/avatar5.png">
+                                        Leonardo
+                                    </div>
+                                    <div class="item" data-value="matt">
+                                        <img class="image" alt="" src="assets/img/avatar/avatar5.png">
+                                        Matt
+                                    </div>
+                                    <div class="item" data-value="justen">
+                                        <img class="image" alt="" src="assets/img/avatar/avatar6.png">
+                                        Lola Kitsune
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-1 mt-7">Search & Selection</h4>
+                            <p class="fs-6-plus mb-2">Works fine with large lists</p>
+                            <div class="ui fluid search selection simple-select select-dropdown mb-4">
+                                <input type="hidden" name="country">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Select Country</div>
+                                <div class="menu">
+                                    <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                                    <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                                    <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+                                    <div class="item" data-value="dz"><i class="dz flag"></i>Algeria</div>
+                                    <div class="item" data-value="as"><i class="as flag"></i>American Samoa</div>
+                                    <div class="item" data-value="ad"><i class="ad flag"></i>Andorra</div>
+                                    <div class="item" data-value="ao"><i class="ao flag"></i>Angola</div>
+                                    <div class="item" data-value="ai"><i class="ai flag"></i>Anguilla</div>
+                                    <div class="item" data-value="ag"><i class="ag flag"></i>Antigua</div>
+                                    <div class="item" data-value="ar"><i class="ar flag"></i>Argentina</div>
+                                    <div class="item" data-value="am"><i class="am flag"></i>Armenia</div>
+                                    <div class="item" data-value="aw"><i class="aw flag"></i>Aruba</div>
+                                    <div class="item" data-value="au"><i class="au flag"></i>Australia</div>
+                                    <div class="item" data-value="at"><i class="at flag"></i>Austria</div>
+                                    <div class="item" data-value="az"><i class="az flag"></i>Azerbaijan</div>
+                                    <div class="item" data-value="bs"><i class="bs flag"></i>Bahamas</div>
+                                    <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                                    <div class="item" data-value="bd"><i class="bd flag"></i>Bangladesh</div>
+                                    <div class="item" data-value="bb"><i class="bb flag"></i>Barbados</div>
+                                    <div class="item" data-value="by"><i class="by flag"></i>Belarus</div>
+                                    <div class="item" data-value="be"><i class="be flag"></i>Belgium</div>
+                                    <div class="item" data-value="bz"><i class="bz flag"></i>Belize</div>
+                                    <div class="item" data-value="bj"><i class="bj flag"></i>Benin</div>
+                                    <div class="item" data-value="bm"><i class="bm flag"></i>Bermuda</div>
+                                    <div class="item" data-value="bt"><i class="bt flag"></i>Bhutan</div>
+                                    <div class="item" data-value="bo"><i class="bo flag"></i>Bolivia</div>
+                                    <div class="item" data-value="ba"><i class="ba flag"></i>Bosnia</div>
+                                    <div class="item" data-value="bw"><i class="bw flag"></i>Botswana</div>
+                                    <div class="item" data-value="bv"><i class="bv flag"></i>Bouvet Island</div>
+                                    <div class="item" data-value="br"><i class="br flag"></i>Brazil</div>
+                                    <div class="item" data-value="vg"><i class="vg flag"></i>British Virgin Islands</div>
+                                    <div class="item" data-value="bn"><i class="bn flag"></i>Brunei</div>
+                                    <div class="item" data-value="bg"><i class="bg flag"></i>Bulgaria</div>
+                                    <div class="item" data-value="bf"><i class="bf flag"></i>Burkina Faso</div>
+                                    <div class="item" data-value="mm"><i class="mm flag"></i>Burma</div>
+                                    <div class="item" data-value="bi"><i class="bi flag"></i>Burundi</div>
+                                    <div class="item" data-value="tc"><i class="tc flag"></i>Caicos Islands</div>
+                                    <div class="item" data-value="kh"><i class="kh flag"></i>Cambodia</div>
+                                    <div class="item" data-value="cm"><i class="cm flag"></i>Cameroon</div>
+                                    <div class="item" data-value="ca"><i class="ca flag"></i>Canada</div>
+                                    <div class="item" data-value="cv"><i class="cv flag"></i>Cape Verde</div>
+                                    <div class="item" data-value="ky"><i class="ky flag"></i>Cayman Islands</div>
+                                    <div class="item" data-value="cf"><i class="cf flag"></i>Central African Republic</div>
+                                    <div class="item" data-value="td"><i class="td flag"></i>Chad</div>
+                                    <div class="item" data-value="cl"><i class="cl flag"></i>Chile</div>
+                                    <div class="item" data-value="cn"><i class="cn flag"></i>China</div>
+                                    <div class="item" data-value="cx"><i class="cx flag"></i>Christmas Island</div>
+                                    <div class="item" data-value="cc"><i class="cc flag"></i>Cocos Islands</div>
+                                    <div class="item" data-value="co"><i class="co flag"></i>Colombia</div>
+                                    <div class="item" data-value="km"><i class="km flag"></i>Comoros</div>
+                                    <div class="item" data-value="cg"><i class="cg flag"></i>Congo Brazzaville</div>
+                                    <div class="item" data-value="cd"><i class="cd flag"></i>Congo</div>
+                                    <div class="item" data-value="ck"><i class="ck flag"></i>Cook Islands</div>
+                                    <div class="item" data-value="cr"><i class="cr flag"></i>Costa Rica</div>
+                                    <div class="item" data-value="ci"><i class="ci flag"></i>Cote Divoire</div>
+                                    <div class="item" data-value="hr"><i class="hr flag"></i>Croatia</div>
+                                    <div class="item" data-value="cu"><i class="cu flag"></i>Cuba</div>
+                                    <div class="item" data-value="cy"><i class="cy flag"></i>Cyprus</div>
+                                    <div class="item" data-value="cz"><i class="cz flag"></i>Czech Republic</div>
+                                    <div class="item" data-value="dk"><i class="dk flag"></i>Denmark</div>
+                                    <div class="item" data-value="dj"><i class="dj flag"></i>Djibouti</div>
+                                    <div class="item" data-value="dm"><i class="dm flag"></i>Dominica</div>
+                                    <div class="item" data-value="do"><i class="do flag"></i>Dominican Republic</div>
+                                    <div class="item" data-value="ec"><i class="ec flag"></i>Ecuador</div>
+                                    <div class="item" data-value="eg"><i class="eg flag"></i>Egypt</div>
+                                    <div class="item" data-value="sv"><i class="sv flag"></i>El Salvador</div>
+                                    <div class="item" data-value="gb"><i class="gb flag"></i>England</div>
+                                    <div class="item" data-value="gq"><i class="gq flag"></i>Equatorial Guinea</div>
+                                    <div class="item" data-value="er"><i class="er flag"></i>Eritrea</div>
+                                    <div class="item" data-value="ee"><i class="ee flag"></i>Estonia</div>
+                                    <div class="item" data-value="et"><i class="et flag"></i>Ethiopia</div>
+                                    <div class="item" data-value="eu"><i class="eu flag"></i>European Union</div>
+                                    <div class="item" data-value="fk"><i class="fk flag"></i>Falkland Islands</div>
+                                    <div class="item" data-value="fo"><i class="fo flag"></i>Faroe Islands</div>
+                                    <div class="item" data-value="fj"><i class="fj flag"></i>Fiji</div>
+                                    <div class="item" data-value="fi"><i class="fi flag"></i>Finland</div>
+                                    <div class="item" data-value="fr"><i class="fr flag"></i>France</div>
+                                    <div class="item" data-value="gf"><i class="gf flag"></i>French Guiana</div>
+                                    <div class="item" data-value="pf"><i class="pf flag"></i>French Polynesia</div>
+                                    <div class="item" data-value="tf"><i class="tf flag"></i>French Territories</div>
+                                    <div class="item" data-value="ga"><i class="ga flag"></i>Gabon</div>
+                                    <div class="item" data-value="gm"><i class="gm flag"></i>Gambia</div>
+                                    <div class="item" data-value="ge"><i class="ge flag"></i>Georgia</div>
+                                    <div class="item" data-value="de"><i class="de flag"></i>Germany</div>
+                                    <div class="item" data-value="gh"><i class="gh flag"></i>Ghana</div>
+                                    <div class="item" data-value="gi"><i class="gi flag"></i>Gibraltar</div>
+                                    <div class="item" data-value="gr"><i class="gr flag"></i>Greece</div>
+                                    <div class="item" data-value="gl"><i class="gl flag"></i>Greenland</div>
+                                    <div class="item" data-value="gd"><i class="gd flag"></i>Grenada</div>
+                                    <div class="item" data-value="gp"><i class="gp flag"></i>Guadeloupe</div>
+                                    <div class="item" data-value="gu"><i class="gu flag"></i>Guam</div>
+                                    <div class="item" data-value="gt"><i class="gt flag"></i>Guatemala</div>
+                                    <div class="item" data-value="gw"><i class="gw flag"></i>Guinea-Bissau</div>
+                                    <div class="item" data-value="gn"><i class="gn flag"></i>Guinea</div>
+                                    <div class="item" data-value="gy"><i class="gy flag"></i>Guyana</div>
+                                    <div class="item" data-value="ht"><i class="ht flag"></i>Haiti</div>
+                                    <div class="item" data-value="hm"><i class="hm flag"></i>Heard Island</div>
+                                    <div class="item" data-value="hn"><i class="hn flag"></i>Honduras</div>
+                                    <div class="item" data-value="hk"><i class="hk flag"></i>Hong Kong</div>
+                                    <div class="item" data-value="hu"><i class="hu flag"></i>Hungary</div>
+                                    <div class="item" data-value="is"><i class="is flag"></i>Iceland</div>
+                                    <div class="item" data-value="in"><i class="in flag"></i>India</div>
+                                    <div class="item" data-value="io"><i class="io flag"></i>Indian Ocean Territory</div>
+                                    <div class="item" data-value="id"><i class="id flag"></i>Indonesia</div>
+                                    <div class="item" data-value="ir"><i class="ir flag"></i>Iran</div>
+                                    <div class="item" data-value="iq"><i class="iq flag"></i>Iraq</div>
+                                    <div class="item" data-value="ie"><i class="ie flag"></i>Ireland</div>
+                                    <div class="item" data-value="il"><i class="il flag"></i>Israel</div>
+                                    <div class="item" data-value="it"><i class="it flag"></i>Italy</div>
+                                    <div class="item" data-value="jm"><i class="jm flag"></i>Jamaica</div>
+                                    <div class="item" data-value="jp"><i class="jp flag"></i>Japan</div>
+                                    <div class="item" data-value="jo"><i class="jo flag"></i>Jordan</div>
+                                    <div class="item" data-value="kz"><i class="kz flag"></i>Kazakhstan</div>
+                                    <div class="item" data-value="ke"><i class="ke flag"></i>Kenya</div>
+                                    <div class="item" data-value="ki"><i class="ki flag"></i>Kiribati</div>
+                                    <div class="item" data-value="kw"><i class="kw flag"></i>Kuwait</div>
+                                    <div class="item" data-value="kg"><i class="kg flag"></i>Kyrgyzstan</div>
+                                    <div class="item" data-value="la"><i class="la flag"></i>Laos</div>
+                                    <div class="item" data-value="lv"><i class="lv flag"></i>Latvia</div>
+                                    <div class="item" data-value="lb"><i class="lb flag"></i>Lebanon</div>
+                                    <div class="item" data-value="ls"><i class="ls flag"></i>Lesotho</div>
+                                    <div class="item" data-value="lr"><i class="lr flag"></i>Liberia</div>
+                                    <div class="item" data-value="ly"><i class="ly flag"></i>Libya</div>
+                                    <div class="item" data-value="li"><i class="li flag"></i>Liechtenstein</div>
+                                    <div class="item" data-value="lt"><i class="lt flag"></i>Lithuania</div>
+                                    <div class="item" data-value="lu"><i class="lu flag"></i>Luxembourg</div>
+                                    <div class="item" data-value="mo"><i class="mo flag"></i>Macau</div>
+                                    <div class="item" data-value="mk"><i class="mk flag"></i>Macedonia</div>
+                                    <div class="item" data-value="mg"><i class="mg flag"></i>Madagascar</div>
+                                    <div class="item" data-value="mw"><i class="mw flag"></i>Malawi</div>
+                                    <div class="item" data-value="my"><i class="my flag"></i>Malaysia</div>
+                                    <div class="item" data-value="mv"><i class="mv flag"></i>Maldives</div>
+                                    <div class="item" data-value="ml"><i class="ml flag"></i>Mali</div>
+                                    <div class="item" data-value="mt"><i class="mt flag"></i>Malta</div>
+                                    <div class="item" data-value="mh"><i class="mh flag"></i>Marshall Islands</div>
+                                    <div class="item" data-value="mq"><i class="mq flag"></i>Martinique</div>
+                                    <div class="item" data-value="mr"><i class="mr flag"></i>Mauritania</div>
+                                    <div class="item" data-value="mu"><i class="mu flag"></i>Mauritius</div>
+                                    <div class="item" data-value="yt"><i class="yt flag"></i>Mayotte</div>
+                                    <div class="item" data-value="mx"><i class="mx flag"></i>Mexico</div>
+                                    <div class="item" data-value="fm"><i class="fm flag"></i>Micronesia</div>
+                                    <div class="item" data-value="md"><i class="md flag"></i>Moldova</div>
+                                    <div class="item" data-value="mc"><i class="mc flag"></i>Monaco</div>
+                                    <div class="item" data-value="mn"><i class="mn flag"></i>Mongolia</div>
+                                    <div class="item" data-value="me"><i class="me flag"></i>Montenegro</div>
+                                    <div class="item" data-value="ms"><i class="ms flag"></i>Montserrat</div>
+                                    <div class="item" data-value="ma"><i class="ma flag"></i>Morocco</div>
+                                    <div class="item" data-value="mz"><i class="mz flag"></i>Mozambique</div>
+                                    <div class="item" data-value="na"><i class="na flag"></i>Namibia</div>
+                                    <div class="item" data-value="nr"><i class="nr flag"></i>Nauru</div>
+                                    <div class="item" data-value="np"><i class="np flag"></i>Nepal</div>
+                                    <div class="item" data-value="an"><i class="an flag"></i>Netherlands Antilles</div>
+                                    <div class="item" data-value="nl"><i class="nl flag"></i>Netherlands</div>
+                                    <div class="item" data-value="nc"><i class="nc flag"></i>New Caledonia</div>
+                                    <div class="item" data-value="pg"><i class="pg flag"></i>New Guinea</div>
+                                    <div class="item" data-value="nz"><i class="nz flag"></i>New Zealand</div>
+                                    <div class="item" data-value="ni"><i class="ni flag"></i>Nicaragua</div>
+                                    <div class="item" data-value="ne"><i class="ne flag"></i>Niger</div>
+                                    <div class="item" data-value="ng"><i class="ng flag"></i>Nigeria</div>
+                                    <div class="item" data-value="nu"><i class="nu flag"></i>Niue</div>
+                                    <div class="item" data-value="nf"><i class="nf flag"></i>Norfolk Island</div>
+                                    <div class="item" data-value="kp"><i class="kp flag"></i>North Korea</div>
+                                    <div class="item" data-value="mp"><i class="mp flag"></i>Northern Mariana Islands</div>
+                                    <div class="item" data-value="no"><i class="no flag"></i>Norway</div>
+                                    <div class="item" data-value="om"><i class="om flag"></i>Oman</div>
+                                    <div class="item" data-value="pk"><i class="pk flag"></i>Pakistan</div>
+                                    <div class="item" data-value="pw"><i class="pw flag"></i>Palau</div>
+                                    <div class="item" data-value="ps"><i class="ps flag"></i>Palestine</div>
+                                    <div class="item" data-value="pa"><i class="pa flag"></i>Panama</div>
+                                    <div class="item" data-value="py"><i class="py flag"></i>Paraguay</div>
+                                    <div class="item" data-value="pe"><i class="pe flag"></i>Peru</div>
+                                    <div class="item" data-value="ph"><i class="ph flag"></i>Philippines</div>
+                                    <div class="item" data-value="pn"><i class="pn flag"></i>Pitcairn Islands</div>
+                                    <div class="item" data-value="pl"><i class="pl flag"></i>Poland</div>
+                                    <div class="item" data-value="pt"><i class="pt flag"></i>Portugal</div>
+                                    <div class="item" data-value="pr"><i class="pr flag"></i>Puerto Rico</div>
+                                    <div class="item" data-value="qa"><i class="qa flag"></i>Qatar</div>
+                                    <div class="item" data-value="re"><i class="re flag"></i>Reunion</div>
+                                    <div class="item" data-value="ro"><i class="ro flag"></i>Romania</div>
+                                    <div class="item" data-value="ru"><i class="ru flag"></i>Russia</div>
+                                    <div class="item" data-value="rw"><i class="rw flag"></i>Rwanda</div>
+                                    <div class="item" data-value="sh"><i class="sh flag"></i>Saint Helena</div>
+                                    <div class="item" data-value="kn"><i class="kn flag"></i>Saint Kitts and Nevis</div>
+                                    <div class="item" data-value="lc"><i class="lc flag"></i>Saint Lucia</div>
+                                    <div class="item" data-value="pm"><i class="pm flag"></i>Saint Pierre</div>
+                                    <div class="item" data-value="vc"><i class="vc flag"></i>Saint Vincent</div>
+                                    <div class="item" data-value="ws"><i class="ws flag"></i>Samoa</div>
+                                    <div class="item" data-value="sm"><i class="sm flag"></i>San Marino</div>
+                                    <div class="item" data-value="gs"><i class="gs flag"></i>Sandwich Islands</div>
+                                    <div class="item" data-value="st"><i class="st flag"></i>Sao Tome</div>
+                                    <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
+                                    <div class="item" data-value="sn"><i class="sn flag"></i>Senegal</div>
+                                    <div class="item" data-value="cs"><i class="cs flag"></i>Serbia</div>
+                                    <div class="item" data-value="rs"><i class="rs flag"></i>Serbia</div>
+                                    <div class="item" data-value="sc"><i class="sc flag"></i>Seychelles</div>
+                                    <div class="item" data-value="sl"><i class="sl flag"></i>Sierra Leone</div>
+                                    <div class="item" data-value="sg"><i class="sg flag"></i>Singapore</div>
+                                    <div class="item" data-value="sk"><i class="sk flag"></i>Slovakia</div>
+                                    <div class="item" data-value="si"><i class="si flag"></i>Slovenia</div>
+                                    <div class="item" data-value="sb"><i class="sb flag"></i>Solomon Islands</div>
+                                    <div class="item" data-value="so"><i class="so flag"></i>Somalia</div>
+                                    <div class="item" data-value="za"><i class="za flag"></i>South Africa</div>
+                                    <div class="item" data-value="kr"><i class="kr flag"></i>South Korea</div>
+                                    <div class="item" data-value="es"><i class="es flag"></i>Spain</div>
+                                    <div class="item" data-value="lk"><i class="lk flag"></i>Sri Lanka</div>
+                                    <div class="item" data-value="sd"><i class="sd flag"></i>Sudan</div>
+                                    <div class="item" data-value="sr"><i class="sr flag"></i>Suriname</div>
+                                    <div class="item" data-value="sj"><i class="sj flag"></i>Svalbard</div>
+                                    <div class="item" data-value="sz"><i class="sz flag"></i>Swaziland</div>
+                                    <div class="item" data-value="se"><i class="se flag"></i>Sweden</div>
+                                    <div class="item" data-value="ch"><i class="ch flag"></i>Switzerland</div>
+                                    <div class="item" data-value="sy"><i class="sy flag"></i>Syria</div>
+                                    <div class="item" data-value="tw"><i class="tw flag"></i>Taiwan</div>
+                                    <div class="item" data-value="tj"><i class="tj flag"></i>Tajikistan</div>
+                                    <div class="item" data-value="tz"><i class="tz flag"></i>Tanzania</div>
+                                    <div class="item" data-value="th"><i class="th flag"></i>Thailand</div>
+                                    <div class="item" data-value="tl"><i class="tl flag"></i>Timorleste</div>
+                                    <div class="item" data-value="tg"><i class="tg flag"></i>Togo</div>
+                                    <div class="item" data-value="tk"><i class="tk flag"></i>Tokelau</div>
+                                    <div class="item" data-value="to"><i class="to flag"></i>Tonga</div>
+                                    <div class="item" data-value="tt"><i class="tt flag"></i>Trinidad</div>
+                                    <div class="item" data-value="tn"><i class="tn flag"></i>Tunisia</div>
+                                    <div class="item" data-value="tr"><i class="tr flag"></i>Turkey</div>
+                                    <div class="item" data-value="tm"><i class="tm flag"></i>Turkmenistan</div>
+                                    <div class="item" data-value="tv"><i class="tv flag"></i>Tuvalu</div>
+                                    <div class="item" data-value="ug"><i class="ug flag"></i>Uganda</div>
+                                    <div class="item" data-value="ua"><i class="ua flag"></i>Ukraine</div>
+                                    <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
+                                    <div class="item" data-value="us"><i class="us flag"></i>United States</div>
+                                    <div class="item" data-value="uy"><i class="uy flag"></i>Uruguay</div>
+                                    <div class="item" data-value="um"><i class="um flag"></i>Us Minor Islands</div>
+                                    <div class="item" data-value="vi"><i class="vi flag"></i>Us Virgin Islands</div>
+                                    <div class="item" data-value="uz"><i class="uz flag"></i>Uzbekistan</div>
+                                    <div class="item" data-value="vu"><i class="vu flag"></i>Vanuatu</div>
+                                    <div class="item" data-value="va"><i class="va flag"></i>Vatican City</div>
+                                    <div class="item" data-value="ve"><i class="ve flag"></i>Venezuela</div>
+                                    <div class="item" data-value="vn"><i class="vn flag"></i>Vietnam</div>
+                                    <div class="item" data-value="wf"><i class="wf flag"></i>Wallis and Futuna</div>
+                                    <div class="item" data-value="eh"><i class="eh flag"></i>Western Sahara</div>
+                                    <div class="item" data-value="ye"><i class="ye flag"></i>Yemen</div>
+                                    <div class="item" data-value="zm"><i class="zm flag"></i>Zambia</div>
+                                    <div class="item" data-value="zw"><i class="zw flag"></i>Zimbabwe</div>
+                                </div>
+                            </div>
+                            <select class="ui search simple-select select-dropdown">
+                                <option value="">State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                            <h4 class="lh-0 pb-1 mt-7">Tags & Search Selection</h4>
+                            <p class="fs-6-plus mb-2">Allow to specify multiple choices</p>
+                            <select class="ui fluid search simple-select select-dropdown mb-4" multiple="">
+                                <option value="">State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                            <div class="ui fluid multiple search selection simple-select select-dropdown">
+                                <input type="hidden" name="country">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Select Country</div>
+                                <div class="menu">
+                                    <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                                    <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                                    <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+                                    <div class="item" data-value="dz"><i class="dz flag"></i>Algeria</div>
+                                    <div class="item" data-value="as"><i class="as flag"></i>American Samoa</div>
+                                    <div class="item" data-value="ad"><i class="ad flag"></i>Andorra</div>
+                                    <div class="item" data-value="ao"><i class="ao flag"></i>Angola</div>
+                                    <div class="item" data-value="ai"><i class="ai flag"></i>Anguilla</div>
+                                    <div class="item" data-value="ag"><i class="ag flag"></i>Antigua</div>
+                                    <div class="item" data-value="ar"><i class="ar flag"></i>Argentina</div>
+                                    <div class="item" data-value="am"><i class="am flag"></i>Armenia</div>
+                                    <div class="item" data-value="aw"><i class="aw flag"></i>Aruba</div>
+                                    <div class="item" data-value="au"><i class="au flag"></i>Australia</div>
+                                    <div class="item" data-value="at"><i class="at flag"></i>Austria</div>
+                                    <div class="item" data-value="az"><i class="az flag"></i>Azerbaijan</div>
+                                    <div class="item" data-value="bs"><i class="bs flag"></i>Bahamas</div>
+                                    <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                                    <div class="item" data-value="bd"><i class="bd flag"></i>Bangladesh</div>
+                                    <div class="item" data-value="bb"><i class="bb flag"></i>Barbados</div>
+                                    <div class="item" data-value="by"><i class="by flag"></i>Belarus</div>
+                                    <div class="item" data-value="be"><i class="be flag"></i>Belgium</div>
+                                    <div class="item" data-value="bz"><i class="bz flag"></i>Belize</div>
+                                    <div class="item" data-value="bj"><i class="bj flag"></i>Benin</div>
+                                    <div class="item" data-value="bm"><i class="bm flag"></i>Bermuda</div>
+                                    <div class="item" data-value="bt"><i class="bt flag"></i>Bhutan</div>
+                                    <div class="item" data-value="bo"><i class="bo flag"></i>Bolivia</div>
+                                    <div class="item" data-value="ba"><i class="ba flag"></i>Bosnia</div>
+                                    <div class="item" data-value="bw"><i class="bw flag"></i>Botswana</div>
+                                    <div class="item" data-value="bv"><i class="bv flag"></i>Bouvet Island</div>
+                                    <div class="item" data-value="br"><i class="br flag"></i>Brazil</div>
+                                    <div class="item" data-value="vg"><i class="vg flag"></i>British Virgin Islands</div>
+                                    <div class="item" data-value="bn"><i class="bn flag"></i>Brunei</div>
+                                    <div class="item" data-value="bg"><i class="bg flag"></i>Bulgaria</div>
+                                    <div class="item" data-value="bf"><i class="bf flag"></i>Burkina Faso</div>
+                                    <div class="item" data-value="mm"><i class="mm flag"></i>Burma</div>
+                                    <div class="item" data-value="bi"><i class="bi flag"></i>Burundi</div>
+                                    <div class="item" data-value="tc"><i class="tc flag"></i>Caicos Islands</div>
+                                    <div class="item" data-value="kh"><i class="kh flag"></i>Cambodia</div>
+                                    <div class="item" data-value="cm"><i class="cm flag"></i>Cameroon</div>
+                                    <div class="item" data-value="ca"><i class="ca flag"></i>Canada</div>
+                                    <div class="item" data-value="cv"><i class="cv flag"></i>Cape Verde</div>
+                                    <div class="item" data-value="ky"><i class="ky flag"></i>Cayman Islands</div>
+                                    <div class="item" data-value="cf"><i class="cf flag"></i>Central African Republic</div>
+                                    <div class="item" data-value="td"><i class="td flag"></i>Chad</div>
+                                    <div class="item" data-value="cl"><i class="cl flag"></i>Chile</div>
+                                    <div class="item" data-value="cn"><i class="cn flag"></i>China</div>
+                                    <div class="item" data-value="cx"><i class="cx flag"></i>Christmas Island</div>
+                                    <div class="item" data-value="cc"><i class="cc flag"></i>Cocos Islands</div>
+                                    <div class="item" data-value="co"><i class="co flag"></i>Colombia</div>
+                                    <div class="item" data-value="km"><i class="km flag"></i>Comoros</div>
+                                    <div class="item" data-value="cg"><i class="cg flag"></i>Congo Brazzaville</div>
+                                    <div class="item" data-value="cd"><i class="cd flag"></i>Congo</div>
+                                    <div class="item" data-value="ck"><i class="ck flag"></i>Cook Islands</div>
+                                    <div class="item" data-value="cr"><i class="cr flag"></i>Costa Rica</div>
+                                    <div class="item" data-value="ci"><i class="ci flag"></i>Cote Divoire</div>
+                                    <div class="item" data-value="hr"><i class="hr flag"></i>Croatia</div>
+                                    <div class="item" data-value="cu"><i class="cu flag"></i>Cuba</div>
+                                    <div class="item" data-value="cy"><i class="cy flag"></i>Cyprus</div>
+                                    <div class="item" data-value="cz"><i class="cz flag"></i>Czech Republic</div>
+                                    <div class="item" data-value="dk"><i class="dk flag"></i>Denmark</div>
+                                    <div class="item" data-value="dj"><i class="dj flag"></i>Djibouti</div>
+                                    <div class="item" data-value="dm"><i class="dm flag"></i>Dominica</div>
+                                    <div class="item" data-value="do"><i class="do flag"></i>Dominican Republic</div>
+                                    <div class="item" data-value="ec"><i class="ec flag"></i>Ecuador</div>
+                                    <div class="item" data-value="eg"><i class="eg flag"></i>Egypt</div>
+                                    <div class="item" data-value="sv"><i class="sv flag"></i>El Salvador</div>
+                                    <div class="item" data-value="gb"><i class="gb flag"></i>England</div>
+                                    <div class="item" data-value="gq"><i class="gq flag"></i>Equatorial Guinea</div>
+                                    <div class="item" data-value="er"><i class="er flag"></i>Eritrea</div>
+                                    <div class="item" data-value="ee"><i class="ee flag"></i>Estonia</div>
+                                    <div class="item" data-value="et"><i class="et flag"></i>Ethiopia</div>
+                                    <div class="item" data-value="eu"><i class="eu flag"></i>European Union</div>
+                                    <div class="item" data-value="fk"><i class="fk flag"></i>Falkland Islands</div>
+                                    <div class="item" data-value="fo"><i class="fo flag"></i>Faroe Islands</div>
+                                    <div class="item" data-value="fj"><i class="fj flag"></i>Fiji</div>
+                                    <div class="item" data-value="fi"><i class="fi flag"></i>Finland</div>
+                                    <div class="item" data-value="fr"><i class="fr flag"></i>France</div>
+                                    <div class="item" data-value="gf"><i class="gf flag"></i>French Guiana</div>
+                                    <div class="item" data-value="pf"><i class="pf flag"></i>French Polynesia</div>
+                                    <div class="item" data-value="tf"><i class="tf flag"></i>French Territories</div>
+                                    <div class="item" data-value="ga"><i class="ga flag"></i>Gabon</div>
+                                    <div class="item" data-value="gm"><i class="gm flag"></i>Gambia</div>
+                                    <div class="item" data-value="ge"><i class="ge flag"></i>Georgia</div>
+                                    <div class="item" data-value="de"><i class="de flag"></i>Germany</div>
+                                    <div class="item" data-value="gh"><i class="gh flag"></i>Ghana</div>
+                                    <div class="item" data-value="gi"><i class="gi flag"></i>Gibraltar</div>
+                                    <div class="item" data-value="gr"><i class="gr flag"></i>Greece</div>
+                                    <div class="item" data-value="gl"><i class="gl flag"></i>Greenland</div>
+                                    <div class="item" data-value="gd"><i class="gd flag"></i>Grenada</div>
+                                    <div class="item" data-value="gp"><i class="gp flag"></i>Guadeloupe</div>
+                                    <div class="item" data-value="gu"><i class="gu flag"></i>Guam</div>
+                                    <div class="item" data-value="gt"><i class="gt flag"></i>Guatemala</div>
+                                    <div class="item" data-value="gw"><i class="gw flag"></i>Guinea-Bissau</div>
+                                    <div class="item" data-value="gn"><i class="gn flag"></i>Guinea</div>
+                                    <div class="item" data-value="gy"><i class="gy flag"></i>Guyana</div>
+                                    <div class="item" data-value="ht"><i class="ht flag"></i>Haiti</div>
+                                    <div class="item" data-value="hm"><i class="hm flag"></i>Heard Island</div>
+                                    <div class="item" data-value="hn"><i class="hn flag"></i>Honduras</div>
+                                    <div class="item" data-value="hk"><i class="hk flag"></i>Hong Kong</div>
+                                    <div class="item" data-value="hu"><i class="hu flag"></i>Hungary</div>
+                                    <div class="item" data-value="is"><i class="is flag"></i>Iceland</div>
+                                    <div class="item" data-value="in"><i class="in flag"></i>India</div>
+                                    <div class="item" data-value="io"><i class="io flag"></i>Indian Ocean Territory</div>
+                                    <div class="item" data-value="id"><i class="id flag"></i>Indonesia</div>
+                                    <div class="item" data-value="ir"><i class="ir flag"></i>Iran</div>
+                                    <div class="item" data-value="iq"><i class="iq flag"></i>Iraq</div>
+                                    <div class="item" data-value="ie"><i class="ie flag"></i>Ireland</div>
+                                    <div class="item" data-value="il"><i class="il flag"></i>Israel</div>
+                                    <div class="item" data-value="it"><i class="it flag"></i>Italy</div>
+                                    <div class="item" data-value="jm"><i class="jm flag"></i>Jamaica</div>
+                                    <div class="item" data-value="jp"><i class="jp flag"></i>Japan</div>
+                                    <div class="item" data-value="jo"><i class="jo flag"></i>Jordan</div>
+                                    <div class="item" data-value="kz"><i class="kz flag"></i>Kazakhstan</div>
+                                    <div class="item" data-value="ke"><i class="ke flag"></i>Kenya</div>
+                                    <div class="item" data-value="ki"><i class="ki flag"></i>Kiribati</div>
+                                    <div class="item" data-value="kw"><i class="kw flag"></i>Kuwait</div>
+                                    <div class="item" data-value="kg"><i class="kg flag"></i>Kyrgyzstan</div>
+                                    <div class="item" data-value="la"><i class="la flag"></i>Laos</div>
+                                    <div class="item" data-value="lv"><i class="lv flag"></i>Latvia</div>
+                                    <div class="item" data-value="lb"><i class="lb flag"></i>Lebanon</div>
+                                    <div class="item" data-value="ls"><i class="ls flag"></i>Lesotho</div>
+                                    <div class="item" data-value="lr"><i class="lr flag"></i>Liberia</div>
+                                    <div class="item" data-value="ly"><i class="ly flag"></i>Libya</div>
+                                    <div class="item" data-value="li"><i class="li flag"></i>Liechtenstein</div>
+                                    <div class="item" data-value="lt"><i class="lt flag"></i>Lithuania</div>
+                                    <div class="item" data-value="lu"><i class="lu flag"></i>Luxembourg</div>
+                                    <div class="item" data-value="mo"><i class="mo flag"></i>Macau</div>
+                                    <div class="item" data-value="mk"><i class="mk flag"></i>Macedonia</div>
+                                    <div class="item" data-value="mg"><i class="mg flag"></i>Madagascar</div>
+                                    <div class="item" data-value="mw"><i class="mw flag"></i>Malawi</div>
+                                    <div class="item" data-value="my"><i class="my flag"></i>Malaysia</div>
+                                    <div class="item" data-value="mv"><i class="mv flag"></i>Maldives</div>
+                                    <div class="item" data-value="ml"><i class="ml flag"></i>Mali</div>
+                                    <div class="item" data-value="mt"><i class="mt flag"></i>Malta</div>
+                                    <div class="item" data-value="mh"><i class="mh flag"></i>Marshall Islands</div>
+                                    <div class="item" data-value="mq"><i class="mq flag"></i>Martinique</div>
+                                    <div class="item" data-value="mr"><i class="mr flag"></i>Mauritania</div>
+                                    <div class="item" data-value="mu"><i class="mu flag"></i>Mauritius</div>
+                                    <div class="item" data-value="yt"><i class="yt flag"></i>Mayotte</div>
+                                    <div class="item" data-value="mx"><i class="mx flag"></i>Mexico</div>
+                                    <div class="item" data-value="fm"><i class="fm flag"></i>Micronesia</div>
+                                    <div class="item" data-value="md"><i class="md flag"></i>Moldova</div>
+                                    <div class="item" data-value="mc"><i class="mc flag"></i>Monaco</div>
+                                    <div class="item" data-value="mn"><i class="mn flag"></i>Mongolia</div>
+                                    <div class="item" data-value="me"><i class="me flag"></i>Montenegro</div>
+                                    <div class="item" data-value="ms"><i class="ms flag"></i>Montserrat</div>
+                                    <div class="item" data-value="ma"><i class="ma flag"></i>Morocco</div>
+                                    <div class="item" data-value="mz"><i class="mz flag"></i>Mozambique</div>
+                                    <div class="item" data-value="na"><i class="na flag"></i>Namibia</div>
+                                    <div class="item" data-value="nr"><i class="nr flag"></i>Nauru</div>
+                                    <div class="item" data-value="np"><i class="np flag"></i>Nepal</div>
+                                    <div class="item" data-value="an"><i class="an flag"></i>Netherlands Antilles</div>
+                                    <div class="item" data-value="nl"><i class="nl flag"></i>Netherlands</div>
+                                    <div class="item" data-value="nc"><i class="nc flag"></i>New Caledonia</div>
+                                    <div class="item" data-value="pg"><i class="pg flag"></i>New Guinea</div>
+                                    <div class="item" data-value="nz"><i class="nz flag"></i>New Zealand</div>
+                                    <div class="item" data-value="ni"><i class="ni flag"></i>Nicaragua</div>
+                                    <div class="item" data-value="ne"><i class="ne flag"></i>Niger</div>
+                                    <div class="item" data-value="ng"><i class="ng flag"></i>Nigeria</div>
+                                    <div class="item" data-value="nu"><i class="nu flag"></i>Niue</div>
+                                    <div class="item" data-value="nf"><i class="nf flag"></i>Norfolk Island</div>
+                                    <div class="item" data-value="kp"><i class="kp flag"></i>North Korea</div>
+                                    <div class="item" data-value="mp"><i class="mp flag"></i>Northern Mariana Islands</div>
+                                    <div class="item" data-value="no"><i class="no flag"></i>Norway</div>
+                                    <div class="item" data-value="om"><i class="om flag"></i>Oman</div>
+                                    <div class="item" data-value="pk"><i class="pk flag"></i>Pakistan</div>
+                                    <div class="item" data-value="pw"><i class="pw flag"></i>Palau</div>
+                                    <div class="item" data-value="ps"><i class="ps flag"></i>Palestine</div>
+                                    <div class="item" data-value="pa"><i class="pa flag"></i>Panama</div>
+                                    <div class="item" data-value="py"><i class="py flag"></i>Paraguay</div>
+                                    <div class="item" data-value="pe"><i class="pe flag"></i>Peru</div>
+                                    <div class="item" data-value="ph"><i class="ph flag"></i>Philippines</div>
+                                    <div class="item" data-value="pn"><i class="pn flag"></i>Pitcairn Islands</div>
+                                    <div class="item" data-value="pl"><i class="pl flag"></i>Poland</div>
+                                    <div class="item" data-value="pt"><i class="pt flag"></i>Portugal</div>
+                                    <div class="item" data-value="pr"><i class="pr flag"></i>Puerto Rico</div>
+                                    <div class="item" data-value="qa"><i class="qa flag"></i>Qatar</div>
+                                    <div class="item" data-value="re"><i class="re flag"></i>Reunion</div>
+                                    <div class="item" data-value="ro"><i class="ro flag"></i>Romania</div>
+                                    <div class="item" data-value="ru"><i class="ru flag"></i>Russia</div>
+                                    <div class="item" data-value="rw"><i class="rw flag"></i>Rwanda</div>
+                                    <div class="item" data-value="sh"><i class="sh flag"></i>Saint Helena</div>
+                                    <div class="item" data-value="kn"><i class="kn flag"></i>Saint Kitts and Nevis</div>
+                                    <div class="item" data-value="lc"><i class="lc flag"></i>Saint Lucia</div>
+                                    <div class="item" data-value="pm"><i class="pm flag"></i>Saint Pierre</div>
+                                    <div class="item" data-value="vc"><i class="vc flag"></i>Saint Vincent</div>
+                                    <div class="item" data-value="ws"><i class="ws flag"></i>Samoa</div>
+                                    <div class="item" data-value="sm"><i class="sm flag"></i>San Marino</div>
+                                    <div class="item" data-value="gs"><i class="gs flag"></i>Sandwich Islands</div>
+                                    <div class="item" data-value="st"><i class="st flag"></i>Sao Tome</div>
+                                    <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
+                                    <div class="item" data-value="sn"><i class="sn flag"></i>Senegal</div>
+                                    <div class="item" data-value="cs"><i class="cs flag"></i>Serbia</div>
+                                    <div class="item" data-value="rs"><i class="rs flag"></i>Serbia</div>
+                                    <div class="item" data-value="sc"><i class="sc flag"></i>Seychelles</div>
+                                    <div class="item" data-value="sl"><i class="sl flag"></i>Sierra Leone</div>
+                                    <div class="item" data-value="sg"><i class="sg flag"></i>Singapore</div>
+                                    <div class="item" data-value="sk"><i class="sk flag"></i>Slovakia</div>
+                                    <div class="item" data-value="si"><i class="si flag"></i>Slovenia</div>
+                                    <div class="item" data-value="sb"><i class="sb flag"></i>Solomon Islands</div>
+                                    <div class="item" data-value="so"><i class="so flag"></i>Somalia</div>
+                                    <div class="item" data-value="za"><i class="za flag"></i>South Africa</div>
+                                    <div class="item" data-value="kr"><i class="kr flag"></i>South Korea</div>
+                                    <div class="item" data-value="es"><i class="es flag"></i>Spain</div>
+                                    <div class="item" data-value="lk"><i class="lk flag"></i>Sri Lanka</div>
+                                    <div class="item" data-value="sd"><i class="sd flag"></i>Sudan</div>
+                                    <div class="item" data-value="sr"><i class="sr flag"></i>Suriname</div>
+                                    <div class="item" data-value="sj"><i class="sj flag"></i>Svalbard</div>
+                                    <div class="item" data-value="sz"><i class="sz flag"></i>Swaziland</div>
+                                    <div class="item" data-value="se"><i class="se flag"></i>Sweden</div>
+                                    <div class="item" data-value="ch"><i class="ch flag"></i>Switzerland</div>
+                                    <div class="item" data-value="sy"><i class="sy flag"></i>Syria</div>
+                                    <div class="item" data-value="tw"><i class="tw flag"></i>Taiwan</div>
+                                    <div class="item" data-value="tj"><i class="tj flag"></i>Tajikistan</div>
+                                    <div class="item" data-value="tz"><i class="tz flag"></i>Tanzania</div>
+                                    <div class="item" data-value="th"><i class="th flag"></i>Thailand</div>
+                                    <div class="item" data-value="tl"><i class="tl flag"></i>Timorleste</div>
+                                    <div class="item" data-value="tg"><i class="tg flag"></i>Togo</div>
+                                    <div class="item" data-value="tk"><i class="tk flag"></i>Tokelau</div>
+                                    <div class="item" data-value="to"><i class="to flag"></i>Tonga</div>
+                                    <div class="item" data-value="tt"><i class="tt flag"></i>Trinidad</div>
+                                    <div class="item" data-value="tn"><i class="tn flag"></i>Tunisia</div>
+                                    <div class="item" data-value="tr"><i class="tr flag"></i>Turkey</div>
+                                    <div class="item" data-value="tm"><i class="tm flag"></i>Turkmenistan</div>
+                                    <div class="item" data-value="tv"><i class="tv flag"></i>Tuvalu</div>
+                                    <div class="item" data-value="ug"><i class="ug flag"></i>Uganda</div>
+                                    <div class="item" data-value="ua"><i class="ua flag"></i>Ukraine</div>
+                                    <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
+                                    <div class="item" data-value="us"><i class="us flag"></i>United States</div>
+                                    <div class="item" data-value="uy"><i class="uy flag"></i>Uruguay</div>
+                                    <div class="item" data-value="um"><i class="um flag"></i>Us Minor Islands</div>
+                                    <div class="item" data-value="vi"><i class="vi flag"></i>Us Virgin Islands</div>
+                                    <div class="item" data-value="uz"><i class="uz flag"></i>Uzbekistan</div>
+                                    <div class="item" data-value="vu"><i class="vu flag"></i>Vanuatu</div>
+                                    <div class="item" data-value="va"><i class="va flag"></i>Vatican City</div>
+                                    <div class="item" data-value="ve"><i class="ve flag"></i>Venezuela</div>
+                                    <div class="item" data-value="vn"><i class="vn flag"></i>Vietnam</div>
+                                    <div class="item" data-value="wf"><i class="wf flag"></i>Wallis and Futuna</div>
+                                    <div class="item" data-value="eh"><i class="eh flag"></i>Western Sahara</div>
+                                    <div class="item" data-value="ye"><i class="ye flag"></i>Yemen</div>
+                                    <div class="item" data-value="zm"><i class="zm flag"></i>Zambia</div>
+                                    <div class="item" data-value="zw"><i class="zw flag"></i>Zimbabwe</div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-1 mt-7">Floated Content</h4>
+                            <p class="fs-6-plus mb-2">Content floated to the right</p>
+                            <div class="ui fluid selection simple-select select-dropdown">
+                                <i class="select-dropdown icon"></i>
+                                <span class="default text">Select Type</span>
+                                <div class="menu">
+                                    <div class="item">
+                                        <i class="fa fa-exclamation-circle right floated icon"></i>
+                                        Important
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-comments-o right floated icon"></i>
+                                        Announcement
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-comment-o right floated icon"></i>
+                                        Discussion
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-1 mt-7">Loading State</h4>
+                            <p class="fs-6-plus mb-2">Will be useful at remote data querying</p>
+                            <div class="ui loading fluid multiple search selection simple-select select-dropdown mb-4">
+                                <input type="hidden" name="country" value="kp">
+                                <i class="select-dropdown icon"></i>
+                                <input class="search">
+                                <div class="default text">Search...</div>
+                                <div class="menu">
+                                    <div class="item">Choice 1</div>
+                                    <div class="item">Choice 2</div>
+                                    <div class="item">Choice 3</div>
+                                </div>
+                            </div>
+                            <div class="ui loading selection simple-select select-dropdown">
+                                <input type="hidden" name="choise">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Choice</div>
+                                <div class="menu">
+                                    <div class="item">Choice 1</div>
+                                    <div class="item">Choice 2</div>
+                                    <div class="item">Choice 3</div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 mb-3 mt-7">Error State</h4>
+                            <div class="ui fluid selection simple-select select-dropdown error">
+                                <input type="hidden" name="choise">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Choice</div>
+                                <div class="menu">
+                                    <div class="item">Choice 1</div>
+                                    <div class="item">Choice 2</div>
+                                    <div class="item">Choice 3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Selects
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <h4 class="lh-0 pb-1">Maximum Selection</h4>
+                            <p class="fs-6-plus mb-2">Force the maximum number of selections</p>
+                            <select multiple="" name="skills" class="ui fluid normal maximum-selection select-dropdown mb-3">
+                                <option value="">Skills</option>
+                                <option value="angular">Angular</option>
+                                <option value="css">CSS</option>
+                                <option value="design">Graphic Design</option>
+                                <option value="ember">Ember</option>
+                                <option value="html">HTML</option>
+                                <option value="ia">Information Architecture</option>
+                                <option value="javascript">Javascript</option>
+                                <option value="mech">Mechanical Engineering</option>
+                                <option value="meteor">Meteor</option>
+                                <option value="node">NodeJS</option>
+                                <option value="plumbing">Plumbing</option>
+                                <option value="python">Python</option>
+                                <option value="rails">Rails</option>
+                                <option value="react">React</option>
+                                <option value="repair">Kitchen Repair</option>
+                                <option value="ruby">Ruby</option>
+                                <option value="ui">UI Design</option>
+                                <option value="ux">User Experience</option>
+                            </select>
+                            <div class="ui fluid multiple search normal selection maximum-selection select-dropdown mb-3">
+                                <input type="hidden" name="country">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Select Country</div>
+                                <div class="menu">
+                                    <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                                    <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                                    <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+                                    <div class="item" data-value="dz"><i class="dz flag"></i>Algeria</div>
+                                    <div class="item" data-value="as"><i class="as flag"></i>American Samoa</div>
+                                    <div class="item" data-value="ad"><i class="ad flag"></i>Andorra</div>
+                                    <div class="item" data-value="ao"><i class="ao flag"></i>Angola</div>
+                                    <div class="item" data-value="ai"><i class="ai flag"></i>Anguilla</div>
+                                    <div class="item" data-value="ag"><i class="ag flag"></i>Antigua</div>
+                                    <div class="item" data-value="ar"><i class="ar flag"></i>Argentina</div>
+                                    <div class="item" data-value="am"><i class="am flag"></i>Armenia</div>
+                                    <div class="item" data-value="aw"><i class="aw flag"></i>Aruba</div>
+                                    <div class="item" data-value="au"><i class="au flag"></i>Australia</div>
+                                    <div class="item" data-value="at"><i class="at flag"></i>Austria</div>
+                                    <div class="item" data-value="az"><i class="az flag"></i>Azerbaijan</div>
+                                    <div class="item" data-value="bs"><i class="bs flag"></i>Bahamas</div>
+                                    <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                                    <div class="item" data-value="bd"><i class="bd flag"></i>Bangladesh</div>
+                                    <div class="item" data-value="bb"><i class="bb flag"></i>Barbados</div>
+                                    <div class="item" data-value="by"><i class="by flag"></i>Belarus</div>
+                                    <div class="item" data-value="be"><i class="be flag"></i>Belgium</div>
+                                    <div class="item" data-value="bz"><i class="bz flag"></i>Belize</div>
+                                    <div class="item" data-value="bj"><i class="bj flag"></i>Benin</div>
+                                    <div class="item" data-value="bm"><i class="bm flag"></i>Bermuda</div>
+                                    <div class="item" data-value="bt"><i class="bt flag"></i>Bhutan</div>
+                                    <div class="item" data-value="bo"><i class="bo flag"></i>Bolivia</div>
+                                    <div class="item" data-value="ba"><i class="ba flag"></i>Bosnia</div>
+                                    <div class="item" data-value="bw"><i class="bw flag"></i>Botswana</div>
+                                    <div class="item" data-value="bv"><i class="bv flag"></i>Bouvet Island</div>
+                                    <div class="item" data-value="br"><i class="br flag"></i>Brazil</div>
+                                    <div class="item" data-value="vg"><i class="vg flag"></i>British Virgin Islands</div>
+                                    <div class="item" data-value="bn"><i class="bn flag"></i>Brunei</div>
+                                    <div class="item" data-value="bg"><i class="bg flag"></i>Bulgaria</div>
+                                    <div class="item" data-value="bf"><i class="bf flag"></i>Burkina Faso</div>
+                                    <div class="item" data-value="mm"><i class="mm flag"></i>Burma</div>
+                                    <div class="item" data-value="bi"><i class="bi flag"></i>Burundi</div>
+                                    <div class="item" data-value="tc"><i class="tc flag"></i>Caicos Islands</div>
+                                    <div class="item" data-value="kh"><i class="kh flag"></i>Cambodia</div>
+                                    <div class="item" data-value="cm"><i class="cm flag"></i>Cameroon</div>
+                                    <div class="item" data-value="ca"><i class="ca flag"></i>Canada</div>
+                                    <div class="item" data-value="cv"><i class="cv flag"></i>Cape Verde</div>
+                                    <div class="item" data-value="ky"><i class="ky flag"></i>Cayman Islands</div>
+                                    <div class="item" data-value="cf"><i class="cf flag"></i>Central African Republic</div>
+                                    <div class="item" data-value="td"><i class="td flag"></i>Chad</div>
+                                    <div class="item" data-value="cl"><i class="cl flag"></i>Chile</div>
+                                    <div class="item" data-value="cn"><i class="cn flag"></i>China</div>
+                                    <div class="item" data-value="cx"><i class="cx flag"></i>Christmas Island</div>
+                                    <div class="item" data-value="cc"><i class="cc flag"></i>Cocos Islands</div>
+                                    <div class="item" data-value="co"><i class="co flag"></i>Colombia</div>
+                                    <div class="item" data-value="km"><i class="km flag"></i>Comoros</div>
+                                    <div class="item" data-value="cg"><i class="cg flag"></i>Congo Brazzaville</div>
+                                    <div class="item" data-value="cd"><i class="cd flag"></i>Congo</div>
+                                    <div class="item" data-value="ck"><i class="ck flag"></i>Cook Islands</div>
+                                    <div class="item" data-value="cr"><i class="cr flag"></i>Costa Rica</div>
+                                    <div class="item" data-value="ci"><i class="ci flag"></i>Cote Divoire</div>
+                                    <div class="item" data-value="hr"><i class="hr flag"></i>Croatia</div>
+                                    <div class="item" data-value="cu"><i class="cu flag"></i>Cuba</div>
+                                    <div class="item" data-value="cy"><i class="cy flag"></i>Cyprus</div>
+                                    <div class="item" data-value="cz"><i class="cz flag"></i>Czech Republic</div>
+                                    <div class="item" data-value="dk"><i class="dk flag"></i>Denmark</div>
+                                    <div class="item" data-value="dj"><i class="dj flag"></i>Djibouti</div>
+                                    <div class="item" data-value="dm"><i class="dm flag"></i>Dominica</div>
+                                    <div class="item" data-value="do"><i class="do flag"></i>Dominican Republic</div>
+                                    <div class="item" data-value="ec"><i class="ec flag"></i>Ecuador</div>
+                                    <div class="item" data-value="eg"><i class="eg flag"></i>Egypt</div>
+                                    <div class="item" data-value="sv"><i class="sv flag"></i>El Salvador</div>
+                                    <div class="item" data-value="gb"><i class="gb flag"></i>England</div>
+                                    <div class="item" data-value="gq"><i class="gq flag"></i>Equatorial Guinea</div>
+                                    <div class="item" data-value="er"><i class="er flag"></i>Eritrea</div>
+                                    <div class="item" data-value="ee"><i class="ee flag"></i>Estonia</div>
+                                    <div class="item" data-value="et"><i class="et flag"></i>Ethiopia</div>
+                                    <div class="item" data-value="eu"><i class="eu flag"></i>European Union</div>
+                                    <div class="item" data-value="fk"><i class="fk flag"></i>Falkland Islands</div>
+                                    <div class="item" data-value="fo"><i class="fo flag"></i>Faroe Islands</div>
+                                    <div class="item" data-value="fj"><i class="fj flag"></i>Fiji</div>
+                                    <div class="item" data-value="fi"><i class="fi flag"></i>Finland</div>
+                                    <div class="item" data-value="fr"><i class="fr flag"></i>France</div>
+                                    <div class="item" data-value="gf"><i class="gf flag"></i>French Guiana</div>
+                                    <div class="item" data-value="pf"><i class="pf flag"></i>French Polynesia</div>
+                                    <div class="item" data-value="tf"><i class="tf flag"></i>French Territories</div>
+                                    <div class="item" data-value="ga"><i class="ga flag"></i>Gabon</div>
+                                    <div class="item" data-value="gm"><i class="gm flag"></i>Gambia</div>
+                                    <div class="item" data-value="ge"><i class="ge flag"></i>Georgia</div>
+                                    <div class="item" data-value="de"><i class="de flag"></i>Germany</div>
+                                    <div class="item" data-value="gh"><i class="gh flag"></i>Ghana</div>
+                                    <div class="item" data-value="gi"><i class="gi flag"></i>Gibraltar</div>
+                                    <div class="item" data-value="gr"><i class="gr flag"></i>Greece</div>
+                                    <div class="item" data-value="gl"><i class="gl flag"></i>Greenland</div>
+                                    <div class="item" data-value="gd"><i class="gd flag"></i>Grenada</div>
+                                    <div class="item" data-value="gp"><i class="gp flag"></i>Guadeloupe</div>
+                                    <div class="item" data-value="gu"><i class="gu flag"></i>Guam</div>
+                                    <div class="item" data-value="gt"><i class="gt flag"></i>Guatemala</div>
+                                    <div class="item" data-value="gw"><i class="gw flag"></i>Guinea-Bissau</div>
+                                    <div class="item" data-value="gn"><i class="gn flag"></i>Guinea</div>
+                                    <div class="item" data-value="gy"><i class="gy flag"></i>Guyana</div>
+                                    <div class="item" data-value="ht"><i class="ht flag"></i>Haiti</div>
+                                    <div class="item" data-value="hm"><i class="hm flag"></i>Heard Island</div>
+                                    <div class="item" data-value="hn"><i class="hn flag"></i>Honduras</div>
+                                    <div class="item" data-value="hk"><i class="hk flag"></i>Hong Kong</div>
+                                    <div class="item" data-value="hu"><i class="hu flag"></i>Hungary</div>
+                                    <div class="item" data-value="is"><i class="is flag"></i>Iceland</div>
+                                    <div class="item" data-value="in"><i class="in flag"></i>India</div>
+                                    <div class="item" data-value="io"><i class="io flag"></i>Indian Ocean Territory</div>
+                                    <div class="item" data-value="id"><i class="id flag"></i>Indonesia</div>
+                                    <div class="item" data-value="ir"><i class="ir flag"></i>Iran</div>
+                                    <div class="item" data-value="iq"><i class="iq flag"></i>Iraq</div>
+                                    <div class="item" data-value="ie"><i class="ie flag"></i>Ireland</div>
+                                    <div class="item" data-value="il"><i class="il flag"></i>Israel</div>
+                                    <div class="item" data-value="it"><i class="it flag"></i>Italy</div>
+                                    <div class="item" data-value="jm"><i class="jm flag"></i>Jamaica</div>
+                                    <div class="item" data-value="jp"><i class="jp flag"></i>Japan</div>
+                                    <div class="item" data-value="jo"><i class="jo flag"></i>Jordan</div>
+                                    <div class="item" data-value="kz"><i class="kz flag"></i>Kazakhstan</div>
+                                    <div class="item" data-value="ke"><i class="ke flag"></i>Kenya</div>
+                                    <div class="item" data-value="ki"><i class="ki flag"></i>Kiribati</div>
+                                    <div class="item" data-value="kw"><i class="kw flag"></i>Kuwait</div>
+                                    <div class="item" data-value="kg"><i class="kg flag"></i>Kyrgyzstan</div>
+                                    <div class="item" data-value="la"><i class="la flag"></i>Laos</div>
+                                    <div class="item" data-value="lv"><i class="lv flag"></i>Latvia</div>
+                                    <div class="item" data-value="lb"><i class="lb flag"></i>Lebanon</div>
+                                    <div class="item" data-value="ls"><i class="ls flag"></i>Lesotho</div>
+                                    <div class="item" data-value="lr"><i class="lr flag"></i>Liberia</div>
+                                    <div class="item" data-value="ly"><i class="ly flag"></i>Libya</div>
+                                    <div class="item" data-value="li"><i class="li flag"></i>Liechtenstein</div>
+                                    <div class="item" data-value="lt"><i class="lt flag"></i>Lithuania</div>
+                                    <div class="item" data-value="lu"><i class="lu flag"></i>Luxembourg</div>
+                                    <div class="item" data-value="mo"><i class="mo flag"></i>Macau</div>
+                                    <div class="item" data-value="mk"><i class="mk flag"></i>Macedonia</div>
+                                    <div class="item" data-value="mg"><i class="mg flag"></i>Madagascar</div>
+                                    <div class="item" data-value="mw"><i class="mw flag"></i>Malawi</div>
+                                    <div class="item" data-value="my"><i class="my flag"></i>Malaysia</div>
+                                    <div class="item" data-value="mv"><i class="mv flag"></i>Maldives</div>
+                                    <div class="item" data-value="ml"><i class="ml flag"></i>Mali</div>
+                                    <div class="item" data-value="mt"><i class="mt flag"></i>Malta</div>
+                                    <div class="item" data-value="mh"><i class="mh flag"></i>Marshall Islands</div>
+                                    <div class="item" data-value="mq"><i class="mq flag"></i>Martinique</div>
+                                    <div class="item" data-value="mr"><i class="mr flag"></i>Mauritania</div>
+                                    <div class="item" data-value="mu"><i class="mu flag"></i>Mauritius</div>
+                                    <div class="item" data-value="yt"><i class="yt flag"></i>Mayotte</div>
+                                    <div class="item" data-value="mx"><i class="mx flag"></i>Mexico</div>
+                                    <div class="item" data-value="fm"><i class="fm flag"></i>Micronesia</div>
+                                    <div class="item" data-value="md"><i class="md flag"></i>Moldova</div>
+                                    <div class="item" data-value="mc"><i class="mc flag"></i>Monaco</div>
+                                    <div class="item" data-value="mn"><i class="mn flag"></i>Mongolia</div>
+                                    <div class="item" data-value="me"><i class="me flag"></i>Montenegro</div>
+                                    <div class="item" data-value="ms"><i class="ms flag"></i>Montserrat</div>
+                                    <div class="item" data-value="ma"><i class="ma flag"></i>Morocco</div>
+                                    <div class="item" data-value="mz"><i class="mz flag"></i>Mozambique</div>
+                                    <div class="item" data-value="na"><i class="na flag"></i>Namibia</div>
+                                    <div class="item" data-value="nr"><i class="nr flag"></i>Nauru</div>
+                                    <div class="item" data-value="np"><i class="np flag"></i>Nepal</div>
+                                    <div class="item" data-value="an"><i class="an flag"></i>Netherlands Antilles</div>
+                                    <div class="item" data-value="nl"><i class="nl flag"></i>Netherlands</div>
+                                    <div class="item" data-value="nc"><i class="nc flag"></i>New Caledonia</div>
+                                    <div class="item" data-value="pg"><i class="pg flag"></i>New Guinea</div>
+                                    <div class="item" data-value="nz"><i class="nz flag"></i>New Zealand</div>
+                                    <div class="item" data-value="ni"><i class="ni flag"></i>Nicaragua</div>
+                                    <div class="item" data-value="ne"><i class="ne flag"></i>Niger</div>
+                                    <div class="item" data-value="ng"><i class="ng flag"></i>Nigeria</div>
+                                    <div class="item" data-value="nu"><i class="nu flag"></i>Niue</div>
+                                    <div class="item" data-value="nf"><i class="nf flag"></i>Norfolk Island</div>
+                                    <div class="item" data-value="kp"><i class="kp flag"></i>North Korea</div>
+                                    <div class="item" data-value="mp"><i class="mp flag"></i>Northern Mariana Islands</div>
+                                    <div class="item" data-value="no"><i class="no flag"></i>Norway</div>
+                                    <div class="item" data-value="om"><i class="om flag"></i>Oman</div>
+                                    <div class="item" data-value="pk"><i class="pk flag"></i>Pakistan</div>
+                                    <div class="item" data-value="pw"><i class="pw flag"></i>Palau</div>
+                                    <div class="item" data-value="ps"><i class="ps flag"></i>Palestine</div>
+                                    <div class="item" data-value="pa"><i class="pa flag"></i>Panama</div>
+                                    <div class="item" data-value="py"><i class="py flag"></i>Paraguay</div>
+                                    <div class="item" data-value="pe"><i class="pe flag"></i>Peru</div>
+                                    <div class="item" data-value="ph"><i class="ph flag"></i>Philippines</div>
+                                    <div class="item" data-value="pn"><i class="pn flag"></i>Pitcairn Islands</div>
+                                    <div class="item" data-value="pl"><i class="pl flag"></i>Poland</div>
+                                    <div class="item" data-value="pt"><i class="pt flag"></i>Portugal</div>
+                                    <div class="item" data-value="pr"><i class="pr flag"></i>Puerto Rico</div>
+                                    <div class="item" data-value="qa"><i class="qa flag"></i>Qatar</div>
+                                    <div class="item" data-value="re"><i class="re flag"></i>Reunion</div>
+                                    <div class="item" data-value="ro"><i class="ro flag"></i>Romania</div>
+                                    <div class="item" data-value="ru"><i class="ru flag"></i>Russia</div>
+                                    <div class="item" data-value="rw"><i class="rw flag"></i>Rwanda</div>
+                                    <div class="item" data-value="sh"><i class="sh flag"></i>Saint Helena</div>
+                                    <div class="item" data-value="kn"><i class="kn flag"></i>Saint Kitts and Nevis</div>
+                                    <div class="item" data-value="lc"><i class="lc flag"></i>Saint Lucia</div>
+                                    <div class="item" data-value="pm"><i class="pm flag"></i>Saint Pierre</div>
+                                    <div class="item" data-value="vc"><i class="vc flag"></i>Saint Vincent</div>
+                                    <div class="item" data-value="ws"><i class="ws flag"></i>Samoa</div>
+                                    <div class="item" data-value="sm"><i class="sm flag"></i>San Marino</div>
+                                    <div class="item" data-value="gs"><i class="gs flag"></i>Sandwich Islands</div>
+                                    <div class="item" data-value="st"><i class="st flag"></i>Sao Tome</div>
+                                    <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
+                                    <div class="item" data-value="sn"><i class="sn flag"></i>Senegal</div>
+                                    <div class="item" data-value="cs"><i class="cs flag"></i>Serbia</div>
+                                    <div class="item" data-value="rs"><i class="rs flag"></i>Serbia</div>
+                                    <div class="item" data-value="sc"><i class="sc flag"></i>Seychelles</div>
+                                    <div class="item" data-value="sl"><i class="sl flag"></i>Sierra Leone</div>
+                                    <div class="item" data-value="sg"><i class="sg flag"></i>Singapore</div>
+                                    <div class="item" data-value="sk"><i class="sk flag"></i>Slovakia</div>
+                                    <div class="item" data-value="si"><i class="si flag"></i>Slovenia</div>
+                                    <div class="item" data-value="sb"><i class="sb flag"></i>Solomon Islands</div>
+                                    <div class="item" data-value="so"><i class="so flag"></i>Somalia</div>
+                                    <div class="item" data-value="za"><i class="za flag"></i>South Africa</div>
+                                    <div class="item" data-value="kr"><i class="kr flag"></i>South Korea</div>
+                                    <div class="item" data-value="es"><i class="es flag"></i>Spain</div>
+                                    <div class="item" data-value="lk"><i class="lk flag"></i>Sri Lanka</div>
+                                    <div class="item" data-value="sd"><i class="sd flag"></i>Sudan</div>
+                                    <div class="item" data-value="sr"><i class="sr flag"></i>Suriname</div>
+                                    <div class="item" data-value="sj"><i class="sj flag"></i>Svalbard</div>
+                                    <div class="item" data-value="sz"><i class="sz flag"></i>Swaziland</div>
+                                    <div class="item" data-value="se"><i class="se flag"></i>Sweden</div>
+                                    <div class="item" data-value="ch"><i class="ch flag"></i>Switzerland</div>
+                                    <div class="item" data-value="sy"><i class="sy flag"></i>Syria</div>
+                                    <div class="item" data-value="tw"><i class="tw flag"></i>Taiwan</div>
+                                    <div class="item" data-value="tj"><i class="tj flag"></i>Tajikistan</div>
+                                    <div class="item" data-value="tz"><i class="tz flag"></i>Tanzania</div>
+                                    <div class="item" data-value="th"><i class="th flag"></i>Thailand</div>
+                                    <div class="item" data-value="tl"><i class="tl flag"></i>Timorleste</div>
+                                    <div class="item" data-value="tg"><i class="tg flag"></i>Togo</div>
+                                    <div class="item" data-value="tk"><i class="tk flag"></i>Tokelau</div>
+                                    <div class="item" data-value="to"><i class="to flag"></i>Tonga</div>
+                                    <div class="item" data-value="tt"><i class="tt flag"></i>Trinidad</div>
+                                    <div class="item" data-value="tn"><i class="tn flag"></i>Tunisia</div>
+                                    <div class="item" data-value="tr"><i class="tr flag"></i>Turkey</div>
+                                    <div class="item" data-value="tm"><i class="tm flag"></i>Turkmenistan</div>
+                                    <div class="item" data-value="tv"><i class="tv flag"></i>Tuvalu</div>
+                                    <div class="item" data-value="ug"><i class="ug flag"></i>Uganda</div>
+                                    <div class="item" data-value="ua"><i class="ua flag"></i>Ukraine</div>
+                                    <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
+                                    <div class="item" data-value="us"><i class="us flag"></i>United States</div>
+                                    <div class="item" data-value="uy"><i class="uy flag"></i>Uruguay</div>
+                                    <div class="item" data-value="um"><i class="um flag"></i>Us Minor Islands</div>
+                                    <div class="item" data-value="vi"><i class="vi flag"></i>Us Virgin Islands</div>
+                                    <div class="item" data-value="uz"><i class="uz flag"></i>Uzbekistan</div>
+                                    <div class="item" data-value="vu"><i class="vu flag"></i>Vanuatu</div>
+                                    <div class="item" data-value="va"><i class="va flag"></i>Vatican City</div>
+                                    <div class="item" data-value="ve"><i class="ve flag"></i>Venezuela</div>
+                                    <div class="item" data-value="vn"><i class="vn flag"></i>Vietnam</div>
+                                    <div class="item" data-value="wf"><i class="wf flag"></i>Wallis and Futuna</div>
+                                    <div class="item" data-value="eh"><i class="eh flag"></i>Western Sahara</div>
+                                    <div class="item" data-value="ye"><i class="ye flag"></i>Yemen</div>
+                                    <div class="item" data-value="zm"><i class="zm flag"></i>Zambia</div>
+                                    <div class="item" data-value="zw"><i class="zw flag"></i>Zimbabwe</div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 mb-3 mt-7">Selection Without Tags</h4>
+                            <div class="ui fluid multiple search special selection without-labels select-dropdown">
+                                <input type="hidden" name="country" value="af,al,dz">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Select Country</div>
+                                <div class="menu">
+                                    <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                                    <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                                    <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+                                    <div class="item" data-value="dz"><i class="dz flag"></i>Algeria</div>
+                                    <div class="item" data-value="as"><i class="as flag"></i>American Samoa</div>
+                                    <div class="item" data-value="ad"><i class="ad flag"></i>Andorra</div>
+                                    <div class="item" data-value="ao"><i class="ao flag"></i>Angola</div>
+                                    <div class="item" data-value="ai"><i class="ai flag"></i>Anguilla</div>
+                                    <div class="item" data-value="ag"><i class="ag flag"></i>Antigua</div>
+                                    <div class="item" data-value="ar"><i class="ar flag"></i>Argentina</div>
+                                    <div class="item" data-value="am"><i class="am flag"></i>Armenia</div>
+                                    <div class="item" data-value="aw"><i class="aw flag"></i>Aruba</div>
+                                    <div class="item" data-value="au"><i class="au flag"></i>Australia</div>
+                                    <div class="item" data-value="at"><i class="at flag"></i>Austria</div>
+                                    <div class="item" data-value="az"><i class="az flag"></i>Azerbaijan</div>
+                                    <div class="item" data-value="bs"><i class="bs flag"></i>Bahamas</div>
+                                    <div class="item" data-value="bh"><i class="bh flag"></i>Bahrain</div>
+                                    <div class="item" data-value="bd"><i class="bd flag"></i>Bangladesh</div>
+                                    <div class="item" data-value="bb"><i class="bb flag"></i>Barbados</div>
+                                    <div class="item" data-value="by"><i class="by flag"></i>Belarus</div>
+                                    <div class="item" data-value="be"><i class="be flag"></i>Belgium</div>
+                                    <div class="item" data-value="bz"><i class="bz flag"></i>Belize</div>
+                                    <div class="item" data-value="bj"><i class="bj flag"></i>Benin</div>
+                                    <div class="item" data-value="bm"><i class="bm flag"></i>Bermuda</div>
+                                    <div class="item" data-value="bt"><i class="bt flag"></i>Bhutan</div>
+                                    <div class="item" data-value="bo"><i class="bo flag"></i>Bolivia</div>
+                                    <div class="item" data-value="ba"><i class="ba flag"></i>Bosnia</div>
+                                    <div class="item" data-value="bw"><i class="bw flag"></i>Botswana</div>
+                                    <div class="item" data-value="bv"><i class="bv flag"></i>Bouvet Island</div>
+                                    <div class="item" data-value="br"><i class="br flag"></i>Brazil</div>
+                                    <div class="item" data-value="vg"><i class="vg flag"></i>British Virgin Islands</div>
+                                    <div class="item" data-value="bn"><i class="bn flag"></i>Brunei</div>
+                                    <div class="item" data-value="bg"><i class="bg flag"></i>Bulgaria</div>
+                                    <div class="item" data-value="bf"><i class="bf flag"></i>Burkina Faso</div>
+                                    <div class="item" data-value="mm"><i class="mm flag"></i>Burma</div>
+                                    <div class="item" data-value="bi"><i class="bi flag"></i>Burundi</div>
+                                    <div class="item" data-value="tc"><i class="tc flag"></i>Caicos Islands</div>
+                                    <div class="item" data-value="kh"><i class="kh flag"></i>Cambodia</div>
+                                    <div class="item" data-value="cm"><i class="cm flag"></i>Cameroon</div>
+                                    <div class="item" data-value="ca"><i class="ca flag"></i>Canada</div>
+                                    <div class="item" data-value="cv"><i class="cv flag"></i>Cape Verde</div>
+                                    <div class="item" data-value="ky"><i class="ky flag"></i>Cayman Islands</div>
+                                    <div class="item" data-value="cf"><i class="cf flag"></i>Central African Republic</div>
+                                    <div class="item" data-value="td"><i class="td flag"></i>Chad</div>
+                                    <div class="item" data-value="cl"><i class="cl flag"></i>Chile</div>
+                                    <div class="item" data-value="cn"><i class="cn flag"></i>China</div>
+                                    <div class="item" data-value="cx"><i class="cx flag"></i>Christmas Island</div>
+                                    <div class="item" data-value="cc"><i class="cc flag"></i>Cocos Islands</div>
+                                    <div class="item" data-value="co"><i class="co flag"></i>Colombia</div>
+                                    <div class="item" data-value="km"><i class="km flag"></i>Comoros</div>
+                                    <div class="item" data-value="cg"><i class="cg flag"></i>Congo Brazzaville</div>
+                                    <div class="item" data-value="cd"><i class="cd flag"></i>Congo</div>
+                                    <div class="item" data-value="ck"><i class="ck flag"></i>Cook Islands</div>
+                                    <div class="item" data-value="cr"><i class="cr flag"></i>Costa Rica</div>
+                                    <div class="item" data-value="ci"><i class="ci flag"></i>Cote Divoire</div>
+                                    <div class="item" data-value="hr"><i class="hr flag"></i>Croatia</div>
+                                    <div class="item" data-value="cu"><i class="cu flag"></i>Cuba</div>
+                                    <div class="item" data-value="cy"><i class="cy flag"></i>Cyprus</div>
+                                    <div class="item" data-value="cz"><i class="cz flag"></i>Czech Republic</div>
+                                    <div class="item" data-value="dk"><i class="dk flag"></i>Denmark</div>
+                                    <div class="item" data-value="dj"><i class="dj flag"></i>Djibouti</div>
+                                    <div class="item" data-value="dm"><i class="dm flag"></i>Dominica</div>
+                                    <div class="item" data-value="do"><i class="do flag"></i>Dominican Republic</div>
+                                    <div class="item" data-value="ec"><i class="ec flag"></i>Ecuador</div>
+                                    <div class="item" data-value="eg"><i class="eg flag"></i>Egypt</div>
+                                    <div class="item" data-value="sv"><i class="sv flag"></i>El Salvador</div>
+                                    <div class="item" data-value="gb"><i class="gb flag"></i>England</div>
+                                    <div class="item" data-value="gq"><i class="gq flag"></i>Equatorial Guinea</div>
+                                    <div class="item" data-value="er"><i class="er flag"></i>Eritrea</div>
+                                    <div class="item" data-value="ee"><i class="ee flag"></i>Estonia</div>
+                                    <div class="item" data-value="et"><i class="et flag"></i>Ethiopia</div>
+                                    <div class="item" data-value="eu"><i class="eu flag"></i>European Union</div>
+                                    <div class="item" data-value="fk"><i class="fk flag"></i>Falkland Islands</div>
+                                    <div class="item" data-value="fo"><i class="fo flag"></i>Faroe Islands</div>
+                                    <div class="item" data-value="fj"><i class="fj flag"></i>Fiji</div>
+                                    <div class="item" data-value="fi"><i class="fi flag"></i>Finland</div>
+                                    <div class="item" data-value="fr"><i class="fr flag"></i>France</div>
+                                    <div class="item" data-value="gf"><i class="gf flag"></i>French Guiana</div>
+                                    <div class="item" data-value="pf"><i class="pf flag"></i>French Polynesia</div>
+                                    <div class="item" data-value="tf"><i class="tf flag"></i>French Territories</div>
+                                    <div class="item" data-value="ga"><i class="ga flag"></i>Gabon</div>
+                                    <div class="item" data-value="gm"><i class="gm flag"></i>Gambia</div>
+                                    <div class="item" data-value="ge"><i class="ge flag"></i>Georgia</div>
+                                    <div class="item" data-value="de"><i class="de flag"></i>Germany</div>
+                                    <div class="item" data-value="gh"><i class="gh flag"></i>Ghana</div>
+                                    <div class="item" data-value="gi"><i class="gi flag"></i>Gibraltar</div>
+                                    <div class="item" data-value="gr"><i class="gr flag"></i>Greece</div>
+                                    <div class="item" data-value="gl"><i class="gl flag"></i>Greenland</div>
+                                    <div class="item" data-value="gd"><i class="gd flag"></i>Grenada</div>
+                                    <div class="item" data-value="gp"><i class="gp flag"></i>Guadeloupe</div>
+                                    <div class="item" data-value="gu"><i class="gu flag"></i>Guam</div>
+                                    <div class="item" data-value="gt"><i class="gt flag"></i>Guatemala</div>
+                                    <div class="item" data-value="gw"><i class="gw flag"></i>Guinea-Bissau</div>
+                                    <div class="item" data-value="gn"><i class="gn flag"></i>Guinea</div>
+                                    <div class="item" data-value="gy"><i class="gy flag"></i>Guyana</div>
+                                    <div class="item" data-value="ht"><i class="ht flag"></i>Haiti</div>
+                                    <div class="item" data-value="hm"><i class="hm flag"></i>Heard Island</div>
+                                    <div class="item" data-value="hn"><i class="hn flag"></i>Honduras</div>
+                                    <div class="item" data-value="hk"><i class="hk flag"></i>Hong Kong</div>
+                                    <div class="item" data-value="hu"><i class="hu flag"></i>Hungary</div>
+                                    <div class="item" data-value="is"><i class="is flag"></i>Iceland</div>
+                                    <div class="item" data-value="in"><i class="in flag"></i>India</div>
+                                    <div class="item" data-value="io"><i class="io flag"></i>Indian Ocean Territory</div>
+                                    <div class="item" data-value="id"><i class="id flag"></i>Indonesia</div>
+                                    <div class="item" data-value="ir"><i class="ir flag"></i>Iran</div>
+                                    <div class="item" data-value="iq"><i class="iq flag"></i>Iraq</div>
+                                    <div class="item" data-value="ie"><i class="ie flag"></i>Ireland</div>
+                                    <div class="item" data-value="il"><i class="il flag"></i>Israel</div>
+                                    <div class="item" data-value="it"><i class="it flag"></i>Italy</div>
+                                    <div class="item" data-value="jm"><i class="jm flag"></i>Jamaica</div>
+                                    <div class="item" data-value="jp"><i class="jp flag"></i>Japan</div>
+                                    <div class="item" data-value="jo"><i class="jo flag"></i>Jordan</div>
+                                    <div class="item" data-value="kz"><i class="kz flag"></i>Kazakhstan</div>
+                                    <div class="item" data-value="ke"><i class="ke flag"></i>Kenya</div>
+                                    <div class="item" data-value="ki"><i class="ki flag"></i>Kiribati</div>
+                                    <div class="item" data-value="kw"><i class="kw flag"></i>Kuwait</div>
+                                    <div class="item" data-value="kg"><i class="kg flag"></i>Kyrgyzstan</div>
+                                    <div class="item" data-value="la"><i class="la flag"></i>Laos</div>
+                                    <div class="item" data-value="lv"><i class="lv flag"></i>Latvia</div>
+                                    <div class="item" data-value="lb"><i class="lb flag"></i>Lebanon</div>
+                                    <div class="item" data-value="ls"><i class="ls flag"></i>Lesotho</div>
+                                    <div class="item" data-value="lr"><i class="lr flag"></i>Liberia</div>
+                                    <div class="item" data-value="ly"><i class="ly flag"></i>Libya</div>
+                                    <div class="item" data-value="li"><i class="li flag"></i>Liechtenstein</div>
+                                    <div class="item" data-value="lt"><i class="lt flag"></i>Lithuania</div>
+                                    <div class="item" data-value="lu"><i class="lu flag"></i>Luxembourg</div>
+                                    <div class="item" data-value="mo"><i class="mo flag"></i>Macau</div>
+                                    <div class="item" data-value="mk"><i class="mk flag"></i>Macedonia</div>
+                                    <div class="item" data-value="mg"><i class="mg flag"></i>Madagascar</div>
+                                    <div class="item" data-value="mw"><i class="mw flag"></i>Malawi</div>
+                                    <div class="item" data-value="my"><i class="my flag"></i>Malaysia</div>
+                                    <div class="item" data-value="mv"><i class="mv flag"></i>Maldives</div>
+                                    <div class="item" data-value="ml"><i class="ml flag"></i>Mali</div>
+                                    <div class="item" data-value="mt"><i class="mt flag"></i>Malta</div>
+                                    <div class="item" data-value="mh"><i class="mh flag"></i>Marshall Islands</div>
+                                    <div class="item" data-value="mq"><i class="mq flag"></i>Martinique</div>
+                                    <div class="item" data-value="mr"><i class="mr flag"></i>Mauritania</div>
+                                    <div class="item" data-value="mu"><i class="mu flag"></i>Mauritius</div>
+                                    <div class="item" data-value="yt"><i class="yt flag"></i>Mayotte</div>
+                                    <div class="item" data-value="mx"><i class="mx flag"></i>Mexico</div>
+                                    <div class="item" data-value="fm"><i class="fm flag"></i>Micronesia</div>
+                                    <div class="item" data-value="md"><i class="md flag"></i>Moldova</div>
+                                    <div class="item" data-value="mc"><i class="mc flag"></i>Monaco</div>
+                                    <div class="item" data-value="mn"><i class="mn flag"></i>Mongolia</div>
+                                    <div class="item" data-value="me"><i class="me flag"></i>Montenegro</div>
+                                    <div class="item" data-value="ms"><i class="ms flag"></i>Montserrat</div>
+                                    <div class="item" data-value="ma"><i class="ma flag"></i>Morocco</div>
+                                    <div class="item" data-value="mz"><i class="mz flag"></i>Mozambique</div>
+                                    <div class="item" data-value="na"><i class="na flag"></i>Namibia</div>
+                                    <div class="item" data-value="nr"><i class="nr flag"></i>Nauru</div>
+                                    <div class="item" data-value="np"><i class="np flag"></i>Nepal</div>
+                                    <div class="item" data-value="an"><i class="an flag"></i>Netherlands Antilles</div>
+                                    <div class="item" data-value="nl"><i class="nl flag"></i>Netherlands</div>
+                                    <div class="item" data-value="nc"><i class="nc flag"></i>New Caledonia</div>
+                                    <div class="item" data-value="pg"><i class="pg flag"></i>New Guinea</div>
+                                    <div class="item" data-value="nz"><i class="nz flag"></i>New Zealand</div>
+                                    <div class="item" data-value="ni"><i class="ni flag"></i>Nicaragua</div>
+                                    <div class="item" data-value="ne"><i class="ne flag"></i>Niger</div>
+                                    <div class="item" data-value="ng"><i class="ng flag"></i>Nigeria</div>
+                                    <div class="item" data-value="nu"><i class="nu flag"></i>Niue</div>
+                                    <div class="item" data-value="nf"><i class="nf flag"></i>Norfolk Island</div>
+                                    <div class="item" data-value="kp"><i class="kp flag"></i>North Korea</div>
+                                    <div class="item" data-value="mp"><i class="mp flag"></i>Northern Mariana Islands</div>
+                                    <div class="item" data-value="no"><i class="no flag"></i>Norway</div>
+                                    <div class="item" data-value="om"><i class="om flag"></i>Oman</div>
+                                    <div class="item" data-value="pk"><i class="pk flag"></i>Pakistan</div>
+                                    <div class="item" data-value="pw"><i class="pw flag"></i>Palau</div>
+                                    <div class="item" data-value="ps"><i class="ps flag"></i>Palestine</div>
+                                    <div class="item" data-value="pa"><i class="pa flag"></i>Panama</div>
+                                    <div class="item" data-value="py"><i class="py flag"></i>Paraguay</div>
+                                    <div class="item" data-value="pe"><i class="pe flag"></i>Peru</div>
+                                    <div class="item" data-value="ph"><i class="ph flag"></i>Philippines</div>
+                                    <div class="item" data-value="pn"><i class="pn flag"></i>Pitcairn Islands</div>
+                                    <div class="item" data-value="pl"><i class="pl flag"></i>Poland</div>
+                                    <div class="item" data-value="pt"><i class="pt flag"></i>Portugal</div>
+                                    <div class="item" data-value="pr"><i class="pr flag"></i>Puerto Rico</div>
+                                    <div class="item" data-value="qa"><i class="qa flag"></i>Qatar</div>
+                                    <div class="item" data-value="re"><i class="re flag"></i>Reunion</div>
+                                    <div class="item" data-value="ro"><i class="ro flag"></i>Romania</div>
+                                    <div class="item" data-value="ru"><i class="ru flag"></i>Russia</div>
+                                    <div class="item" data-value="rw"><i class="rw flag"></i>Rwanda</div>
+                                    <div class="item" data-value="sh"><i class="sh flag"></i>Saint Helena</div>
+                                    <div class="item" data-value="kn"><i class="kn flag"></i>Saint Kitts and Nevis</div>
+                                    <div class="item" data-value="lc"><i class="lc flag"></i>Saint Lucia</div>
+                                    <div class="item" data-value="pm"><i class="pm flag"></i>Saint Pierre</div>
+                                    <div class="item" data-value="vc"><i class="vc flag"></i>Saint Vincent</div>
+                                    <div class="item" data-value="ws"><i class="ws flag"></i>Samoa</div>
+                                    <div class="item" data-value="sm"><i class="sm flag"></i>San Marino</div>
+                                    <div class="item" data-value="gs"><i class="gs flag"></i>Sandwich Islands</div>
+                                    <div class="item" data-value="st"><i class="st flag"></i>Sao Tome</div>
+                                    <div class="item" data-value="sa"><i class="sa flag"></i>Saudi Arabia</div>
+                                    <div class="item" data-value="sn"><i class="sn flag"></i>Senegal</div>
+                                    <div class="item" data-value="cs"><i class="cs flag"></i>Serbia</div>
+                                    <div class="item" data-value="rs"><i class="rs flag"></i>Serbia</div>
+                                    <div class="item" data-value="sc"><i class="sc flag"></i>Seychelles</div>
+                                    <div class="item" data-value="sl"><i class="sl flag"></i>Sierra Leone</div>
+                                    <div class="item" data-value="sg"><i class="sg flag"></i>Singapore</div>
+                                    <div class="item" data-value="sk"><i class="sk flag"></i>Slovakia</div>
+                                    <div class="item" data-value="si"><i class="si flag"></i>Slovenia</div>
+                                    <div class="item" data-value="sb"><i class="sb flag"></i>Solomon Islands</div>
+                                    <div class="item" data-value="so"><i class="so flag"></i>Somalia</div>
+                                    <div class="item" data-value="za"><i class="za flag"></i>South Africa</div>
+                                    <div class="item" data-value="kr"><i class="kr flag"></i>South Korea</div>
+                                    <div class="item" data-value="es"><i class="es flag"></i>Spain</div>
+                                    <div class="item" data-value="lk"><i class="lk flag"></i>Sri Lanka</div>
+                                    <div class="item" data-value="sd"><i class="sd flag"></i>Sudan</div>
+                                    <div class="item" data-value="sr"><i class="sr flag"></i>Suriname</div>
+                                    <div class="item" data-value="sj"><i class="sj flag"></i>Svalbard</div>
+                                    <div class="item" data-value="sz"><i class="sz flag"></i>Swaziland</div>
+                                    <div class="item" data-value="se"><i class="se flag"></i>Sweden</div>
+                                    <div class="item" data-value="ch"><i class="ch flag"></i>Switzerland</div>
+                                    <div class="item" data-value="sy"><i class="sy flag"></i>Syria</div>
+                                    <div class="item" data-value="tw"><i class="tw flag"></i>Taiwan</div>
+                                    <div class="item" data-value="tj"><i class="tj flag"></i>Tajikistan</div>
+                                    <div class="item" data-value="tz"><i class="tz flag"></i>Tanzania</div>
+                                    <div class="item" data-value="th"><i class="th flag"></i>Thailand</div>
+                                    <div class="item" data-value="tl"><i class="tl flag"></i>Timorleste</div>
+                                    <div class="item" data-value="tg"><i class="tg flag"></i>Togo</div>
+                                    <div class="item" data-value="tk"><i class="tk flag"></i>Tokelau</div>
+                                    <div class="item" data-value="to"><i class="to flag"></i>Tonga</div>
+                                    <div class="item" data-value="tt"><i class="tt flag"></i>Trinidad</div>
+                                    <div class="item" data-value="tn"><i class="tn flag"></i>Tunisia</div>
+                                    <div class="item" data-value="tr"><i class="tr flag"></i>Turkey</div>
+                                    <div class="item" data-value="tm"><i class="tm flag"></i>Turkmenistan</div>
+                                    <div class="item" data-value="tv"><i class="tv flag"></i>Tuvalu</div>
+                                    <div class="item" data-value="ug"><i class="ug flag"></i>Uganda</div>
+                                    <div class="item" data-value="ua"><i class="ua flag"></i>Ukraine</div>
+                                    <div class="item" data-value="ae"><i class="ae flag"></i>United Arab Emirates</div>
+                                    <div class="item" data-value="us"><i class="us flag"></i>United States</div>
+                                    <div class="item" data-value="uy"><i class="uy flag"></i>Uruguay</div>
+                                    <div class="item" data-value="um"><i class="um flag"></i>Us Minor Islands</div>
+                                    <div class="item" data-value="vi"><i class="vi flag"></i>Us Virgin Islands</div>
+                                    <div class="item" data-value="uz"><i class="uz flag"></i>Uzbekistan</div>
+                                    <div class="item" data-value="vu"><i class="vu flag"></i>Vanuatu</div>
+                                    <div class="item" data-value="va"><i class="va flag"></i>Vatican City</div>
+                                    <div class="item" data-value="ve"><i class="ve flag"></i>Venezuela</div>
+                                    <div class="item" data-value="vn"><i class="vn flag"></i>Vietnam</div>
+                                    <div class="item" data-value="wf"><i class="wf flag"></i>Wallis and Futuna</div>
+                                    <div class="item" data-value="eh"><i class="eh flag"></i>Western Sahara</div>
+                                    <div class="item" data-value="ye"><i class="ye flag"></i>Yemen</div>
+                                    <div class="item" data-value="zm"><i class="zm flag"></i>Zambia</div>
+                                    <div class="item" data-value="zw"><i class="zw flag"></i>Zimbabwe</div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-1 mt-7">Tagging and User Additions</h4>
+                            <p class="fs-6-plus mb-2">User may type own options in either single or multiple modes</p>
+                            <h5 class="ui sub header mb-1">Single</h5>
+                            <select name="skills" class="ui fluid search tags-allow-select select-dropdown">
+                                <option value="">Skills</option>
+                                <option value="angular">Angular</option>
+                                <option value="css">CSS</option>
+                                <option value="design">Graphic Design</option>
+                                <option value="ember">Ember</option>
+                                <option value="html">HTML</option>
+                                <option value="ia">Information Architecture</option>
+                                <option value="javascript">Javascript</option>
+                                <option value="mech">Mechanical Engineering</option>
+                                <option value="meteor">Meteor</option>
+                                <option value="node">NodeJS</option>
+                                <option value="plumbing">Plumbing</option>
+                                <option value="python">Python</option>
+                                <option value="rails">Rails</option>
+                                <option value="react">React</option>
+                                <option value="repair">Kitchen Repair</option>
+                                <option value="ruby">Ruby</option>
+                                <option value="ui">UI Design</option>
+                                <option value="ux">User Experience</option>
+                            </select>
+                            <h5 class="ui sub header mb-1 mt-3">Multiple</h5>
+                            <div class="ui fluid multiple search selection tags-allow-select select-dropdown">
+                                <input name="tags" type="hidden">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Skills</div>
+                                <div class="menu">
+                                    <div class="item" data-value="angular">Angular</div>
+                                    <div class="item" data-value="css">CSS</div>
+                                    <div class="item" data-value="design">Graphic Design</div>
+                                    <div class="item" data-value="ember">Ember</div>
+                                    <div class="item" data-value="html">HTML</div>
+                                    <div class="item" data-value="ia">Information Architecture</div>
+                                    <div class="item" data-value="javascript">Javascript</div>
+                                    <div class="item" data-value="mech">Mechanical Engineering</div>
+                                    <div class="item" data-value="meteor">Meteor</div>
+                                    <div class="item" data-value="node">NodeJS</div>
+                                    <div class="item" data-value="plumbing">Plumbing</div>
+                                    <div class="item" data-value="python">Python</div>
+                                    <div class="item" data-value="rails">Rails</div>
+                                    <div class="item" data-value="react">React</div>
+                                    <div class="item" data-value="repair">Kitchen Repair</div>
+                                    <div class="item" data-value="ruby">Ruby</div>
+                                    <div class="item" data-value="ui">UI Design</div>
+                                    <div class="item" data-value="ux">User Experience</div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-1 mt-7">Remote Content</h4>
+                            <p class="fs-6-plus mb-2">
+                                Using Remote API call allows users to select choices from remote large datasets
+                                <br> After fetching data can be stored in <code>SessionStorage</code>
+                            </p>
+                            <div class="ui fluid multiple search selection remote-select-query select-dropdown">
+                                <input name="tags" type="hidden">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Favorite Animals</div>
+                            </div>
+                            <h4 class="lh-0 pb-1 mt-7 mb-2">Restoring default values</h4>
+                            <div class="ui multiple selection fluid clear-selects-dropdown simple-select select-dropdown">
+                                <input name="gender" type="hidden" value="default,default2">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Default</div>
+                                <div class="menu">
+                                    <div class="item" data-value="0">Value</div>
+                                    <div class="item" data-value="1">Another Value</div>
+                                    <div class="item" data-value="default">Default Value</div>
+                                    <div class="item" data-value="default2">Second Default</div>
+                                </div>
+                            </div>
+                            <div class="my-3 btw-1 bc-gray-lighter"></div>
+                            <div class="ui selection fluid clear-selects-dropdown simple-select select-dropdown">
+                                <input name="gender" type="hidden" value="default">
+                                <i class="select-dropdown icon"></i>
+                                <div class="default text">Select a value</div>
+                                <div class="menu">
+                                    <div class="item" data-value="0">Value</div>
+                                    <div class="item" data-value="1">Another Value</div>
+                                </div>
+                            </div>
+                            <div class="my-3 btw-1 bc-gray-lighter"></div>
+                            <div class="ui selection fluid clear-selects-dropdown simple-select select-dropdown">
+                                <input name="gender" type="hidden" value="default">
+                                <i class="select-dropdown icon"></i>
+                                <div class="text">Default Value</div>
+                                <div class="menu">
+                                    <div class="item" data-value="0">Value</div>
+                                    <div class="item" data-value="1">Another Value</div>
+                                    <div class="item" data-value="default">Default Value</div>
+                                </div>
+                            </div>
+                            <div class="my-3 btw-1 bc-gray-lighter"></div>
+                            <a href="" class="btn btn-default clear-selects">Restore All Dropdowns</a>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Checkbox
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="mb-7">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h4 class="lh-0 pb-1">Check Boxes</h4>
+                                        <p class="fs-6-plus fw-bold">Choose One or More Options</p>
+                                        <div class="ui dynamic checkbox mr-4 mb-1">
+                                            <input type="checkbox" name="checkbox">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox mb-1">
+                                            <input type="checkbox" name="checkbox">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox mr-4">
+                                            <input type="checkbox" name="checkbox">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="lh-0 mb-1">Sliders</h4>
+                                        <p class="fw-bold fs-6-plus">Choose One</p>
+                                        <div class="field">
+                                            <div class="ui slider checkbox dynamic mr-4">
+                                                <input type="radio" name="throughput" checked="checked">
+                                                <label>20 max</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui slider checkbox dynamic">
+                                                <input type="radio" name="throughput">
+                                                <label>10 max</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui slider checkbox dynamic">
+                                                <input type="radio" name="throughput">
+                                                <label>5 max</label>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="ui toggle checkbox dynamic">
+                                            <input type="checkbox" name="public">
+                                            <label>Subscribe</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="mb-7">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h4 class="lh-0 pb-1">Radios</h4>
+                                        <p class="fs-6-plus fw-bold">Indicate an age range</p>
+                                        <div class="ui radio dynamic checkbox mb-1">
+                                            <input type="radio" name="radio">
+                                            <label>Under 18</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui radio dynamic checkbox mb-1">
+                                            <input type="radio" name="radio">
+                                            <label>Between 18 and 34</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui radio dynamic checkbox">
+                                            <input type="radio" name="radio">
+                                            <label>After 34</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="lh-0 mb-3">Without Javascript</h4>
+                                        <div class="ui checkbox mb-1">
+                                            <input type="checkbox" name="checkbox-static" id="static-checkbox">
+                                            <label for="static-checkbox">Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui checkbox radio">
+                                            <input type="radio" name="radio-static" id="static-radio-1">
+                                            <label for="static-radio-1">Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui checkbox radio">
+                                            <input type="radio" name="radio-static" id="static-radio-2">
+                                            <label for="static-radio-2">Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui toggle checkbox dynamic mt-1">
+                                            <input type="checkbox" name="public" id="static-toggle">
+                                            <label for="static-toggle">Toggle Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui slider checkbox dynamic mt-1">
+                                            <input type="checkbox" name="public" id="static-slider">
+                                            <label for="static-slider">Slider Label</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="mb-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h4 class="lh-0 mb-3">Grouped Checkbox</h4>
+                                        <div class="list">
+                                            <div class="item">
+                                                <div class="ui master checkbox">
+                                                    <input type="checkbox" name="fruits">
+                                                    <label>Fruits</label>
+                                                </div>
+                                                <div class="list">
+                                                    <div class="item">
+                                                        <div class="ui child checkbox ml-2 mb-1">
+                                                            <input type="checkbox" name="apple">
+                                                            <label>Apple</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="ui child checkbox ml-2 mb-1">
+                                                            <input type="checkbox" name="orange">
+                                                            <label>Orange</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="ui child checkbox ml-2 mb-1">
+                                                            <input type="checkbox" name="pear">
+                                                            <label>Pear</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h4 class="lh-0 mb-1">One-Way Choice</h4>
+                                    <p class="fs-6-plus">Can't be unchecked</p>
+                                    <div class="ui checkbox uncheckable mr-4 mb-1">
+                                        <input type="checkbox">
+                                        <label>Uncheckable</label>
+                                    </div>
+                                    <div class="ui checkbox uncheckable">
+                                        <input type="checkbox" checked="checked">
+                                        <label>Uncheckable</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-7">
+                                <h4 class="lh-0 mb-3">States</h4>
+                                <div class="ui read-only checkbox dynamic mr-4 mb-1">
+                                    <input type="checkbox" checked>
+                                    <label>Read Only</label>
+                                </div>
+                                <div class="ui checked dynamic checkbox mb-1 mr-4">
+                                    <input type="checkbox" checked>
+                                    <label>Checked</label>
+                                </div>
+                                <div class="ui checkbox mb-1 mr-4 indeterminate">
+                                    <input type="checkbox">
+                                    <label>Indeterminate</label>
+                                </div>
+                                <div class="ui disabled slider checkbox mb-1 mr-4">
+                                    <input type="radio" disabled="disabled">
+                                    <label>Disabled</label>
+                                </div>
+                                <br>
+                                <div class="ui disabled checkbox mb-1 mr-4">
+                                    <input type="checkbox" disabled="disabled">
+                                    <label>Disabled</label>
+                                </div>
+                                <div class="ui dynamic checkbox mb-1 mr-4">
+                                    <input type="radio">
+                                    <label>As Radio</label>
+                                </div>
+                                <div class="ui dynamic radio checkbox mb-1 mr-4">
+                                    <input type="checkbox">
+                                    <label>As Checkbox</label>
+                                </div>
+                                <div class="ui dynamic toggle checkbox mb-1 mr-4">
+                                    <input type="radio">
+                                    <label>As Radio</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Checkbox
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="mb-7">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h4 class="lh-0 mb-3">Checkbox Colors</h4>
+                                        <div class="ui dynamic checkbox checkbox-primary mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox checkbox-danger mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox checkbox-info mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox checkbox-warning mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox checkbox-success mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="lh-0 mb-3">Radio Colors</h4>
+                                        <div class="ui dynamic radio checkbox checkbox-primary mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic radio checkbox checkbox-danger mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic radio checkbox checkbox-info mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic radio checkbox checkbox-warning mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic radio checkbox checkbox-success mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-7">
+                                    <div class="col-6">
+                                        <h4 class="lh-0 mb-3" id="new-option-forms-filled-checkbox">Checkbox Fill Colors</h4>
+                                        <div class="ui dynamic checkbox checkbox-fill checkbox-primary mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox checkbox-fill checkbox-danger mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox checkbox-fill checkbox-info mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox checkbox-fill checkbox-warning mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox checkbox-fill checkbox-success mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic checkbox checkbox-fill mb-1">
+                                            <input type="checkbox" name="checkbox-color" checked="checked">
+                                            <label>Checkbox Label</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="lh-0 mb-3">Radio  fill Colors</h4>
+                                        <div class="ui dynamic radio checkbox checkbox-fill checkbox-primary mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic radio checkbox checkbox-fill checkbox-danger mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic radio checkbox checkbox-fill checkbox-info mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic radio checkbox checkbox-fill checkbox-warning mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic radio checkbox checkbox-fill checkbox-success mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic radio checkbox checkbox-fill mb-1">
+                                            <input type="radio" checked="checked">
+                                            <label>Radio Label</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-7">
+                                    <div class="col-6">
+                                        <h4 class="lh-0 mb-3">Slider Colors</h4>
+                                        <div class="ui dynamic slider checkbox checkbox-primary mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Slider Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic slider checkbox checkbox-danger mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Slider Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic slider checkbox checkbox-info mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Slider Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic slider checkbox checkbox-warning mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Slider Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic slider checkbox checkbox-success mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Slider Label</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="lh-0 mb-3">Toggle Colors</h4>
+                                        <div class="ui dynamic toggle checkbox checkbox-primary mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Toggle Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic toggle checkbox checkbox-danger mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Toggle Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic toggle checkbox checkbox-info mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Toggle Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic toggle checkbox checkbox-warning mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Toggle Label</label>
+                                        </div>
+                                        <br>
+                                        <div class="ui dynamic toggle checkbox checkbox-success mb-1">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Toggle Label</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <h4 class="lh-0 mb-1">Evant Attaching</h4>
+                                <p class="fs-6-plus mb-2">Checkbox events could be atached to other elements</p>
+                                <div class="btn btn-sm btn-default btn-checkbox-toggle">Toggle</div>
+                                <div class="btn btn-sm btn-primary btn-checkbox-check">Check</div>
+                                <div class="btn btn-sm btn-danger btn-checkbox-uncheck">Uncheck</div>
+                                <div class="ui checkbox slider btn-checkbox-check attaching-events">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                                <div class="ui checkbox btn-checkbox-check attaching-events">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-2">
+                                        <div class="ui attaching-events slider checkbox">
+                                            <input type="checkbox">
+                                            <label>1</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="ui attaching-events toggle checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <label>2</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="ui attaching-events checkbox">
+                                            <input type="checkbox">
+                                            <label>3</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="ui attaching-events slider checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <label>4</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="ui attaching-events toggle checkbox">
+                                            <input type="checkbox">
+                                            <label>5</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="ui attaching-events checkbox">
+                                            <input type="checkbox">
+                                            <label>6</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Form Element States
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="pb-6">
+                                <div class="form-group mb-4">
+                                    <input type="text" class="form-control" value="Normal State">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input type="text" class="form-control" placeholder="Disabled" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" value="Readonly input here…" readonly>
+                                </div>
+                            </form>
+                            <div class="pb-6">
+                                <h4 class="lh-0 pb-1">Disabled Form Group</h4>
+                                <p class="fs-6-plus mb-2">Add the <code>disabled</code> attribute to a <code>fieldset</code> to disable all the controls within.</p>
+                                <form>
+                                    <fieldset disabled>
+                                        <div class="form-inline"><label class="sr-only" for="disabledTextInput">Disabled
+                                            input</label>
+                                            <input type="text" id="disabledTextInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Disabled input">
+                                            <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description ml-2">Can't check this</span>
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div>
+                                <h4 class="lh-0 pb-1">Validation States</h4>
+                                <p class="fs-6-plus mb-2">Add add <code>.has-{warning | danger | success}</code> to the parent element
+                                </p>
+                                <form>
+                                    <div class="form-group has-success mb-3">
+                                        <label class="form-control-label" for="inputSuccess1">Input with success</label>
+                                        <input type="text" class="form-control form-control-success" id="inputSuccess1">
+                                        <div class="form-control-feedback">Success! You've done it.</div>
+                                        <small class="form-text text-muted">Example help text that remains unchanged.
+                                        </small>
+                                    </div>
+                                    <div class="form-group has-warning mb-3">
+                                        <label class="form-control-label" for="inputWarning1">Input with warning</label>
+                                        <input type="text" class="form-control form-control-warning" id="inputWarning1">
+                                        <div class="form-control-feedback">Shucks, check the formatting of that and try again.
+                                        </div>
+                                        <small class="form-text text-muted">Example help text that remains unchanged.
+                                        </small>
+                                    </div>
+                                    <div class="form-group has-danger mb-3">
+                                        <label class="form-control-label" for="inputDanger1">Input with danger</label>
+                                        <input type="text" class="form-control form-control-danger" id="inputDanger1">
+                                        <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+                                        <small class="form-text text-muted">Example help text that remains unchanged.
+                                        </small>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Groups
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form>
+                                <div class="pb-6">
+                                    <h4 class="lh-0 pb-2">Input groups</h4>
+                                    <div class="row mb-4">
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="leftNumberFormInputGroup">Number</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon">$</div>
+                                                <input type="text" class="form-control" id="leftNumberFormInputGroup" placeholder="Number">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="rightNumberFormInputGroup">Number</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="text" class="form-control" id="rightNumberFormInputGroup" placeholder="Number">
+                                                <div class="input-group-addon">$</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="leftIconFormInputGroupNum">Number</label>
+                                            <div class="input-group input-left-icon mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="text" class="form-control" id="leftIconFormInputGroupNum" placeholder="User Name">
+                                                <i class="input-icon fa fa-user"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="rightIconFormInputGroup">Icon</label>
+                                            <div class="input-group input-right-icon mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="text" class="form-control" id="rightIconFormInputGroup" placeholder="User Name">
+                                                <i class="input-icon fa fa-user"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="leftIconFormInputGroupSN">Student name</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="fa fa-graduation-cap"></i></div>
+                                                <input type="text" class="form-control" id="leftIconFormInputGroupSN" placeholder="Student name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="rightIconFocusFormInputGroup">Student name</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="fa fa-user-plus"></i></div>
+                                                <input type="text" class="form-control" id="rightIconFocusFormInputGroup" placeholder="Student name" value="Maximilian Stevenson">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="leftCheckFormInputGroup">Some Text</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon">
+                                                    <label class="custom-control custom-checkbox mb-0 mr-0">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                </div>
+                                                <input type="text" class="form-control" id="leftCheckFormInputGroup" placeholder="Some Text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="rightCheckFormInputGroup">Do you have a job?</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="text" class="form-control" id="rightCheckFormInputGroup" placeholder="Do you have a job?">
+                                                <div class="input-group-addon">
+                                                    <label class="custom-control custom-checkbox mb-0 mr-0">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="leftWebsiteFormInputGroup">Website Location</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon">https://www.</div>
+                                                <input type="text" class="form-control" id="leftWebsiteFormInputGroup" placeholder="Website Location">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="rightMailFormInputGroup">Username</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="text" class="form-control" id="rightMailFormInputGroup" placeholder="Username">
+                                                <div class="input-group-addon">@reactive.com</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="leftPerformerFormInputGroup">Performer</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon p-0">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-transparent" type="button" id="dropdown-performer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            Action<i class="fa fa-angle-down icon-ml"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdown-performer">
+                                                            <div class="dropdown-menu-content">
+                                                                <a class="dropdown-item" href="">Action</a>
+                                                                <a class="dropdown-item" href="">Another action</a>
+                                                                <a class="dropdown-item" href="">Something else here</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" id="leftPerformerFormInputGroup" placeholder="Performer">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="sr-only" for="rightUsernameFormInputGroup">First Name</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="text" class="form-control" id="rightUsernameFormInputGroup" placeholder="First Name">
+                                                <div class="input-group-addon p-0">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-transparent" type="button" id="dropdown-first-name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            Action<i class="fa fa-angle-down icon-ml"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-first-name">
+                                                            <div class="dropdown-menu-content">
+                                                                <a class="dropdown-item" href="">Action</a>
+                                                                <a class="dropdown-item" href="">Another action</a>
+                                                                <a class="dropdown-item" href="">Something else here</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="custom-control custom-radio">
+                                            <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description ml-2">Toggle this radio</span>
+                                        </label>
+                                        <label class="custom-control custom-radio">
+                                            <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description ml-2">Or toggle this radio</span>
+                                        </label>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description ml-2">Check this checkbox</span>
+                                        </label>
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description ml-2">Check this checkbox</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="lh-0 pb-1">Control sizing</h4>
+                                    <p class="fs-6-plus mb-2">Set heights using <code>.form-control-{sm | md | lg}</code> classes
+                                    </p>
+                                    <input class="mb-4 form-control form-control-lg" type="text" placeholder="Large Input">
+                                    <input class="mb-4 form-control" type="text" placeholder="Default input">
+                                    <input class="form-control form-control-sm" type="text" placeholder="Small Input">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/app');
+        </script>
+    {{/content}}
+{{/extend}}

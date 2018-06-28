@@ -1,0 +1,14 @@
+$weather-lg-margin: 0 !default;
+$weather-single-max-width: 100% !default;
+$weather-single-margin: 0 !default;
+
+/* body */
+$weather-lg-body-background: transparentize($brand-success, 0.88) !default;
+$weather-lg-today-padding: 52px 40px 32px !default;
+$weather-lg-today-day-font: 48rem / 14 !default;
+$weather-lg-today-night-font: 30rem / 14 !default;
+$weather-lg-week-weather-padding: 20px 0 !default;
+
+$weather-single-body-background: transparentize($brand-success, 0.88) !default;
+$weather-single-today-padding: 2.5rem 0 2.5rem 2.5rem !default;
+$weather-single-today-day-font: 48rem / 14 !default;

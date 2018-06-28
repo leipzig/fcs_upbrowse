@@ -1,0 +1,422 @@
+{{#extend "layout-1" current="widgets-2"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack">
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark clearfix panel-header-p panel-header-sm bbw-1 bc-gray-lighter">
+                            <h2 class="pull-left">
+                                Visits
+                            </h2>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="clearfix">
+                                <div class="pull-left">
+                                    <h2 class="fw-light lh-0">Saturday</h2>
+                                    <h6 class="fs-6-plus c-gray">january 16</h6>
+                                </div>
+                                <span class="display-4 pull-right lh-0">1450 <i class="ion-ios-bolt-outline fs-2 fa-rotate-270 c-info"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark spark-widget">
+                        <div class="panel-header grid-stack-handle bgc-white-dark clearfix panel-header-p panel-header-sm bbw-1 bc-gray-lighter">
+                            <h2 class="pull-left">
+                                Reviews
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="clearfix">
+                                <div class="">
+                                    <h2 class="fw-light lh-0">14200</h2>
+                                    <h6 class="fs-6-plus c-gray">All Reviews <span class="pull-right">15<i>%</i><i class="fa fa-play fa-rotate-90 icon-ml-ch c-danger"></i></span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark spark-widget">
+                        <div class="panel-header grid-stack-handle bgc-white-dark clearfix panel-header-p panel-header-sm bbw-1 bc-gray-lighter">
+                            <h2 class="pull-left">
+                                Income Today
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="clearfix">
+                                <div class="">
+                                    <h2 class="fw-light lh-0">234000</h2>
+                                    <h6 class="fs-6-plus c-gray">Total Income <span class="pull-right">58<i>%</i><i class="fa fa-play fa-rotate-270 icon-ml-ch c-primary"></i></span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-primary spark-widget">
+                        <div class="panel-header bgc-primary grid-stack-handle panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Temperature
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-primary bgc-active-light-trans"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="clearfix">
+                                <div class="pull-left">
+                                    <h4  class="lh-7">Saturday</h4>
+                                    <h6 class="fs-6-plus">january 16</h6>
+                                </div>
+                                <span class="display-4 pull-right lh-0">12°<canvas id="weather-partly-cloudy-day" width="38" height="38"></canvas></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Monthly Earnings
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-2">
+                            <div class="h-md pos-r panel-body-p py-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class=""><span class="fs-1 fw-light">20154</span></h3>
+                                        <h6 class="c-info lh-5">+ 15% this week</h6>
+                                    </div>
+                                    <span class="col-7 p-0 spark-line spark-line-full panel-body-bottom-right" sparkHeight="80"
+                                          sparkFillColor="#eff5f6" sparkSpotRadius="0" sparkType="line" sparkLineWidth="2"
+                                          sparkLineColor="#2d6f70" values="2,3,5,4,6,5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Visits
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-2">
+                            <div class="h-md pos-r panel-body-p py-0">
+                                <h3 class=""><span class="fs-1 fw-light">85600</span></h3>
+                                <h6 class="c-info lh-5 fs-7">+ 15% this week</h6>
+                                <h6 class="c-danger lh-0 fs-7">- 5% previous week</h6>
+
+                                <span class="col-7 p-0 spark-line spark-line-full panel-body-bottom-right" sparkHeight="80"
+                                    sparkFillColor="#e6eff2" sparkSpotRadius="0" sparkType="line" sparkLineWidth="2"
+                                    sparkLineColor="#50555d" values="1,4,5,2,8,7"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Reviews
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-2">
+                            <div class="h-md pos-r panel-body-p py-0">
+                                <h3 class="lh-0 fs-1 fw-light">20154</h3>
+                                <h6 class="c-gray">Today</h6>
+                                <span class="col-7 p-0 spark-line spark-line-full panel-body-bottom-right" sparkHeight="80"
+                                      sparkFillColor="#3a5190" sparkSpotRadius="0" sparkType="line" values="2,3,5,4,6,5"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Daily Page Views
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-2">
+                            <div class="h-md pos-r panel-body-p py-0">
+                                <div class="row">
+                                    <div class="col-5 text-center">
+                                        <h3 class="display-4"><i class="icon-screen-desktop c-danger"></i></h3>
+                                        <h6><span class="counter" data-counter="2301">Counting ...</span> <i class="fa fa-level-down icon-ml-ch c-danger"></i></h6>
+                                    </div>
+                                    <span class="spark-line spark-line-full panel-body-bottom-right" sparkWidth="240" sparkHeight="80"
+                                    sparkType="bar" sparkBarColor="#ba9d2b" sparkBarWidth="5" sparkBarSpacing="10"
+                                    values="0,6,9,3,5,5,7,1,4,6,4,3,7,4,5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" data-gs-height="19" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-body pt-2 grid-stack-handle">
+                            <div class="h-lg pos-r panel-body-p py-0">
+                                <h3 class=""><span class="fs-1 fw-light">32304</span> <i class="pull-right icon-envelope-open fs-1 m-2"></i></h3>
+                                <h6 class="c-danger lh-5">- 8% this week</h6>
+                            </div>
+                            <span class="p-0 spark-line spark-line-full panel-body-bottom" sparkHeight="80"
+                                sparkFillColor="" sparkSpotRadius="0" sparkType="line" sparkLineWidth="1"
+                                sparkLineColor="#7F260F" values="8,7,4,9,5,4,7,8,5,4,2,2,1"></span>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" data-gs-height="19" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-body pt-2 grid-stack-handle">
+                            <div class="h-lg pos-r panel-body-p py-0">
+                                <h3 class=""><span class="fs-1 fw-light">8280</span> <i class="pull-right icon-basket fs-1 m-2"></i></h3>
+                                <h6 class="c-primary lh-5">+ 15% this week</h6>
+                            </div>
+                            <span class="p-0 spark-line spark-line-full panel-body-bottom" sparkHeight="80"
+                                sparkFillColor="" sparkSpotRadius="0" sparkType="line" sparkLineWidth="1"
+                                sparkLineColor="#498033" values="1,3,2,3,5,4,7,6,5,9,6,7,10"></span>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" data-gs-height="19" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-body pt-2 grid-stack-handle">
+                            <div class="h-lg pos-r panel-body-p py-0">
+                                <h3 class=""><span class="fs-1 fw-light">56013</span> <i class="pull-right icon-bubbles fs-1 m-2"></i></h3>
+                                <h6 class="c-primary lh-5">+ 10% this week</h6>
+                            </div>
+                            <span class="p-0 spark-line spark-line-full panel-body-bottom" sparkHeight="80"
+                                sparkFillColor="" sparkSpotRadius="0" sparkType="line" sparkLineWidth="1"
+                                sparkLineColor="#498033" values="1,2,2,4,5,8,7,4,5,9,4,7,9"></span>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" data-gs-height="19" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 bgc-white-dark">
+                        <div class="panel-body pt-2 grid-stack-handle">
+                            <div class="h-lg pos-r panel-body-p py-0">
+                                <h3 class=""><span class="fs-1 fw-light">3220</span> <i class="pull-right icon-call-in fs-1 m-2"></i></h3>
+                                <h6 class="c-danger lh-5">- 5% this week</h6>
+                            </div>
+                            <span class="p-0 spark-line spark-line-full panel-body-bottom" sparkHeight="80"
+                                sparkFillColor="" sparkSpotRadius="0" sparkType="line" sparkLineWidth="1"
+                                sparkLineColor="#7F260F" values="4,7,6,9,5,6,7,4,5,3,2,3,1"></span>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Reviews
+                            </h2>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-3 text-center">
+                            <div class="clearfix">
+                                <div class="h-sm">
+                                    <h3 class=""><span class="fs-1 fw-light">20154</span><i class="fa fa-level-up icon-ml-ch c-primary"></i></h3>
+                                    <a href="" class="c-gray">+ 15% in compared with yesterday</a>
+                                </div>
+                                <span class="spark-line spark-line-full" sparkHeight="70" sparkLineColor="#498033"
+                                      sparkFillColor="" sparkSpotRadius="0" sparkType="line"
+                                      values="4,3,5,4,6,5"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Statistic
+                            </h2>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-0">
+                            <h3 class="pos-a fw-light">324/102</h3>
+                            <div class="clearfix text-center">
+                                <span class="pr-2 spark-line spark-line-inline" sparkHeight="93" sparkType="pie"
+                                      sparkOffset="-90" sparkSliceColors="[#3a5190,#f1f4f4]" values="60, 30"></span>
+                                <a class="slide-icon-x py-1 px-2 my-2 bw-1 bc-gray-lighter d-block text-left c-success lh-0" href="">
+                                    <span class="bgc-success btn-icon btn-icon-md rounded-circle mr-2">
+                                        <i class="icon-directions fs-4"></i>
+                                    </span>
+                                    <span class="d-inline-block align-top lh-7">
+                                        <span class="fs-6 d-block">Some text goes here</span>
+                                        <span class="c-gray fs-7">Beatae esse est, facilis libero quas!</span>
+                                    </span>
+                                    <span class="pull-right c-gray mt-1 lh-5"><i class="fa fa-angle-right fs-5"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Earnings
+                            </h2>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-3 text-center">
+                            <div class="clearfix">
+                                <div class="h-sm">
+                                    <h3 class=""><span class="fs-1 fw-light">320000</span><i class="fa fa-level-up icon-ml-ch c-primary"></i></h3>
+                                    <a href="">+ 5% this week</a>
+                                </div>
+                                <span class="spark-line spark-line-full" sparkWidth="240" sparkHeight="70"
+                                    sparkType="bar" sparkBarColor="#3a5190" sparkBarWidth="5" sparkBarSpacing="10"
+                                    values="0,6,9,3,5,5,7,1,4,6,4,3,7,4,5,4,6,7,3"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel weather-single c-white-dark pb-0">
+                        <canvas class="weather-bg" id="weather-single-bg"></canvas>
+                        <div class="panel-header grid-stack-handle  panel-header-p panel-header-lg bgc-active-light-trans">
+                            <h2 class="pull-left mr-3">
+                                New York
+                            </h2>
+                            <a href="#" class="panel-header-link">
+                                <span>Saturday, Sep 1</span><i class="fa fa-angle-right icon-ml"></i>
+                            </a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row today">
+                                <div class="col-4">
+                                    <div class="day d-inline-block">
+                                        <canvas id="weather-icon" width="55" height="55"></canvas>
+                                        <span class="fs-4 d-block text-center">18 °C</span>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="weather-details fs-5">
+                                        <div class="humidity">
+                                            <i class="wi wi-raindrop"></i>
+                                            <span>80 %</span>
+                                        </div>
+                                        <div class="wind">
+                                            <i class="wi wi-strong-wind"></i>
+                                            <span>5 mph SE</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" data-gs-height="39" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-body panel-body-p text-center grid-stack-handle">
+                            <div class="text-center">
+                                <h2 class="lh-0 fw-light">Block Title</h2>
+                                <h4 class="c-warning">Sub Title</h4>
+                                <span class="d-block pt-4 pb-3"><i class="ion-social-buffer-outline display-1 c-gray-light"></i></span>
+                                <p class="fs-6-plus mb-0 lh-6">Consectetur adipisicing elit. Corporis cum exercitationem explicabo laborum porro qui sit totam velit veritatis voluptate?</p>
+                                <a href="" class="btn btn-warning btn-lg my-4">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" data-gs-height="39" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-body panel-body-p text-center grid-stack-handle">
+                            <div class="text-center">
+                                <h2 class="lh-0 fw-light">Block Title</h2>
+                                <h4 class="c-info">Sub Title</h4>
+                                <span class="d-block pt-4 pb-3"><i class="ion-ios-world-outline display-1 c-gray-light"></i></span>
+                                <p class="fs-6-plus mb-0 lh-6">Consectetur adipisicing elit. Corporis cum exercitationem explicabo laborum porro qui sit totam velit veritatis voluptate?</p>
+                                <a href="" class="btn btn-info btn-lg my-4">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" data-gs-height="39" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-body panel-body-p text-center grid-stack-handle">
+                            <div class="text-center">
+                                <h2 class="lh-0 fw-light">Block Title</h2>
+                                <h4 class="c-primary">Sub Title</h4>
+                                <span class="d-block pt-4 pb-3"><i class="ion-ios-gear-outline display-1 c-gray-light"></i></span>
+                                <p class="fs-6-plus mb-0 lh-6">Consectetur adipisicing elit. Corporis cum exercitationem explicabo laborum porro qui sit totam velit veritatis voluptate?</p>
+                                <a href="" class="btn btn-primary btn-lg my-4">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-min-width="3" data-gs-height="39" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-body panel-body-p text-center grid-stack-handle">
+                            <div class="text-center">
+                                <h2 class="lh-0 fw-light">Block Title</h2>
+                                <h4 class="c-danger">Sub Title</h4>
+                                <span class="d-block pt-4 pb-3"><i class="ion-ios-speedometer-outline display-1 c-gray-light"></i></span>
+                                <p class="fs-6-plus mb-0 lh-6">Consectetur adipisicing elit. Corporis cum exercitationem explicabo laborum porro qui sit totam velit veritatis voluptate?</p>
+                                <a href="" class="btn btn-danger btn-lg my-4">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/widget');
+        </script>
+    {{/content}}
+{{/extend}}
+

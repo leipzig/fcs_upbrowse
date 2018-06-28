@@ -1,0 +1,1045 @@
+{{#extend "layout-1" current="animations"}}
+{{! append html code into the content block declared in the layout partial }}
+
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap bgc-white-dark o-hidden">
+            <div>
+                <div class="text-center mt-7 mb-3">
+                    <h3>JS Animations</h3><br>
+                </div>
+            </div>
+            <div class="row panel-grid doubled-transition-panels" id="js-transition-panel">
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-warning panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-danger panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-info panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-warning panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-danger panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-info panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+            <div id="js-transition">
+                <div class="text-center mt-3 mb-7">
+                    <select class="ui animation-type simple-select select-dropdown mr-2 mb-2">
+                        <option value="" selected="" disabled="">Effect</option>
+                        <option value="callout.bounce">callout.bounce</option>
+                        <option value="callout.shake">callout.shake</option>
+                        <option value="callout.flash">callout.flash</option>
+                        <option value="callout.pulse">callout.pulse</option>
+                        <option value="callout.swing">callout.swing</option>
+                        <option value="callout.tada">callout.tada</option>
+                        <option value="transition.fadeIn">transition.fadeIn</option>
+                        <option value="transition.fadeOut">transition.fadeOut</option>
+                        <option value="transition.flipXIn">transition.flipXIn</option>
+                        <option value="transition.flipXOut">transition.flipXOut</option>
+                        <option value="transition.flipYIn">transition.flipYIn</option>
+                        <option value="transition.flipYOut">transition.flipYOut</option>
+                        <option value="transition.flipBounceXIn">transition.flipBounceXIn</option>
+                        <option value="transition.flipBounceXOut">transition.flipBounceXOut</option>
+                        <option value="transition.flipBounceYIn">transition.flipBounceYIn</option>
+                        <option value="transition.flipBounceYOut">transition.flipBounceYOut</option>
+                        <option value="transition.swoopIn">transition.swoopIn</option>
+                        <option value="transition.swoopOut">transition.swoopOut</option>
+                        <option value="transition.whirlIn">transition.whirlIn</option>
+                        <option value="transition.whirlOut">transition.whirlOut</option>
+                        <option value="transition.shrinkIn">transition.shrinkIn</option>
+                        <option value="transition.shrinkOut">transition.shrinkOut</option>
+                        <option value="transition.expandIn">transition.expandIn</option>
+                        <option value="transition.expandOut">transition.expandOut</option>
+                        <option value="transition.bounceIn">transition.bounceIn</option>
+                        <option value="transition.bounceOut">transition.bounceOut</option>
+                        <option value="transition.bounceUpIn">transition.bounceUpIn</option>
+                        <option value="transition.bounceUpOut">transition.bounceUpOut</option>
+                        <option value="transition.bounceDownIn">transition.bounceDownIn</option>
+                        <option value="transition.bounceDownOut">transition.bounceDownOut</option>
+                        <option value="transition.bounceLeftIn">transition.bounceLeftIn</option>
+                        <option value="transition.bounceLeftOut">transition.bounceLeftOut</option>
+                        <option value="transition.bounceRightIn">transition.bounceRightIn</option>
+                        <option value="transition.bounceRightOut">transition.bounceRightOut</option>
+                        <option value="transition.slideUpIn">transition.slideUpIn</option>
+                        <option value="transition.slideUpOut">transition.slideUpOut</option>
+                        <option value="transition.slideDownIn">transition.slideDownIn</option>
+                        <option value="transition.slideDownOut">transition.slideDownOut</option>
+                        <option value="transition.slideLeftIn">transition.slideLeftIn</option>
+                        <option value="transition.slideLeftOut">transition.slideLeftOut</option>
+                        <option value="transition.slideRightIn">transition.slideRightIn</option>
+                        <option value="transition.slideRightOut">transition.slideRightOut</option>
+                        <option value="transition.slideUpBigIn">transition.slideUpBigIn</option>
+                        <option value="transition.slideUpBigOut">transition.slideUpBigOut</option>
+                        <option value="transition.slideDownBigIn">transition.slideDownBigIn</option>
+                        <option value="transition.slideDownBigOut">transition.slideDownBigOut</option>
+                        <option value="transition.slideLeftBigIn">transition.slideLeftBigIn</option>
+                        <option value="transition.slideLeftBigOut">transition.slideLeftBigOut</option>
+                        <option value="transition.slideRightBigIn">transition.slideRightBigIn</option>
+                        <option value="transition.slideRightBigOut">transition.slideRightBigOut</option>
+                        <option value="transition.perspectiveUpIn">transition.perspectiveUpIn</option>
+                        <option value="transition.perspectiveUpOut">transition.perspectiveUpOut</option>
+                        <option value="transition.perspectiveDownIn">transition.perspectiveDownIn</option>
+                        <option value="transition.perspectiveDownOut">transition.perspectiveDownOut</option>
+                        <option value="transition.perspectiveLeftIn">transition.perspectiveLeftIn</option>
+                        <option value="transition.perspectiveLeftOut">transition.perspectiveLeftOut</option>
+                        <option value="transition.perspectiveRightIn">transition.perspectiveRightIn</option>
+                        <option value="transition.perspectiveRightOut">transition.perspectiveRightOut</option>
+                    </select>
+                    <select class="ui animation-stagger simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Stagger</option>
+                        <option value="false">false</option>
+                        <option value="100" selected>100ms</option>
+                        <option value="200">200ms</option>
+                        <option value="300">300ms</option>
+                    </select>
+                    <div class="ui dynamic checkbox mr-2 mb-2 animation-drag">
+                        <input type="checkbox" tabindex="0" class="hidden">
+                        <label>Drag</label>
+                    </div>
+                </div>
+            </div>
+            <div class="h-md"></div>
+            <div>
+                <div class="text-center mt-7 mb-3">
+                    <h3>Css Animations</h3><br>
+                    <h4>Single Transition</h4><br>
+                </div>
+            </div>
+            <div class="row panel-grid justify-content-center transition-panels" id="single-transition-panel">
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-warning panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+            <div id="single-transition">
+                <div class="text-center mt-3 mb-7">
+                    <select class="ui animation-type simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Type</option>
+                        <option value="fade">fade</option>
+                        <option value="fade up">fade up</option>
+                        <option value="fade down">fade down</option>
+                        <option value="fade left">fade left</option>
+                        <option value="fade right">fade right</option>
+                        <option value="fade in">fade in</option>
+                        <option value="fade up in">fade up in</option>
+                        <option value="fade down in">fade down in</option>
+                        <option value="fade left in">fade left in</option>
+                        <option value="fade right in">fade right in</option>
+                        <option value="fade out">fade out</option>
+                        <option value="fade up out">fade up out</option>
+                        <option value="fade down out">fade down out</option>
+                        <option value="fade left out">fade left out</option>
+                        <option value="fade right out">fade right out</option>
+                        <option value="slide">slide</option>
+                        <option value="slide up">slide up</option>
+                        <option value="slide down">slide down</option>
+                        <option value="slide left">slide left</option>
+                        <option value="slide right">slide right</option>
+                        <option value="slide in">slide in</option>
+                        <option value="slide up in">slide up in</option>
+                        <option value="slide down in">slide down in</option>
+                        <option value="slide left in">slide left in</option>
+                        <option value="slide right in">slide right in</option>
+                        <option value="slide out">slide out</option>
+                        <option value="slide up out">slide up out</option>
+                        <option value="slide down out">slide down out</option>
+                        <option value="slide left out">slide left out</option>
+                        <option value="slide right out">slide right out</option>
+                        <option value="fly">fly</option>
+                        <option value="fly up">fly up</option>
+                        <option value="fly down">fly down</option>
+                        <option value="fly left">fly left</option>
+                        <option value="fly right">fly right</option>
+                        <option value="fly in">fly in</option>
+                        <option value="fly up in">fly up in</option>
+                        <option value="fly down in">fly down in</option>
+                        <option value="fly left in">fly left in</option>
+                        <option value="fly right in">fly right in</option>
+                        <option value="fly out">fly out</option>
+                        <option value="fly up out">fly up out</option>
+                        <option value="fly down out">fly down out</option>
+                        <option value="fly left out">fly left out</option>
+                        <option value="fly right out">fly right out</option>
+                        <option value="swing up">swing up</option>
+                        <option value="swing down">swing down</option>
+                        <option value="swing left">swing left</option>
+                        <option value="swing right">swing right</option>
+                        <option value="swing up in">swing up in</option>
+                        <option value="swing down in">swing down in</option>
+                        <option value="swing left in">swing left in</option>
+                        <option value="swing right in">swing right in</option>
+                        <option value="swing up out">swing up out</option>
+                        <option value="swing down out">swing down out</option>
+                        <option value="swing left out">swing left out</option>
+                        <option value="swing right out">swing right out</option>
+                        <option value="scale">scale</option>
+                        <option value="scale in">scale in</option>
+                        <option value="scale out">scale out</option>
+                        <option value="drop">drop</option>
+                        <option value="drop in">drop in</option>
+                        <option value="drop out">drop out</option>
+                        <option value="flip vertical">flip vertical</option>
+                        <option value="flip horizontal">flip horizontal</option>
+                        <option value="flip vertical in">flip vertical in</option>
+                        <option value="flip horizontal in">flip horizontal in</option>
+                        <option value="flip vertical out">flip vertical out</option>
+                        <option value="flip horizontal out">flip horizontal out</option>
+                        <option value="browse">browse</option>
+                        <option value="browse in">browse in</option>
+                        <option value="browse left out">browse left out</option>
+                        <option value="browse right out">browse right out</option>
+                        <option value="flash">flash</option>
+                        <option value="shake">shake</option>
+                        <option value="bounce">bounce</option>
+                        <option value="bounce In">bounce In</option>
+                        <option value="tada">tada</option>
+                        <option value="pulse">pulse</option>
+                        <option value="jiggle">jiggle</option>
+                    </select>
+                    <select class="ui animation-duration simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Duration</option>
+                        <option value="150ms">150ms</option>
+                        <option value="300ms">300ms</option>
+                        <option value="500ms">500ms</option>
+                        <option value="700ms">700ms</option>
+                        <option value="1000ms">1000ms</option>
+                    </select>
+                    <div class="ui dynamic checkbox mr-2 mb-2 animation-queue">
+                        <input type="checkbox" tabindex="0" class="hidden" checked>
+                        <label>Queue</label>
+                    </div>
+                </div>
+            </div>
+            <div class="h-md"></div>
+            <div>
+                <div class="text-center mt-7 mb-3">
+                    <h4>Doubled Transition</h4><br>
+                </div>
+            </div>
+            <div class="row panel-grid justify-content-center transition-panels" id="doubled-transition-panel">
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-warning panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+            <div id="doubled-transition">
+                <div class="text-center mt-3 mb-7">
+                    <select class="ui animation-type1 simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Type</option>
+                        <option value="fade">fade</option>
+                        <option value="fade up">fade up</option>
+                        <option value="fade down">fade down</option>
+                        <option value="fade left">fade left</option>
+                        <option value="fade right">fade right</option>
+                        <option value="fade in">fade in</option>
+                        <option value="fade up in">fade up in</option>
+                        <option value="fade down in">fade down in</option>
+                        <option value="fade left in">fade left in</option>
+                        <option value="fade right in">fade right in</option>
+                        <option value="fade out">fade out</option>
+                        <option value="fade up out">fade up out</option>
+                        <option value="fade down out">fade down out</option>
+                        <option value="fade left out">fade left out</option>
+                        <option value="fade right out">fade right out</option>
+                        <option value="slide">slide</option>
+                        <option value="slide up">slide up</option>
+                        <option value="slide down">slide down</option>
+                        <option value="slide left">slide left</option>
+                        <option value="slide right">slide right</option>
+                        <option value="slide in">slide in</option>
+                        <option value="slide up in">slide up in</option>
+                        <option value="slide down in">slide down in</option>
+                        <option value="slide left in">slide left in</option>
+                        <option value="slide right in">slide right in</option>
+                        <option value="slide out">slide out</option>
+                        <option value="slide up out">slide up out</option>
+                        <option value="slide down out">slide down out</option>
+                        <option value="slide left out">slide left out</option>
+                        <option value="slide right out">slide right out</option>
+                        <option value="fly" selected>fly</option>
+                        <option value="fly up">fly up</option>
+                        <option value="fly down">fly down</option>
+                        <option value="fly left">fly left</option>
+                        <option value="fly right">fly right</option>
+                        <option value="fly in">fly in</option>
+                        <option value="fly up in">fly up in</option>
+                        <option value="fly down in">fly down in</option>
+                        <option value="fly left in">fly left in</option>
+                        <option value="fly right in">fly right in</option>
+                        <option value="fly out">fly out</option>
+                        <option value="fly up out">fly up out</option>
+                        <option value="fly down out">fly down out</option>
+                        <option value="fly left out">fly left out</option>
+                        <option value="fly right out">fly right out</option>
+                        <option value="swing up">swing up</option>
+                        <option value="swing down">swing down</option>
+                        <option value="swing left">swing left</option>
+                        <option value="swing right">swing right</option>
+                        <option value="swing up in">swing up in</option>
+                        <option value="swing down in">swing down in</option>
+                        <option value="swing left in">swing left in</option>
+                        <option value="swing right in">swing right in</option>
+                        <option value="swing up out">swing up out</option>
+                        <option value="swing down out">swing down out</option>
+                        <option value="swing left out">swing left out</option>
+                        <option value="swing right out">swing right out</option>
+                        <option value="scale">scale</option>
+                        <option value="scale in">scale in</option>
+                        <option value="scale out">scale out</option>
+                        <option value="drop">drop</option>
+                        <option value="drop in">drop in</option>
+                        <option value="drop out">drop out</option>
+                        <option value="flip vertical">flip vertical</option>
+                        <option value="flip horizontal">flip horizontal</option>
+                        <option value="flip vertical in">flip vertical in</option>
+                        <option value="flip horizontal in">flip horizontal in</option>
+                        <option value="flip vertical out">flip vertical out</option>
+                        <option value="flip horizontal out">flip horizontal out</option>
+                        <option value="browse">browse</option>
+                        <option value="browse in">browse in</option>
+                        <option value="browse left out">browse left out</option>
+                        <option value="browse right out">browse right out</option>
+                        <option value="flash">flash</option>
+                        <option value="shake">shake</option>
+                        <option value="bounce">bounce</option>
+                        <option value="bounce In">bounce In</option>
+                        <option value="tada">tada</option>
+                        <option value="pulse">pulse</option>
+                        <option value="jiggle">jiggle</option>
+                    </select>
+                    <select class="ui animation-type2 simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Type</option>
+                        <option value="fade">fade</option>
+                        <option value="fade up">fade up</option>
+                        <option value="fade down">fade down</option>
+                        <option value="fade left">fade left</option>
+                        <option value="fade right">fade right</option>
+                        <option value="fade in">fade in</option>
+                        <option value="fade up in">fade up in</option>
+                        <option value="fade down in">fade down in</option>
+                        <option value="fade left in">fade left in</option>
+                        <option value="fade right in">fade right in</option>
+                        <option value="fade out">fade out</option>
+                        <option value="fade up out">fade up out</option>
+                        <option value="fade down out">fade down out</option>
+                        <option value="fade left out">fade left out</option>
+                        <option value="fade right out">fade right out</option>
+                        <option value="slide">slide</option>
+                        <option value="slide up">slide up</option>
+                        <option value="slide down">slide down</option>
+                        <option value="slide left">slide left</option>
+                        <option value="slide right">slide right</option>
+                        <option value="slide in">slide in</option>
+                        <option value="slide up in">slide up in</option>
+                        <option value="slide down in">slide down in</option>
+                        <option value="slide left in">slide left in</option>
+                        <option value="slide right in">slide right in</option>
+                        <option value="slide out">slide out</option>
+                        <option value="slide up out">slide up out</option>
+                        <option value="slide down out">slide down out</option>
+                        <option value="slide left out">slide left out</option>
+                        <option value="slide right out">slide right out</option>
+                        <option value="fly">fly</option>
+                        <option value="fly up">fly up</option>
+                        <option value="fly down">fly down</option>
+                        <option value="fly left">fly left</option>
+                        <option value="fly right">fly right</option>
+                        <option value="fly in">fly in</option>
+                        <option value="fly up in">fly up in</option>
+                        <option value="fly down in">fly down in</option>
+                        <option value="fly left in">fly left in</option>
+                        <option value="fly right in">fly right in</option>
+                        <option value="fly out">fly out</option>
+                        <option value="fly up out">fly up out</option>
+                        <option value="fly down out">fly down out</option>
+                        <option value="fly left out">fly left out</option>
+                        <option value="fly right out">fly right out</option>
+                        <option value="swing up">swing up</option>
+                        <option value="swing down">swing down</option>
+                        <option value="swing left">swing left</option>
+                        <option value="swing right">swing right</option>
+                        <option value="swing up in">swing up in</option>
+                        <option value="swing down in">swing down in</option>
+                        <option value="swing left in">swing left in</option>
+                        <option value="swing right in">swing right in</option>
+                        <option value="swing up out">swing up out</option>
+                        <option value="swing down out">swing down out</option>
+                        <option value="swing left out">swing left out</option>
+                        <option value="swing right out">swing right out</option>
+                        <option value="scale">scale</option>
+                        <option value="scale in">scale in</option>
+                        <option value="scale out">scale out</option>
+                        <option value="drop">drop</option>
+                        <option value="drop in">drop in</option>
+                        <option value="drop out">drop out</option>
+                        <option value="flip vertical">flip vertical</option>
+                        <option value="flip horizontal">flip horizontal</option>
+                        <option value="flip vertical in">flip vertical in</option>
+                        <option value="flip horizontal in">flip horizontal in</option>
+                        <option value="flip vertical out">flip vertical out</option>
+                        <option value="flip horizontal out">flip horizontal out</option>
+                        <option value="browse">browse</option>
+                        <option value="browse in">browse in</option>
+                        <option value="browse left out">browse left out</option>
+                        <option value="browse right out">browse right out</option>
+                        <option value="flash">flash</option>
+                        <option value="shake">shake</option>
+                        <option value="bounce">bounce</option>
+                        <option value="bounce In">bounce In</option>
+                        <option value="tada" selected>tada</option>
+                        <option value="pulse">pulse</option>
+                        <option value="jiggle">jiggle</option>
+                    </select>
+                    <select class="ui animation-duration simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Duration</option>
+                        <option value="150ms">150ms</option>
+                        <option value="300ms">300ms</option>
+                        <option value="500ms">500ms</option>
+                        <option value="700ms">700ms</option>
+                        <option value="1000ms">1000ms</option>
+                    </select>
+                    <div class="ui dynamic checkbox mr-2 mb-2 animation-queue">
+                        <input type="checkbox" tabindex="0" class="hidden" checked>
+                        <label>Queue</label>
+                    </div>
+                </div>
+            </div>
+            <div class="h-md"></div>
+            <div>
+                <div class="text-center mt-7 mb-3">
+                    <h4>Grouped Transition</h4><br>
+                </div>
+            </div>
+            <div class="row panel-grid doubled-transition-panels" id="grouped-transition-panel">
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-warning panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-danger panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-info panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-warning panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-danger panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-info panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+            <div id="grouped-transition">
+                <div class="text-center mt-3 mb-7">
+                    <select class="ui animation-type simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Type</option>
+                        <option value="fade">fade</option>
+                        <option value="fade up">fade up</option>
+                        <option value="fade down">fade down</option>
+                        <option value="fade left">fade left</option>
+                        <option value="fade right">fade right</option>
+                        <option value="fade in">fade in</option>
+                        <option value="fade up in">fade up in</option>
+                        <option value="fade down in">fade down in</option>
+                        <option value="fade left in">fade left in</option>
+                        <option value="fade right in">fade right in</option>
+                        <option value="fade out">fade out</option>
+                        <option value="fade up out">fade up out</option>
+                        <option value="fade down out">fade down out</option>
+                        <option value="fade left out">fade left out</option>
+                        <option value="fade right out">fade right out</option>
+                        <option value="slide">slide</option>
+                        <option value="slide up">slide up</option>
+                        <option value="slide down">slide down</option>
+                        <option value="slide left">slide left</option>
+                        <option value="slide right">slide right</option>
+                        <option value="slide in">slide in</option>
+                        <option value="slide up in">slide up in</option>
+                        <option value="slide down in">slide down in</option>
+                        <option value="slide left in">slide left in</option>
+                        <option value="slide right in">slide right in</option>
+                        <option value="slide out">slide out</option>
+                        <option value="slide up out">slide up out</option>
+                        <option value="slide down out">slide down out</option>
+                        <option value="slide left out">slide left out</option>
+                        <option value="slide right out">slide right out</option>
+                        <option value="fly">fly</option>
+                        <option value="fly up">fly up</option>
+                        <option value="fly down">fly down</option>
+                        <option value="fly left">fly left</option>
+                        <option value="fly right">fly right</option>
+                        <option value="fly in">fly in</option>
+                        <option value="fly up in">fly up in</option>
+                        <option value="fly down in">fly down in</option>
+                        <option value="fly left in">fly left in</option>
+                        <option value="fly right in">fly right in</option>
+                        <option value="fly out">fly out</option>
+                        <option value="fly up out">fly up out</option>
+                        <option value="fly down out">fly down out</option>
+                        <option value="fly left out">fly left out</option>
+                        <option value="fly right out">fly right out</option>
+                        <option value="swing up">swing up</option>
+                        <option value="swing down">swing down</option>
+                        <option value="swing left">swing left</option>
+                        <option value="swing right">swing right</option>
+                        <option value="swing up in">swing up in</option>
+                        <option value="swing down in">swing down in</option>
+                        <option value="swing left in">swing left in</option>
+                        <option value="swing right in">swing right in</option>
+                        <option value="swing up out">swing up out</option>
+                        <option value="swing down out">swing down out</option>
+                        <option value="swing left out">swing left out</option>
+                        <option value="swing right out">swing right out</option>
+                        <option value="scale">scale</option>
+                        <option value="scale in">scale in</option>
+                        <option value="scale out">scale out</option>
+                        <option value="drop">drop</option>
+                        <option value="drop in">drop in</option>
+                        <option value="drop out">drop out</option>
+                        <option value="flip vertical">flip vertical</option>
+                        <option value="flip horizontal">flip horizontal</option>
+                        <option value="flip vertical in">flip vertical in</option>
+                        <option value="flip horizontal in">flip horizontal in</option>
+                        <option value="flip vertical out">flip vertical out</option>
+                        <option value="flip horizontal out">flip horizontal out</option>
+                        <option value="browse">browse</option>
+                        <option value="browse in">browse in</option>
+                        <option value="browse left out">browse left out</option>
+                        <option value="browse right out">browse right out</option>
+                        <option value="flash">flash</option>
+                        <option value="shake">shake</option>
+                        <option value="bounce">bounce</option>
+                        <option value="bounce In">bounce In</option>
+                        <option value="tada">tada</option>
+                        <option value="pulse">pulse</option>
+                        <option value="jiggle">jiggle</option>
+                    </select>
+                    <select class="ui animation-duration simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Duration</option>
+                        <option value="150ms">150ms</option>
+                        <option value="300ms">300ms</option>
+                        <option value="500ms">500ms</option>
+                        <option value="700ms">700ms</option>
+                        <option value="1000ms">1000ms</option>
+                    </select>
+                    <select class="ui animation-interval simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Interval</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="350">350</option>
+                        <option value="600">600</option>
+                    </select>
+                    <div class="ui dynamic checkbox mr-2 mb-2 animation-queue">
+                        <input type="checkbox" tabindex="0" class="hidden" checked>
+                        <label>Queue</label>
+                    </div>
+                </div>
+            </div>
+            <div class="h-md"></div>
+            <div>
+                <div class="text-center mt-7 mb-3">
+                    <h4>Grouped Doubled Transition</h4><br>
+                </div>
+            </div>
+            <div class="row panel-grid doubled-transition-panels" id="grouped-doubled-transition-panel">
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-warning panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-danger panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-info panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-warning panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-danger panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-4 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-info panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel With Colors
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0 text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s and popularised in the
+                                1960s.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+            <div id="grouped-doubled-transition">
+                <div class="text-center mt-3 mb-7">
+                    <select class="ui animation-type1 simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Type</option>
+                        <option value="fade">fade</option>
+                        <option value="fade up">fade up</option>
+                        <option value="fade down">fade down</option>
+                        <option value="fade left">fade left</option>
+                        <option value="fade right">fade right</option>
+                        <option value="fade in">fade in</option>
+                        <option value="fade up in">fade up in</option>
+                        <option value="fade down in">fade down in</option>
+                        <option value="fade left in">fade left in</option>
+                        <option value="fade right in">fade right in</option>
+                        <option value="fade out">fade out</option>
+                        <option value="fade up out">fade up out</option>
+                        <option value="fade down out">fade down out</option>
+                        <option value="fade left out">fade left out</option>
+                        <option value="fade right out">fade right out</option>
+                        <option value="slide">slide</option>
+                        <option value="slide up">slide up</option>
+                        <option value="slide down">slide down</option>
+                        <option value="slide left">slide left</option>
+                        <option value="slide right">slide right</option>
+                        <option value="slide in">slide in</option>
+                        <option value="slide up in">slide up in</option>
+                        <option value="slide down in">slide down in</option>
+                        <option value="slide left in">slide left in</option>
+                        <option value="slide right in">slide right in</option>
+                        <option value="slide out">slide out</option>
+                        <option value="slide up out">slide up out</option>
+                        <option value="slide down out">slide down out</option>
+                        <option value="slide left out">slide left out</option>
+                        <option value="slide right out">slide right out</option>
+                        <option value="fly" selected>fly</option>
+                        <option value="fly up">fly up</option>
+                        <option value="fly down">fly down</option>
+                        <option value="fly left">fly left</option>
+                        <option value="fly right">fly right</option>
+                        <option value="fly in">fly in</option>
+                        <option value="fly up in">fly up in</option>
+                        <option value="fly down in">fly down in</option>
+                        <option value="fly left in">fly left in</option>
+                        <option value="fly right in">fly right in</option>
+                        <option value="fly out">fly out</option>
+                        <option value="fly up out">fly up out</option>
+                        <option value="fly down out">fly down out</option>
+                        <option value="fly left out">fly left out</option>
+                        <option value="fly right out">fly right out</option>
+                        <option value="swing up">swing up</option>
+                        <option value="swing down">swing down</option>
+                        <option value="swing left">swing left</option>
+                        <option value="swing right">swing right</option>
+                        <option value="swing up in">swing up in</option>
+                        <option value="swing down in">swing down in</option>
+                        <option value="swing left in">swing left in</option>
+                        <option value="swing right in">swing right in</option>
+                        <option value="swing up out">swing up out</option>
+                        <option value="swing down out">swing down out</option>
+                        <option value="swing left out">swing left out</option>
+                        <option value="swing right out">swing right out</option>
+                        <option value="scale">scale</option>
+                        <option value="scale in">scale in</option>
+                        <option value="scale out">scale out</option>
+                        <option value="drop">drop</option>
+                        <option value="drop in">drop in</option>
+                        <option value="drop out">drop out</option>
+                        <option value="flip vertical">flip vertical</option>
+                        <option value="flip horizontal">flip horizontal</option>
+                        <option value="flip vertical in">flip vertical in</option>
+                        <option value="flip horizontal in">flip horizontal in</option>
+                        <option value="flip vertical out">flip vertical out</option>
+                        <option value="flip horizontal out">flip horizontal out</option>
+                        <option value="browse">browse</option>
+                        <option value="browse in">browse in</option>
+                        <option value="browse left out">browse left out</option>
+                        <option value="browse right out">browse right out</option>
+                        <option value="flash">flash</option>
+                        <option value="shake">shake</option>
+                        <option value="bounce">bounce</option>
+                        <option value="bounce In">bounce In</option>
+                        <option value="tada">tada</option>
+                        <option value="pulse">pulse</option>
+                        <option value="jiggle">jiggle</option>
+                    </select>
+                    <select class="ui animation-type2 simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Type</option>
+                        <option value="fade">fade</option>
+                        <option value="fade up">fade up</option>
+                        <option value="fade down">fade down</option>
+                        <option value="fade left">fade left</option>
+                        <option value="fade right">fade right</option>
+                        <option value="fade in">fade in</option>
+                        <option value="fade up in">fade up in</option>
+                        <option value="fade down in">fade down in</option>
+                        <option value="fade left in">fade left in</option>
+                        <option value="fade right in">fade right in</option>
+                        <option value="fade out">fade out</option>
+                        <option value="fade up out">fade up out</option>
+                        <option value="fade down out">fade down out</option>
+                        <option value="fade left out">fade left out</option>
+                        <option value="fade right out">fade right out</option>
+                        <option value="slide">slide</option>
+                        <option value="slide up">slide up</option>
+                        <option value="slide down">slide down</option>
+                        <option value="slide left">slide left</option>
+                        <option value="slide right">slide right</option>
+                        <option value="slide in">slide in</option>
+                        <option value="slide up in">slide up in</option>
+                        <option value="slide down in">slide down in</option>
+                        <option value="slide left in">slide left in</option>
+                        <option value="slide right in">slide right in</option>
+                        <option value="slide out">slide out</option>
+                        <option value="slide up out">slide up out</option>
+                        <option value="slide down out">slide down out</option>
+                        <option value="slide left out">slide left out</option>
+                        <option value="slide right out">slide right out</option>
+                        <option value="fly">fly</option>
+                        <option value="fly up">fly up</option>
+                        <option value="fly down">fly down</option>
+                        <option value="fly left">fly left</option>
+                        <option value="fly right">fly right</option>
+                        <option value="fly in">fly in</option>
+                        <option value="fly up in">fly up in</option>
+                        <option value="fly down in">fly down in</option>
+                        <option value="fly left in">fly left in</option>
+                        <option value="fly right in">fly right in</option>
+                        <option value="fly out">fly out</option>
+                        <option value="fly up out">fly up out</option>
+                        <option value="fly down out">fly down out</option>
+                        <option value="fly left out">fly left out</option>
+                        <option value="fly right out">fly right out</option>
+                        <option value="swing up">swing up</option>
+                        <option value="swing down">swing down</option>
+                        <option value="swing left">swing left</option>
+                        <option value="swing right">swing right</option>
+                        <option value="swing up in">swing up in</option>
+                        <option value="swing down in">swing down in</option>
+                        <option value="swing left in">swing left in</option>
+                        <option value="swing right in">swing right in</option>
+                        <option value="swing up out">swing up out</option>
+                        <option value="swing down out">swing down out</option>
+                        <option value="swing left out">swing left out</option>
+                        <option value="swing right out">swing right out</option>
+                        <option value="scale">scale</option>
+                        <option value="scale in">scale in</option>
+                        <option value="scale out">scale out</option>
+                        <option value="drop">drop</option>
+                        <option value="drop in">drop in</option>
+                        <option value="drop out">drop out</option>
+                        <option value="flip vertical">flip vertical</option>
+                        <option value="flip horizontal">flip horizontal</option>
+                        <option value="flip vertical in">flip vertical in</option>
+                        <option value="flip horizontal in">flip horizontal in</option>
+                        <option value="flip vertical out">flip vertical out</option>
+                        <option value="flip horizontal out">flip horizontal out</option>
+                        <option value="browse">browse</option>
+                        <option value="browse in">browse in</option>
+                        <option value="browse left out">browse left out</option>
+                        <option value="browse right out">browse right out</option>
+                        <option value="flash">flash</option>
+                        <option value="shake">shake</option>
+                        <option value="bounce">bounce</option>
+                        <option value="bounce In">bounce In</option>
+                        <option value="tada" selected>tada</option>
+                        <option value="pulse">pulse</option>
+                        <option value="jiggle">jiggle</option>
+                    </select>
+                    <select class="ui animation-duration simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Duration</option>
+                        <option value="150ms">150ms</option>
+                        <option value="300ms">300ms</option>
+                        <option value="500ms">500ms</option>
+                        <option value="700ms">700ms</option>
+                        <option value="1000ms">1000ms</option>
+                    </select>
+                    <select class="ui animation-interval simple-select select-dropdown mr-2 mb-2">
+                        <option value="">Interval</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="350">350</option>
+                        <option value="600">600</option>
+                    </select>
+                    <div class="ui dynamic checkbox mr-2 mb-2 animation-queue">
+                        <input type="checkbox" tabindex="0" class="hidden" checked>
+                        <label>Queue</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/animation');
+        </script>
+    {{/content}}
+{{/extend}}

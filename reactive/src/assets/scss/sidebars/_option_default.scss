@@ -1,0 +1,107 @@
+/*!
+ * @version: 1.1.1
+ * @name: default
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+.sidebar-option-default {
+    @include sidebar-def-state($sidebar-theme-default);
+    &.sidebar-state-open { @include sidebar-state-open($sidebar-theme-default);
+        .sidebar-wrap { width: 252px;
+            &:after { width: 252px; }
+            .sidebar-menu li.footer { width: 252px; }
+        }
+    };
+    &.sidebar-state-compact:not(.js-open) { @include sidebar-state-compact($sidebar-theme-default);
+        > .sidebar-wrap { width: 320px;
+            &:after,
+            .sidebar-content { width: 65px; }
+            .app-name,
+            .app-name .compact-name { display: block }
+            .tab-links { display: none; }
+            .profile { display: none; }
+            nav.sidebar-menu > ul > li { position: relative;
+                &.nav-addon,
+                &.header { display: none; }
+                &.footer { width: 65px; position: fixed; }
+                &.footer,
+                &.upward {
+                    > ul.sub-menu { bottom: 54px; top: auto; }
+                }
+                > a { padding: 16px 20px;
+                    span { position: absolute; left: 65px; width: 252px; height: 54px; top: 0; display: none; padding: 16px 20px; }
+                    .toggle { display: none; }
+                    .badge { position: absolute; top: 8px; right: 8px; }
+                }
+                > ul.sub-menu { display: none !important; position: absolute; top: 54px; left: 65px; width: 252px; z-index: 1; }
+                &:hover {
+                    > ul.sub-menu { display: block !important; }
+                    > a span { display: block; }
+                }
+            }
+            nav.sidebar-menu {
+                > ul {
+                    ul { background: clr( body-dark );
+                        ul { background: clr( body-darker );}
+                    }
+                    > li > a span { background: clr( body-darker ); }
+                }
+            }
+            .ps-scrollbar-x-rail,
+            .ps-scrollbar-y-rail { display: none; }
+        }
+    }
+    &.sidebar-state-close { @include sidebar-state-close($sidebar-theme-default); }
+    &.sidebar-bg-default { @include sidebar-bg-default($sidebar-bg-default);
+        &.sidebar-state-open .sidebar-wrap { background: clr(body-dark);}
+        &.sidebar-state-close .sidebar-wrap { background: clr(body-dark);}
+    }
+    &.sidebar-bg-one { @include sidebar-bg-one($sidebar-bg-one);
+        .sidebar-wrap {
+            .tab-links {
+                a[data-toggle="tab"] { border-bottom-width: 0; height: 63px;
+                    &:hover,
+                    &:active,
+                    &.active { background: none; border-bottom-width: 4px; }
+                    i { font-size: 20px; }
+                    .badge { top: 10px; }
+                }
+            }
+            .profile {
+                .details { padding: 23px;
+                    .about { margin-top: 20px; font-size: 1rem; float: none; text-align: center; }
+                    .sbg-settings { display: inline-block; position: absolute; top: 10px; right: 14px;}
+                    .sbg-title { display: block; }
+                    .settings { display: none; }
+
+                }
+                .picture {  border: 1px solid; margin: 0 auto; display: block; }
+            }
+            @include media-breakpoint-up(md) {
+                .profile {
+                    .about h3 { font-size: $font-size-5; }
+                    .picture { width: 100px; height: 100px; float: none; }
+                }
+            }
+            @include media-breakpoint-down(sm) {
+                .profile {
+                    .about h3 { font-size: $font-size-6; }
+                    .picture { width: 55px; height: 55px; }
+                }
+            }
+        }
+    }
+    .sidebar-wrap {
+        .sidebar-content { width: 252px; }
+        .profile { @include sidebar-profile(); }
+        .tab-links {
+            ul { justify-content: space-around; }
+            a[data-toggle="tab"] { min-width: 63px; height: 58px; line-height: 58px;
+                i { font-size: 18px; }
+            }
+            .badge { top: 8px; right: 10px; }
+        }
+    }
+}
+

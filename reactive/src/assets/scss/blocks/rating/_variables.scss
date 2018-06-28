@@ -1,0 +1,90 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: Rating
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+$rating-margin: 0 !default;
+$rating-white-space: nowrap !default;
+$rating-vertical-align: baseline !default;
+
+$rating-icon-cursor: pointer !default;
+$rating-icon-width: 1.25em !default;
+$rating-icon-height: auto !default;
+$rating-icon-transition: opacity $default-duration $default-easing,
+background $default-duration $default-easing,
+text-shadow $default-duration $default-easing,
+color $default-duration $default-easing !default;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Standard */
+$rating-inactive-background: transparent !default;
+$rating-inactive-color: rgba(0, 0, 0, 0.15) !default;
+
+$rating-selected-background: $rating-inactive-background !default;
+$rating-selected-color: $gray-dark !default;
+
+$rating-active-background: $rating-inactive-background !default;
+$rating-active-color: $gray-dark !default;
+
+/* Star */
+$rating-star-icon-width: $rating-icon-width !default;
+$rating-star-icon-height: $rating-icon-height !default;
+$rating-star-shadow-width: 1px !default;
+
+$rating-star-inactive-background: $rating-inactive-background !default;
+$rating-star-inactive-color: $rating-inactive-color !default;
+$rating-star-inactive-text-shadow: none !default;
+
+$rating-star-active-background: $rating-active-background !default;
+$rating-star-active-color:clr(warning-lighter) !default;
+$rating-star-active-shadow-color: transparent !default;
+$rating-star-active-text-shadow: 0 -$rating-star-shadow-width 0 $rating-star-active-shadow-color,
+-$rating-star-shadow-width 0 0 $rating-star-active-shadow-color,
+0px $rating-star-shadow-width 0 $rating-star-active-shadow-color,
+$rating-star-shadow-width 0 0 $rating-star-active-shadow-color !default;
+
+$rating-star-selected-background: $rating-selected-background !default;
+$rating-star-selected-color:  clr(warning-lightest) !default;
+$rating-star-selected-shadow-color: clr(warning) !default;
+$rating-star-selected-text-shadow: 0 -$rating-star-shadow-width 0 $rating-star-selected-shadow-color,
+-$rating-star-shadow-width 0 0 $rating-star-selected-shadow-color,
+0px $rating-star-shadow-width 0 $rating-star-selected-shadow-color,
+$rating-star-shadow-width 0 0 $rating-star-selected-shadow-color !default;
+
+/* Heart */
+$rating-heart-icon-width: 1.4em !default;
+$rating-heart-icon-height: $rating-icon-height !default;
+$rating-heart-shadow-width: 1px !default;
+
+$rating-heart-inactive-background: $rating-inactive-background !default;
+$rating-heart-inactive-color: $rating-inactive-color !default;
+$rating-heart-inactive-text-shadow: none !default;
+
+$rating-heart-active-background: $rating-active-background !default;
+$rating-heart-active-color: clr(danger-lightest) !default;
+$rating-heart-active-shadow-color: clr(danger) !default;
+$rating-heart-active-text-shadow: 0 -$rating-heart-shadow-width 0 $rating-heart-active-shadow-color,
+-$rating-heart-shadow-width 0 0 $rating-heart-active-shadow-color,
+0px $rating-heart-shadow-width 0 $rating-heart-active-shadow-color,
+$rating-heart-shadow-width 0 0 $rating-heart-active-shadow-color !default;
+
+$rating-heart-selected-background: $rating-selected-background !default;
+$rating-heart-selected-color: clr(danger-lighter) !default;
+$rating-heart-selected-shadow-color: clr(danger) !default;
+$rating-heart-selected-text-shadow: 0 -$rating-heart-shadow-width 0 $rating-heart-selected-shadow-color,
+-$rating-heart-shadow-width 0 0 $rating-heart-selected-shadow-color,
+0px $rating-heart-shadow-width 0 $rating-heart-selected-shadow-color,
+$rating-heart-shadow-width 0 0 $rating-heart-selected-shadow-color !default;
+
+/*-------------------
+        States
+--------------------*/
+
+$rating-interactive-active-icon-opacity: 1 !default;
+$rating-interactive-selected-icon-opacity: 1 !default;

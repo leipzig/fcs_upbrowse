@@ -1,0 +1,749 @@
+{{#extend "layout-1" current="dashboard-2"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack world-map" id="panel-grid">
+                <section data-gs-min-width="12" class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel pb-0 b-shadow-none bgc-white-darkest">
+                        <div class="panel-header grid-stack-handle grid-stack-handle panel-header-sm bgc-white-darkest">
+                            <h2 class="pull-left">
+                                Sales By Countries
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="#" class="panel-header-link" id="panelDropdownSales" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>This Week</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right lh-5" aria-labelledby="panelDropdownSales">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="map"></div>
+                                    </div>
+                                    <section class="panel-wrap d-block search col-md-12 col-lg-12 col-xl-3 hidden-lg-down">
+                                        <div class="panel b-shadow-none pb-0">
+                                            <div class="panel-header panel-header-sm px-4">
+                                                <h2 class="pull-left">Search</h2>
+                                                <div class="pull-right hidden-lg-down"><a class="hamburger-btn" title="menu"><span></span></a></div>
+                                            </div>
+                                            <div class="pt-xl-1 pt-4 px-4 pb-4 panel-body bgc-white-dark mb-3">
+                                                <input type="text" class="form-control" placeholder="Search on the map">
+                                            </div>
+                                            <div class="px-4 py-4 panel-body bgc-white-dark search-results transition hidden">
+                                                <div class="list celled">
+                                                    <div class="item">
+                                                        <a href="" data-href="paris" class="c-gray-light w-100 d-block py-2"><i class="fa fa-map-marker icon-mr-ch"></i>Paris, France</a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="" data-href="brasilia" class="c-gray-light w-100 d-block py-2"><i class="fa fa-map-marker icon-mr-ch"></i>Brasilia, Brazil</a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="" data-href="newyork" class="c-gray-light w-100 d-block py-2"><i class="fa fa-map-marker icon-mr-ch"></i>New York, USA</a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="" data-href="tokyo" class="c-gray-light w-100 d-block py-2"><i class="fa fa-map-marker icon-mr-ch"></i>Tokyo, Japan</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="23" class="panel-wrap panel-grid-item grid-stack-item d-block col-md-12 col-lg-4">
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-header grid-stack-handle panel-header-p panel-header-sm bgc-white-dark">
+                            <h2 class="mb-3">Filter Top Countries</h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-3">
+                            <div class="areaLegend"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-gs-height="23" class="panel-wrap panel-grid-item grid-stack-item d-block col-md-12 col-lg-4">
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-header grid-stack-handle panel-header-p panel-header-sm bgc-white-dark">
+                            <h2 class="mb-3">Filter Top Cities</h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-3">
+                            <div class="plotLegend"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-gs-height="23" class="panel-wrap panel-grid-item grid-stack-item d-block col-md-12  col-lg-4">
+                    <div class="panel bgc-white-dark pb-0">
+                        <div class="panel-header grid-stack-handle panel-header-p panel-header-sm bgc-white-dark">
+                            <h2 class="mb-3">Statistic</h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="mb-3">
+                                <div class="clearfix c-gray lh-3">
+                                    <span class="fs-6 pull-left">Europe</span>
+                                    <span class="badge badge-default fs-6-plus pull-right">+ 10% <span class="fa fa-arrow-up "></span></span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-xs bgc-info-light progress-bar-animated" style="width: 45%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar progress-bar-xs bgc-info-dark progress-bar-animated" style="width: 10%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="fs-8 mt-1 c-gray">Lorem ipsum dolor.</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="clearfix c-gray lh-3">
+                                    <span class="fs-6 pull-left">USA</span>
+                                    <span class="badge badge-default fs-6-plus pull-right">+ 20% <span class="fa fa-arrow-up "></span></span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-xs bgc-info-light progress-bar-animated" style="width: 65%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar progress-bar-xs bgc-info-dark progress-bar-animated" style="width: 20%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bbw-1 bc-gray-lighter clearfix panel-header-p grid-stack-handle bgc-white-dark panel-header-md">
+                            <h2 class="pull-left">
+                                Top Products
+                            </h2>
+                            <!-- Controls -->
+                            <div class="pull-right mr-7">
+                                <a class="btn btn-sm-icon btn-default" href="#top-products" role="button" data-slide="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="btn btn-sm-icon btn-default" href="#top-products" role="button" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-0">
+                            <div id="top-products" class="top-product-carousel">
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/image1.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic8.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic1.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic2.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic3.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic7.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic6.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/image3.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bbw-1 bc-gray-lighter clearfix panel-header-p grid-stack-handle bgc-white-dark panel-header-md">
+                            <h2 class="pull-left">
+                                New Products
+                            </h2>
+                            <!-- Controls -->
+                            <div class="pull-right mr-7">
+                                <a class="btn btn-sm-icon btn-default" href="#new-products" role="button" data-slide="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="btn btn-sm-icon btn-default" href="#new-products" role="button" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-0">
+                            <div id="new-products" class="new-product-carousel">
+                                <!-- Carousel -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/image1.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic8.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic1.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic2.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic3.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic7.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/pic6.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- Slide Item -->
+                                <div class="slide-item">
+                                    <div class="pt-4 clearfix">
+                                        <a href="product-single.html" class="pull-left">
+                                            <img src="assets/img/products/image3.jpg" width="100" height="150" alt="">
+                                        </a>
+                                        <div class="pull-left info ml-3">
+                                            <h5 class="name d-block">Product Name</h5>
+                                            <span class="price d-block fs-4 mt-1">$ 42300</span>
+                                            <div class="star rating rating-disable fs-6 d-block mt-1" data-rating="3" data-max-rating="5"></div>
+                                            <a class="badge badge-default badge-circle fs-6 mt-2" href=""><i class="fa fa-shopping-cart icon-mr"></i>34 Times</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Slide Item -->
+                                <!-- End Carousel -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="40" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Latest Reviews
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="#" class="panel-header-link" id="panelDropdownReviews" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>Selectable</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu lh-5" aria-labelledby="panelDropdownReviews">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="reviews">
+                                <div class="review clearfix">
+                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                    <div class="content">
+                                        <a class="author" href="">Reece Collins</a>
+                                        <div class="star rating rating-disable fs-5 float-sm-right" data-rating="3"
+                                             data-max-rating="5"></div>
+                                    </div>
+                                    <div class="content text text-indent">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Lorem Ipsum is simply
+                                        dummy text of the printing and typesetting industry.
+                                    </div>
+                                    <div class="content metadata">
+                                        <span class="date">Sep 15, 2020</span>
+                                        <span class="hour">10:28 Am</span>
+                                    </div>
+                                </div>
+                                <div class="review clearfix">
+                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                    <div class="content">
+                                        <a class="author" href="">James Foster</a>
+                                        <div class="star rating rating-disable fs-5 float-sm-right" data-rating="4"
+                                             data-max-rating="5"></div>
+                                    </div>
+                                    <div class="content text text-indent">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                                        Lorem Ipsum is simply
+                                        dummy text of the printing and typesetting industry.
+                                    </div>
+                                    <div class="content metadata">
+                                        <span class="date">Sep 14, 2020</span>
+                                        <span class="hour">13:21 Am</span>
+                                    </div>
+                                </div>
+                                <div class="review clearfix">
+                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                    <div class="content">
+                                        <a class="author" href="">Taylor Foster</a>
+                                        <div class="star rating rating-disable fs-5 float-sm-right" data-rating="4"
+                                             data-max-rating="5"></div>
+                                    </div>
+                                    <div class="content text text-indent">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                                        Lorem Ipsum is simply
+                                        dummy text of the printing and typesetting industry.
+                                    </div>
+                                    <div class="content metadata">
+                                        <span class="date">Sep 14, 2020</span>
+                                        <span class="hour">13:21 Am</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+
+                <section data-gs-height="40" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                    <!--Start Panel-->
+                    <div class="panel weather-lg c-white-dark pb-0">
+                        <canvas class="weather-bg" id="weather-bg"></canvas>
+                        <div class="panel-header grid-stack-handle  panel-header-p panel-header-lg">
+                            <h2 class="pull-left">
+                                SHANGHAI
+                            </h2>
+                            <a href="" class="panel-header-link ml-1 hidden-xs-down bgc-active-light-trans">Monday, Sep 15</a>
+                            {{#embed "panel-icons" slide="1" class="hidden-xs-down bgc-light-trans bgc-active-light-trans"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="row today">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="day mb-2">
+                                        <i class="wi wi-day-cloudy-gusts"></i>
+                                        <span class="ml-4 fs-1">22 °C</span>
+                                    </div>
+                                    <div class="night">
+                                        <i class="fs-3 wi wi-night-clear"></i>
+                                        <span class="ml-4 fs-3">10 °C</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="weather-details fs-5 lh-5">
+                                        <div class="humidity">
+                                            <i class="wi wi-raindrop"></i>
+                                            <span>80 %</span>
+                                        </div>
+                                        <div class="pressure">
+                                            <i class="wi wi-barometer"></i>
+                                            <span>750 mmHg</span>
+                                        </div>
+                                        <div class="wind">
+                                            <i class="wi wi-strong-wind"></i>
+                                            <span>5 mph SE</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="week-weather bgc-white-dark">
+                                <div class="row">
+                                    <div class="col-sm-3 col-6 text-center">
+                                        <div class="week-day mb-1 text-uppercase">Tue</div>
+                                        <div class="day-time"><i class="fs-4 lh-5 wi wi-day-cloudy-windy"></i><span>21 °C</span>
+                                        </div>
+                                        <div class="nighttime"><i class="fs-4 lh-5 wi wi-night-alt-cloudy"></i><span>13 °C</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-6 text-center">
+                                        <div class="week-day mb-1 text-uppercase">Wed</div>
+                                        <div class="day-time"><i
+                                            class="fs-4 lh-5 wi wi-day-sunny"></i><span>20 °C</span></div>
+                                        <div class="nighttime"><i
+                                            class="fs-4 lh-5 wi wi-night-alt-hail"></i><span>11 °C</span></div>
+                                    </div>
+                                    <div class="col-sm-3 hidden-xs-down text-center">
+                                        <div class="week-day mb-1 text-uppercase">Thu</div>
+                                        <div class="day-time"><i class="fs-4 lh-5 wi wi-day-rain"></i><span>23 °C</span>
+                                        </div>
+                                        <div class="nighttime"><i class="fs-4 lh-5 wi wi-night-alt-lightning"></i><span>12 °C</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 hidden-xs-down text-center">
+                                        <div class="week-day mb-1 text-uppercase">Fri</div>
+                                        <div class="day-time"><i
+                                            class="fs-4 lh-5 wi wi-day-sunny"></i><span>24 °C</span></div>
+                                        <div class="nighttime"><i
+                                            class="fs-4 lh-5 wi wi-night-cloudy"></i><span>14 °C</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+
+                <section data-gs-min-width="12" class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Sortable Coupons
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="#" class="panel-header-link" id="panelDropdownMenu3" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>This Week</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right lh-5" aria-labelledby="panelDropdownMenu3">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="sortable-containment">
+                                <div class="pb-1"></div>
+                                <div class="list sortable-list hidden-sm-down">
+                                    <div class="item checked-list-item p-0 c-gray">
+                                        <div class="checked-list-checkbox">
+                                            id
+                                        </div>
+                                        <div class="pl-3 checked-list-details">
+                                            <div class="row">
+                                                <div class="col-sm-3">Name</div>
+                                                <div class="col-sm-2">Created</div>
+                                                <div class="col-sm-2">Total</div>
+                                                <div class="col-sm-1">Sold</div>
+                                                <div class="col-sm-3">Progress</div>
+                                                <div class="col-sm-1 text-center">Action</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list sortable-list celled">
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="brw-1 bc-gray-lighter checked-list-checkbox px-4">
+                                            1
+                                        </div>
+                                        <div class="pl-3 checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-3">Happy Marriage <a href="" class="badge badge-pill fs-6-plus ml-4 badge-info">New</a></div>
+                                                <div class="col-sm-2">18.18.2020</div>
+                                                <div class="col-sm-2">$ 26740</div>
+                                                <div class="col-sm-1">130</div>
+                                                <div class="col-sm-3">
+                                                    <div class="clearfix c-gray lh-3 mt-sm--2">
+                                                        <span class="fs-7 pull-left">Target</span>
+                                                        <span class="fs-7 pull-right">$ 55600</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-xs bg-info progress-bar-animated" style="width: 45%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-1 text-center mt-2 mt-sm-0"><a href=""><i class="fa fa-pencil fs-7"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="brw-1 bc-gray-lighter checked-list-checkbox px-4">
+                                            2
+                                        </div>
+                                        <div class="pl-3 checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-3">Merry Christmas</div>
+                                                <div class="col-sm-2">18.18.2020</div>
+                                                <div class="col-sm-2">$ 26740</div>
+                                                <div class="col-sm-1">130</div>
+                                                <div class="col-sm-3">
+                                                    <div class="clearfix c-gray lh-3 mt-sm--2">
+                                                        <span class="fs-7 pull-left">Target</span>
+                                                        <span class="fs-7 pull-right">$ 55600</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-info progress-bar-xs" style="width: 70%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-1 text-center mt-2 mt-sm-0"><a href=""><i class="fa fa-pencil fs-7"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="brw-1 bc-gray-lighter checked-list-checkbox px-4">
+                                            3
+                                        </div>
+                                        <div class="pl-3 checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-3">My Dear<a href="" class="badge badge-pill fs-6-plus ml-4 badge-danger">Hot</a></div>
+                                                <div class="col-sm-2">18.18.2020</div>
+                                                <div class="col-sm-2">$ 26740</div>
+                                                <div class="col-sm-1"><i class="fs-4 c-primary fa fa-check"></i></div>
+                                                <div class="col-sm-3">
+                                                    <div class="clearfix c-gray lh-3 mt-sm--2">
+                                                        <span class="fs-7 pull-left">Target</span>
+                                                        <span class="fs-7 pull-right">$ 55600</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary progress-bar-xs" style="width: 100%;" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-1 text-center mt-2 mt-sm-0"><a href=""><i class="fa fa-trash fs-7 c-gray-dark"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="brw-1 bc-gray-lighter checked-list-checkbox px-4">
+                                            4
+                                        </div>
+                                        <div class="pl-3 checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-3">Happy Marriage</div>
+                                                <div class="col-sm-2">18.18.2020</div>
+                                                <div class="col-sm-2">$ 26740</div>
+                                                <div class="col-sm-1">130</div>
+                                                <div class="col-sm-3">
+                                                    <div class="clearfix c-gray lh-3 mt-sm--2">
+                                                        <span class="fs-7 pull-left">Target</span>
+                                                        <span class="fs-7 pull-right">$ 55600</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-info progress-bar-xs" style="width: 15%;" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-1 text-center mt-2 mt-sm-0"><a href=""><i class="fa fa-pencil fs-7"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="brw-1 bc-gray-lighter checked-list-checkbox px-4">
+                                            5
+                                        </div>
+                                        <div class="pl-3 checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-3">Merry Christmas</div>
+                                                <div class="col-sm-2">18.18.2020</div>
+                                                <div class="col-sm-2">$ 26740</div>
+                                                <div class="col-sm-1">130</div>
+                                                <div class="col-sm-3">
+                                                    <div class="clearfix c-gray lh-3 mt-sm--2">
+                                                        <span class="fs-7 pull-left">Target</span>
+                                                        <span class="fs-7 pull-right">$ 55600</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-info progress-bar-xs" style="width: 50%;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-1 text-center mt-2 mt-sm-0"><a href=""><i class="fa fa-pencil fs-7"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/dash2');
+        </script>
+    {{/content}}
+{{/extend}}

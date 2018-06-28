@@ -1,0 +1,13 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: footer
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.footer-wrap { position: relative; background: $brand-body; z-index: 5; height: $footer-height; line-height: $footer-height;
+    color: clr( body-inverse-darker ); text-align: center;
+    i { position: relative; top: 4px; }
+    .footer-details { position: absolute; right: 0; bottom: 0; @include clearfix; }
+}
+

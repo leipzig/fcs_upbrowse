@@ -1,0 +1,121 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: list-plus
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+@import 'variables';
+@import 'mixins';
+
+$list-plus-theme-default: (
+    // View
+    container-max-width: $list-plus-container-max-width,
+    container-margin: $list-plus-container-margin,
+);
+
+$list-plus-elements-theme-default: (
+    // Elements
+    background: $list-plus-background,
+    margin: $list-plus-margin,
+    padding: $list-plus-padding,
+    divider: $list-plus-divider,
+    border: $list-plus-border,
+    line-height: $list-plus-line-height,
+    first-margin: $list-plus-first-margin,
+    first-padding: $list-plus-first-padding,
+);
+
+$list-plus-nested-list-theme-default: (
+    // Nested List
+    margin: $list-plus-nested-margin,
+    padding: $list-plus-nested-padding,
+    divider: $list-plus-nested-divider,
+    border: $list-plus-nested-border,
+    background: $list-plus-nested-background,
+);
+
+$list-plus-avatar-theme-default: (
+    // Avatar
+    display: $list-plus-avatar-display,
+    font-size: $list-plus-avatar-font-size,
+    float: $list-plus-avatar-float,
+    width: $list-plus-avatar-width,
+    height: $list-plus-avatar-height,
+    spacing: $list-plus-avatar-spacing,
+    margin: $list-plus-avatar-margin,
+    border-radius: $list-plus-avatar-border-radius,
+    background: $list-plus-avatar-background,
+);
+
+$list-plus-content-theme-default: (
+    // Content
+    margin: $list-plus-content-margin,
+);
+
+$list-plus-author-theme-default: (
+    // Author
+    font-size: $list-plus-author-font-size,
+    color: $list-plus-author-color,
+    hover-color: $list-plus-author-hover-color,
+    font-weight: $list-plus-author-font-weight,
+);
+
+$list-plus-metadata-theme-default: (
+    // Metadata
+    display: $list-plus-metadata-display,
+    font-size: $list-plus-metadata-font-size,
+    spacing: $list-plus-metadata-spacing,
+    content-spacing: $list-plus-metadata-content-spacing,
+    color: $list-plus-metadata-color,
+);
+
+$list-plus-text-theme-default: (
+    // Text
+    font-size: $list-plus-text-font-size,
+    margin: $list-plus-text-margin,
+    word-wrap: $list-plus-text-word-wrap,
+    line-height: $list-plus-text-line-height,
+);
+
+$list-plus-actions-theme-default: (
+    // Actions
+    font-size: $list-plus-action-font-size,
+    content-distance: $list-plus-action-content-distance,
+    link-color: $list-plus-action-link-color,
+    link-hover-color: $list-plus-action-link-hover-color,
+);
+
+$list-plus-reply-theme-default: (
+    // Reply
+    margin: $list-plus-reply-margin,
+    height: $list-plus-reply-height,
+    font-size: $list-plus-reply-font-size,
+);
+
+$list-plus-threaded-theme-default: (
+    // Threaded
+    width: $list-plus-avatar-width,
+    padding: $list-plus-threaded-padding,
+    border-left: $list-plus-threaded-border-left,
+);
+
+
+// Default theme
+//.list-plus { @include list-plus($list-plus-theme-default);
+//    &.threaded { @include list-plus-threaded('.list-plus-item', $list-plus-threaded-theme-default); }
+//    .list-plus-item { @include list-plus-item($list-plus-elements-theme-default);
+//        .avatar { @include list-plus-avatar($list-plus-avatar-theme-default); }
+//        .content { @include list-plus-content($list-plus-content-theme-default);
+//            .author { @include list-plus-author($list-plus-author-theme-default); }
+//            .metadata { @include list-plus-metadata($list-plus-metadata-theme-default); }
+//            .text { @include list-plus-text($list-plus-text-theme-default); }
+//            .actions { @include list-plus-actions($list-plus-actions-theme-default); }
+//        }
+//        .list-plus {
+//            @include list-plus-nested-list('.list-plus-item', $list-plus-nested-list-theme-default);
+//        }
+//    }
+//    .reply { @include list-plus-reply($list-plus-reply-theme-default); }
+//}
+

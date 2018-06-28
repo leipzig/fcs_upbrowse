@@ -1,0 +1,576 @@
+{{#extend "layout-1" current='typography'}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="col-sm-12 col-md-6 col-lg-6 col-xl-3 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Unordered List
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-2">
+                            <ul class="list">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Vonsectetur adipiscing elit</li>
+                                <li>Sed do eiusmod tempor incididunt</li>
+                                <li>Ut labore et dolore magna aliqua
+                                    <ul>
+                                        <li>Ut enim ad minim veniam</li>
+                                        <li>Quis nostrud exercitation ullamco</li>
+                                        <li>laboris nisi ut aliquip ex ea commodo</li>
+                                    </ul>
+                                </li>
+                                <li>Consequat. Duis aute irure dolor</li>
+                                <li>In reprehenderit in voluptate velit</li>
+                                <li>Esse cillum dolore eu fugiat nulla pariatur.</li>
+                                <li>Excepteur sint occaecat cupidatat</li>
+                                <li>Sunt in culpa qui officia deserunt</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-6 col-lg-6 col-xl-3 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Ordered List
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-2">
+                            <ol class="list">
+                                <li>Lortem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet
+                                    <ol>
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor</li>
+                                    </ol>
+                                </li>
+                                <li>Excepteur sint occaecat cupidatat</li>
+                                <li>Sunt in culpa qui officia deserunt</li>
+                                <li>Nulla volutpat aliquam velit</li>
+                                <li>Anim id est laborum</li>
+                                <li>Quis nostrup exercitation ullamco</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-6 col-lg-6 col-xl-3 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Unstyled List
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-2">
+                            <ol class="list list-unstyled">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit
+                                    <div class="list ml-3">
+                                        <div class="item">
+                                            <i class="fa fa-bookmark-o icon"></i>
+                                            <div class="pl-1 content">
+                                                <div class="description">Phasellus iaculis neque</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa fa-bookmark-o icon"></i>
+                                            <div class="pl-1 content">
+                                                <div class="description">Purus sodales ultricies</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa fa-bookmark-o icon"></i>
+                                            <div class="pl-1 content">
+                                                <div class="description">Vestibulum laoreet porttitor</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa fa-bookmark-o icon"></i>
+                                            <div class="pl-1 content">
+                                                <div class="description">Ac tristique libero volutpat</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-6 col-lg-6 col-xl-3 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Styled List
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-2">
+                            <div class="list">
+                                <div class="item">
+                                    <i class="fa fa-folder icon"></i>
+                                    <div class="content">
+                                        <a href="" class="header">src</a>
+                                        <div class="description fs-7">Source files for project</div>
+                                        <div class="list">
+                                            <div class="item">
+                                                <i class="fa fa-folder icon"></i>
+                                                <div class="content">
+                                                    <a href="" class="header">site</a>
+                                                    <div class="description fs-7">Your site's theme</div>
+                                                    <div class="list">
+                                                        <div class="item">
+                                                            <i class="fa fa-folder icon"></i>
+                                                            <div class="content">
+                                                                <a href="" class="header">default</a>
+                                                                <div class="description fs-7">Default packaged theme</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="fa fa-folder icon"></i>
+                                    <div class="content">
+                                        <a href="" class="header">dist</a>
+                                        <div class="description fs-7">Compiled CSS and JS files</div>
+                                        <div class="list">
+                                            <div class="item">
+                                                <i class="fa fa-folder icon"></i>
+                                                <div class="content">
+                                                    <a href="" class="header">components</a>
+                                                    <div class="description fs-7">Component CSS and JS</div>
+                                                </div>
+                                            </div>
+                                            <div class="item mt-1">
+                                                <i class="fa fa-folder icon"></i>
+                                                <div class="content">
+                                                    <a href="" class="header">theme</a>
+                                                    <div class="description fs-7">Themes are in this folder</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Styled List with Images
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="fs-6 mb-1">List with images and descriptions</p>
+                            <div class="list">
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar1.png">
+                                    <div class="content">
+                                        <a href="" class="header">Reece Lewis</a>
+                                        <div class="description">Watching <a><b>Project Development</b></a> just now.</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar2.png">
+                                    <div class="content">
+                                        <a href="" class="header">Jamie Jones</a>
+                                        <div class="description">Has liked <a><b>Top actors</b></a> 10 hours ago.</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar3.png">
+                                    <div class="content">
+                                        <a href="" class="header">Taylor Fletcher</a>
+                                        <div class="description">Has quoted <a><b>Suzanne Collins</b></a> yesterday.</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar4.png">
+                                    <div class="content">
+                                        <a href="" class="header">Veronika Ossi</a>
+                                        <div class="description">Last seen watching <a><b>Twin Peaks</b></a> 3 days ago.</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar5.png">
+                                    <div class="content">
+                                        <a href="" class="header">Rhys Brooks</a>
+                                        <div class="description">Has beeb online 4 day ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Styled List with Animation
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="fs-6 mb-1">List with slide animation</p>
+                            <div class="list animated divided">
+                                <div class="item py-2">
+                                    <i class="fa fa-files-o icon-mr-ch fs-2 icon"></i>
+                                    <div class="content">
+                                        <a href="" class="header">Brock Giles</a>
+                                        <div class="description">Phasellus iaculis neque</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <i class="fa fa-files-o icon-mr-ch fs-2 icon"></i>
+                                    <div class="content">
+                                        <a href="" class="header">Dariel Wallace</a>
+                                        <div class="description">Icy cold noodles and lamb burgers.</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <i class="fa fa-files-o icon-mr-ch fs-2 icon"></i>
+                                    <div class="content">
+                                        <a href="" class="header">Sapporo Haru</a>
+                                        <div class="description">Quick and delicious sushi.</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <i class="fa fa-files-o icon-mr-ch fs-2 icon"></i>
+                                    <div class="content">
+                                        <a href="" class="header">Jared Allison</a>
+                                        <div class="description">Integer molestie lorem at mast.</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <i class="fa fa-files-o icon-mr-ch fs-2 icon"></i>
+                                    <div class="content">
+                                        <a href="" class="header">Jared Allison</a>
+                                        <div class="description">Esse cillum dolore eu fugiat nulla pariatur.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Styled List with Floated Content
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="fs-6 mb-1">List, with right floated buttons</p>
+                            <div class="list celled">
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar6.png">
+                                    <div class="content">
+                                        <a href="" class="header">Reece Lewis</a>
+                                        <div class="description">Watching <a><i>Project Development</i></a></div>
+                                    </div>
+                                    <div class="pull-right content">
+                                        <div class="btn btn-default">Add</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar5.png">
+                                    <div class="content">
+                                        <a href="" class="header">Jamie Jones</a>
+                                        <div class="description">Has liked <a><i>Top actors</i></a></div>
+                                    </div>
+                                    <div class="pull-right content">
+                                        <div class="btn btn-default">Add</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar4.png">
+                                    <div class="content">
+                                        <a href="" class="header">Taylor Fletcher</a>
+                                        <div class="description">Has quoted <a><i>Suzanne Collins</i></a> yesterday.</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar2.png">
+                                    <div class="content">
+                                        <a href="" class="header">Veronika Ossi</a>
+                                        <div class="description">Last seen watching <a><i>Twin Peaks</i></a> 3 days ago.</div>
+                                    </div>
+                                </div>
+                                <div class="item py-2">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar7.png">
+                                    <div class="content">
+                                        <a href="" class="header">Rhys Brooks</a>
+                                        <div class="description">Has beeb online 4 day ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                List Headers
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="fs-6 mb-1">List, with headers</p>
+                            <div class="list celled animated selection">
+                                <div class="item py-1">
+                                    <a href="" class="fs-5 fw-semibold header">Paris</a>
+                                    Lorem ipsum dolor sit.
+                                </div>
+                                <div class="item py-1">
+                                    <a href="" class="fs-5 fw-semibold header">Moscow</a>
+                                    Lorem ipsum dolor sit amet, consectetur.
+                                </div>
+                                <div class="item py-1">
+                                    <a href="" class="fs-5 fw-semibold header">London</a>
+                                    Adipisci cumque doloribus voluptates.
+                                </div>
+                                <div class="item py-1">
+                                    <a href="" class="fs-5 fw-semibold header">San Francisco</a>
+                                    <div class="list">
+                                        <div class="item pb-1">
+                                            <a href="" class="fs-5 fw-semibold header">New Youk City</a>
+                                            Lorem ipsum dolor sit amet, consectetur.
+                                        </div>
+                                        <div class="item py-1">
+                                            <a href="" class="fs-5 fw-semibold header">Amsterdam</a>
+                                            Adipisci cumque doloribus voluptates.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Horizontal List
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="fs-6 mb-2">List with horizontally formatted and selectable items</p>
+                            <div class="list divided horizontal selection d-xl-flex flex-xl-row">
+                                <div class="item px-2 px-lg-4 py-1">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar7.png">
+                                    <div class="content">
+                                        <a href="" class="header">Reece Lewis</a>
+                                    </div>
+                                </div>
+                                <div class="item px-2 px-lg-4 py-1">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar6.png">
+                                    <div class="content">
+                                        <a href="" class="header">Jamie Jones</a>
+                                    </div>
+                                </div>
+                                <div class="item px-2 px-lg-4 py-1">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar5.png">
+                                    <div class="content">
+                                        <a href="" class="header">Taylor Fletcher</a>
+                                    </div>
+                                </div>
+                                <div class="item px-2 px-lg-4 py-1">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar4.png">
+                                    <div class="content">
+                                        <a href="" class="header">Veronika Ossi</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="fs-6 mb-2 mt-5">Ordered horizontal list with  selectable items</p>
+                            <div class="list ordered horizontal selection">
+                                <div class="item px-lg-4 py-1">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar7.png">
+                                    <div class="content">
+                                        <a href="" class="header">Reece Lewis</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar6.png">
+                                    <div class="content">
+                                        <a href="" class="header">Jamie Jones</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar5.png">
+                                    <div class="content">
+                                        <a href="" class="header">Taylor Fletcher</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/avatar/avatar4.png">
+                                    <div class="content">
+                                        <a href="" class="header">Veronika Ossi</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                HEADINGS
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <h1>h1.heading
+                                <small class="c-gray">h1.sub.heading</small>
+                            </h1>
+                            <h2>h2.heading
+                                <small class="c-gray">h2.sub.heading</small>
+                            </h2>
+                            <h3>h3.heading
+                                <small class="c-gray">h3.sub.heading</small>
+                            </h3>
+                            <h4>h4.heading
+                                <small class="c-gray">h4.sub.heading</small>
+                            </h4>
+                            <h5>h5.heading
+                                <small class="c-gray">h5.sub.heading</small>
+                            </h5>
+                            <h6>h6.heading
+                                <small class="c-gray">h6.sub.heading</small>
+                            </h6>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                BLOCKQUOTES
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div>
+                                <p class="fs-7 mb-1">Wrap <code>&lt;blockquote class="blockquote"&gt;</code> around any text for the quoting</p>
+                                <blockquote class="blockquote mb-7">
+                                    <p class="mb-0">It is a long established fact that a reader will be distracted by the readable ...</p>
+                                    <footer class="blockquote-footer c-gray">Someone famous in <cite title="Source Title">Source
+                                        Title</cite></footer>
+                                </blockquote>
+                                <p class="fs-7 mb-1"><code>.blockquote-reverse</code> for right aligned quotes</p>
+                                <blockquote class="blockquote blockquote-reverse">
+                                    <p class="mb-0">It is a long established fact that a reader will be distracted by the readable ...</p>
+                                    <footer class="blockquote-footer c-gray">Someone famous in <cite title="Source Title">Source
+                                        Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                EMPHASIS CLASSES
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="fs-7 mb-4">Change colors with <code>text-{muted | primary | success | info | warning | danger | white}</code> classes</p>
+                                    <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                                    </p>
+                                    <p class="text-primary">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+                                    <p class="text-success">Explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.</p>
+                                    <p class="text-info">Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                                    <p class="text-warning">Dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
+                                    <p class="text-danger">Magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.
+                                    </p>
+                                    <p class="text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="fs-7 mb-4">Styled with <code>segment-{primary | success | info | warning | danger}</code> classes</p>
+                                    <p class="bgc-white-darker p-2 segment-success">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                                    </p>
+                                    <p class="bgc-white-darker p-2 segment-warning">
+                                        Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+                                    </p>
+                                    <p class="bgc-white-darker p-2 segment-danger">
+                                        Explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="bg-primary p-2 text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                            </p>
+                            <p class="bg-success p-2 text-white">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+                            </p>
+                            <p class="bg-info p-2 text-white">Explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.
+                            </p>
+                            <p class="bg-warning p-2 text-white">Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
+                            </p>
+                            <p class="bg-danger p-2 text-white">Dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+                            </p>
+                            <p class="bg-inverse p-2 text-white">Magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.
+                            </p>
+                            <p class="bgc-white-darkest p-2">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/app');
+        </script>
+    {{/content}}
+{{/extend}}

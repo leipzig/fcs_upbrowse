@@ -1,0 +1,98 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: Adapted Rating plugin
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+@import "variables";
+
+.rating { display: block; font-size: $font-size-5; vertical-align: $rating-vertical-align;
+    &.rating-enable { cursor: pointer; }
+    .icon { font-family: 'FontAwesome'; line-height: 1; backface-visibility: hidden; font-weight: normal; font-style: normal; text-align: center; display: inline-block; }
+
+    /* Empty Star */
+    .icon:before { content: '\f005'; }
+
+    /* Active Star */
+    .active.icon:before { content: '\f005'; }
+
+/*******************************
+             Types
+*******************************/
+
+/*-------------------
+        Star
+--------------------*/
+
+    /* Inactive */
+    &.star .icon { color: $rating-star-inactive-color; width: $rating-star-icon-width; }
+
+    /* Active Star */
+    &.star .active.icon { color: $rating-star-active-color !important; text-shadow: $rating-star-active-text-shadow; }
+    &.star .active.icon:before { content: '\f005'; }
+
+    /* Selected Star */
+    &.star .icon.selected,
+    &.star .icon.selected.active { color: $rating-star-selected-color !important; }
+    &.star.partial { position: relative; z-index: 1; }
+    &.star.partial:before { position: absolute; z-index: -1; }
+
+    /* Unfilled Star */
+    &.star .icon:before { content: '\f005'; }
+
+    /* Partial */
+    &.star .partial.icon:before { content: '\f006'; }
+    &.star .partial.icon { content: '\f005'; }
+
+/*-------------------
+        Heart
+--------------------*/
+    /* Icon */
+    &.heart .icon { color: $rating-heart-inactive-color; width: $rating-heart-icon-width;  cursor: pointer;  margin: 0; text-align: center; height: auto; padding: 0;
+        font-weight: normal; font-style: normal; vertical-align: $rating-vertical-align;}
+
+    /* Active Heart */
+    &.heart .active.icon { text-shadow: $rating-heart-active-text-shadow; color: $rating-heart-active-color !important; }
+    &.heart .active.icon:before { content: '\f004'; }
+    &.heart:last-child { margin-right: 0; }
+    &.heart:before { display: block; content: ''; visibility: hidden; clear: both; height: 0; }
+
+    /* Selected Heart */
+    &.heart .icon.selected,
+    &.heart .icon.selected.active { color: $rating-heart-selected-color !important; }
+
+    /* Empty Heart
+    &.heart .icon:before { content: '\f08a';}*/
+    &.heart .icon:before { content: '\f004'; }
+
+/*******************************
+             States
+*******************************/
+
+    /* Inactive Icon */
+    .icon { color: $rating-inactive-color; }
+
+    /* Active Icon */
+    .active.icon { color: $rating-active-color; }
+
+    /* Selected Icon */
+    .icon.selected,
+    .icon.selected.active { color: $rating-active-color; }
+
+/*-------------------
+       Disabled
+--------------------*/
+
+    /* disabled rating */
+    &.disabled .icon { cursor: default; }
+
+/*-------------------
+     Interacting (Active)
+--------------------*/
+
+    /* Selected Rating */
+    &.selected .active.icon { opacity: $rating-interactive-active-icon-opacity; }
+    &.selected .icon.selected,
+    .icon.selected { opacity: $rating-interactive-selected-icon-opacity; }
+}

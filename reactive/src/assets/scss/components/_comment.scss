@@ -1,0 +1,40 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: Comments
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+.comments { @include list-plus($list-plus-theme-default);
+    &.threaded { @include list-plus-threaded('.comment', $list-plus-threaded-theme-default); }
+    .comment { @include list-plus-item(map_merge($list-plus-elements-theme-default, (padding: 2.2em 0 0)));
+        .avatar { @include list-plus-avatar($list-plus-avatar-theme-default); }
+        .content { @include list-plus-content($list-plus-content-theme-default);
+            .author { @include list-plus-author($list-plus-author-theme-default); }
+            .metadata { @include list-plus-metadata($list-plus-metadata-theme-default); }
+            &.text { @include list-plus-text(map_merge($list-plus-text-theme-default, (line-height: $line-height-h5))); text-indent: 4ch; }
+            &.actions { @include list-plus-actions($list-plus-actions-theme-default); }
+        }
+        .comments {
+            @include list-plus-nested-list('.comment', map_merge($list-plus-nested-list-theme-default, (margin: 2.2em 0 1.5em 79px)));
+        }
+    }
+    .reply { @include list-plus-reply($list-plus-reply-theme-default); }
+}
+
+.panel-wrap[max-width~="561px"] .comments {
+    .comment .content.actions {
+        .action { margin-right: 1rem !important; }
+        .text { display: none; }
+    }
+    .comments { margin-left: 30px; }
+    .comment .content { margin-left: 70px!important; }
+    .comment .content.text,
+    .comment .content.actions {
+        margin-left: 0 !important;
+    }
+    .comment .content.text { margin-top: 1.7rem; }
+    .reply { margin-left: 0; }
+}
+

@@ -1,0 +1,248 @@
+// Start with assigning color names to specific hex values.
+$red:           #a53012 !default; // #7F260F !default;
+$orange:        #d39d2b !default; // #AB6A1B !default;
+$yellow:        #a58825 !default; // #A18825 !default;
+$green:         #4c8033 !default; // #498033 !default;
+$blue-light:    #aab0bf !default; // #aab0bf !default;
+$blue:          #3e5190 !default; // #31457a !default;
+$blue-dark:     #353b4a !default; // #353b4a !default;
+$teal:          #3a8586 !default; // #2d6f70 !default;
+$pink:          #9e3359 !default; // #9A3359 !default;
+$purple:        #542e78 !default; // #502E78 !default;Z
+
+$white:         #fff !default;
+$white-dark:    #f4f9fc !default;
+$white-darker:  #eef6f8 !default;
+$white-darkest: #e6eff3 !default;
+$gray-lightest: #e7edf0 !default;
+$gray-lighter:  #dee4e8 !default;
+$gray-light:    #a9aeb1 !default;
+$gray:          #797e81 !default;
+$gray-dark:     #585e61 !default;
+$gray-darker:   #484e51 !default;
+$gray-darkest:  #383e41 !default;
+$black:         #000 !default;
+
+/* Reactive colors clr() */
+$palette: (
+    colors: (
+        'success': $blue,
+        'primary': $green,
+        'warning': $yellow,
+        'danger': $red,
+        'info': $teal,
+        'body': $blue-dark,
+        'body-inverse': $blue-light,
+        'purple': $purple,
+        'pink': $pink,
+        'orange': $orange
+    ),
+    tones: (
+        'darkest': 18,
+        'darker': 12,
+        'dark': 6,
+        'normal' : 0,
+        'light' : -6,
+        'lighter' : -12,
+        'lightest' : -18
+    ),
+    alpha: (
+        //'low': 0.675,
+        //'medium': 0.8,
+        //'high': 0.9
+    ),
+    mix: (
+        'color': #ff0000,
+        'keep': 100%
+    )
+);
+
+/* Bootstrap theme colors */
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$theme-colors: (
+    success: $blue,
+    primary: $green,
+    info: $teal,
+    warning: $yellow,
+    danger: $red,
+    inverse: $gray-dark
+) !default;
+
+$colors: (
+    blue: $blue,
+    purple: $purple,
+    pink: $pink,
+    red: $red,
+    orange: $orange,
+    yellow: $yellow,
+    green: $green,
+    teal: $teal,
+    white: $white,
+    gray: $gray,
+    gray-dark: $gray-dark
+) !default;
+
+$grays: (
+    100: $gray-100,
+    200: $gray-200,
+    300: $gray-300,
+    400: $gray-400,
+    500: $gray-500,
+    600: $gray-600,
+    700: $gray-700,
+    800: $gray-800,
+    900: $gray-900
+) !default;
+
+// Brand Colors
+$color-youtube: #e52d27;
+$color-youtube-square: $color-youtube;
+$color-youtube-play: $color-youtube;
+$color-yelp: #af0606;
+$color-y-combinator: #F0652F;
+$color-yc: $color-y-combinator;
+$color-yahoo: #400191;
+$color-xing: #026466;
+$color-xing-square: $color-xing;
+$color-wordpress: #21759b;
+$color-windows: #00bcf2;
+$color-wikipedia-w: #000;
+$color-wechat: #93d034;
+$color-weixin: $color-wechat;
+$color-weibo: #E71D34;
+$color-vk: #45668e;
+$color-vine: #00b488;
+$color-vimeo: #1ab7ea;
+$color-vimeo-square: $color-vimeo;
+$color-viacoin: #333;
+$color-twitter: #55acee;
+$color-twitter-square: $color-twitter;
+$color-twitch: #6441a5;
+$color-tumblr: #35465c;
+$color-tumblr-square: $color-tumblr;
+$color-tripadvisor: #589442;
+$color-trello: #256a92;
+$color-tencent-weibo: #74AF2C;
+$color-stumbleupon: #eb4924;
+$color-stumbleupon-circle: $color-stumbleupon;
+$color-steam: #0B0B0B;
+$color-steam-square: $color-steam;
+$color-stack-overflow: #fe7a15;
+$color-stack-exchange: #000;
+$color-spotify: #7ab800;
+$color-soundcloud: #f80;
+$color-slideshare: #e98325;
+$color-slack: #0f7965;
+$color-skype: #00aff0;
+$color-skyatlas: #00adbb;
+$color-simplybuilt: #000;
+$color-shirtsinbulk: #dd3a26;
+$color-share-alt: #01bf01;
+$color-share-alt-square: $color-share-alt;
+$color-sellsy: #1f78b9;
+$color-safari: #1B88CA;
+$color-renren: #005EAC;
+$color-reddit: #ff4500;
+$color-reddit-square: $color-reddit;
+$color-ra: #000;
+$color-rebel: $color-ra;
+$color-qq: #000;
+$color-pinterest: #cc2127;
+$color-pinterest-square: $color-pinterest;
+$color-pinterest-p: $color-pinterest;
+$color-pied-piper: #2f9f46;
+$color-pied-piper-square: $color-pied-piper;
+$color-pied-piper-alt: $color-pied-piper;
+$color-paypal: #253b80;
+$color-pagelines: #000;
+$color-optin-monster: #83c11f;
+$color-opera: #cc0f16;
+$color-openid: #F78C40;
+$color-opencart: #2AC2EF;
+$color-odnoklassniki: #ed812b;
+$color-odnoklassniki-square: $color-odnoklassniki;
+$color-medium: #000;
+$color-meanpath: #538ed7;
+$color-maxcdn: #FF6600;
+$color-linux: #333333;
+$color-linkedin: #0976b4;
+$color-linkedin-square: $color-linkedin;
+$color-leanpub: #0c0c0c;
+$color-lastfm: #c3000d;
+$color-lastfm-square: $color-lastfm;
+$color-jsfiddle: #4679BD;
+$color-joomla: #142849;
+$color-ioxhost: #faa729;
+$color-internet-explorer: #1EBBEE;
+$color-instagram: #3f729b;
+$color-html5: #e34f26;
+$color-houzz: #7ac142;
+$color-hacker-news: #ff6600;
+$color-google: #4285f4;
+$color-google-wallet: $color-google;
+$color-google-plus: #dd4b39;
+$color-google-plus-square: $color-google-plus;
+$color-gittip: #663300;
+$color-git: #333;
+$color-github: $color-git;
+$color-github-square: $color-github;
+$color-github-alt: $color-github;
+$color-git-square: $color-git;
+$color-gg: #000;
+$color-gg-circle: #000;
+$color-get-pocket: #d3505a;
+$color-ge: #000;
+$color-foursquare: #0072b1;
+$color-forumbee: #83ad13;
+$color-fonticons: #1C1E29;
+$color-flickr: #ff0084;
+$color-firefox: #e66000;
+$color-facebook: #3b5998;
+$color-facebook-square: $color-facebook;
+$color-facebook-official: $color-facebook;
+$color-expeditedssl: #343433;
+$color-empire: #000;
+$color-drupal: #0077c0;
+$color-dropbox: #007ee5;
+$color-dribbble: #444444;
+$color-digg: #000;
+$color-deviantart: #4e6252;
+$color-delicious: #3399ff;
+$color-dashcube: #7f7f7f;
+$color-css3: #1680C0;
+$color-creative-commons: #231f20;
+$color-contao: #eb8623;
+$color-connectdevelop: #391448;
+$color-codepen: #000;
+$color-chrome: #4587F3;
+$color-cc-visa: #0157a2;
+$color-cc-stripe: #00afe1;
+$color-cc-paypal: #253b80;
+$color-cc-mastercard: #0a3a82;
+$color-cc-jcb: #003A8F;
+$color-cc-discover: #f68121;
+$color-cc-diners-club: #004A97;
+$color-cc-amex: #007bc1;
+$color-buysellads: #c90100;
+$color-bitcoin: #ee9209;
+$color-btc: $color-bitcoin;
+$color-black-tie: #222;
+$color-bitbucket: #205081;
+$color-bitbucket-square: $color-bitbucket;
+$color-behance: #1769ff;
+$color-behance-square: $color-behance;
+$color-apple: #979797;
+$color-angellist: #000;
+$color-android: #a4c639;
+$color-amazon: #ff9900;
+$color-adn: #4A484C;
+$color-500px: #0099e5;

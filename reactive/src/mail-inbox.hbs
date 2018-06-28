@@ -1,0 +1,550 @@
+{{#extend "layout-1" current="mail-inbox"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack" id="panel-grid">
+                <section data-gs-height="90" data-smart-icon="fa fa-inbox" class="hidden-lg-down col-sm-12 col-md-12 col-lg-4 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix panel-header-p grid-stack-handle bgc-white-dark panel-header-md">
+                            <button class="btn btn-primary px-5"><i class="fa fa-edit icon-mr-ch"></i>Compose</button>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="mail-folders panel-body-p pt-0 mr-1 mt-4 pb-0 mb-4">
+                                <div class="list mb-4">
+                                    <div class="item mb-2">
+                                        <i class="fa fa-inbox icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header gray">
+                                                <span class="c-gray-dark font-weight-bold">Inbox</span>
+                                                <span class="badge badge-pill badge-info pull-right">150</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-paper-plane icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header"><span class="c-gray-dark">Sent</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-star icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header"><span class="c-gray-dark">Starred</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-exclamation-circle icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header">
+                                                <span class="c-gray-dark">Important</span>
+                                                <span class="badge badge-pill badge-danger pull-right">105</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-files-o icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header"><span class="c-gray-dark">Drafts</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-ban icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header">
+                                                <span class="c-gray-dark">Spam</span>
+                                                <span class="badge badge-pill badge-default pull-right">2</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-trash icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header"><span class="c-gray-dark">Trash</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <a class="fs-5clearfix" data-toggle="collapse" href="#collapseLabels" aria-expanded="true" aria-controls="collapseLabels">
+                                        <span class="c-gray fw-light">Labels</span>
+                                        <i class="fa fa-angle-down pull-right"></i>
+                                    </a>
+                                    <div class="collapse show" id="collapseLabels">
+                                        <div class="list pt-3">
+                                            <div class="item mb-2">
+                                                <i class="fa fa-tags icon c-danger"></i>
+                                                <div class="content">
+                                                    <a href="" class="header gray"><span class="c-gray-dark">Friends</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-2">
+                                                <i class="fa fa-tags icon c-primary"></i>
+                                                <div class="content">
+                                                    <a href="" class="header"><span class="c-gray-dark">Family</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-2">
+                                                <i class="fa fa-tags icon c-warning"></i>
+                                                <div class="content">
+                                                    <a href="" class="header"><span class="c-gray-dark">Work</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="fa fa-gear icon c-gray"></i>
+                                                <div class="content">
+                                                    <a href="" class="header"><span class="c-gray">Manage Labels</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="fs-5 clearfix" data-toggle="collapse" href="#collapseFolders" aria-expanded="true" aria-controls="collapseFolders">
+                                    <span class="c-gray fw-light">Folders</span>
+                                    <i class="fa fa-angle-down pull-right"></i>
+                                </a>
+                                <div class="collapse show" id="collapseFolders">
+                                    <div class="list pt-3">
+                                        <div class="item mb-2">
+                                            <i class="fa fa-ban icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header gray"><span class="c-gray-dark">Spam</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item mb-2">
+                                            <i class="fa fa-folder icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">Yahoo Mail</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item mb-2">
+                                            <i class="fa fa-folder icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">Gmail</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item mb-2">
+                                            <i class="fa fa-folder icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">Company</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item mb-2">
+                                            <i class="fa fa-folder icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">From Conference</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa fa-gear icon c-gray"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">Manage Folders</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="90" class="col-sm-12 col-md-12 col-lg-12 col-xl-9 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle  bgc-white-dark panel-header-md">
+                            <div class="panel-input pull-left">
+                                <input class="form-control form-control-sm search-control" data-list=".mail-list" type="text" placeholder="Search">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            <a href="" class="panel-header-link pull-right"><i class="fa fa-gear"></i></a>
+                            <div class="hidden-xs-down">
+                                <a href="" class="panel-header-link pull-right"><i class="fa fa-angle-right"></i></a>
+                                <span class="pull-right px-2">1 - 20 of 250</span>
+                                <a href="" class="panel-header-link pull-right"><i class="fa fa-angle-left"></i></a>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body-p pt-0 mb-3">
+                                <div class="list m-0">
+                                    <div class="mail-inbox item checked-list-item p-0">
+                                        <div class="checked-list-checkbox ui master checkbox">
+                                            <input type="checkbox" name="mail-list">
+                                            <label></label>
+                                        </div>
+                                        <div class="c-gray-dark checked-list-details pr-0">
+                                            <div class="row">
+                                                <div class="col-sm-12 actions">
+                                                    <a href="" class="c-gray-dark mr-5 mr-sm-6 hidden-xl-up"><i class="fa fa-file-o icon-mr"></i><span class="text">New</span></a>
+                                                    <a href="" class="c-gray-dark mr-5 mr-sm-6"><i class="fa fa-ban icon-mr"></i><span class="text">Spam</span></a>
+                                                    <a href="" class="c-gray-dark mr-5 mr-sm-6"><i class="fa fa-trash icon-mr"></i><span class="text">Delete</span></a>
+                                                    <div class="dropdown d-inline-block mr-5 mr-sm-6">
+                                                        <a href="#" class="c-gray-dark" id="dropdownMove" data-toggle="dropdown"
+                                                           aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fa fa-folder icon-mr-ch"></i><span class="text">Move</span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right lh-5" aria-labelledby="dropdownMove">
+                                                            <div class="dropdown-menu-content">
+                                                                <a class="dropdown-item" href="#">Folder</a>
+                                                                <a class="dropdown-item" href="#">Other Folder</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown d-inline-block">
+                                                        <a href="#" class="c-gray-dark" id="dropdownMore" data-toggle="dropdown"
+                                                           aria-haspopup="true" aria-expanded="false">
+                                                            <i class="icon-options"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right lh-5" aria-labelledby="dropdownMore">
+                                                            <div class="dropdown-menu-content">
+                                                                <a class="dropdown-item" href="#"><i class="fa fa-folder icon-mr"></i>Move</a>
+                                                                <a class="dropdown-item" href="#"><i class="fa fa-gear icon-mr"></i>Settings</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list celled mail-list p-0">
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-warning fa fa-star"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="font-weight-bold">Robert Matthews</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="c-primary fa fa-tags"></i></span>
+                                                            <span class="mr-2 font-weight-bold">Lorem Ipsum</span>
+                                                            <span class="c-gray">It is a long established fact that a reader will be ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 15</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation-circle c-danger"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="font-weight-bold">Arthur Murray</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2 font-weight-bold">Simply dummy text</span>
+                                                            <span class="c-gray">The point of using Lorem Ipsum is that it has a ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right"><i class="fa icon-mr fa-paperclip"></i>Sep 15</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="font-weight-bold">me, Max Reynolds</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2 font-weight-bold">Typesetting industry</span>
+                                                            <span class="c-gray">Many desktop publishing packages and ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 14</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation-circle c-danger"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Dominic Johnson</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="c-primary fa fa-tags"></i></span>
+                                                            <span class="mr-2">Industry's standard</span>
+                                                            <span class="c-gray">Various versions have evolved over the ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 13</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-warning fa fa-star"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation-circle c-danger"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Envato Support (2)</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2">Specimen book</span>
+                                                            <span class="c-gray">There are many variations of passages of Lorem ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 13</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Envato Support</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2">Consectetur</span>
+                                                            <span class="c-gray">If you are going to use a passage of Lorem Ipsum ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 13</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Digital World</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2">Eiusmod tempor</span>
+                                                            <span class="c-gray">All the Lorem Ipsum generators on the Internet ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right"><i class="fa icon-mr fa-paperclip"></i>Sep 10</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Ashton Francis (4)</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2">Incididunt ut labore et dolore</span>
+                                                            <span class="c-gray">It uses a dictionary of over ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 10</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Ignacio Rush</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2">Magna aliqua</span>
+                                                            <span class="c-gray">The generated Lorem Ipsum is therefore always free ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 10</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Max Reynolds</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="c-warning fa fa-tags"></i></span>
+                                                            <span class="mr-2">Ut enim ad minim veniam</span>
+                                                            <span class="c-gray">Contrary to popular belief, Lorem Ipsum ... </span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 10</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Nehemiah Nash</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2">Quis nostrud exercitation ullamco</span>
+                                                            <span class="c-gray">The standard chunk of Lorem ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 10</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-gray-light fa fa-star-o"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">me, Nasir Anderson</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2">Aliquip ex ea commodo</span>
+                                                            <span class="c-gray"> Richard McClintock, a Latin professor at ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 9</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-warning fa fa-star"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Jay Christian</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2">Duis aute irure dolor</span>
+                                                            <span class="c-gray">Lorem Ipsum comes from sections 1.10.32 ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right">Sep 9</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item checked-list-item p-0">
+                                                <div class="checked-list-checkbox ui child checkbox">
+                                                    <input type="checkbox" name="mail-list">
+                                                    <label></label>
+                                                </div>
+                                                <div onclick="window.location.href='mail-reply.html'" class="c-gray-dark checked-list-details">
+                                                    <div class="row">
+                                                        <div class="col-md-1 mail-detail mail-star">
+                                                            <span class="icon-control mr-1"><i class="c-warning fa fa-star"></i></span>
+                                                            <span class="icon-control"><i class="c-gray-light fa fa-exclamation"></i></span>
+                                                        </div>
+                                                        <div class="col-md-3 mail-detail"><span class="">Enrique Steele</span></div>
+                                                        <div class="col-md-6 mail-text mail-detail">
+                                                            <span class="icon-control mail-tags mr-2"><i class="icon-tag c-gray-light"></i></span>
+                                                            <span class="mr-2">Aboris nisi ut consequat</span>
+                                                            <span class="c-gray"> The first line of Lorem Ipsum, "Lorem ...</span>
+                                                        </div>
+                                                        <div class="col-md-2 c-gray mail-detail mail-date">
+                                                            <span class="pull-right"><i class="fa icon-mr fa-paperclip"></i>Sep 9</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/mail');
+        </script>
+    {{/content}}
+{{/extend}}

@@ -1,0 +1,262 @@
+/*!
+ * @version: 1.1.1
+ * @name: _mixins
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+@mixin sidebar-profile() {
+    // profile
+    overflow: hidden;
+    .details { padding: 30px; position: relative;
+        .name { font-size: $font-size-6; line-height: (28rem / 14); }
+        .about { margin-top: 10px; font-size: $font-size-7; }
+        .sbg-settings,
+        .sbg-title { display: none; }
+    }
+    .picture { background-repeat: no-repeat; width: 65px; height: 65px; border: 1px solid clr( body-inverse-light ); vertical-align: middle; margin-right: 20px; display: inline-block; }
+}
+@mixin sidebar-profile-with-pic() {
+    @include media-breakpoint-down(sm) {
+        .details { padding: 30px 25px 25px;
+            .about { margin-top: 10px; font-size: 1rem; float: none; text-align: center; color: clr( body-inverse-dark );
+                h3 { font-size: $font-size-5; color: clr( body-inverse-lighter );}
+            }
+            .picture { width: 60px; height: 60px; }
+        }
+    }
+    @include media-breakpoint-up(md) {
+        .details { padding: 30px 25px 25px;
+            .picture { width: 85px; height: 85px; float: none; }
+        }
+    }
+    .details { background: linear-gradient(rgba(clr(body-dark), .1), rgba(clr(body-dark), .3)), url('../img/profile-bg.jpg'); background-size: 300% 180%;
+        .about { margin-top: 10px; font-size: 1rem; float: none; text-align: center; color: clr( body-inverse-dark );
+            h3 { font-size: $font-size-5; color: clr( body-inverse-lighter );}
+        }
+        .sbg-settings { display: none; }
+        .sbg-title { display: none; }
+        .settings { display: block; color: clr( body-inverse-lighter ); }
+        .picture { border: 2px solid clr(body-inverse); margin: 0 auto; display: block; }
+    }
+}
+@mixin sidebar-profile-without-pic() {
+    @include media-breakpoint-down(sm) {
+        .details { padding: 30px 25px 25px;
+            .about { margin-top: 10px; font-size: 1rem; float: none; text-align: center; color: clr( body-inverse-dark );
+                h3 { font-size: $font-size-5; color: clr( body-inverse-lighter );}
+            }
+            .picture { width: 60px; height: 60px; }
+        }
+    }
+    @include media-breakpoint-up(md) {
+        .details { padding: 150px 25px 25px;
+            .picture { width: 55px; height: 55px; position: fixed; left: 17px; top: 19px; z-index: 2; }
+        }
+    }
+    .details { background: linear-gradient(rgba(clr(body-dark), .1), rgba(clr(body-dark), 1)), url('../img/profile-bg-2.jpg'); background-size: cover;
+        .about { display: none; }
+        .sbg-settings { display: none; }
+        .sbg-title { display: none; }
+        .settings { display: none; }
+        .picture { border: 2px solid clr(body-inverse); margin: 0 auto; display: block; }
+    }
+}
+@mixin sidebar-profile-with-pic-border() {
+    @include media-breakpoint-down(sm) {
+        .details { padding: 30px 25px 25px;
+            .about { margin-top: 10px; font-size: 1rem; float: none; text-align: center; color: clr( body-inverse-dark );
+                h3 { font-size: $font-size-5; color: clr( body-inverse-lighter );}
+            }
+            .picture { width: 60px; height: 60px; }
+        }
+    }
+    @include media-breakpoint-up(md) {
+        .details { padding: 150px 25px 15px;
+            .picture { width: 55px; height: 55px; z-index: 2; }
+            .about { border-bottom: 7px solid #1b1f26; padding-bottom: 11px; width: 226px;
+                .name { font-size: 1rem; line-height: 1rem; margin-top: 19px;}
+                .sbg-title { font-size: 10px;}
+            }
+        }
+    }
+    .details { background: linear-gradient(rgba(clr(body-dark), .1), rgba(clr(body-dark), 1)), url('../img/profile-bg-2.jpg'); background-size: cover;
+        .sbg-settings { display: none; }
+        .settings { display: none; }
+        .picture { border: 2px solid clr(body-inverse); margin: 0 auto; display: block; }
+
+    }
+}
+@mixin tab-links-side() {
+    z-index: 1; height: 100%;  position: fixed; left: 0; top: 0;
+}
+@mixin sidebar-def-state($theme) {
+    &.fixed-header.sidebar-def-state-open.sidebar-type-slide,
+    &.aside-header-fixed.sidebar-def-state-open.sidebar-type-slide {
+        .header-wrap { left: map_get($theme, open-width);}
+    }
+    &.sidebar-def-state-open .panel.panel-maximized-screen { left: map_get($theme, open-width); }
+    &.fixed-header.sidebar-def-state-compact.sidebar-type-slide,
+    &.aside-header-fixed.sidebar-def-state-compact.sidebar-type-slide {
+        .header-wrap { left: map_get($theme, compact-width);}
+    }
+    &.sidebar-def-state-compact .panel.panel-maximized-screen { left: map_get($theme, compact-width); }
+}
+@mixin sidebar-state-open($theme) {
+    & { padding-left: map-get($theme, open-width);
+        &.fixed-header.sidebar-type-push,
+        &.aside-header-fixed.sidebar-type-push {
+            .header-wrap { left: map-get($theme, open-width); }
+        }
+        .page-loader.loader-wrap { left: map-get($theme, open-width); }
+        @content;
+    }
+}
+@mixin sidebar-state-compact($theme) {
+    & { padding-left: map-get($theme, compact-width);
+        &.fixed-header.sidebar-type-push,
+        &.aside-header-fixed.sidebar-type-push {
+            .header-wrap { left: map-get($theme, compact-width);}
+        }
+        .page-loader.loader-wrap { left: map-get($theme, compact-width); }
+        @content;
+    }
+}
+@mixin sidebar-state-close($theme) {
+    & { padding-left: 0;
+        &.sidebar-type-slide .sidebar-wrap { left: -(map-get($theme, open-width)); }
+        > .sidebar-wrap { width: 0;
+            > .sidebar-content { width: 0; }
+        }
+        @content;
+    }
+}
+@mixin sidebar-state-top($theme) {
+
+}
+@mixin sidebar-state-bottom($theme) {
+
+}
+@mixin sidebar-bg-default($theme) {
+    .sidebar-wrap {
+        .profile { color: clr( body-inverse-dark );
+            .details { color: clr( body-inverse-light );
+                @if(map-get($theme, details-bg)) {
+                    background: map-get($theme, details-bg);
+                };
+                .name { color: clr( body-inverse-light ); }
+            }
+        }
+        .footer-menu-overlay { background: clr('body-darkest'); }
+        .sidebar-menu { background: clr(body-dark);
+            li {
+                &.menu-item:hover > a,
+                &.menu-item.current > a,
+                &.menu-item.active > a { color: clr( body-inverse-light ); background: clr( body-darker ); }
+                &.menu-item.current > a {  border-left-color: $brand-primary; }
+                &.menu-item.current > a { background: clr( body-darkest );}
+                &.footer {
+                    > a { background: clr(  body-darker ); }
+                    ul { background: clr( body-dark ); }
+                }
+            }
+            .sub-menu { background: clr( body-dark ); }
+        }
+        .tab-links { background:  map-get($theme, links-bg);
+            a[data-toggle="tab"] { color: map-get($theme, links-color);
+                &:hover,
+                &:active,
+                &.active { background: map-get($theme, links-link-bg); color: clr( body-inverse-light ); }
+            }
+        }
+        .btn.btn-outline-sidebar { background: transparent; color: clr(body-inverse); border-color: clr(body-inverse-darkest);
+            &:hover,
+            &:active,
+            &:focus { background: clr(body-inverse-darkest); color: clr(body-dark); border-color: clr(body-inverse-darkest); }
+        }
+        .form-control { border-bottom-color: clr(body-inverse-darkest); background-color: clr(body-darker); color: clr(body-inverse);
+            &:active,
+            &:focus { background: clr(body-darker); color: clr(body-inverse); border-color: $brand-primary; }
+        }
+        .ui.checkbox .box:before, .ui.checkbox label:before { background-color: clr(body-darker); border-color: clr(body-darker);}
+        .ui.checkbox label:not(.has-state), .ui.checkbox + label:not(.has-state) { color: clr(body-inverse-darker)}
+        .noUi-target { background-color: clr(body-darker); }
+        .ui.select-dropdown .menu { background-color: clr(body-darker); border-color: clr(body-darker); color: clr(body-inverse-dark); }
+        .ui.select-dropdown .menu > .item { color: clr(body-inverse-dark); }
+        .ui.select-dropdown .menu > .active.item,
+        .ui.select-dropdown .menu > .item:active,
+        .ui.select-dropdown .menu > .item:hover { background-color: clr(body-darkest); color: clr(body-inverse) }
+    }
+    &.sidebar-state-compact {
+        .sidebar-wrap:after { background: clr(body-dark); }
+    }
+}
+@mixin sidebar-bg-one($theme) {
+    .sidebar-wrap { background-size: cover;
+        &:after {
+            background: linear-gradient(rgba(clr( body-darkest ), .7), rgba(clr( body-darkest ), 1)), url('../img/profile-bg.jpg') top no-repeat;
+            background-size: cover;
+        }
+        .profile {
+            .about { color: clr( body-inverse-dark );
+                h3 { color: clr( body-inverse-light );}
+            }
+            .picture { border-color: clr(body-inverse); }
+        }
+        .btn.btn-outline-sidebar { background: transparent; color: clr(body-inverse); border-color: clr(body-inverse-darkest);
+            &:hover,
+            &:active,
+            &:focus { background: clr(body-inverse-darkest); color: clr(body-dark); border-color: clr(body-inverse-darkest); }
+        }
+        .form-control { border-bottom-color: clr(body-inverse-darkest); background-color: clr(body-darker); color: clr(body-inverse);
+            &:active,
+            &:focus { background: clr(body-darker); color: clr(body-inverse); border-color: $brand-primary; }
+        }
+        .ui.checkbox .box:before, .ui.checkbox label:before { background-color: clr(body-darker); border-color: clr(body-darker);}
+        .ui.checkbox label:not(.has-state), .ui.checkbox + label:not(.has-state) { color: clr(body-inverse-darker)}
+        .noUi-target { background-color: clr(body-darker); }
+        .ui.select-dropdown .menu { background-color: clr(body-darker); border-color: clr(body-darker); color: clr(body-inverse-dark); }
+        .ui.select-dropdown .menu > .item { color: clr(body-inverse-dark); }
+        .ui.select-dropdown .menu > .active.item,
+        .ui.select-dropdown .menu > .item:active,
+        .ui.select-dropdown .menu > .item:hover { background-color: clr(body-darkest); color: clr(body-inverse) }
+    }
+    .footer-menu-overlay { background: clr('body-darkest'); }
+    .sidebar-menu {
+        li {
+            &.menu-item:hover > a,
+            &.menu-item.current > a,
+            &.menu-item.active > a { color: clr( body-inverse-light ); background: rgba(clr( body-darker ), .9); }
+            &.menu-item.current > a {  border-left-color: $brand-primary; }
+            &.menu-item.current > a { background: clr( body-darkest );}
+            &.footer {
+                > a { background: clr(  body-darker ); }
+                ul { background: clr( body-dark ); }
+            }
+        }
+        .sub-menu { background: rgba(clr( body-darkest ), .5); }
+    }
+    &.sidebar-state-open {
+
+    }
+    &.sidebar-state-compact {
+        .sidebar-wrap {
+            nav.sidebar-menu {
+                li .sub-menu {
+                    &.menu-item:hover > a,
+                    &.menu-item.current > a,
+                    &.menu-item.active > a { color: clr( body-inverse-light ); background: clr( body-darker ); }
+                    &.menu-item.current > a {  border-left-color: $brand-primary; }
+                    &.menu-item.current > a { background: clr( body-darkest );}
+                }
+            }
+        }
+    }
+    .tab-links {
+        a[data-toggle="tab"] { color: map-get($theme, links-color);
+            &:hover,
+            &:active,
+            &.active { color: clr( body-inverse-light ); }
+        }
+    }
+}

@@ -1,0 +1,1055 @@
+{{#extend "layout-1" current="documents"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="panel-wrap panel-grid-item grid-stack-item col-xl-9 col-lg-8 col-md-12">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-dark panel-header-md">
+                            <h2>
+                                Reactive Admin Template Documentation
+                            </h2>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <section id="overview" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Overview</h4>
+                                </header>
+                                <p class="text-indent">
+                                    Reactive is a multipurpose admin template designed to be simple, responsive, highly flexible and targeted
+                                    to any monitor sizes. It has been developed to address users best experience and simplicity of the user
+                                    interface. Every single component is written with best practices in mind, well tested and actively supported.
+                                    We are doing our best to provide you rapid and qualitative support. If you think there is something which
+                                    is not understandable, find a drawback, have suggestions about new functionality or
+                                    any other question about the template don't hesitate to send a message by our support service or by a
+                                    private email. All messages will be carefully considered and problems will be solved.
+                                </p>
+                                <p class="text-indent">
+                                    Reactive comes with two <b>html/javascript/css</b> and <b>handlebars/scss/typescript</b> versions.
+                                    Use the former version if you want to work with a plain html template.
+                                    You could find the html/javascript/css code in the html folder of the root directory.
+                                </p>
+                                <p><b>First of all you need to build the template to start editing:</b></p>
+                            </section>
+                            <section id="build" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Build</h4>
+                                </header>
+                                <div class="alert alert-info">
+                                    <i class="icon-exclamation icon-mr-ch fs-5"></i>You should already have <b><a class="c-info" target="_blank" href="https://nodejs.org/en/">Node.js</a></b> installed in your machine to build the project.
+                                </div>
+                                <p>Install <a target="_blank" href="https://nodejs.org/en/">Node.js</a></p>
+                                <p class="text-indent">
+                                    The template is using <b>Gulp</b> to automate the development and build processes and <b>Jspm</b> to manage modules and plugins.
+                                    All you should do to start your project is to open the terminal/console in the root directory
+                                    (where the <b>project.json</b> file is located) and enter fallowing commands based on which version you choose:
+                                </p>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#html-version" role="tab">Handlebars Version</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#hbs-version" role="tab">HTML Version</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content p-3 bw-1 bc-gray-lighter mb-4">
+                                    <div class="tab-pane active" id="html-version" role="tabpanel">
+                                        <ol class="lh-1">
+                                            <li class="pl-3"><code>npm install</code> to install all dependencies/plugins</li>
+                                            <li class="pl-3"><code>npm run serve.dev</code> to start the server in development mode</li>
+                                            <li class="pl-3">Open you favorite browser and enter http://localhost:5555 in the browser address bar</li>
+                                        </ol>
+                                        <p class="text-indent">
+                                            Take a look into the <b>src/</b> folder to make your changes.  Enter <code>npm run lint</code> to find all syntax errors in your typescript and scss files.
+                                            At the end enter <code>npm start</code> to compile the code, create css/js bundles, minify the code and start the server in production mode.
+                                            New <b>reactive_html/prod</b> folder will be generated with all template files. Please note:
+                                        </p>
+                                        <div class="alert alert-danger">
+                                            <i class="fa fa-exclamation-circle icon-mr-ch fs-5"></i>The command will remove already existing <b>reactive_html/prod</b> folder
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="hbs-version" role="tabpanel">
+                                        <ol class="lh-1">
+                                            <li class="pl-3"><code>npm install</code> to install all dependencies/plugins</li>
+                                            <li class="pl-3"><code>npm run build.html</code> to build html/js/css files. (<b>reactive_html/dev</b> folder will be recreated)</li>
+                                            <li class="pl-3"><code>npm run serve.html</code> to start the server in development mode</li>
+                                            <li class="pl-3">Open you favorite browser and enter http://localhost:5555 in the browser address bar</li>
+                                        </ol>
+                                        <p class="text-indent">
+                                            Take a look into the <b>reactive_html/dev</b> folder to make your changes.
+                                            At the end enter <code>npm run serve.html.prod</code> to create
+                                            css/js bundles, minify the code and start the server in production mode.
+                                            New <b>reactive_html/prod</b> folder will be generated with all template files. Please note:
+                                        </p>
+                                        <div class="alert alert-danger">
+                                            <i class="fa fa-exclamation-circle icon-mr-ch fs-5"></i>The command will remove already existing <b>reactive_html/prod</b> folder
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-indent">
+                                    The template has built in server which will reload the browser automatically and is good for development purposes.
+                                    In production you should be using a fully featured web server such as nginx, Apache, lighttpd, etc.
+                                    Template code for production is located in the <b>/reactive_html/prod</b> folder.
+                                </p>
+                            </section>
+                            <section id="structure" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>File Structure</h4>
+                                </header>
+                                <div class="list">
+                                    <div class="item">
+                                        <i class="fa fa-folder-open icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header">reactive-admin-template</a>
+                                            <div class="description fs-7">Root Folder</div>
+                                            <div class="list">
+                                                <div class="item">
+                                                    <i class="fa fa-folder-open icon"></i>
+                                                    <div class="content">
+                                                        <a href="" class="header">src</a>
+                                                        <div class="description fs-7">Template source files for <b>hbs/ts/scss</b> version</div>
+                                                        <div class="list">
+                                                            <div class="item">
+                                                                <i class="fa fa-folder-open icon"></i>
+                                                                <div class="content">
+                                                                    <a href="" class="header">assets</a>
+                                                                    <div class="list">
+                                                                        <div class="item">
+                                                                            <i class="fa fa-folder-open icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">fonts</a>
+                                                                                <div class="description fs-7">Template fonts</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="list">
+                                                                        <div class="item">
+                                                                            <i class="fa fa-folder-open icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">img</a>
+                                                                                <div class="description fs-7">All images used in the template</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="list">
+                                                                        <div class="item">
+                                                                            <i class="fa fa-folder-open icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">scss</a>
+                                                                                <div class="description fs-7">Scss styles</div>
+                                                                                <div class="list">
+                                                                                    <div class="item">
+                                                                                        <i class="fa fa-file-o icon"></i>
+                                                                                        <div class="content">
+                                                                                            <a href="" class="header">style.scss</a>
+                                                                                            <div class="description fs-7">Main scss file</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item">
+                                                                                        <i class="fa fa-file-o icon"></i>
+                                                                                        <div class="content">
+                                                                                            <a href="" class="header">...</a>
+                                                                                            <div class="description fs-7">Other scss files which are imported into style.scss</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fa fa-folder-open icon"></i>
+                                                                <div class="content">
+                                                                    <a href="" class="header">router</a>
+                                                                    <div class="list">
+                                                                        <div class="item">
+                                                                            <i class="fa fa-file-o icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">cytovas.json</a>
+                                                                                <div class="description fs-7">Used by handlebars to generate sidebar navigation and pages titles</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fa fa-folder-open icon"></i>
+                                                                <div class="content">
+                                                                    <a href="" class="header">partials</a>
+                                                                    <div class="description fs-7">Handlebars partial blocks</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fa fa-folder-open icon"></i>
+                                                                <div class="content">
+                                                                    <a href="" class="header">scripts</a>
+                                                                    <div class="description fs-7">Typescript code</div>
+                                                                    <div class="list">
+                                                                        <div class="item">
+                                                                            <i class="fa fa-folder-open icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">modules</a>
+                                                                                <div class="description fs-7">Modules imported into entry points</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <i class="fa fa-file-o icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">app.ts</a>
+                                                                                <div class="description fs-7">Default entry point</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <i class="fa fa-file-o icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">...</a>
+                                                                                <div class="description fs-7">Other entry points</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fa fa-file-o icon"></i>
+                                                                <div class="content">
+                                                                    <a href="" class="header">...</a>
+                                                                    <div class="description fs-7">Handlebars files which will be compiled into html pages by Gulp</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="fa fa-folder-open icon"></i>
+                                                    <div class="content">
+                                                        <a href="" class="header">reactive_html</a>
+                                                        <div class="description fs-7">html/js/css version</div>
+                                                        <div class="list">
+                                                            <div class="item">
+                                                                <i class="fa fa-folder-open icon"></i>
+                                                                <div class="content">
+                                                                    <a href="" class="header">dev</a>
+                                                                    <div class="description fs-7">html/js/css files for development</div>
+                                                                    <div class="list">
+                                                                        <div class="item">
+                                                                            <i class="fa fa-folder-open icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">assets</a>
+                                                                                <div class="list">
+                                                                                    <div class="item">
+                                                                                        <i class="fa fa-folder-open icon"></i>
+                                                                                        <div class="content">
+                                                                                            <a href="" class="header">fonts</a>
+                                                                                            <div class="description fs-7">Template fonts</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item">
+                                                                                        <i class="fa fa-folder-open icon"></i>
+                                                                                        <div class="content">
+                                                                                            <a href="" class="header">img</a>
+                                                                                            <div class="description fs-7">All images used in the template</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item">
+                                                                                        <i class="fa fa-folder-open icon"></i>
+                                                                                        <div class="content">
+                                                                                            <a href="" class="header">css</a>
+                                                                                            <div class="description fs-7">Css styles</div>
+                                                                                            <div class="list">
+                                                                                                <div class="item">
+                                                                                                    <i class="fa fa-file-o icon"></i>
+                                                                                                    <div class="content">
+                                                                                                        <a href="" class="header">style.css</a>
+                                                                                                        <div class="description fs-7">Main css styles</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="item">
+                                                                                                    <i class="fa fa-file-o icon"></i>
+                                                                                                    <div class="content">
+                                                                                                        <a href="" class="header">plugin.css</a>
+                                                                                                        <div class="description fs-7">Plugins css styles</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <i class="fa fa-folder-open icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">scripts</a>
+                                                                                <div class="description fs-7">Javascript code</div>
+                                                                                <div class="list">
+                                                                                    <div class="item">
+                                                                                        <i class="fa fa-folder-open icon"></i>
+                                                                                        <div class="content">
+                                                                                            <a href="" class="header">modules</a>
+                                                                                            <div class="description fs-7">Modules imported into entry points</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item">
+                                                                                        <i class="fa fa-file-o icon"></i>
+                                                                                        <div class="content">
+                                                                                            <a href="" class="header">app.js</a>
+                                                                                            <div class="description fs-7">Default entry point</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item">
+                                                                                        <i class="fa fa-file-o icon"></i>
+                                                                                        <div class="content">
+                                                                                            <a href="" class="header">...</a>
+                                                                                            <div class="description fs-7">Other entry points</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <i class="fa fa-file-o icon"></i>
+                                                                            <div class="content">
+                                                                                <a href="" class="header">...</a>
+                                                                                <div class="description fs-7">Html pages</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fa fa-folder-open icon"></i>
+                                                                <div class="content">
+                                                                    <a href="" class="header">prod</a>
+                                                                    <div class="description fs-7">Compiled html/js/css files generated in production mode</div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="html" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>HTML Structure</h4>
+                                </header>
+                                <span class="image-lazy img-fluid" data-src="assets/img/code.jpeg"></span>
+                            </section>
+                            <section id="scripts" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Scripts</h4>
+                                </header>
+                                <p class="text-indent">
+                                    Each feature or component has been written as a separate module and located in a separate file.
+                                    The modules are imported into entry points. <b>app.ts</b> file (<b>app.js</b> for html version)
+                                    is the default entry point. Each page could have more than one entry points. You could control what modules to
+                                    use and in which order from these files. Entry points should be placed in <b>src/scripts</b> (<b>reactive-html/dev/scripts</b> for html version) folder.
+                                    These entry points will be bundled as separate files in production.
+                                    Consider checking the <b>seed</b> project to see how it works.
+                                </p>
+                                <p class="text-indent">Reactive comes with several plugins written especially for this template from scratch. Here will be described the API documentation.
+                                    <br>Please write to <a href="#support">Our support</a> if you want the other plugins to be documented too.
+                                </p>
+                                <section id="scripts-sidebar" class="mt-3 mb-5">
+                                    <header class="mb-3">
+                                        <h5>SidebarOptions</h5>
+                                    </header>
+                                    <table class="table table-bordered fs-7 c-gray-darker">
+                                        <thead>
+                                            <tr class="table-active">
+                                                <th>Option Name</th>
+                                                <th>Type</th>
+                                                <th>Default</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>animationSpeed</td><td>number</td><td>400</td><td>Open/Close animation duration</td></tr>
+                                            <tr><td>defaultState</td><td>string</td><td>'open'</td><td>Sidebar default state</td></tr>
+                                            <tr><td>draggable</td><td>boolean</td><td>true</td><td>If sidebar should be draggable with `touch` gestures</td></tr>
+                                            <tr><td>easingClose</td><td>string</td><td>'easeOutCubic'</td><td>Sidebar close easing</td></tr>
+                                            <tr><td>easingOpen</td><td>string</td><td>'easeOutQuad'</td><td>Sidebar open easing</td></tr>
+                                            <tr><td>position</td><td>string</td><td>'left'</td><td>Sidebar position (only left)</td></tr>
+                                            <tr><td>scroll</td><td>boolean</td><td>true</td><td>If scroll should be enabled</td></tr>
+                                            <tr><td>scrollOptions</td><td>PerfectScrollbarSettings</td><td>{}</td><td><a target="_blank" href="https://github.com/noraesae/perfect-scrollbar#optional-parameters">Perfect Scrollbar Options</a></td></tr>
+                                            <tr><td>triggerState</td><td>string</td><td>'compact' (open | compact | close)</td><td>Sidebar trigger state</td></tr>
+                                            <tr><td>triggerStateIcon</td><td>any</td><td>{open: 'm-icon-arrow-right', close: 'm-icon-arrow-left', normal: 'm-icon-arrow' }</td><td>Sidebar trigger button icon classes</td></tr>
+                                            <tr><td>type</td><td>string</td><td>'push' - (push | slide)</td><td>Sidebar type \</td></tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h6 class="mt-3">Events</h6>
+                                    <p class="mb-3">All events are fired on 'sidebar' element</p>
+                                    <table class="table table-bordered fs-7 c-gray-darker">
+                                        <thead>
+                                            <tr class="table-active">
+                                                <th>Event Name</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>sidebar-before-state-change</td><td>Fires before sidebar changes state</td></tr>
+                                            <tr><td>sidebar-attach-handles</td><td>Fires after sidebar init and after sidebar changes state</td></tr>
+                                            <tr><td>sidebar-after-scroll-init</td><td>Fires after sidebar scroll is initialized</td></tr>
+                                            <tr><td>sidebar-state-changed</td><td>Fires after sidebar state is changed</td></tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h6 class="mt-3">Methods</h6>
+                                    <p class="fs-7 mb-3" id="sidebar-class">Sidebar Class Methods</p>
+                                    <table class="table table-bordered fs-7 c-gray-darker">
+                                        <thead>
+                                            <tr class="table-active">
+                                                <th>Sidebar public methods</th>
+                                                <th>Params</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>Constructor</td><td>sidebar: DOM Element or Selector<br>_options?: <a href="#scripts-sidebar">SidebarOptions</a></td><td><code>let sidebar = new Sidebar(sidebar: Element | string, _options?: SidebarOptions)</code><br>Create new sidebar</td></tr>
+                                            <tr><td>sidebar.init</td><td></td><td>Initializes the sidebar instance</td></tr>
+                                            <tr><td>sidebar.setSidebarState</td><td>change: boolean = false</td><td>Change sidebar state if parameter is true or corrects it otherwise</td></tr>
+                                            <tr><td>sidebar.destroy</td><td></td><td>Destroy sidebar and detach events</td></tr>
+                                            <tr><td>sidebar.state</td><td></td><td>Getter - get state</td></tr>
+                                            <tr><td>sidebar.width</td><td></td><td>Getter - get width</td></tr>
+                                            <tr><td>sidebar.type</td><td></td><td>Getter - get type</td></tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                                <section id="scripts-menu" class="mt-3 mb-5">
+                                    <header class="mb-3">
+                                        <h5>MenuOptions</h5>
+                                    </header>
+                                    <table class="table table-bordered fs-7 c-gray-darker">
+                                        <thead>
+                                            <tr class="table-active">
+                                                <th>Option Name</th>
+                                                <th>Type</th>
+                                                <th>Default</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr><td>animationSpeed</td><td>number</td><td>400</td><td>SubMenu open/close animation duration</td></tr>
+                                        <tr><td>closeEasnig</td><td>string</td><td>'easeOutQuad'</td><td>SubMenu close easing</td></tr>
+                                        <tr><td>openEasnig</td><td>string</td><td>'easeOutQuad'</td><td>SubMenu open easing</td></tr>
+                                        <tr><td>triggerDelay</td><td>number</td><td>2000</td><td>Scroll sidebar to the current link after specified milliseconds</td></tr>
+                                        <tr><td>triggerDuration</td><td>number</td><td>800</td><td>Scroll animation duration</td></tr>
+                                        <tr><td>triggerScroll</td><td>boolean</td><td>true</td><td>If sidebar should be scrolled to the current link</td></tr>
+                                        <tr><td>triggerScrollEasing</td><td>string</td><td>'easeInOutQuad'</td><td>Scroll easing to the current link</td></tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h6 class="mt-3">Methods</h6>
+                                    <p class="fs-7 mb-3">Menu Class Methods</p>
+                                    <table class="table table-bordered fs-7 c-gray-darker">
+                                        <thead>
+                                            <tr class="table-active">
+                                                <th>Menu public methods</th>
+                                                <th>Params</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>Constructor</td><td>menu: string - Element Selector <br>_sidebar: <a href="#sidebar-class">Sidebar class</a> instance<br> _options?: <a href="#scripts-menu">MenuOptions</a></td><td><code>let menu = new Menu(menu: string, _sidebar: Sidebar, _options?: MenuOptions)</code><br>Create new menu</td></tr>
+                                            <tr><td>menu.init</td><td></td><td>Initializes the menu instance</td></tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                                <section id="scripts-menu" class="mt-3 mb-5">
+                                    <header class="mb-3">
+                                        <h5>Aside Class</h5>
+                                    </header>
+                                    <code>let aside = new Aside(aside: Element | string, _options:AsideOptions).init();</code>
+                                    <p>Creates new Aside instance and manages it</p>
+                                    <p class="fs-7"># Please write to <a href="#support">Our support</a> if you want this to be documented too. Will be added within a day</p>
+                                </section>
+                                <section id="scripts-menu" class="mt-3 mb-5">
+                                    <header class="mb-3">
+                                        <h5>Grid Class</h5>
+                                    </header>
+                                    <code>let grid = new Grid(grid: HTMLElement, gridItems: GridItems[], gridStore: GridStore).init();</code>
+                                    <p>Creates Grid based on responsive grid structure</p>
+                                    <p class="fs-7"># Please write to <a href="#support">Our support</a> if you want this to be documented too. Will be added within a day</p>
+                                </section>
+                                <section id="scripts-menu" class="mt-3 mb-5">
+                                    <header class="mb-3">
+                                        <h5>GridItem Class</h5>
+                                    </header>
+                                    <code>let gridItem = new GridItem(gridItem: HTMLElement, id: number, panel: Panel).init()</code>
+                                    <p>Creates single Grid Item</p>
+                                    <p class="fs-7"># Please write to <a href="#support">Our support</a> if you want this to be documented too. Will be added within a day</p>
+                                </section>
+                                <section id="scripts-menu" class="mt-3 mb-5">
+                                    <header class="mb-3">
+                                        <h5>GridStore Class</h5>
+                                    </header>
+                                    <code>let gridStore = new GridStore(storageName: string, storage: Storage = window.loacalStorage).init()</code>
+                                    <p>Creates Grid Store where the grid items positions and sizes is saved and could be restored</p>
+                                    <p class="fs-7"># Please write to <a href="#support">Our support</a> if you want this to be documented too. Will be added within a day</p>
+                                </section>
+                                <section id="scripts-menu" class="mt-3 mb-5">
+                                    <header class="mb-3">
+                                        <h5>Store Class</h5>
+                                    </header>
+                                    <p>Manages Storage</p>
+                                    <p class="fs-7"># Please write to <a href="#support">Our support</a> if you want this to be documented too. Will be added within a day</p>
+                                </section>
+                                <section id="scripts-menu" class="mt-3 mb-5">
+                                    <header class="mb-3">
+                                        <h5>Panel Class</h5>
+                                    </header>
+                                    <p></p>
+                                    <code> let panel = new Panel(panel: HTMLElement).init();</code>
+                                    <p>Creates new panel</p>
+                                    <p class="fs-7"># Please write to <a href="#support">Our support</a> if you want this to be documented too. Will be added within a day</p>
+                                </section>
+                                <section id="scripts-menu" class="mt-3 mb-5">
+                                    <header class="mb-3">
+                                        <h5>Picture Crop</h5>
+                                    </header>
+                                    <p>Picture Crop functionality</p>
+                                    <p class="fs-7"># Please write to <a href="#support">Our support</a> if you want this to be documented too. Will be added within a day</p>
+                                </section>
+                            </section>
+                            <section id="styles" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Styles</h4>
+                                </header>
+                                <i class="mb-1 text-indent d-block">For handlebars/scss/typescript version:</i>
+                                <p class="text-indent">
+                                    All styles in the template is written in <b>Scss</b> with a lot of variables. Each module/component has
+                                    its own Scss file. All modules are imported into main <b>style.scss</b> file. Add your variables or change
+                                    existing ones in <b>custom.scss</b> file which you could find in the <b>src/assets/scss </b>folder.
+                                </p>
+                                <div class="pt-2"></div>
+                                <i class="mb-1 text-indent d-block">For html/css/js version:</i>
+                                <p class="text-indent">
+                                    Plugins and theme styles located in separate files during development. In production
+                                    mode they will be concatenated and minified into one css file.
+                                </p>
+                            </section>
+                            <section id="hbs" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Handlebars</h4>
+                                </header>
+                                <i class="mb-1 text-indent d-block">For handlebars/scss/typescript version:</i>
+                                <p class="text-indent">
+                                    The template is using <b>Handlebar</b> template engine to import/export/extend main blocks of html code, such as header, footer, aside, etc.
+                                    There are several main layout blocks. Pages extend these layouts and import their
+                                    content into them. You could find these layouts and other partials in the <b>src/partials</b> directory.
+                                    The code is well documented but you can read more about how its is working under the hood
+                                    <a href="https://github.com/shannonmoeller/handlebars-layouts#helpers" target="_blank">here</a> and <a href="http://handlebarsjs.com/builtin_helpers.html" target="_blank">here</a>
+                                </p>
+                            </section>
+                            <section id="sidebar-links" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Sidebar</h4>
+                                </header>
+                                <i class="mb-1 text-indent d-block">For handlebars/scss/typescript version:</i>
+                                <p class="text-indent">
+                                    The links of sidebar menu are edited from the <b>src/router/index.json</b> file. Here you could change also labels, links position, icons, etc.
+                                </p>
+                            </section>
+                            <section id="helpers" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Css Helpers</h4>
+                                </header>
+                                <table class="table table-bordered fs-7 c-gray-darker">
+                                    <thead>
+                                    <tr>
+                                        <th>Class Name</th>
+                                        <th>Style</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/borders/">Borders</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.bw-*</td>
+                                        <td>Border width. Available values: 1, 2, 3, 4. <br>.bw-1 (1px), .bw-2 (2px), .bw-3 (3px), .bw-4 (4px)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.blw-*</td>
+                                        <td>Border left width. Available values: 1, 2, 3, 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.brw-*</td>
+                                        <td>Border right width. Available values: 1, 2, 3, 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.btw-*</td>
+                                        <td>Border top width. Available values: 1, 2, 3, 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.bbw-*</td>
+                                        <td>Border bottom width. Available values: 1, 2, 3, 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.br-*</td>
+                                        <td>Border Radius. Available values: 0, xs, sm, md, lg, xl, circle</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.bs-solid</td>
+                                        <td>Border style solid.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.bs-dashed</td>
+                                        <td>Border style dashed.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.bs-dotted</td>
+                                        <td>Border style dotted.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.bc-*</td>
+                                        <td>Border Colors. Available values: <a target="_blank" href="colors.html">See color palette</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/clearfix/">Clearfix</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/close-icon/">Close icon</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/colors/">Colors</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.bgc-*</td>
+                                        <td>Background and text color. Available values: <a target="_blank" href="colors.html">See color palette</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.c-*</td>
+                                        <td>Text color. Available values: <a target="_blank" href="colors.html">See color palette</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/flex/">Flex</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/display/">Display</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/image-replacement/">Image replacement</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/visibility/">Visibility</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/position/">Position</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.pos-s</td>
+                                        <td>Position static</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.pos-a</td>
+                                        <td>Position absolute</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.pos-r</td>
+                                        <td>Position relative</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.pos-f</td>
+                                        <td>Position fixed</td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/float/#responsive">Float</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/embed/">Embeds</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/screenreaders/">Screenreaders</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/sizing/">Sizing</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-*</td>
+                                        <td>Block Height. Available values: sm(6rem), md, lg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.mxw-*</td>
+                                        <td>Block max width. Available values: 50(50px), 100, 150, 200, 300, 400, 500, 600</td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/spacing/">Spacing</a></td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/text/">Typography</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-1</td>
+                                        <td>Font Size 36px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-2</td>
+                                        <td>Font Size 30px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-3</td>
+                                        <td>Font Size 24px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-4-plus</td>
+                                        <td>Font Size 20px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-4</td>
+                                        <td>Font Size 18px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-5</td>
+                                        <td>Font Size 16px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-6</td>
+                                        <td>Font Size 14px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-6-plus</td>
+                                        <td>Font Size 13px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-7</td>
+                                        <td>Font Size 12px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fs-7</td>
+                                        <td>Font Size 10px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.lh-*</td>
+                                        <td>Line Height. Available values: 0, 1, 2, 3, 4, 5, 6, 7, 8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.text-indent</td>
+                                        <td>Add text indent to a text block</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.nowrap</td>
+                                        <td>White space nowrap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.fw-*</td>
+                                        <td>Font weight. Available values: light, normal, semibold, bold</td>
+                                    </tr>
+
+                                    <tr class="table-active">
+                                        <td colspan="2"><a target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/vertical-align/">Vertical align</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                            <section id="plugins" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Plugins</h4>
+                                </header>
+                                <table class="table table-hover fs-7 c-gray-darker">
+                                    <thead>
+                                    <tr class="table-active">
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="https://getbootstrap.com/" target="_blank">Bootstrap 4 Beta (latest version)</a></td>
+                                        <td>Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://bootstrap-table.wenzhixin.net.cn/documentation/" target="_blank">Bootstrap Table</a></td>
+                                        <td>An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://jdewit.github.io/bootstrap-timepicker/" target="_blank">Bootstrap Timepicker</a></td>
+                                        <td>Easily select a time for a text input using your mouse or keyboards arrow keys.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.virtuosoft.eu/code/bootstrap-touchspin/" target="_blank">Bootstrap Touchspin</a></td>
+                                        <td>A mobile and touch friendly input spinner component for Bootstrap 3. It supports the mousewheel and the up/down keys.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://www.chartjs.org/docs/latest/" target="_blank">Chart Js</a></td>
+                                        <td>Simple yet flexible JavaScript charting for designers & developers</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://semantic-ui.com/modules/checkbox.html" target="_blank">Checkbox</a></td>
+                                        <td>A checkbox allows a user to select a value from a small set of options, often binary</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://github.com/fengyuanchen/cropperjs/blob/master/README.md" target="_blank">Cropperjs</a></td>
+                                        <td>JavaScript image cropper.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://semantic-ui.com/modules/dropdown.html" target="_blank">Dropdown</a></td>
+                                        <td>A dropdown allows a user to select a value from a series of options</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://www.dropzonejs.com/" target="_blank">Dropzone</a></td>
+                                        <td>Open source library that provides drag’n’drop file uploads with image previews.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://rendro.github.io/easy-pie-chart/" target="_blank">Easy Pie Chart</a></td>
+                                        <td>Lightweight jQuery plugin to render and animate nice pie charts with the HTML5 canvas element</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a></td>
+                                        <td>The iconic font and CSS toolkit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://fullcalendar.io/" target="_blank">Fullcalendar</a></td>
+                                        <td>A JavaScript event calendar. Customizable and open source.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://troolee.github.io/gridstack.js/" target="_blank">Gridstack</a></td>
+                                        <td>jQuery plugin for widget layout.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://hammerjs.github.io/" target="_blank">Hummerjs</a></td>
+                                        <td>A javascript library for multi-touch gestures</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://robinherbots.github.io/Inputmask/" target="_blank">Inputmask</a></td>
+                                        <td>jQuery Input Mask plugin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">Ion Rangeslider</a></td>
+                                        <td>jQuery-pluginEasy, flexible and responsive range slider with skin support</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://ionicons.com/" target="_blank">Ionicons</a></td>
+                                        <td>The premium icon font for Ionic Framework.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://jquery.com/" target="_blank">Jquery</a></td>
+                                        <td>Fast, small, and feature-rich JavaScript library</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.vincentbroute.fr/mapael/" target="_blank">Jquery Mapael</a></td>
+                                        <td>Ease the build of pretty data visualizations on dynamic vector maps</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://omnipotent.net/jquery.sparkline/#s-about" target="_blank">Jquery Sparkline</a></td>
+                                        <td>jQuery plugin to generate sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via javascript.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://jqueryui.com/" target="_blank">Jqueryui</a></td>
+                                        <td>A curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://momentjs.com/" target="_blank">Moment</a></td>
+                                        <td>Parse, validate, manipulate, and display dates and times in JavaScript.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://noraesae.github.io/perfect-scrollbar/" target="_blank">Perfect Scrollbar</a></td>
+                                        <td>Minimalistic but perfect custom scrollbar plugin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://simplelineicons.com/" target="_blank">Simple Line Icons</a></td>
+                                        <td>Simple and Minimal Line Icons</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://bgrins.github.io/spectrum/" target="_blank">Spectrum Colorpicker</a></td>
+                                        <td>The No Hassle JavaScript Colorpicker</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://velocityjs.org/" target="_blank">Velocity</a></td>
+                                        <td>An animation engine with the same API as jQuery's $.animate().</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://imakewebthings.com/waypoints/" target="_blank">Waypoints</a></td>
+                                        <td>Easiest way to trigger a function when you scroll to an element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://weathericons.io/" target="_blank">Weather Icons</a></td>
+                                        <td>215 Weather Themed Icons and CSS</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://vitalets.github.io/x-editable/" target="_blank">X Editable</a></td>
+                                        <td>This library allows you to create editable elements on your page</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                            <section id="support" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Support</h4>
+                                </header>
+                                <p class="fs-5 mb-2">Our support team is always ready and will kindly answer your questions.</p>
+                                <a target="_blank" href="https://themeforest.net/item/reactive-responsive-admin-template/20407621/support">Support Team</a><br>
+                                <a target="_blank" href="https://themeforest.net/user/flexlayers">Our Contacts</a>
+                            </section>
+                            <section id="license" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>License</h4>
+                                </header>
+                                <p>Reactive Admin Template comes with two <a target="_blank" href="https://themeforest.net/licenses/standard">Standard licenses</a></p>
+                                <h5 class="mb-3 ">Regular License Info</h5>
+                                <p class="text-indent mb-0">
+                                    Regular license can be used for end products that do not charge users for
+                                    access or service(access is free and there will be no monthly subscription fee).
+                                </p>
+                                <p class="text-indent mb-0">
+                                    Single regular license can be used for single end product and end product can be used by you or your client.
+                                    If you want to sell end product to multiple clients then you will need to purchase separate license for each client.
+                                    The same rule applies if you want to use the same end product on multiple domains(unique setup).
+                                </p>
+                                <p class="text-indent mb-1">
+                                    For more info on Themeforest Regular license you can check <a target="_blank" href="https://themeforest.net/licenses/terms/regular">https://themeforest.net/licenses/terms/regular</a>
+                                </p>
+
+                                <h5 class="my-3">Extended license Info</h5>
+                                <p class="text-indent mb-0">
+                                    Extended license can be used for end products(web service or SAAS) that charges users
+                                    for access or service(e.g: monthly subscription fee).
+                                </p>
+                                <p class="text-indent mb-0">
+                                    Single extended license can be used for single end product and end product can be used by you or your client.
+                                    If you want to sell end product to multiple clients then you will need to purchase separate extended license for each client.
+                                    The same rule applies if you want to use the same end product on multiple domains(unique setup).
+                                </p>
+                                <p class="text-indent mb-1">
+                                    For more info on Themeforest Extended licenses you can check <a target="_blank" href="https://themeforest.net/licenses/terms/extended">https://themeforest.net/licenses/terms/extended</a>
+                                </p>
+                            </section>
+                            <section id="changelog" class="mb-5">
+                                <header class="mb-3">
+                                    <h4>Changelog</h4>
+                                </header>
+                                <h6 class="mb-2">Version 1.1.0 <span class="fs-7 ml-7">September 11, 2017</span></h6>
+                                <ul class="list">
+                                    <li><a target="_blank" href="#aside-settings" class="aside-trigger" data-aside="#aside" data-toggle="tab"><span>Layouts</span><small class="badge badge-pill ml-2 badge-danger">New</small></a></li>
+                                    <li><a target="_blank" href="nestable.html"><span>Nestables</span><small class="badge badge-pill ml-2 badge-danger">New</small></a></li>
+                                    <li><a target="_blank" href="panel-pin-responsive.html"><span>Pin Responsive Panels</span><small class="badge badge-pill ml-2 badge-danger">New</small></a></li>
+                                    <li><a target="_blank" href="animations.html"><span>Animations</span><small class="badge badge-pill ml-2 badge-danger">New</small></a></li>
+                                    <li><a target="_blank" href="page-starter.html"><span>New Starter pages</span><small class="badge badge-pill ml-2 badge-danger">New</small></a></li>
+                                    <li><a target="_blank" href="form-add-ons.html#panel-no-ui-slider"><span>Line Sliders</span><small class="badge badge-pill ml-2 badge-warning">New</small></a></li>
+                                    <li><a target="_blank" href="forms.html#new-option-forms-filled-checkbox"><span>Filled Checkboxes</span><small class="badge badge-pill ml-2 badge-warning">New</small></a></li>
+                                    <li><a target="_blank" href="#aside-settings" class="aside-trigger" data-aside="#aside" data-toggle="tab"><span>40+ sidebar options</span><small class="badge badge-pill ml-2 badge-danger">New</small></a></li>
+                                    <li><a target="_blank" href="" class="aside-trigger" data-aside="#aside" data-toggle="tab"><span>Mega Menu</span><small class="badge badge-pill ml-2 badge-warning">New</small></a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <footer class="fs-7 mt-4">
+                                    <span>flexlayers   &copy; 2017</span>
+                                </footer>
+                            </section>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+
+                <section class="panel-wrap panel-grid-item grid-stack-item col-xl-3 col-lg-4 hidden-md-down">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-dark panel-header-md">
+                            <h2>
+                                Table of Contents
+                            </h2>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="list ordered selection ml-0  panel-body-p sticky-top">
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#overview" class="header c-gray">Overview</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#build" class="header c-gray">Build</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#structure" class="header c-gray">File Structure</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#html" class="header c-gray">HTML Structure</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#scripts" class="header c-gray">Scripts</a>
+                                        <div class="list">
+                                            <div class="item px-lg-4 py-1">
+                                                <div class="content">
+                                                    <a href="#scripts-sidebar" class="header c-gray">Sidebar Class</a>
+                                                </div>
+                                            </div>
+                                            <div class="item px-lg-4 py-1">
+                                                <div class="content">
+                                                    <a href="#scripts-menu" class="header c-gray">Menu Class</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#styles" class="header c-gray">Styles</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#hbs" class="header c-gray">Handlebar Layouts</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#sidebar-links" class="header c-gray">Sidebar</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#helpers" class="header c-gray">Css Helpers</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#plugins" class="header c-gray">Plugins</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#support" class="header c-gray">Support</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#license" class="header c-gray">License</a>
+                                    </div>
+                                </div>
+                                <div class="item px-lg-4 py-1">
+                                    <div class="content">
+                                        <a href="#changelog" class="header c-gray">Changelog v.1.1.0</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/app');
+        </script>
+    {{/content}}
+{{/extend}}
+
+

@@ -1,0 +1,35 @@
+{{#extend "layout-1" current="tables-editable-columns"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <div class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Dynamic Table
+                            </h2>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="page-size-table">
+                                <div id="toolbar">
+                                    <button id="new-table-row" class="btn btn-primary"><i class="fa fa-file icon-mr"></i>New</button>
+                                    <button id="remove-table-row" class="btn btn-danger" disabled><i class="fa fa-trash icon-mr"></i>Delete</button>
+                                </div>
+                                <table id="table-editable-columns" class="card-view-no-edit"></table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/table');
+        </script>
+    {{/content}}
+{{/extend}}

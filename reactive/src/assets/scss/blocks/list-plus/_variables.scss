@@ -1,0 +1,69 @@
+// View
+$list-plus-container-max-width: 1000px !default;
+$list-plus-container-margin: 0 !default;
+
+// Elements
+$list-plus-background: none !default;
+$list-plus-margin: 0 !default;
+$list-plus-padding: 2em 0 0 !default;
+$list-plus-divider: none !default;
+$list-plus-border: none !default;
+$list-plus-line-height: $line-height-base !default;
+$list-plus-first-margin: 0 !default;
+$list-plus-first-padding: 0 !default;
+
+// Nested List
+$list-plus-nested-margin: 1.5em 0 0.5em 79px !default;
+$list-plus-nested-padding: 0 !default;
+$list-plus-nested-divider: none !default;
+$list-plus-nested-border: none !default;
+$list-plus-nested-background: none !default;
+
+
+// Avatar
+$list-plus-avatar-display: block !default;
+$list-plus-avatar-font-size: $font-size-3 !default;
+$list-plus-avatar-float: left !default;
+$list-plus-avatar-width: 55px !default;
+$list-plus-avatar-height: 55px !default;
+$list-plus-avatar-spacing: 25px !default;
+$list-plus-avatar-margin: 0 !default;
+$list-plus-avatar-border-radius: 10rem !default;
+$list-plus-avatar-background: $white-darkest !default;
+
+// Content
+$list-plus-content-margin: $list-plus-avatar-width + $list-plus-avatar-spacing !default;
+
+// Author
+$list-plus-author-font-size: $font-size-5 !default;
+$list-plus-author-color: $link-color !default;
+$list-plus-author-hover-color: $link-hover-color !default;
+$list-plus-author-font-weight: normal !default;
+
+// Metadata
+$list-plus-metadata-display: block !default;
+$list-plus-metadata-font-size: .78rem !default;
+$list-plus-metadata-spacing: 0 !default;
+$list-plus-metadata-content-spacing: 1.5em !default;
+$list-plus-metadata-color: $gray !default;
+
+// Text
+$list-plus-text-font-size: inherit !default;
+$list-plus-text-margin: .5em 0 .75em !default;
+$list-plus-text-word-wrap: break-word !default;
+$list-plus-text-line-height: 24px !default;
+
+// Actions
+$list-plus-action-font-size: 0.92rem !default;
+$list-plus-action-content-distance: 2em !default;
+$list-plus-action-link-color: $gray !default;
+$list-plus-action-link-hover-color: $gray-dark !default;
+
+// Reply
+$list-plus-reply-margin: 2em 0 0 79px !default;
+$list-plus-reply-height: 8em !default;
+$list-plus-reply-font-size: 1em !default;
+
+// Threaded
+$list-plus-threaded-padding: 0 !default;
+$list-plus-threaded-border-left: 2px solid $gray-lighter !default;

@@ -1,0 +1,80 @@
+/*!
+ * @version: 1.1.1
+ * @name: wizard
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.wizard,
+.tabcontrol { display: block; width: 100%; overflow: hidden;
+    /* Accessibility */
+    ul { list-style: none; padding: 0; margin: 0;
+        > li { display: inline-block; padding: 0;
+            a { white-space: nowrap; }
+        }
+    }
+    > .steps .current-info,
+    > .content > .title { position: absolute; left: -999em; }
+}
+
+.wizard {
+    > .steps { position: relative; display: block; width: 100%; background: $white-darkest;
+        > ul > li { width: 25%; }
+        a { text-align: center; display: block; padding: 1em 1em; font-size: $font-size-6; outline: 0; width: 101% }
+        a,
+        .disabled a { background: $white-darker; color: $gray; }
+        .disabled a { cursor: default; }
+        .current a { background: $brand-primary; color: $white-dark; cursor: default; }
+        .done a { background: $brand-primary; opacity: .75; color: $white-dark; width: auto;}
+        .error a { background: $brand-danger; color: $white-dark; }
+    }
+    > .content { display: block; overflow: hidden; position: relative;
+        > .body { float: left; position: absolute; padding: 1.5rem 0 2rem; width: 100%; }
+    }
+    > .actions { position: relative; display: block; text-align: center; width: 100%;
+        > ul { display: inline-block;
+            > li { margin: 0 0 0 1.5em; float: left; }
+        }
+        a { @include btn; @extend .btn-primary; }
+        .disabled a { @extend .btn-default; }
+    }
+    &.vertical > .steps { float: left; width: 30%; height: 100% }
+    &.vertical > .steps > ul > li { float: none; width: 100%;
+        a { text-align: left; }
+    }
+    &.vertical > .content { display: inline; float: left; margin: 0 0 1em 0; width: 70%; }
+    &.vertical > .actions { display: inline; float: right; text-align: right;}
+
+    &.step-animate {
+        > .steps > ul > li {
+            a {
+                position: relative;
+                transition: background 500ms ease, color 500ms ease;
+               // transition-delay: 800ms;
+                background: linear-gradient(to right, $brand-primary 50%, $white-darker 50%);
+                background-size: 250% 100%;
+                background-position: right bottom;
+            }
+            &.current a,
+            &.done a {
+                background-position: left bottom;
+                color: $white-dark;
+            }
+        }
+    }
+}
+.tabcontrol {
+    > .steps { position: relative; display: block; width: 100%; z-index: 1;
+        > ul { @extend .nav; @extend .nav-tabs; }
+        > ul > li { @extend .nav-item; }
+        > ul > li > a { @extend .nav-link; }
+        > ul > li.current > a {  @extend .nav-link.active; }
+    }
+    > .content { position: relative; display: inline-block; width: 100%; overflow: hidden; margin-top: -1px; border: 1px solid $gray-lightest;
+        > .body { float: left; position: absolute; width: 100%; }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    &.vertical > .steps,
+    &.vertical > .content { display: block !important; float: none !important; width: 100% !important; }
+}

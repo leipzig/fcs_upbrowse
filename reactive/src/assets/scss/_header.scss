@@ -1,0 +1,90 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: header
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.header-wrap { position: relative; z-index: 400; box-shadow: 3px 3px 7px rgba(15, 16, 21, 0.1);
+    .header-tools { background: $white-dark; height: $header-height; color: $gray; line-height: $header-height;
+        > a,
+        > div > a { padding: 0 20px; transition: background .3s, color .3s; display: inline-block; position: relative;
+            .badge { position: absolute; top: 12px; right: 12px; }
+        }
+        > a:not(.btn):hover,
+        > a.active:not(.btn),
+        > div > a:not(.btn):hover,
+        > div > a.active:not(.btn),
+        > .search:hover,
+        > .header-hover { background: rgba($white-darkest, .7); }
+        .search { position: relative; padding: 0 020px; color: $gray; font-size: $font-size-base; transition: background .3s, color .3s; width: 225px;
+            &:hover input { border-bottom-color: darken($gray-lighter, 7); }
+            input { display: inline-block; width: 100%;  padding: 3px 0;  border-width: 0;  border-bottom: 1px solid $gray-lighter;  background: none;
+                transition: border-color .3s, width .3s, margin-left .3s; line-height: $line-height-6;
+                &:focus { outline: none; border-color: $gray-light; color: $gray-dark; }
+            }
+            input:focus + .search-button { color: $gray-dark; }
+            .search-button { font-weight: 300; position: absolute; right: 20px; top: 21px; font-size: 13px; }
+        }
+    }
+
+    .page-title-wrap { height: $page-title-height; line-height: $page-title-height; background: $white-darkest; overflow: hidden; width: 100%;
+        .page-title { padding: 0 20px; line-height: inherit  }
+        .smart-links { @include clearfix();
+            ul { float: right;
+                li { float: left;
+                    a { padding: 0 25px; display: block; position: relative; transition: background .2s;
+                        &:hover,
+                        &.active { background: $strong-transparent-black; }
+                        i { font-size: $font-size-4; }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .header-wrap .page-title-wrap .smart-links ul li a { padding: 0 15px; }
+}
+
+.header-bg-warning .header-wrap .header-tools { background: $brand-warning; }
+.header-bg-danger .header-wrap .header-tools { background: $brand-danger; }
+.header-bg-info .header-wrap .header-tools { background: $brand-info; }
+.header-bg-primary .header-wrap .header-tools { background: $brand-primary; }
+.header-bg-warning .header-wrap,
+.header-bg-danger .header-wrap,
+.header-bg-info .header-wrap,
+.header-bg-primary .header-wrap {
+    .header-tools { color: $white-dark;
+        .m-icon .m-icon-lines { background-color: $white-dark;
+            &:after,
+            &:before { background-color: $white-dark; }
+        }
+        a:not(.btn):hover,
+        a.active,
+        > .search:hover,
+        > .header-hover { background: rgba($white-darkest, .08); }
+        .search-button,
+        .search input.form-control { color: $white-darker;
+            &:focus { outline: none; border-color: $white-darker !important; color: $white-dark; }
+        }
+        input:focus + .search-button { color: $white-dark; }
+    }
+    ::-webkit-input-placeholder { color: $white-darkest; }
+    ::-moz-placeholder { color: $white-darkest; }
+    :-ms-input-placeholder { color: $white-darkest; }
+    :-moz-placeholder { color: $white-darkest; }
+    .page-title-wrap { background: $white-dark; }
+}
+@include theme-header-color();
+.header-fixed,
+.aside-header-fixed .header-wrap {
+    position: fixed; right: 0; top: 0; left: 0;
+}
+.smart-links { position: absolute; right: 0; background: inherit; }
+
+
+
+
+

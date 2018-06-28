@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    {{#block "head"}}{{! declare head block}}
+        {{! calculate the title based on the data/index.json file content }}
+        <title>{{title current}} - reactive admin template</title>
+    {{/block}}
+    <!-- inject-head:css -->
+    <!-- endinject -->
+</head>
+<body>
+    <div id="app" class="reactive-app header-bg-info sidebar-type-slide sidebar-state-close sidebar-tr-state-open sidebar-bg-one sidebar-option-theme4 aside-close no-saved-theme">
+        <!-- inject-body-start:js -->
+        <!-- endinject -->
+
+        <!--Begin Header-->
+        <header id="header" class="header-wrap clearfix">
+            <div class="header-tools">
+                {{! declare header block and embed header-1 partial}}
+                {{#block "header"}}{{#embed "header-1"}}{{/embed}}{{/block}}
+            </div>
+            {{! embed breadcrumbs partial with 'current' variable. The value of the 'current' variable comes from filea which exited this partial}}
+            {{#embed "breadcrumbs" current=current}}{{/embed}}
+        </header>
+        <!--End Header-->
+
+        <!--Begin Loader-->
+        <div class="page-loader loader-wrap" id="loader-wrap">
+            <div class="loader loading-icon"></div>
+        </div>
+        <!--End Loader-->
+
+        <!--Begin Content-->
+        <section id="main" class="main-wrap bgc-white-darkest" role="main">
+            {{! declare content block}}
+            {{#block "content"}}{{/block}}
+        </section>
+        <!--End Content-->
+
+        <!--Begin Sidebar-->
+        <section id="sidebar" class="sidebar-wrap">
+            {{! declare sidebar block end embed sidebar-1 partial. The value of the 'current' variable comes from filea which exited this partial}}
+            {{#block "sidebar"}}{{#embed "sidebar-1" current=current}}{{/embed}}{{/block}}
+        </section>
+        <!--End Sidebar-->
+
+        <!--Begin aside-->
+        <aside id="aside" class="aside-wrap" role="complementary">
+            {{! declare aisde block end embed aisde partial.}}
+            {{#block "aisde"}}{{#embed "aside"}}{{/embed}}{{/block}}
+        </aside>
+        <!--End aside-->
+
+        <!--Begin Footer-->
+        <footer id="footer" class="footer-wrap" role="contentinfo">
+            {{! declare footer block end embed footer-1 partial.}}
+            {{#block "footer"}}{{#embed "footer-1"}}{{/embed}}{{/block}}
+        </footer>
+        <!--End Footer-->
+    </div>
+{{#block "foot"}}
+<!-- inject-body-end:js -->
+<!-- endinject -->
+{{/block}}
+</body>
+</html>

@@ -1,0 +1,15 @@
+/*!
+ * @version: 1.1.1
+ * @name: _starter_pages
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+.reactive-starter-pages {
+    .starter-page { margin-bottom: 3rem;
+        .image { height: 500px; width: 100%; background-color: $gray-lighter; overflow: hidden; display: block; cursor: pointer; box-shadow: 2px 2px 7px rgba(clr( body-darkest ), .1);
+            img { height: 100%; }
+        }
+        .list { font-size: $font-size-6-plus;}
+    }
+}

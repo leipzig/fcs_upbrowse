@@ -1,0 +1,177 @@
+{{#extend "layout-1" current='panel-dynamic-initial'}}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack">
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item grid-stack-item" data-gs-locked="true" data-gs-no-resize="true" data-gs-no-move="true">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-3">
+                        <div class="panel-header clearfix  bgc-white-darkest panel-header-lg">
+                            <h2 class="pull-left">
+                                Size Control
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0">Panels width is controlled by responsive <code>col-*-*</code> classes. Specify <code>data-gs-height</code> HTML attribute for the initial height.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="80" class="col-sm-12 col-md-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Simple size control 1
+                            </h2>
+                            {{#embed "panel-icons" slide="1"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <p class="mb-0 panel-body-p"><code>col-sm-12 col-md-12 col-xl-6</code> classes will be used in this panel. Initial height is <code>800px</code></p>
+                            <p class="mb-0 panel-body-p">Resize the panel and set the size of your choice for each screen size</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="40" class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left hidden-xs-down">
+                                Simple size control 2
+                            </h2>
+                            <div class="ui floating select-dropdown btn-labeled-icon left search simple-select btn btn-default btn-sm">
+                                <i class="icon fa fa-fort-awesome"></i>
+                                <span class="text">Select State</span>
+                                <div class="menu">
+                                    <div class="item" data-value="">State</div>
+                                    <div class="item" data-value="AL">Alabama</div>
+                                    <div class="item" data-value="AK">Alaska</div>
+                                    <div class="item" data-value="AZ">Arizona</div>
+                                    <div class="item" data-value="AR">Arkansas</div>
+                                    <div class="item" data-value="CA">California</div>
+                                    <div class="item" data-value="CO">Colorado</div>
+                                    <div class="item" data-value="CT">Connecticut</div>
+                                    <div class="item" data-value="DE">Delaware</div>
+                                    <div class="item" data-value="DC">District Of Columbia</div>
+                                    <div class="item" data-value="FL">Florida</div>
+                                    <div class="item" data-value="GA">Georgia</div>
+                                    <div class="item" data-value="HI">Hawaii</div>
+                                    <div class="item" data-value="ID">Idaho</div>
+                                    <div class="item" data-value="IL">Illinois</div>
+                                    <div class="item" data-value="IN">Indiana</div>
+                                    <div class="item" data-value="IA">Iowa</div>
+                                    <div class="item" data-value="KS">Kansas</div>
+                                    <div class="item" data-value="KY">Kentucky</div>
+                                    <div class="item" data-value="LA">Louisiana</div>
+                                    <div class="item" data-value="ME">Maine</div>
+                                    <div class="item" data-value="MD">Maryland</div>
+                                    <div class="item" data-value="MA">Massachusetts</div>
+                                    <div class="item" data-value="MI">Michigan</div>
+                                    <div class="item" data-value="MN">Minnesota</div>
+                                    <div class="item" data-value="MS">Mississippi</div>
+                                    <div class="item" data-value="MO">Missouri</div>
+                                    <div class="item" data-value="MT">Montana</div>
+                                    <div class="item" data-value="NE">Nebraska</div>
+                                    <div class="item" data-value="NV">Nevada</div>
+                                    <div class="item" data-value="NH">New Hampshire</div>
+                                    <div class="item" data-value="NJ">New Jersey</div>
+                                    <div class="item" data-value="NM">New Mexico</div>
+                                    <div class="item" data-value="NY">New York</div>
+                                    <div class="item" data-value="NC">North Carolina</div>
+                                    <div class="item" data-value="ND">North Dakota</div>
+                                    <div class="item" data-value="OH">Ohio</div>
+                                    <div class="item" data-value="OK">Oklahoma</div>
+                                    <div class="item" data-value="OR">Oregon</div>
+                                    <div class="item" data-value="PA">Pennsylvania</div>
+                                    <div class="item" data-value="RI">Rhode Island</div>
+                                    <div class="item" data-value="SC">South Carolina</div>
+                                    <div class="item" data-value="SD">South Dakota</div>
+                                    <div class="item" data-value="TN">Tennessee</div>
+                                    <div class="item" data-value="TX">Texas</div>
+                                    <div class="item" data-value="UT">Utah</div>
+                                    <div class="item" data-value="VT">Vermont</div>
+                                    <div class="item" data-value="VA">Virginia</div>
+                                    <div class="item" data-value="WA">Washington</div>
+                                    <div class="item" data-value="WV">West Virginia</div>
+                                    <div class="item" data-value="WI">Wisconsin</div>
+                                    <div class="item" data-value="WY">Wyoming</div>
+                                </div>
+                            </div>
+
+                            {{#embed "panel-icons" slide="1"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <p class="mb-0 panel-body-p"><code>col-sm-12 col-md-12 col-lg-6</code> classes will be used in this panel. Initial height is <code>400px</code></p>
+                            <p class="mb-0 panel-body-p">Resize the panel and set the size of your choice for each screen size</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="40" class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left hidden-xs-down">
+                                Simple size control 3
+                            </h2>
+                            <div class="ui custom-select-dropdown select-dropdown lh-6">
+                                <div class="text">Do something</div>
+                                <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">New</div>
+                                    <div class="item">
+                                        <span class="description">ctrl + o</span>
+                                        Open...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + s</span>
+                                        Save as...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + r</span>
+                                        Rename
+                                    </div>
+                                    <div class="item">Make a copy</div>
+                                    <div class="item">
+                                        <i class="fa fa-folder icon"></i>
+                                        Move to folder
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-trash icon"></i>
+                                        Move to trash
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">Download As...</div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        Publish To Web
+                                        <div class="menu">
+                                            <div class="item">Google Docs</div>
+                                            <div class="item">Google Drive</div>
+                                            <div class="item">Dropbox</div>
+                                            <div class="item">Adobe Creative Cloud</div>
+                                            <div class="item">Private FTP</div>
+                                            <div class="item">Another Service...</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">E-mail Collaborators</div>
+                                </div>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest bgc-active-dark-trans"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <p class="mb-0 panel-body-p"><code>col-sm-12 col-md-12 col-lg-6</code> classes will be used in this panel. Initial height is <code>400px</code></p>
+                            <p class="mb-0 panel-body-p">Resize the panel and set the size of your choice for each screen size</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/app');
+        </script>
+    {{/content}}
+{{/extend}}

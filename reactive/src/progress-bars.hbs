@@ -1,0 +1,311 @@
+{{#extend "layout-1" current="progress-bars"}}
+{{! append html code into the content block declared in the layout partial }}
+
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                PROGRESS BARS
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="pb-6">
+                                <h4 class="lh-0 pb-1">Basic</h4>
+                                <p class="fs-6-plus mb-2">Use background <code>.bg-{color}</code> classes to change the color.
+                                </p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-sm bg-primary" style="width: 30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-sm bg-success" style="width: 45%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-sm bg-info" style="width: 60%" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-sm bg-warning" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-sm bg-danger" style="width: 90%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="pb-6">
+                                <h4 class="lh-0 pb-1">Stripped</h4>
+                                <p class="fs-6-plus mb-2">Add <code>.progress-bar-striped</code> to any
+                                    <code>.progress-bar</code>.</p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-sm progress-bar-striped bg-primary" style="width: 30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-sm progress-bar-striped bg-success progress-bar-animated" style="width: 45%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-sm progress-bar-striped bg-info" style="width: 60%" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-sm progress-bar-striped bg-warning  progress-bar-animated" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-sm progress-bar-striped bg-danger" style="width: 90%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="pb-6">
+                                <h4 class="lh-0 pb-1">Multiple bars</h4>
+                                <p class="fs-6-plus mb-2">Include multiple progress bars in <code>.progress</code>.</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-sm " role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar progress-bar-sm  bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar progress-bar-sm  bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="lh-0 pb-1">Sizes</h4>
+                                <p class="fs-6-plus mb-2">Use <code>progress-bar-{xs | sm | md | lg | xl}</code> classes with the <code>.progress-bar</code>.
+                                </p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-primary progress-bar-xs" style="width: 30%;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success progress-bar-sm" style="width: 45%;" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-info progress-bar-md" style="width: 60%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-warning progress-bar-lg" style="width: 75%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger progress-bar-xl" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                PROGRESS WITH LABELS
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="pb-6">
+                                <h4 class="lh-0 pb-1">Popups</h4>
+                                <p class="fs-7 mb-6">Styled popups with <code>.popup</code> class</p>
+                                <div class="progress mb-7">
+                                    <div class="progress-bar bg-primary progress-bar-xs" style="width: 95%;" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="popup bgc-body-dark">
+                                            <div class="popup-content">95%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress mb-7">
+                                    <div class="progress-bar bg-success" style="width: 70%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="popup bgc-body-dark">
+                                            <div class="popup-content">70%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress mb-7">
+                                    <div class="progress-bar bg-info progress-bar-mf" style="width: 55%;" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="popup bgc-body-dark">
+                                            <div class="popup-content">55%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress mb-7">
+                                    <div class="progress-bar bg-warning progress-bar-lg" style="width: 30%;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="popup bgc-body-dark">
+                                            <div class="popup-content">30%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger progress-bar-xl" style="width: 9%;" role="progressbar" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="popup bgc-body-dark">
+                                            <div class="popup-content">9%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pb-6">
+                                <h4 class="lh-0 pb-1">Labels</h4>
+                                <p class="fs-6 mb-1">Included text might be accompanied with badges.</p>
+                                <div class="clearfix">
+                                    <p class="fs-7 mb-1 pull-left">Project info ...</p>
+                                    <span class="badge bgc-body-darker fs-7 mb-1 pull-right">45%</span>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 45%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="clearfix">
+                                    <p class="fs-7 mb-1 pull-left">This got progress</p>
+                                    <span class="badge bgc-body-darker fs-7 mb-1 pull-right">60%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning progress-bar-lg" style="width: 60%" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="lh-0 pb-1">Inline Information</h4>
+                                <p class="fs-6-plus mb-2">Add labels to your progress bars by placing text within the <code>.progress-bar</code>.
+                                </p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bgc-danger" style="width: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bgc-success progress-bar-md fs-6" style="width: 45%;" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bgc-info progress-bar-lg fs-5" style="width: 60%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bgc-primary progress-bar-xl fs-4" style="width: 75%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                BADGES
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="mb-4">
+                                <p class="fs-6-plus mb-2">Badges scale to match the size of the immediate parent element.</p>
+                                <a href="" class="badge-primary fs-1 badge">Ta</a>
+                                <a href="" class="badge-primary fs-2 badge">Ta</a>
+                                <a href="" class="badge-primary fs-3 badge">Ta</a>
+                                <a href="" class="badge-primary fs-4-plus badge">Ta</a>
+                                <a href="" class="badge-primary fs-5 badge">Ta</a>
+                                <a href="" class="badge-primary fs-6 badge">Ta</a>
+                                <a href="" class="badge-primary fs-7 badge">Ta</a>
+                                <a href="" class="badge-primary fs-8 badge">Ta</a>
+                            </div>
+                            <div class="mb-4">
+                                <p class="fs-6-plus mb-2">Circle Badges with <code>.badge-circle</code> class</p>
+                                <a href="" class="badge-success badge-circle fs-1 badge">2</a>
+                                <a href="" class="badge-success badge-circle fs-2 badge">3</a>
+                                <a href="" class="badge-success badge-circle fs-3 badge">4</a>
+                                <a href="" class="badge-success badge-circle fs-4-plus badge">5</a>
+                                <a href="" class="badge-success badge-circle fs-5 badge">6</a>
+                                <a href="" class="badge-success badge-circle fs-6 badge">7</a>
+                                <a href="" class="badge-success badge-circle fs-7 badge">8</a>
+                                <a href="" class="badge-success badge-circle fs-8 badge">9</a>
+                                <a href="" class="badge-info badge-circle fs-8 badge">10</a>
+                                <a href="" class="badge-info badge-circle fs-7 badge">11</a>
+                                <a href="" class="badge-info badge-circle fs-6 badge">12</a>
+                                <a href="" class="badge-info badge-circle fs-5 badge">13</a>
+                                <a href="" class="badge-info badge-circle fs-4-plus badge">14</a>
+                                <a href="" class="badge-info badge-circle fs-3 badge">15</a>
+                                <a href="" class="badge-info badge-circle fs-2 badge">16</a>
+                                <a href="" class="badge-info badge-circle fs-1 badge">17</a>
+                            </div>
+                            <div class="mb-4">
+                                <p class="fs-6-plus mb-2">Rounded Badges with <code>.badge-pill</code> class</p>
+                                <a href="" class="badge-danger badge-pill fs-1 badge">1</a>
+                                <a href="" class="badge-danger badge-pill fs-2 badge">2</a>
+                                <a href="" class="badge-danger badge-pill fs-3 badge">3</a>
+                                <a href="" class="badge-danger badge-pill fs-4-plus badge">4</a>
+                                <a href="" class="badge-danger badge-pill fs-5 badge">5</a>
+                                <a href="" class="badge-danger badge-pill fs-6 badge">6</a>
+                                <a href="" class="badge-danger badge-pill fs-7 badge">7</a>
+                                <a href="" class="badge-danger badge-pill fs-8 badge">8</a>
+                                <a href="" class="badge-warning badge-pill fs-8 badge">8</a>
+                                <a href="" class="badge-warning badge-pill fs-7 badge">7</a>
+                                <a href="" class="badge-warning badge-pill fs-6 badge">6</a>
+                                <a href="" class="badge-warning badge-pill fs-5 badge">5</a>
+                                <a href="" class="badge-warning badge-pill fs-4-plus badge">4</a>
+                                <a href="" class="badge-warning badge-pill fs-3 badge">3</a>
+                                <a href="" class="badge-warning badge-pill fs-2 badge">2</a>
+                                <a href="" class="badge-warning badge-pill fs-1 badge">1</a>
+                            </div>
+                            <a href="" class="badge-danger bc-danger badge-pill waves mr-2 fs-5 badge">5</a>
+                            <a href="" class="badge-danger bc-danger badge-pill waves mr-2 fs-6 badge">6</a>
+                            <a href="" class="badge-danger bc-danger badge-pill waves mr-2 fs-7 badge">7</a>
+                            <a href="" class="badge-danger bc-danger badge-pill waves mr-2 fs-8 badge">8</a>
+                            <a href="" class="badge-warning bc-warning badge-pill waves mr-2 fs-8 badge">8</a>
+                            <a href="" class="badge-warning bc-warning badge-pill waves mr-2 fs-7 badge">7</a>
+                            <a href="" class="badge-warning bc-warning badge-pill waves mr-2 fs-6 badge">6</a>
+                            <a href="" class="badge-warning bc-warning badge-pill waves mr-2 fs-5 badge">5</a>
+                            <a href="" class="badge-danger bc-danger badge-pill badge-counter mr-2 fs-5 badge" data-counter="20" data-duration="40000"><span class="text"></span></a>
+                            <a href="" class="badge-warning bc-warning badge-pill badge-counter mr-2 fs-5 badge waves" data-counter="20" data-duration="40000"><span class="text"></span></a>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Pills
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <h4 class="lh-0 pb-1">Pills</h4>
+                            <p class="fs-6-plus mb-2">Rounded Badges with <code>.badge-pill</code> class</p>
+                            <div class="mb-2">
+                                <a href="" class="badge badge-pill badge-default c-gray-dark fs-7">Default</a>
+                                <a href="" class="badge badge-pill badge-primary fs-7">Primary</a>
+                                <a href="" class="badge badge-pill badge-success fs-7">Success</a>
+                                <a href="" class="badge badge-pill badge-info fs-7">Info</a>
+                                <a href="" class="badge badge-pill badge-warning fs-7">Warning</a>
+                                <a href="" class="badge badge-pill badge-danger fs-7">Danger</a>
+                            </div>
+                            <div class="mb-3">
+                                <a href="" class="badge badge-pill mt-1 badge-default c-gray-dark fs-6">Default</a>
+                                <a href="" class="badge badge-pill mt-1 badge-primary fs-6">Primary</a>
+                                <a href="" class="badge badge-pill mt-1 badge-success fs-6">Success</a>
+                                <a href="" class="badge badge-pill mt-1 badge-info fs-6">Info</a>
+                                <a href="" class="badge badge-pill mt-1 badge-warning fs-6">Warning</a>
+                                <a href="" class="badge badge-pill mt-1 badge-danger fs-6">Danger</a>
+                            </div>
+                            <h4 class="lh-0 pb-1 mt-6">Pills</h4>
+                            <p class="fs-6-plus mb-2">Empty Badges with <code>.badge-empty</code> class</p>
+                            <div class="mb-2">
+                                <a href="" class="badge badge-empty mr-1 badge-default"></a>
+                                <a href="" class="badge badge-empty mr-1 bgc-body-inverse"></a>
+                                <a href="" class="badge badge-empty mr-1 bgc-body"></a>
+                                <a href="" class="badge badge-empty mr-1 bg-primary"></a>
+                                <a href="" class="badge badge-empty mr-1 bg-info"></a>
+                                <a href="" class="badge badge-empty mr-1 bg-success"></a>
+                                <a href="" class="badge badge-empty mr-1 bgc-pink"></a>
+                                <a href="" class="badge badge-empty mr-1 bgc-purple"></a>
+                                <a href="" class="badge badge-empty mr-1 bgc-danger"></a>
+                                <a href="" class="badge badge-empty mr-1 bg-warning"></a>
+                            </div>
+                            <h4 class="lh-0 pb-3 mt-6">Images</h4>
+                            <div class="">
+                                <a href="" class="badge badge-pill fs-7 mr-1 mt-1 badge-default"><img src="assets/img/avatar/avatar1.png" alt="">Elliot<i class="fa fa-close icon-ml"></i></a>
+                                <a href="" class="badge badge-pill fs-7 mr-1 mt-1 badge-default"><img src="assets/img/picture/pic4.jpg" alt="">Taylor<i class="fa fa-close icon-ml"></i></a>
+                                <a href="" class="badge badge-pill fs-7 mr-1 mt-1 badge-default"><img src="assets/img/avatar/avatar2.png" alt="">Ann<i class="fa fa-close icon-ml"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/app');
+        </script>
+    {{/content}}
+{{/extend}}

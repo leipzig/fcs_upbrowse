@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cytovas FCS Uploader</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.0/metisMenu.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="client/fine-uploader-gallery.css" rel="stylesheet">
+  <link href="css/mm-horizontal.css" rel="stylesheet" type="text/css">
+  <link href="css/fu.css" rel="stylesheet" type="text/css">
+  <link href="css/mm-vertical.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.0/metisMenu.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
+  <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.4.1/packaged/jquery.noty.packaged.min.js"></script>
+  <script src="client/s3.jquery.fine-uploader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+  <script src="js/fuzzyset.js"></script>
+  <script src="js/guess.js"></script>
+  <script src="js/metis.js"></script>
+  <script src="js/UUID.js"></script>
+  <script src="js/moment.min.js"></script>
+  <!-- Fine Uploader Customized Gallery template
+    ====================================================================== -->
+  <script type="text/template" id="qq-template-s3">
+    <div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Drop files here">
+
+      <div class="choicearea">
+        <h3>
+          <div class="label label-success" id="trialchoice"></div>
+          <div class="label label-success" id="assaychoice"></div>
+          <div class="label label-success" id="tubetypechoice"></div>
+          <div class="label label-success" id="specieschoice"></div>
+        </h3> <button type="button" class="btn btn-primary" id="applychoices">Apply</button>
+        <div class="qq-upload-button-selector btn btn-primary" id="stagefile">
+          <div>Stage a file</div>
+        </div>
+      </div>
+
+      <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
+        <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+      </div>
+      <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
+        <span class="qq-upload-drop-area-text-selector"></span>
+      </div>
+
+
+      <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Processing dropped files...</span>
+      <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+      </span>
+      <ul class="qq-upload-list-selector qq-upload-list" role="region" aria-live="polite" aria-relevant="additions removals">
+        <li>
+          <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+          <div class="qq-progress-bar-container-selector qq-progress-bar-container">
+            <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
+          </div>
+          <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+          <div class="qq-thumbnail-wrapper">
+            <a class="preview-link" target="_blank">
+                            <img class="qq-thumbnail-selector" qq-max-size="120" qq-server-scale>
+                        </a>
+          </div>
+          <button type="button" class="qq-upload-cancel-selector qq-upload-cancel">X</button>
+          <button type="button" class="qq-upload-retry-selector qq-upload-retry">
+                        <span class="qq-btn qq-retry-icon" aria-label="Retry"></span>
+                        Retry
+                    </button>
+
+          <div class="qq-file-info">
+            <div class="qq-file-name">
+              <span class="qq-upload-file-selector qq-upload-file"></span>
+              <span class="qq-edit-filename-icon-selector qq-edit-filename-icon" aria-label="Edit filename"></span>
+              <span class="qq-upload-file-selector qq-upload-file qq-editable"><div clas="labchoices"></div></span>
+            </div>
+            <div class="checkedtrialchoice"></div>
+            <div class="checkedassaychoice"></div>
+            <div class="checkedtubechoice"></div>
+            <div class="checkedspecieschoice"></div>
+            <input type="checkbox">
+            <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
+            <span class="qq-upload-size-selector qq-upload-size"></span>
+            <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">
+                            <span class="qq-btn qq-delete-icon" aria-label="Delete"></span>
+                        </button>
+            <button type="button" class="qq-btn qq-upload-pause-selector qq-upload-pause">
+                            <span class="qq-btn qq-pause-icon" aria-label="Pause"></span>
+                        </button>
+            <button type="button" class="qq-btn qq-upload-continue-selector qq-upload-continue">
+                            <span class="qq-btn qq-continue-icon" aria-label="Continue"></span>
+                        </button>
+          </div>
+        </li>
+      </ul>
+
+      <dialog class="qq-alert-dialog-selector">
+        <div class="qq-dialog-message-selector"></div>
+        <div class="qq-dialog-buttons">
+          <button type="button" class="qq-cancel-button-selector">Close</button>
+        </div>
+      </dialog>
+
+      <dialog class="qq-confirm-dialog-selector">
+        <div class="qq-dialog-message-selector"></div>
+        <div class="qq-dialog-buttons">
+          <button type="button" class="qq-cancel-button-selector">No</button>
+          <button type="button" class="qq-ok-button-selector">Yes</button>
+        </div>
+      </dialog>
+
+      <dialog class="qq-prompt-dialog-selector">
+        <div class="qq-dialog-message-selector"></div>
+        <input type="text">
+        <div class="qq-dialog-buttons">
+          <button type="button" class="qq-cancel-button-selector">Cancel</button>
+          <button type="button" class="qq-ok-button-selector">Ok</button>
+        </div>
+      </dialog>
+    </div>
+  </script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">Cytovas FCS Uploader</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Tools <span class="caret"></span>
+              </a>
+            <ul class="dropdown-menu">
+              <li><a href="browse.html" target="_blank">Browse FCS uploads</a></li>
+              <li><a href="projects.html" target="_blank">Project Explorer</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <nav class="sidebar-nav">
+          <h3>Select a Trial and Assay</h3>
+          <ul class="metismenu" id="assay">
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">Events</a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="#">EV</a></li>
+                <li><a href="#">Endothelial</a></li>
+                <li><a href="#">Count</a></li>
+                <li><a href="#">T-cell</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">LVAD</a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="#">EV</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">Titrations</a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="#">Titration</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h3>Select tube class <small><em>Leave unchecked to activate auto-guesser</em></small></h3>
+          <ul class="metismenu" id="tubetype">
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">Type</a>
+              <ul aria-expanded="false" class="collapse">
+                <li>
+                  <a class="has-arrow" href="#" aria-expanded="false">Quality controls</a>
+                  <ul aria-expanded="false" class="collapse">
+                    <li><a href="#">CST Before</a></li>
+                    <li><a href="#">CST After</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="#" aria-expanded="false">Calibration controls</a>
+                  <ul aria-expanded="false" class="collapse">
+                    <li><a href="#">Size beads</a></li>
+                    <li><a href="#">Size SSC</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="#" aria-expanded="false">Compensation controls</a>
+                  <ul aria-expanded="false" class="collapse">
+                    <li>
+                      <a class="has-arrow noclick" href="#" aria-expanded="false">Blue Stained</a>
+                      <ul aria-expanded="false" class="collapse">
+                        <li><a href="#">Blue 530/30</a></li>
+                        <li><a href="#">Blue 575/25</a></li>
+                        <li><a href="#">Blue 695/40</a></li>
+                        <li><a href="#">Blue 780/60</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-arrow noclick" href="#" aria-expanded="false">Red Stained</a>
+                      <ul aria-expanded="false" class="collapse">
+                        <li><a href="#">Red 670/30</a></li>
+                        <li><a href="#">Red 712/21</a></li>
+                        <li><a href="#">Red 780/60</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-arrow noclick" href="#" aria-expanded="false">Violet Stained</a>
+                      <ul aria-expanded="false" class="collapse">
+                        <li><a href="#">Violet 450/50</a></li>
+                        <li><a href="#">Violet 525/50</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="has-arrow" href="#" aria-expanded="false">Unstained</a>
+                    </li>
+                  </ul>
+                </li><!--compensation controls-->
+                <li>
+                  <a class="has-arrow" href="#" aria-expanded="false">Negative controls</a>
+                  <ul aria-expanded="false" class="collapse">
+                    <li><a href="#">Triton</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="#" aria-expanded="false">Samples</a>
+                  <ul aria-expanded="false" class="collapse">
+                    <li><a href="#">Packet</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="#" aria-expanded="false">Titrations</a>
+                  <ul aria-expanded="false" class="collapse">
+                    <li><a href="#">EV Titration</a></li>
+                    <li><a href="#">Cell Titration</a></li>
+                  </ul>
+                </li><!--titrations-->
+                <li>
+                  <a class="has-arrow" href="#" aria-expanded="false">Titration Checks</a>
+                  <ul aria-expanded="false" class="collapse">
+                    <li><a href="#">EV Titration Check</a></li>
+                  </ul>
+                </li><!--titration checks-->
+              </ul><!--type-->
+            </li>
+          </ul><!--tubetype-->
+          <h3>Select sample metadata</h3>
+          <ul class="metismenu" id="species">
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">Species</a>
+              <ul aria-expanded="false" class="collapse">
+                <li><a href="#">Homo sapiens</a></li>
+                <li><a href="#">Mus musculus</a></li>
+                <li><a href="#">Rattus norvegicus</a></li>
+                <li><a href="#">Sus scrofa</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="col-md-9">
+        <!-- Fine Uploader DOM Element-->
+        <div id="fine-uploader-s3"></div>
+        <div class="qq-gallery">
+        </div>
+        <div id="experiment">
+          <h4>Experimental metadata</h4>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                Date:
+                <div class="experiment-date"></div>
+              </div>
+              <div class="col-md-3">
+                Moniker:
+                <div class="experiment-moniker"></div>
+              </div>
+              <div class="col-md-6">
+                ID:
+                <div class="experiment-id"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="qq-form" action="cytovas-instrument-files.s3.amazonaws.com"><input type="hidden" name="expdate" id="expdate"><input type="hidden" name="timestamp" id="timestamp"><input type="hidden" id="expmoniker" name="expmoniker"><input type="hidden" id="expuuid" name="expuuid"></form>
+        <p>
+          <br>
+          <div id="addSubmit" class="btn btn-primary btn-lg">Upload</div>
+          <div id="button-reset" class="btn btn-warning btn-lg">Reset</div>
+        </p>
+        <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template-->
+        <script src="js/uploader.js"></script>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

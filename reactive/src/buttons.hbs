@@ -1,0 +1,1877 @@
+{{#extend "layout-1" current='buttons'}}
+    {{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Basic Styles
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Colors</h4>
+                                <p class="fs-6-plus mb-2">Color Buttons with <code>.btn-default .btn-primary .btn-success .btn-info .btn-warning .btn-danger</code> classes</p>
+                                <button class="btn mb-1 btn-default">Default</button>
+                                <button class="btn mb-1 btn-primary">Primary</button>
+                                <button class="btn mb-1 btn-success">Success</button>
+                                <button class="btn mb-1 btn-info">Info</button>
+                                <button class="btn mb-1 btn-warning">Warning</button>
+                                <button class="btn mb-1 btn-danger">Danger</button>
+                            </div>
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Sizes</h4>
+                                <p class="fs-6-plus mb-2">Four Size variations with <code>.btn-lg .btn-sm .btn-xs</code> classes</p>
+                                <button class="btn mb-1 btn-primary btn-lg">Large</button>
+                                <button class="btn mb-1 btn-primary">Default</button>
+                                <button class="btn mb-1 btn-primary btn-sm">Small</button>
+                                <button class="btn mb-1 btn-primary btn-xs">X-Small</button>
+                                <br>
+                                <button class="btn mb-1 btn-default btn-lg">Large</button>
+                                <button class="btn mb-1 btn-default">Default</button>
+                                <button class="btn mb-1 btn-default btn-sm">Small</button>
+                                <button class="btn mb-1 btn-default btn-xs">X-Small</button>
+                            </div>
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Disabled</h4>
+                                <p class="fs-6-plus mb-2">Disable buttons by adding <code>disabled</code> attribute</p>
+                                <button disabled class="btn mb-1 btn-default">Default</button>
+                                <button disabled class="btn mb-1 btn-primary">Primary</button>
+                                <button disabled class="btn mb-1 btn-success">Success</button>
+                                <button disabled class="btn mb-1 btn-info">Info</button>
+                                <button disabled class="btn mb-1 btn-warning">Warning</button>
+                                <button disabled class="btn mb-1 btn-danger">Danger</button>
+                            </div>
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Outline Buttons</h4>
+                                <p class="fs-6-plus mb-2">Outline Buttons collors by <code>.btn-outline-{ color }</code> classes</p>
+                                <button class="btn mb-1 btn-outline-default">Default</button>
+                                <button class="btn mb-1 btn-outline-primary">Primary</button>
+                                <button class="btn mb-1 btn-outline-success">Success</button>
+                                <button class="btn mb-1 btn-outline-info">Info</button>
+                                <button class="btn mb-1 btn-outline-warning">Warning</button>
+                                <button class="btn mb-1 btn-outline-danger">Danger</button>
+                            </div>
+                            <div class="pb-1">
+                                <h4 class="lh-0 mb-3">Labeled Buttons</h4>
+                                <button class="btn mb-1 btn-outline-default btn-labeled-icon left"><i class="icon fa fa-shopping-cart"></i>Default</button>
+                                <button class="btn mb-1 btn-labeled-icon left btn-info"><i class="icon fa fa-info"></i>Info</button>
+                                <button class="btn mb-1 btn-warning btn-labeled-icon left"><i class="icon fa fa-exclamation-triangle"></i>Warning</button>
+                                <button class="btn mb-1 btn-danger btn-labeled-icon left"><i class="icon fa fa-plug"></i>Danger</button>
+                                <h5 class="mb-2 pt-4">Sizes</h5>
+                                <button class="btn btn-lg mb-1 btn-outline-default btn-labeled-icon left"><i class="icon fa fa-arrow-left"></i>Prev</button>
+                                <button class="btn btn-lg mb-1 btn-outline-default btn-labeled-icon right"><i class="icon fa fa-arrow-right"></i>Next</button>
+                                <button class="btn mb-1 btn-labeled-icon left btn-info"><i class="icon fa fa-backward"></i>Backward</button>
+                                <button class="btn mb-1 btn-labeled-icon right btn-info"><i class="icon fa fa-forward"></i>Forward</button>
+                                <br>
+                                <button class="btn btn-sm mb-1 btn-warning btn-labeled-icon left"><i class="icon fa fa-play"></i>Play</button>
+                                <button class="btn btn-sm mb-1 btn-warning btn-labeled-icon left"><i class="icon fa fa-rotate-left"></i>Cancel</button>
+                                <button class="btn btn-xs mb-1 btn-danger btn-labeled-icon left"><i class="icon fa fa-pause"></i>Pause</button>
+                                <button class="btn btn-xs mb-1 btn-danger btn-labeled-icon left"><i class="icon fa fa-stop"></i>Stop</button>
+                            </div>
+                            <div class="pt-5">
+                                <h4 class="lh-0 mb-3">Rounded Borders</h4>
+                                <button class="btn mb-1 btn-primary br-xs">Primary</button>
+                                <button class="btn mb-1 btn-success br-sm">Success</button>
+                                <button class="btn mb-1 btn-info br-md">Info</button>
+                                <button class="btn mb-1 btn-warning br-lg">Warning</button>
+                                <button class="btn mb-1 btn-danger br-xl">Danger</button>
+                            </div>
+                            <div class="pt-5">
+                                <h4 class="lh-0 mb-3">Circle Buttons</h4>
+                                <button class="btn mb-1 btn-primary br-circle">Primary</button>
+                                <button class="btn mb-1 btn-success br-circle">Success</button>
+                                <button class="btn mb-1 btn-info br-circle">Info</button>
+                                <button class="btn mb-1 btn-warning br-circle">Warning</button>
+                                <button class="btn mb-1 btn-danger br-circle">Danger</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Groups
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Button Group</h4>
+                                <p class="fs-6-plus mb-2">Combine buttons with <code>.btn-group</code></p>
+                                <div class="pb-1">
+                                    <div class="btn-group">
+                                        <button class="btn mb-1 btn-success">Success</button>
+                                        <button class="btn mb-1 btn-warning">Warning</button>
+                                        <button class="btn mb-1 btn-danger">Danger</button>
+                                    </div>
+                                </div>
+                                <div class="pb-1">
+                                    <div class="btn-group">
+                                        <button class="btn mb-1 btn-default">1</button>
+                                        <button class="btn mb-1 btn-default">2</button>
+                                        <button class="btn mb-1 btn-default">3</button>
+                                        <button class="btn mb-1 btn-default">4</button>
+                                    </div>
+                                    <button class="btn btn-default mb-1">5</button>
+                                </div>
+                                <div class="pb-1">
+                                    <div class="btn-group">
+                                        <button class="btn mb-1 btn-default">1</button>
+                                        <button class="btn mb-1 btn-default">2</button>
+                                        <div class="dropdown mb-1">
+                                            <button class="btn btn-default" type="button"
+                                                    id="dropdown-btn-group-1" data-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                Action<i class="fa fa-angle-down icon-ml"></i>
+                                            </button>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="dropdown-btn-group-1">
+                                                <div class="dropdown-menu-content">
+                                                    <a class="dropdown-item" href="">Action</a>
+                                                    <a class="dropdown-item" href="">Another action</a>
+                                                    <a class="dropdown-item" href="">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="fs-6-plus mb-2 mt-1">Vertical buttons with <code>.btn-group.vertical</code></p>
+                                <div class="pb-1">
+                                    <div class="btn-group vertical">
+                                        <button class="btn btn-default">Button</button>
+                                        <div class="dropdown">
+                                            <button class="btn btn-default" type="button"
+                                                    id="dropdown-btn-group-2" data-toggle="dropdown" aria-expanded="false">
+                                                Action<i class="fa fa-angle-down icon-ml"></i>
+                                            </button>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="dropdown-btn-group-2">
+                                                <div class="dropdown-menu-content">
+                                                    <a class="dropdown-item" href="">Action</a>
+                                                    <a class="dropdown-item" href="">Another action</a>
+                                                    <a class="dropdown-item" href="">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-default">Button</button>
+                                        <button class="btn btn-default">Button</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Labeled Buttons</h4>
+                                <div class="mb-3">
+                                    <div class="btn-group">
+                                        <button class="btn mb-1 btn-primary btn-labeled-icon left"><i class="icon fa fa-fast-backward fs-7"></i>Back</button>
+                                        <button class="btn mb-1 btn-primary"><i class="icon fa fa-pause icon-mr fs-7"></i>Stop</button>
+                                        <button class="btn mb-1 btn-primary btn-labeled-icon right"><i class="icon fa fa-fast-forward fs-7"></i>Forward</button>
+                                    </div>
+                                </div>
+                                <div class="btn-group vertical">
+                                    <button class="btn btn-primary btn-labeled-icon left"><i class="icon fa fa-rotate-left"></i>Repeat</button>
+                                    <button class="btn btn-primary btn-labeled-icon left"><i class="icon fa fa-pause fs-7"></i>Pause</button>
+                                    <button class="btn btn-primary btn-labeled-icon left"><i class="icon fa fa-play fs-7"></i>Play</button>
+                                    <button class="btn btn-primary btn-labeled-icon left"><i class="icon fa fa-random"></i>Shuffle</button>
+                                </div>
+                            </div>
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Justified Buttons</h4>
+                                <p class="fs-6-plus mb-2">Justified buttons with the grid classes</p>
+                                <div class="btn-group btn-block">
+                                    <button class="btn col-xs-12 col-sm-3 btn-default">Button</button>
+                                    <button class="btn col-xs-12 col-sm-4 btn-info">Button</button>
+                                    <button class="btn col-xs-12 col-sm-5 btn-success">Button</button>
+                                </div>
+                            </div>
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Radio Button Group</h4>
+                                <p class="fs-6-plus mb-2">Only one button might be in the pressed state</p>
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-primary active">
+                                        <input type="radio" name="options" id="radio-option1" checked>
+                                        Button
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="radio-option2"> Button 2
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="radio-option3"> Button 3
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="lh-0 mb-3">Checked Button Group</h4>
+                                <p class="fs-6-plus mb-2">Multiple buttons could be pressed</p>
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="checkbox" name="options" id="check-option1" checked>
+                                        Button 1
+                                    </label>
+                                    <label class="btn btn-success active">
+                                        <input type="checkbox" name="options" id="check-option2">
+                                        Button 2
+                                    </label>
+                                    <label class="btn btn-success">
+                                        <input type="checkbox" name="options" id="check-option3"> Button 3
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Drop Downs
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="ui simple-select select-dropdown mr-7 mb-3">
+                                <div class="text">Choose & Select an Option</div>
+                                <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">New</div>
+                                    <div class="item">
+                                        <span class="description">ctrl + o</span>
+                                        Open...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + s</span>
+                                        Save as...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + r</span>
+                                        Rename
+                                    </div>
+                                    <div class="item">Make a copy</div>
+                                    <div class="item">
+                                        <i class="fa fa-folder icon"></i>
+                                        Move to folder
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-trash icon"></i>
+                                        Move to trash
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">Download As...</div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        Publish To Web
+                                        <div class="menu">
+                                            <div class="item">Google Docs</div>
+                                            <div class="item">Google Drive</div>
+                                            <div class="item">Dropbox</div>
+                                            <div class="item">Adobe Creative Cloud</div>
+                                            <div class="item">Private FTP</div>
+                                            <div class="item">Another Service...</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">E-mail Collaborators</div>
+                                </div>
+                            </div>
+                            <div class="ui combo-select select-dropdown mr-7 mb-3">
+                                <div class="text">Change the Previous Option</div>
+                                <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">New</div>
+                                    <div class="item">
+                                        <span class="description">ctrl + o</span>
+                                        Open...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + s</span>
+                                        Save as...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + r</span>
+                                        Rename
+                                    </div>
+                                    <div class="item">Make a copy</div>
+                                    <div class="item">
+                                        <i class="fa fa-folder icon"></i>
+                                        Move to folder
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-trash icon"></i>
+                                        Move to trash
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">Download As...</div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        Publish To Web
+                                        <div class="menu">
+                                            <div class="item">Google Docs</div>
+                                            <div class="item">Google Drive</div>
+                                            <div class="item">Dropbox</div>
+                                            <div class="item">Adobe Creative Cloud</div>
+                                            <div class="item">Private FTP</div>
+                                            <div class="item">Another Service...</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">E-mail Collaborators</div>
+                                </div>
+                            </div>
+                            <div class="ui hide-select select-dropdown mr-7 mb-3">
+                                <div class="text">Select an Option</div>
+                                <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">New</div>
+                                    <div class="item">
+                                        <span class="description">ctrl + o</span>
+                                        Open...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + s</span>
+                                        Save as...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + r</span>
+                                        Rename
+                                    </div>
+                                    <div class="item">Make a copy</div>
+                                    <div class="item">
+                                        <i class="fa fa-folder icon"></i>
+                                        Move to folder
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-trash icon"></i>
+                                        Move to trash
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">Download As...</div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        Publish To Web
+                                        <div class="menu">
+                                            <div class="item">Google Docs</div>
+                                            <div class="item">Google Drive</div>
+                                            <div class="item">Dropbox</div>
+                                            <div class="item">Adobe Creative Cloud</div>
+                                            <div class="item">Private FTP</div>
+                                            <div class="item">Another Service...</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">E-mail Collaborators</div>
+                                </div>
+                            </div>
+                            <div class="ui nothing-select select-dropdown mr-7 mb-3">
+                                <div class="text">Do Nothing</div>
+                                <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">New</div>
+                                    <div class="item">
+                                        <span class="description">ctrl + o</span>
+                                        Open...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + s</span>
+                                        Save as...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + r</span>
+                                        Rename
+                                    </div>
+                                    <div class="item">Make a copy</div>
+                                    <div class="item">
+                                        <i class="fa fa-folder icon"></i>
+                                        Move to folder
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-trash icon"></i>
+                                        Move to trash
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">Download As...</div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        Publish To Web
+                                        <div class="menu">
+                                            <div class="item">Google Docs</div>
+                                            <div class="item">Google Drive</div>
+                                            <div class="item">Dropbox</div>
+                                            <div class="item">Adobe Creative Cloud</div>
+                                            <div class="item">Private FTP</div>
+                                            <div class="item">Another Service...</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">E-mail Collaborators</div>
+                                </div>
+                            </div>
+                            <div class="ui custom-select-dropdown select-dropdown mr-7 mb-3">
+                                <div class="text">Do something else</div>
+                                <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">New</div>
+                                    <div class="item">
+                                        <span class="description">ctrl + o</span>
+                                        Open...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + s</span>
+                                        Save as...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + r</span>
+                                        Rename
+                                    </div>
+                                    <div class="item">Make a copy</div>
+                                    <div class="item">
+                                        <i class="fa fa-folder icon"></i>
+                                        Move to folder
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-trash icon"></i>
+                                        Move to trash
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">Download As...</div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        Publish To Web
+                                        <div class="menu">
+                                            <div class="item">Google Docs</div>
+                                            <div class="item">Google Drive</div>
+                                            <div class="item">Dropbox</div>
+                                            <div class="item">Adobe Creative Cloud</div>
+                                            <div class="item">Private FTP</div>
+                                            <div class="item">Another Service...</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">E-mail Collaborators</div>
+                                </div>
+                            </div>
+
+                            <h4 class="lh-0 pb-1 mt-3">Search</h4>
+                            <p class="fs-6-plus mb-2">Search by typing from the list</p>
+                            <div class="ui floating select-dropdown btn-labeled-icon left search simple-select btn btn-default mr-4">
+                                <i class="icon fa fa-globe"></i>
+                                <span class="text">Select Language</span>
+                                <div class="menu">
+                                    <div class="item">Arabic</div>
+                                    <div class="item">Chinese</div>
+                                    <div class="item">Danish</div>
+                                    <div class="item">Dutch</div>
+                                    <div class="item">English</div>
+                                    <div class="item">French</div>
+                                    <div class="item">German</div>
+                                    <div class="item">Greek</div>
+                                    <div class="item">Hungarian</div>
+                                    <div class="item">Italian</div>
+                                    <div class="item">Japanese</div>
+                                    <div class="item">Korean</div>
+                                    <div class="item">Lithuanian</div>
+                                    <div class="item">Persian</div>
+                                    <div class="item">Polish</div>
+                                    <div class="item">Portuguese</div>
+                                    <div class="item">Russian</div>
+                                    <div class="item">Spanish</div>
+                                    <div class="item">Swedish</div>
+                                    <div class="item">Turkish</div>
+                                    <div class="item">Vietnamese</div>
+                                </div>
+                            </div>
+                            <div class="ui floating select-dropdown btn-labeled-icon left search simple-select btn btn-primary">
+                                <i class="icon fa fa-fort-awesome"></i>
+                                <span class="text">Select State</span>
+                                <div class="menu">
+                                    <div class="item" data-value="">State</div>
+                                    <div class="item" data-value="AL">Alabama</div>
+                                    <div class="item" data-value="AK">Alaska</div>
+                                    <div class="item" data-value="AZ">Arizona</div>
+                                    <div class="item" data-value="AR">Arkansas</div>
+                                    <div class="item" data-value="CA">California</div>
+                                    <div class="item" data-value="CO">Colorado</div>
+                                    <div class="item" data-value="CT">Connecticut</div>
+                                    <div class="item" data-value="DE">Delaware</div>
+                                    <div class="item" data-value="DC">District Of Columbia</div>
+                                    <div class="item" data-value="FL">Florida</div>
+                                    <div class="item" data-value="GA">Georgia</div>
+                                    <div class="item" data-value="HI">Hawaii</div>
+                                    <div class="item" data-value="ID">Idaho</div>
+                                    <div class="item" data-value="IL">Illinois</div>
+                                    <div class="item" data-value="IN">Indiana</div>
+                                    <div class="item" data-value="IA">Iowa</div>
+                                    <div class="item" data-value="KS">Kansas</div>
+                                    <div class="item" data-value="KY">Kentucky</div>
+                                    <div class="item" data-value="LA">Louisiana</div>
+                                    <div class="item" data-value="ME">Maine</div>
+                                    <div class="item" data-value="MD">Maryland</div>
+                                    <div class="item" data-value="MA">Massachusetts</div>
+                                    <div class="item" data-value="MI">Michigan</div>
+                                    <div class="item" data-value="MN">Minnesota</div>
+                                    <div class="item" data-value="MS">Mississippi</div>
+                                    <div class="item" data-value="MO">Missouri</div>
+                                    <div class="item" data-value="MT">Montana</div>
+                                    <div class="item" data-value="NE">Nebraska</div>
+                                    <div class="item" data-value="NV">Nevada</div>
+                                    <div class="item" data-value="NH">New Hampshire</div>
+                                    <div class="item" data-value="NJ">New Jersey</div>
+                                    <div class="item" data-value="NM">New Mexico</div>
+                                    <div class="item" data-value="NY">New York</div>
+                                    <div class="item" data-value="NC">North Carolina</div>
+                                    <div class="item" data-value="ND">North Dakota</div>
+                                    <div class="item" data-value="OH">Ohio</div>
+                                    <div class="item" data-value="OK">Oklahoma</div>
+                                    <div class="item" data-value="OR">Oregon</div>
+                                    <div class="item" data-value="PA">Pennsylvania</div>
+                                    <div class="item" data-value="RI">Rhode Island</div>
+                                    <div class="item" data-value="SC">South Carolina</div>
+                                    <div class="item" data-value="SD">South Dakota</div>
+                                    <div class="item" data-value="TN">Tennessee</div>
+                                    <div class="item" data-value="TX">Texas</div>
+                                    <div class="item" data-value="UT">Utah</div>
+                                    <div class="item" data-value="VT">Vermont</div>
+                                    <div class="item" data-value="VA">Virginia</div>
+                                    <div class="item" data-value="WA">Washington</div>
+                                    <div class="item" data-value="WV">West Virginia</div>
+                                    <div class="item" data-value="WI">Wisconsin</div>
+                                    <div class="item" data-value="WY">Wyoming</div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-3 mt-7 mb-2">Search in Menu</h4>
+                            <div class="ui floating select-dropdown simple-select btn-labeled-icon left btn btn-default mr-4">
+                                <i class="fa fa-tags icon"></i>
+                                <span class="text">Filter Posts</span>
+                                <div class="menu">
+                                    <div class="input-group input-right-icon search input">
+                                        <i class="input-icon fa fa-search icon fs-7"></i>
+                                        <input placeholder="Search tags...">
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="header">
+                                        <i class="tags icon"></i>
+                                        Tag Label
+                                    </div>
+                                    <div class="scrolling menu">
+                                        <div class="item">
+                                            <a href="" class="bgc-danger badge badge-empty"></a>
+                                            Important
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="bgc-success badge badge-empty"></a>
+                                            Announcement
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="bgc-body badge badge-empty"></a>
+                                            Cannot Fix
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="bgc-purple badge badge-empty"></a>
+                                            News
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="bgc-warning badge badge-empty"></a>
+                                            Enhancement
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="bgc-body-inverse badge badge-empty"></a>
+                                            Change Declined
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="bgc-orange badge badge-empty"></a>
+                                            Off Topic
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="bgc-pink badge badge-empty"></a>
+                                            Interesting
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="bgc-primary badge badge-empty"></a>
+                                            Discussion
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui floating select-dropdown simple-select btn-labeled-icon left btn btn-warning">
+                                <i class="fa fa-tags icon"></i>
+                                <span class="text">Filter Posts</span>
+                                <div class="menu">
+                                    <div class="input-group input-right-icon search input">
+                                        <i class="input-icon fa fa-search icon fs-7"></i>
+                                        <input placeholder="Search tags...">
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="header">
+                                        <i class="tags icon"></i>
+                                        Tag Label
+                                    </div>
+                                    <div class="scrolling menu">
+                                        <div class="item">
+                                            Important
+                                        </div>
+                                        <div class="item">
+                                            Announcement
+                                        </div>
+                                        <div class="item">
+                                            Cannot Fix
+                                        </div>
+                                        <div class="item">
+                                            News
+                                        </div>
+                                        <div class="item">
+                                            Enhancement
+                                        </div>
+                                        <div class="item">
+                                            Change Declined
+                                        </div>
+                                        <div class="item">
+                                            Off Topic
+                                        </div>
+                                        <div class="item">
+                                            Interesting
+                                        </div>
+                                        <div class="item">
+                                            Discussion
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-3 mt-7">Tags With Search</h4>
+                            <p class="fs-6-plus mb-2">Add new tags by clicking on the icon</p>
+                            <div class="ui multiple select-dropdown simple-select">
+                                <input type="hidden" name="filters" value="important">
+                                <i class="fa fa-tag icon icon-mr-ch"></i>
+                                <span class="text">Filter Posts</span>
+                                <div class="menu">
+                                    <div class="input-group input-right-icon search input">
+                                        <i class="input-icon fa fa-search icon fs-7"></i>
+                                        <input placeholder="Search tags...">
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="header">
+                                        <i class="tags icon"></i>
+                                        Tag Label
+                                    </div>
+                                    <div class="scrolling menu">
+                                        <div class="item" data-value="important">
+                                            <a href="" class="bgc-danger badge badge-empty"></a>
+                                            Important
+                                        </div>
+                                        <div class="item" data-value="announcement">
+                                            <a href="" class="bgc-success badge badge-empty"></a>
+                                            Announcement
+                                        </div>
+                                        <div class="item" data-value="cannotfix">
+                                            <a href="" class="bgc-body badge badge-empty"></a>
+                                            Cannot Fix
+                                        </div>
+                                        <div class="item" data-value="news">
+                                            <a href="" class="bgc-purple badge badge-empty"></a>
+                                            News
+                                        </div>
+                                        <div class="item" data-value="enhancement">
+                                            <a href="" class="bgc-warning badge badge-empty"></a>
+                                            Enhancement
+                                        </div>
+                                        <div class="item" data-value="off-topic">
+                                            <a href="" class="bgc-orange badge badge-empty"></a>
+                                            Off Topic
+                                        </div>
+                                        <div class="item" data-value="interesting">
+                                            <a href="" class="bgc-pink badge badge-empty"></a>
+                                            Interesting
+                                        </div>
+                                        <div class="item" data-value="discussion">
+                                            <a href="" class="bgc-primary badge badge-empty"></a>
+                                            Discussion
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-3 mt-7">Inline</h4>
+                            <p class="fs-6-plus mb-2">Dropdowns in the text</p>
+                            <div class="d-inline-block">
+                                Show posts by
+                                <div class="ui inline px-1 select-dropdown simple-select">
+                                    <div class="text">
+                                        <img class="ui avatar image" alt="" src="assets/img/avatar/avatar1.png">
+                                        Jenny Hess
+                                    </div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="jenny">
+                                            <img class="image" alt="" src="assets/img/avatar/avatar1.png">
+                                            Juo Fu
+                                        </div>
+                                        <div class="item" data-value="elliot">
+                                            <img class="image" alt="" src="assets/img/avatar/avatar2.png">
+                                            Jenny Hess
+                                        </div>
+                                        <div class="item" data-value="stevie">
+                                            <img class="image" alt="" src="assets/img/avatar/avatar3.png">
+                                            Marry Douglas
+                                        </div>
+                                        <div class="item" data-value="christian">
+                                            <img class="image" alt="" src="assets/img/avatar/avatar5.png">
+                                            Leonardo
+                                        </div>
+                                        <div class="item" data-value="matt">
+                                            <img class="image" alt="" src="assets/img/avatar/avatar5.png">
+                                            Matt
+                                        </div>
+                                        <div class="item" data-value="justen">
+                                            <img class="image" alt="" src="assets/img/avatar/avatar6.png">
+                                            Lola Kitsune
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="trophy icon"></i>
+                                <div class="content">
+                                    for
+                                    <div class="ui inline px-1 select-dropdown simple-select">
+                                        <div class="text">today</div>
+                                        <i class="select-dropdown icon"></i>
+                                        <div class="menu">
+                                            <div class="header">Adjust time span</div>
+                                            <div class="active item" data-text="today">Today</div>
+                                            <div class="item" data-text="this week">This Week</div>
+                                            <div class="item" data-text="this month">This Month</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-3 mt-7">Pointing Dropdowns</h4>
+                            <p class="fs-6-plus mb-2">Pointing dropdowns in the menu</p>
+                            <nav class="navbar navbar-expand-lg navbar-light bgc-white-darkest flex-row">
+                                <a class="navbar-brand" href="#">Navbar</a>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="flex-row navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link px-3" href="">Home <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a href="" class="nav-link px-3">
+                                                <div class=" ui only-select pointing top left select-dropdown link item">
+                                                    <span class="text">Shop</span>
+                                                    <i class="select-dropdown icon"></i>
+                                                    <div class="menu">
+                                                        <div class="header">Categories</div>
+                                                        <div class="item">
+                                                            <i class="select-dropdown icon"></i>
+                                                            <span class="text">Clothing</span>
+                                                            <div class="menu">
+                                                                <div class="header">Mens</div>
+                                                                <div class="item">Shirts</div>
+                                                                <div class="item">Pants</div>
+                                                                <div class="item">Jeans</div>
+                                                                <div class="item">Shoes</div>
+                                                                <div class="divider"></div>
+                                                                <div class="header">Womens</div>
+                                                                <div class="item">Dresses</div>
+                                                                <div class="item">Shoes</div>
+                                                                <div class="item">Bags</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">Home Goods</div>
+                                                        <div class="item">Bedroom</div>
+                                                        <div class="divider"></div>
+                                                        <div class="header">Order</div>
+                                                        <div class="item">Status</div>
+                                                        <div class="item">Cancellations</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-3" href="">Features</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="row mt-4">
+                                <div class="col-lg-6">
+                                    <ul class="list-group">
+                                        <li class="list-group-item justify-content-between">
+                                            Cras justo odio
+                                            <span class="badge badge-default badge-pill">14</span>
+                                        </li>
+                                        <li class="list-group-item justify-content-between ui left simple-select pointing select-dropdown link item">
+                                            Messages
+                                            <i class="select-dropdown icon pull-right"></i>
+                                            <span class="badge badge-default badge-pill pull-right">2</span>
+                                            <div class="menu">
+                                                <div class="item">Inbox</div>
+                                                <div class="item">Starred</div>
+                                                <div class="item">Sent Mail</div>
+                                                <div class="item">Drafts (143)</div>
+                                                <div class="divider"></div>
+                                                <div class="item">Spam (1009)</div>
+                                                <div class="item">Trash</div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item justify-content-between">
+                                            Morbi leo risus
+                                            <span class="badge badge-default badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Drop Downs
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <h4 class="lh-0 pb-1">Open Direction</h4>
+                            <p class="fs-6-plus mb-2">By default dropdown opens into the visible space</p>
+                            <div class="mb-1 ui icon top left pointing simple-select select-dropdown btn btn-default">
+                                <i class="fa icon"></i>
+                                <span class="text">Best Fit</span>
+                                <div class="menu">
+                                    <div class="header">Display Density</div>
+                                    <div class="item">Comfortable</div>
+                                    <div class="item">Cozy</div>
+                                    <div class="item">Compact</div>
+                                    <div class="ui divider"></div>
+                                    <div class="item">Settings</div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        <span class="text">Upload Settings</span>
+                                        <div class="menu">
+                                            <div class="item">
+                                                <i class="fa fa-check icon"></i>
+                                                Convert Uploaded Files to PDF
+                                            </div>
+                                            <div class="item">
+                                                <i class="fa fa-check icon"></i>
+                                                Digitize Text from Uploaded Files
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">Manage Apps</div>
+                                    <div class="item">Keyboard Shortcuts</div>
+                                    <div class="item">Help</div>
+                                </div>
+                            </div>
+                            <div class="mb-1 ui icon bottom left pointing simple-select select-dropdown btn btn-default">
+                                <i class="fa icon"></i>
+                                <span class="text">Upward left</span>
+                                <div class="menu">
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        <span class="text">New</span>
+                                        <div class="menu">
+                                            <div class="item">Document</div>
+                                            <div class="item">Image</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">Save As...</div>
+                                    <div class="item">Edit</div>
+                                </div>
+                            </div>
+                            <div class="mb-1 ui icon bottom right pointing simple-select select-dropdown btn btn-default">
+                                <i class="fa icon"></i>
+                                <span class="text">Upward Right</span>
+                                <div class="menu">
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        <span class="text">New</span>
+                                        <div class="menu">
+                                            <div class="item">Document</div>
+                                            <div class="item">Image</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">Save As...</div>
+                                    <div class="item">Edit</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="mb-1 ui floating btn btn-default btn-labeled-icon left select-dropdown simple-select">
+                                <i class="icon fa fa-angle-down"></i>
+                                <span class="text">Menu</span>
+                                <div class="menu">
+                                    <div class="item">
+                                        <i class="left select-dropdown icon"></i>
+                                        <span class="text">Left</span>
+                                        <div class="left menu">
+                                            <div class="item">1</div>
+                                            <div class="item">2</div>
+                                            <div class="item">3</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        <span class="text">Right</span>
+                                        <div class="right menu">
+                                            <div class="item">1</div>
+                                            <div class="item">2</div>
+                                            <div class="item">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-1 ui floating btn btn-default btn-labeled-icon left select-dropdown simple-select">
+                                <i class="fa fa-angle-down icon"></i>
+                                <span class="text">Menu</span>
+                                <div class="left menu">
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        <span class="text">Left</span>
+                                        <div class="menu">
+                                            <div class="item">
+                                                <i class="select-dropdown icon"></i>
+                                                <span class="text">Still Left</span>
+                                                <div class="menu">
+                                                    <div class="item">1</div>
+                                                    <div class="item">2</div>
+                                                    <div class="item">3</div>
+                                                </div>
+                                            </div>
+                                            <div class="item">2</div>
+                                            <div class="item">3</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        <span class="text">Left 2</span>
+                                        <div class="menu">
+                                            <div class="item">1</div>
+                                            <div class="item">2</div>
+                                            <div class="item">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-1 mt-5">Static dropdown</h4>
+                            <p class="fs-6-plus mb-2">No js is required</p>
+                            <div class="ui compact menu">
+                                <div class="ui simple select-dropdown item">
+                                    Dropdown
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item">Choice 1</div>
+                                        <div class="item">Choice 2</div>
+                                        <div class="item">Choice 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-3 mt-7 mb-2">Dropdown Content</h4>
+                            <div class="mb-1 ui floating btn-labeled-icon left select-dropdown btn btn-default simple-select">
+                                <i class="fa fa-bolt icon"></i>
+                                <span class="text">With Header</span>
+                                <div class="menu">
+                                    <div class="header">
+                                        <i class="fa fa-tags icon-mr icon"></i>
+                                        Filter by tag
+                                    </div>
+                                    <div class="item">
+                                        Important
+                                    </div>
+                                    <div class="item">
+                                        Announcement
+                                    </div>
+                                    <div class="item">
+                                        Discussion
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-1 ui floating btn-labeled-icon left select-dropdown btn btn-default simple-select">
+                                <i class="fa fa-bolt icon"></i>
+                                <span class="text">With Divider</span>
+                                <div class="menu">
+                                    <div class="header">
+                                        <i class="fa fa-tags icon-mr icon"></i>
+                                        Filter by tag
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">
+                                        Important
+                                    </div>
+                                    <div class="item">
+                                        Announcement
+                                    </div>
+                                    <div class="item">
+                                        Discussion
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-1 ui floating btn-labeled-icon left select-dropdown btn btn-default simple-select">
+                                <i class="fa fa-bolt icon"></i>
+                                <span class="text">With Icons</span>
+                                <div class="menu">
+                                    <div class="header">
+                                        <i class="fa fa-tags icon icon-mr"></i>
+                                        Filter by tag
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">
+                                        <i class="fa fa-exclamation-triangle icon"></i>
+                                        Important
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-comment icon"></i>
+                                        Announcement
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-comments icon"></i>
+                                        Discussion
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="mb-1 ui floating btn-labeled-icon left select-dropdown btn btn-default simple-select">
+                                <i class="fa fa-bolt icon"></i>
+                                <span class="text">With Description</span>
+                                <div class="menu">
+                                    <div class="header">
+                                        Filter by tag
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">
+                                        <span class="description">2 new</span>
+                                        <span class="text">Important</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">10 new</span>
+                                        <span class="text">Hopper</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">5 new</span>
+                                        <span class="text">Discussion</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-1 ui floating btn-labeled-icon left select-dropdown btn btn-default simple-select">
+                                <i class="fa fa-bolt icon"></i>
+                                <span class="text">With Labels</span>
+                                <div class="menu">
+                                    <div class="header">
+                                        Search Issues
+                                    </div>
+                                    <div class="input-group input-right-icon input">
+                                        <i class="input-icon fa fa-search fs-7 icon"></i>
+                                        <input name="search" placeholder="Search...">
+                                    </div>
+                                    <div class="header">
+                                        <i class="fa fa-tags icon-mr icon"></i>
+                                        Filter by tag
+                                    </div>
+                                    <div class="item">
+                                        <a href="" class="bgc-danger badge badge-empty"></a>
+                                        Important
+                                    </div>
+                                    <div class="item">
+                                        <a href="" class="bgc-success badge badge-empty"></a>
+                                        Announcement
+                                    </div>
+                                    <div class="item">
+                                        <a href="" class="bgc-body badge badge-empty"></a>
+                                        Discussion
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-1 ui floating btn-labeled-icon left select-dropdown btn btn-default simple-select">
+                                <i class="fa fa-bolt icon"></i>
+                                <span class="text">With message</span>
+                                <div class="menu">
+                                    <div class="alert alert-danger message mb-0 bgc-white-dark c-danger" role="alert">
+                                        <strong class="header mb-1">Error</strong>
+                                        <p class="mb-0">You must log-in to see all categories</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="mb-1 ui floating btn-labeled-icon left select-dropdown btn btn-default simple-select">
+                                <i class="fa fa-bolt icon"></i>
+                                <span class="text">With Input</span>
+                                <div class="menu">
+                                    <div class="header">
+                                        Search Issues
+                                    </div>
+                                    <div class="input-group input-right-icon input">
+                                        <i class="input-icon fa fa-search fs-7 icon"></i>
+                                        <input name="search" placeholder="Search...">
+                                    </div>
+                                    <div class="header">
+                                        <i class="tags icon"></i>
+                                        Filter by tag
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">
+                                        <a href="" class="bgc-danger badge badge-empty"></a>
+                                        Important
+                                    </div>
+                                    <div class="item">
+                                        <a href="" class="bgc-success badge badge-empty"></a>
+                                        Announcement
+                                    </div>
+                                    <div class="item">
+                                        <a href="" class="bgc-body badge badge-empty"></a>
+                                        Discussion
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-1 ui floating btn-labeled-icon left select-dropdown btn btn-default simple-select">
+                                <i class="icon-user-follow icon"></i>
+                                <span class="text">With Images</span>
+                                <div class="menu">
+                                    <div class="header">
+                                        People You Might Know
+                                    </div>
+                                    <div class="item">
+                                        <img class="ui avatar image" alt="" src="assets/img/avatar/avatar1.png">
+                                        Jenny Hess
+                                    </div>
+                                    <div class="item">
+                                        <img class="ui avatar image" alt="" src="assets/img/avatar/avatar2.png">
+                                        Elliot Fu
+                                    </div>
+                                    <div class="item">
+                                        <img class="ui avatar image" alt="" src="assets/img/avatar/avatar3.png">
+                                        Stevie Feliciano
+                                    </div>
+                                    <div class="header">
+                                        Your Friends' Friends
+                                    </div>
+                                    <div class="item">
+                                        <img class="ui avatar image" alt="" src="assets/img/avatar/avatar4.png">
+                                        Christian
+                                    </div>
+                                    <div class="item">
+                                        <img class="ui avatar image" alt="" src="assets/img/avatar/avatar5.png">
+                                        Matt
+                                    </div>
+                                    <div class="item">
+                                        <img class="ui avatar image" alt="" src="assets/img/avatar/avatar6.png">
+                                        Justen Kitsune
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="lh-0 pb-1 mt-7 mb-2">States</h4>
+                            <div class="ui loading select-dropdown simple-select mr-4">
+                                Loading Dropdown <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">Choice 1</div>
+                                    <div class="item">Choice 2</div>
+                                    <div class="item">Choice 3</div>
+                                </div>
+                            </div>
+                            <div class="ui loading select-dropdown simple-select btn btn-default">
+                                Loading Dropdown <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">Choice 1</div>
+                                    <div class="item">Choice 2</div>
+                                    <div class="item">Choice 3</div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="ui floating select-dropdown simple-select error mr-4">
+                                    Error State <i class="select-dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item">Choice 1</div>
+                                        <div class="item">Choice 2</div>
+                                        <div class="item">Choice 3</div>
+                                    </div>
+                                </div>
+                                <div class="ui floating select-dropdown simple-select error btn bgc-white-dark bc-danger mr-4">
+                                    Error State <i class="select-dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item">Choice 1</div>
+                                        <div class="item">Choice 2</div>
+                                        <div class="item">Choice 3</div>
+                                    </div>
+                                </div>
+                                <div class="ui floating select-dropdown simple-select c-primary btn bgc-white-dark bc-primary">
+                                    Success State <i class="select-dropdown icon"></i>
+                                    <div class="menu bc-primary">
+                                        <div class="item c-primary">Choice 1</div>
+                                        <div class="item c-primary">Choice 2</div>
+                                        <div class="item c-primary">Choice 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="ui disabled select-dropdown simple-select mr-4">
+                                    Disabled State <i class="select-dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item">Choice 1</div>
+                                        <div class="item">Choice 2</div>
+                                        <div class="item">Choice 3</div>
+                                    </div>
+                                </div>
+                                <div class="ui disabled select-dropdown simple-select mr-4 btn btn-default">
+                                    Disabled State <i class="select-dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item">Choice 1</div>
+                                        <div class="item">Choice 2</div>
+                                        <div class="item">Choice 3</div>
+                                    </div>
+                                </div>
+                                <div class="ui select-dropdown simple-select">
+                                    Disabled Item <i class="select-dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item">Choice 1</div>
+                                        <div class="disabled item">Disabled</div>
+                                        <div class="item">Choice 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-6 mb-2">Compact dropdowns</h5>
+                            <div class="ui bottom right pointing compact select-dropdown simple-select mr-4">
+                                Compact <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">A</div>
+                                    <div class="item">B</div>
+                                    <div class="item">C</div>
+                                </div>
+                            </div>
+                            <div class="ui bottom right pointing compact select-dropdown simple-select btn btn-default">
+                                Compact <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">A</div>
+                                    <div class="item">B</div>
+                                    <div class="item">C</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Icon Buttons
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p btn-icons">
+                            <h4 class="lh-0 mb-3">Brand Icon Buttons</h4>
+                            <p class="fs-6-plus mb-2">Ready to use brand icons of the well-known companies (FontAwesome)</p>
+                            <a href="" class="btn-icon bgc-500px"><i class="fa fa-500px"></i></a>
+                            <a href="" class="btn-icon bgc-adn"><i class="fa fa-adn"></i></a>
+                            <a href="" class="btn-icon bgc-amazon"><i class="fa fa-amazon"></i></a>
+                            <a href="" class="btn-icon bgc-android"><i class="fa fa-android"></i></a>
+                            <a href="" class="btn-icon bgc-angellist"><i class="fa fa-angellist"></i></a>
+                            <a href="" class="btn-icon bgc-apple"><i class="fa fa-apple"></i></a>
+                            <a href="" class="btn-icon bgc-behance"><i class="fa fa-behance"></i></a>
+                            <a href="" class="btn-icon bgc-bitbucket"><i class="fa fa-bitbucket"></i></a>
+                            <a href="" class="btn-icon bgc-bitcoin"><i class="fa fa-bitcoin"></i></a>
+                            <a href="" class="btn-icon bgc-black-tie"><i class="fa fa-black-tie"></i></a>
+                            <a href="" class="btn-icon bgc-buysellads"><i class="fa fa-buysellads"></i></a>
+                            <a href="" class="btn-icon bgc-cc-amex"><i class="fa fa-cc-amex"></i></a>
+                            <a href="" class="btn-icon bgc-cc-diners-club"><i class="fa fa-cc-diners-club"></i></a>
+                            <a href="" class="btn-icon bgc-cc-discover"><i class="fa fa-cc-discover"></i></a>
+                            <a href="" class="btn-icon bgc-cc-jcb"><i class="fa fa-cc-jcb"></i></a>
+                            <a href="" class="btn-icon bgc-cc-mastercard"><i class="fa fa-cc-mastercard"></i></a>
+                            <a href="" class="btn-icon bgc-cc-paypal"><i class="fa fa-cc-paypal"></i></a>
+                            <a href="" class="btn-icon bgc-cc-stripe"><i class="fa fa-cc-stripe"></i></a>
+                            <a href="" class="btn-icon bgc-cc-visa"><i class="fa fa-cc-visa"></i></a>
+                            <a href="" class="btn-icon bgc-chrome"><i class="fa fa-chrome"></i></a>
+                            <a href="" class="btn-icon bgc-codepen"><i class="fa fa-codepen"></i></a>
+                            <a href="" class="btn-icon bgc-connectdevelop"><i class="fa fa-connectdevelop"></i></a>
+                            <a href="" class="btn-icon bgc-contao"><i class="fa fa-contao"></i></a>
+                            <a href="" class="btn-icon bgc-creative-commons"><i class="fa fa-creative-commons"></i></a>
+                            <a href="" class="btn-icon bgc-css3"><i class="fa fa-css3"></i></a>
+                            <a href="" class="btn-icon bgc-dashcube"><i class="fa fa-dashcube"></i></a>
+                            <a href="" class="btn-icon bgc-delicious"><i class="fa fa-delicious"></i></a>
+                            <a href="" class="btn-icon bgc-deviantart"><i class="fa fa-deviantart"></i></a>
+                            <a href="" class="btn-icon bgc-digg"><i class="fa fa-digg"></i></a>
+                            <a href="" class="btn-icon bgc-dribbble"><i class="fa fa-dribbble"></i></a>
+                            <a href="" class="btn-icon bgc-dropbox"><i class="fa fa-dropbox"></i></a>
+                            <a href="" class="btn-icon bgc-drupal"><i class="fa fa-drupal"></i></a>
+                            <a href="" class="btn-icon bgc-empire"><i class="fa fa-empire"></i></a>
+                            <a href="" class="btn-icon bgc-expeditedssl"><i class="fa fa-expeditedssl"></i></a>
+                            <a href="" class="btn-icon bgc-facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="" class="btn-icon bgc-firefox"><i class="fa fa-firefox"></i></a>
+                            <a href="" class="btn-icon bgc-flickr"><i class="fa fa-flickr"></i></a>
+                            <a href="" class="btn-icon bgc-fonticons"><i class="fa fa-fonticons"></i></a>
+                            <a href="" class="btn-icon bgc-forumbee"><i class="fa fa-forumbee"></i></a>
+                            <a href="" class="btn-icon bgc-foursquare"><i class="fa fa-foursquare"></i></a>
+                            <a href="" class="btn-icon bgc-ge"><i class="fa fa-ge"></i></a>
+                            <a href="" class="btn-icon bgc-get-pocket"><i class="fa fa-get-pocket"></i></a>
+                            <a href="" class="btn-icon bgc-gg"><i class="fa fa-gg"></i></a>
+                            <a href="" class="btn-icon bgc-gg-circle"><i class="fa fa-gg-circle"></i></a>
+                            <a href="" class="btn-icon bgc-git"><i class="fa fa-git"></i></a>
+                            <a href="" class="btn-icon bgc-github"><i class="fa fa-github"></i></a>
+                            <a href="" class="btn-icon bgc-github-alt"><i class="fa fa-github-alt"></i></a>
+                            <a href="" class="btn-icon bgc-gittip"><i class="fa fa-gittip"></i></a>
+                            <a href="" class="btn-icon bgc-google"><i class="fa fa-google"></i></a>
+                            <a href="" class="btn-icon bgc-google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="" class="btn-icon bgc-google-wallet"><i class="fa fa-google-wallet"></i></a>
+                            <a href="" class="btn-icon bgc-hacker-news"><i class="fa fa-hacker-news"></i></a>
+                            <a href="" class="btn-icon bgc-houzz"><i class="fa fa-houzz"></i></a>
+                            <a href="" class="btn-icon bgc-html5"><i class="fa fa-html5"></i></a>
+                            <a href="" class="btn-icon bgc-instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="" class="btn-icon bgc-internet-explorer"><i class="fa fa-internet-explorer"></i></a>
+                            <a href="" class="btn-icon bgc-ioxhost"><i class="fa fa-ioxhost"></i></a>
+                            <a href="" class="btn-icon bgc-joomla"><i class="fa fa-joomla"></i></a>
+                            <a href="" class="btn-icon bgc-jsfiddle"><i class="fa fa-jsfiddle"></i></a>
+                            <a href="" class="btn-icon bgc-lastfm"><i class="fa fa-lastfm"></i></a>
+                            <a href="" class="btn-icon bgc-leanpub"><i class="fa fa-leanpub"></i></a>
+                            <a href="" class="btn-icon bgc-linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="" class="btn-icon bgc-linux"><i class="fa fa-linux"></i></a>
+                            <a href="" class="btn-icon bgc-maxcdn"><i class="fa fa-maxcdn"></i></a>
+                            <a href="" class="btn-icon bgc-meanpath"><i class="fa fa-meanpath"></i></a>
+                            <a href="" class="btn-icon bgc-medium"><i class="fa fa-medium"></i></a>
+                            <a href="" class="btn-icon bgc-odnoklassniki"><i class="fa fa-odnoklassniki"></i></a>
+                            <a href="" class="btn-icon bgc-opencart"><i class="fa fa-opencart"></i></a>
+                            <a href="" class="btn-icon bgc-openid"><i class="fa fa-openid"></i></a>
+                            <a href="" class="btn-icon bgc-opera"><i class="fa fa-opera"></i></a>
+                            <a href="" class="btn-icon bgc-optin-monster"><i class="fa fa-optin-monster"></i></a>
+                            <a href="" class="btn-icon bgc-pagelines"><i class="fa fa-pagelines"></i></a>
+                            <a href="" class="btn-icon bgc-paypal"><i class="fa fa-paypal"></i></a>
+                            <a href="" class="btn-icon bgc-pied-piper"><i class="fa fa-pied-piper"></i></a>
+                            <a href="" class="btn-icon bgc-pied-piper-alt"><i class="fa fa-pied-piper-alt"></i></a>
+                            <a href="" class="btn-icon bgc-pinterest"><i class="fa fa-pinterest"></i></a>
+                            <a href="" class="btn-icon bgc-pinterest-p"><i class="fa fa-pinterest-p"></i></a>
+                            <a href="" class="btn-icon bgc-qq"><i class="fa fa-qq"></i></a>
+                            <a href="" class="btn-icon bgc-rebel"><i class="fa fa-rebel"></i></a>
+                            <a href="" class="btn-icon bgc-reddit"><i class="fa fa-reddit"></i></a>
+                            <a href="" class="btn-icon bgc-renren"><i class="fa fa-renren"></i></a>
+                            <a href="" class="btn-icon bgc-safari"><i class="fa fa-safari"></i></a>
+                            <a href="" class="btn-icon bgc-sellsy"><i class="fa fa-sellsy"></i></a>
+                            <a href="" class="btn-icon bgc-share-alt"><i class="fa fa-share-alt"></i></a>
+                            <a href="" class="btn-icon bgc-shirtsinbulk"><i class="fa fa-shirtsinbulk"></i></a>
+                            <a href="" class="btn-icon bgc-simplybuilt"><i class="fa fa-simplybuilt"></i></a>
+                            <a href="" class="btn-icon bgc-skyatlas"><i class="fa fa-skyatlas"></i></a>
+                            <a href="" class="btn-icon bgc-skype"><i class="fa fa-skype"></i></a>
+                            <a href="" class="btn-icon bgc-slack"><i class="fa fa-slack"></i></a>
+                            <a href="" class="btn-icon bgc-slideshare"><i class="fa fa-slideshare"></i></a>
+                            <a href="" class="btn-icon bgc-soundcloud"><i class="fa fa-soundcloud"></i></a>
+                            <a href="" class="btn-icon bgc-spotify"><i class="fa fa-spotify"></i></a>
+                            <a href="" class="btn-icon bgc-stack-exchange"><i class="fa fa-stack-exchange"></i></a>
+                            <a href="" class="btn-icon bgc-stack-overflow"><i class="fa fa-stack-overflow"></i></a>
+                            <a href="" class="btn-icon bgc-steam"><i class="fa fa-steam"></i></a>
+                            <a href="" class="btn-icon bgc-stumbleupon"><i class="fa fa-stumbleupon"></i></a>
+                            <a href="" class="btn-icon bgc-stumbleupon-circle"><i class="fa fa-stumbleupon-circle"></i></a>
+                            <a href="" class="btn-icon bgc-tencent-weibo"><i class="fa fa-tencent-weibo"></i></a>
+                            <a href="" class="btn-icon bgc-trello"><i class="fa fa-trello"></i></a>
+                            <a href="" class="btn-icon bgc-tripadvisor"><i class="fa fa-tripadvisor"></i></a>
+                            <a href="" class="btn-icon bgc-tumblr"><i class="fa fa-tumblr"></i></a>
+                            <a href="" class="btn-icon bgc-twitch"><i class="fa fa-twitch"></i></a>
+                            <a href="" class="btn-icon bgc-twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="" class="btn-icon bgc-viacoin"><i class="fa fa-viacoin"></i></a>
+                            <a href="" class="btn-icon bgc-vimeo"><i class="fa fa-vimeo"></i></a>
+                            <a href="" class="btn-icon bgc-vine"><i class="fa fa-vine"></i></a>
+                            <a href="" class="btn-icon bgc-vk"><i class="fa fa-vk"></i></a>
+                            <a href="" class="btn-icon bgc-weibo"><i class="fa fa-weibo"></i></a>
+                            <a href="" class="btn-icon bgc-wechat"><i class="fa fa-wechat"></i></a>
+                            <a href="" class="btn-icon bgc-wikipedia-w"><i class="fa fa-wikipedia-w"></i></a>
+                            <a href="" class="btn-icon bgc-windows"><i class="fa fa-windows"></i></a>
+                            <a href="" class="btn-icon bgc-wordpress"><i class="fa fa-wordpress"></i></a>
+                            <a href="" class="btn-icon bgc-xing"><i class="fa fa-xing"></i></a>
+                            <a href="" class="btn-icon bgc-y-combinator"><i class="fa fa-y-combinator"></i></a>
+                            <a href="" class="btn-icon bgc-yahoo"><i class="fa fa-yahoo"></i></a>
+                            <a href="" class="btn-icon bgc-yelp"><i class="fa fa-yelp"></i></a>
+                            <a href="" class="btn-icon bgc-youtube"><i class="fa fa-youtube"></i></a>
+                            <a href="" class="btn-icon bgc-youtube-play"><i class="fa fa-youtube-play"></i></a>
+
+                            <h5 class="mb-3 mt-6">Square Slide Animation</h5>
+                            <a href="" class="slide-icon-x btn-icon bgc-creative-commons"><i class="fa fa-creative-commons"></i></a>
+                            <a href="" class="slide-icon-x btn-icon bgc-css3"><i class="fa fa-css3"></i></a>
+                            <a href="" class="slide-icon-x btn-icon bgc-dashcube"><i class="fa fa-dashcube"></i></a>
+                            <a href="" class="slide-icon-x btn-icon bgc-delicious"><i class="fa fa-delicious"></i></a>
+                            <a href="" class="slide-icon-x btn-icon bgc-deviantart"><i class="fa fa-deviantart"></i></a>
+                            <a href="" class="slide-icon-x btn-icon bgc-digg"><i class="fa fa-digg"></i></a>
+                            <a href="" class="slide-icon-x btn-icon bgc-dribbble"><i class="fa fa-dribbble"></i></a>
+                            <br>
+                            <a href="" class="slide-icon-y btn-icon bgc-github-alt"><i class="fa fa-github-alt"></i></a>
+                            <a href="" class="slide-icon-y btn-icon bgc-gittip"><i class="fa fa-gittip"></i></a>
+                            <a href="" class="slide-icon-y btn-icon bgc-google"><i class="fa fa-google"></i></a>
+                            <a href="" class="slide-icon-y btn-icon bgc-google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="" class="slide-icon-y btn-icon bgc-google-wallet"><i class="fa fa-google-wallet"></i></a>
+                            <a href="" class="slide-icon-y btn-icon bgc-hacker-news"><i class="fa fa-hacker-news"></i></a>
+                            <a href="" class="slide-icon-y btn-icon bgc-houzz"><i class="fa fa-houzz"></i></a>
+
+                            <h5 class="mb-3 mt-6">Round Slide Animation</h5>
+                            <a href="" class="btn-icon slide-icon-y rounded-circle bgc-wordpress"><i class="fa fa-wordpress"></i></a>
+                            <a href="" class="btn-icon slide-icon-y rounded-circle bgc-xing"><i class="fa fa-xing"></i></a>
+                            <a href="" class="btn-icon slide-icon-y rounded-circle bgc-y-combinator"><i class="fa fa-y-combinator"></i></a>
+                            <a href="" class="btn-icon slide-icon-y rounded-circle bgc-yahoo"><i class="fa fa-yahoo"></i></a>
+                            <a href="" class="btn-icon slide-icon-y rounded-circle bgc-yelp"><i class="fa fa-yelp"></i></a>
+                            <a href="" class="btn-icon slide-icon-y rounded-circle bgc-youtube"><i class="fa fa-youtube"></i></a>
+                            <a href="" class="btn-icon slide-icon-y rounded-circle bgc-youtube-play"><i class="fa fa-youtube-play"></i></a>
+                            <br>
+                            <a href="" class="btn-icon slide-icon-x rounded-circle bgc-stumbleupon-circle"><i class="fa fa-stumbleupon-circle"></i></a>
+                            <a href="" class="btn-icon slide-icon-x rounded-circle bgc-tencent-weibo"><i class="fa fa-tencent-weibo"></i></a>
+                            <a href="" class="btn-icon slide-icon-x rounded-circle bgc-trello"><i class="fa fa-trello"></i></a>
+                            <a href="" class="btn-icon slide-icon-x rounded-circle bgc-tripadvisor"><i class="fa fa-tripadvisor"></i></a>
+                            <a href="" class="btn-icon slide-icon-x rounded-circle bgc-tumblr"><i class="fa fa-tumblr"></i></a>
+                            <a href="" class="btn-icon slide-icon-x rounded-circle bgc-twitch"><i class="fa fa-twitch"></i></a>
+                            <a href="" class="btn-icon slide-icon-x rounded-circle bgc-twitter"><i class="fa fa-twitter"></i></a>
+
+                            <h5 class="mb-3 mt-6">Simple</h5>
+                            <a href="" class="btn-icon c-wordpress"><i class="fa fa-wordpress"></i></a>
+                            <a href="" class="btn-icon c-xing"><i class="fa fa-xing"></i></a>
+                            <a href="" class="btn-icon c-y-combinator"><i class="fa fa-y-combinator"></i></a>
+                            <a href="" class="btn-icon c-yahoo"><i class="fa fa-yahoo"></i></a>
+                            <a href="" class="btn-icon c-yelp"><i class="fa fa-yelp"></i></a>
+                            <a href="" class="btn-icon c-youtube"><i class="fa fa-youtube"></i></a>
+                            <a href="" class="btn-icon c-youtube-play"><i class="fa fa-youtube-play"></i></a>
+                            <br>
+                            <a href="" class="btn-icon c-pinterest"><i class="fa fa-pinterest"></i></a>
+                            <a href="" class="btn-icon c-pinterest-p"><i class="fa fa-pinterest-p"></i></a>
+                            <a href="" class="btn-icon c-safari"><i class="fa fa-safari"></i></a>
+                            <a href="" class="btn-icon c-sellsy"><i class="fa fa-sellsy"></i></a>
+                            <a href="" class="btn-icon c-reddit"><i class="fa fa-reddit"></i></a>
+                            <a href="" class="btn-icon c-renren"><i class="fa fa-renren"></i></a>
+                            <a href="" class="btn-icon c-safari"><i class="fa fa-safari"></i></a>
+                        </div>
+
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Drop-down Buttons
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Colors</h4>
+                                <p class="fs-6-plus mb-2">Regular buttons wrapped in <code>.dropdown</code></p>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-default" type="button" id="dropdown-bgc-white-dark"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown Default<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-bgc-white-dark">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-primary" type="button" id="dropdown-bgc-primary"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown Primary<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-bgc-primary">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-success" type="button" id="dropdown-bgc-success"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown Success<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-bgc-success">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-info" type="button" id="dropdown-bgc-info"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown Info<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-bgc-info">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-warning" type="button" id="dropdown-bgc-warning"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown Warning<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-bgc-warning">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-danger" type="button" id="dropdown-bgc-danger"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown Danger<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-bgc-danger">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Split Drop-downs</h4>
+                                <p class="fs-6-plus mb-2">Buttons and drop-downs wrapped in <code>.btn-group</code></p>
+                                <div class="btn-group mb-1">
+                                    <button type="button" class="btn btn-default">Action</button>
+                                    <button type="button" class="btn btn-default" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group bg-primary mb-1">
+                                    <button type="button" class="btn btn-primary">Action</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group bg-success mb-1">
+                                    <button type="button" class="btn btn-success">Action</button>
+                                    <button type="button" class="btn btn-success" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group bg-info mb-1">
+                                    <button type="button" class="btn btn-info">Action</button>
+                                    <button type="button" class="btn btn-info" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group bg-warning mb-1">
+                                    <button type="button" class="btn btn-warning">Action</button>
+                                    <button type="button" class="btn btn-warning" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group  bg-danger mb-1">
+                                    <button type="button" class="btn btn-danger">Action</button>
+                                    <button type="button" class="btn btn-danger" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">Drop-up buttonss</h4>
+                                <p class="fs-6-plus mb-2">Buttons wrapped in <code>.dropup</code></p>
+                                <div class="dropdown dropup mb-1">
+                                    <button class="btn btn-default" type="button" id="dropup-bgc-white-dark"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown Default<i class="fa fa-angle-up icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropup-bgc-white-dark">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropup mb-1">
+                                    <button class="btn btn-success" type="button" id="dropup-bgc-success"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown Success<i class="fa fa-angle-up icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropup-bgc-success">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropup mb-1">
+                                    <button class="btn btn-warning" type="button" id="dropup-bgc-warning"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown Warning<i class="fa fa-angle-up icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropup-bgc-warning">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="btn-group mb-1 dropup bg-info">
+                                    <button type="button" class="btn btn-info">Action</button>
+                                    <button type="button" class="btn btn-info" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-up"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group mb-1 dropup bg-primary">
+                                    <button type="button" class="btn btn-primary">Action</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-up"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group mb-1 dropup bg-danger">
+                                    <button type="button" class="btn btn-danger">Action</button>
+                                    <button type="button" class="btn btn-danger" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-up"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pb-7">
+                                <h4 class="lh-0 mb-3">With labels</h4>
+                                <div class="btn-group mb-1 bg-primary">
+                                    <button class="btn btn-primary btn-labeled-icon left"><i class="icon fa fa-play fs-7"></i>Play</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-bgc-success">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group dropup mb-1 bg-warning">
+                                    <button class="btn btn-warning btn-labeled-icon left"><i class="icon fa fa-rotate-left"></i>Repeat</button>
+                                    <button type="button" class="btn btn-warning" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-up"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-bgc-success">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="lh-0 mb-3">Sizes</h4>
+                                <p class="fs-6-plus mb-2">Size variations with <code>.btn-lg .btn-sm .btn-xs</code> classes</p>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-primary btn-lg" type="button" id="dropdown-lg-bgc-primary"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Large<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lg-bgc-primary">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-primary" type="button" id="dropdown-md-bgc-primary"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Default<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-md-bgc-primary">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-primary btn-sm" type="button" id="dropdown-sm-bgc-primary"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Small<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-sm-bgc-primary">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-primary btn-xs" type="button" id="dropdown-xs-bgc-primary"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        X-Small<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-xs-bgc-primary">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-default btn-lg" type="button" id="dropdown-lg-bgc-white-dark"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Large<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-lg-bgc-white-dark">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-default" type="button" id="dropdown-md-bgc-white-dark"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Default<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-md-bgc-white-dark">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-default btn-sm" type="button" id="dropdown-sm-bgc-white-dark"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Small<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-sm-bgc-white-dark">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown mb-1">
+                                    <button class="btn btn-default btn-xs" type="button" id="dropdown-xs-bgc-white-dark"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        X-Small<i class="fa fa-angle-down icon-ml"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-xs-bgc-white-dark">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/app');
+        </script>
+    {{/content}}
+{{/extend}}

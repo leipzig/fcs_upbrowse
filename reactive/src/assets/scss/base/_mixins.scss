@@ -1,0 +1,200 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: Colors
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+@mixin border($style, $prefix, $inc, $from, $to, $unit) {
+    $i: $from;
+    @while $i <= $to {
+        .#{$prefix}-#{$i} { #{$style}-width: $i#{$unit} !important; #{$style}-style: solid !important; }
+        $i: $i + $inc;
+    }
+
+    @each $key in (xs,sm,md,lg,xl) {
+        @include media-breakpoint-up($key) {
+            $i: $from;
+            @while $i <= $to {
+                .#{$prefix}-#{$key}-#{$i} { #{$style}-width: $i#{$unit} !important; #{$style}-style: solid !important;}
+                $i: $i + $inc;
+            }
+        }
+    }
+}
+
+@function toUrl($colour) {
+    @return '%23' + str-slice('#{$colour}', 2, -1);
+}
+
+@mixin form-control-validation($color) {
+    // Color the label and help text
+    .form-control-feedback,
+    .form-control-label,
+    .col-form-label,
+    .form-check-label,
+    .custom-control {
+        color: $color !important;
+    }
+
+    // Set the border and box shadow on specific inputs to match
+    .form-control {
+        border-color: $color;
+
+        &:focus {
+            @include box-shadow($input-box-shadow, 0 0 6px lighten($color, 20%));
+        }
+    }
+
+    // Set validation states also for addons
+    .input-group-addon {
+        color: $color;
+        border-color: $color;
+        background-color: lighten($color, 40%);
+    }
+}
+
+// debug palette
+$palette-debug : false;
+// map to save palette colors
+$palette-stock: ();
+
+@function map-deep-get($map, $keys...) {
+    $value: $map;
+    @each $key in $keys {
+        $value: map-get($value, $key);
+    }
+    @return $value;
+}
+@function map-deep-set($map, $keys...) {
+    $map-list: ($map,);
+    $result: null;
+    @if length($keys) == 2 {
+        @return map-merge($map, (nth($keys, 1): nth($keys, -1)));
+    }
+    @for $i from 1 through length($keys) - 2 {
+        $map-list: append($map-list, map-get(nth($map-list, -1), nth($keys, $i)));
+    }
+    @for $i from length($map-list) through 1 {
+        $result: map-merge(nth($map-list, $i), (nth($keys, $i): if($i == length($map-list), nth($keys, -1), $result)));
+    }
+    @return $result;
+}
+
+@each $colors in map-keys(map-get($palette, colors)) {
+    $palette: map-deep-set($palette, 'colors', $colors, mix(map-deep-get($palette, 'colors', $colors),map-deep-get($palette,'mix','color'),map-deep-get($palette,'mix','keep')));
+}
+
+@function clr($name, $is-imp: false) {
+    @if map-has-key($palette-stock, $name) {
+        $c : map-get($palette-stock, $name);
+        @if $is-imp == false {
+            @return $c;
+        } @else {
+            @return ($c !important);
+        }
+    }
+
+    @warn "Unknown `#{$name}` in palette.";
+    @return null;
+}
+
+
+// loop through primary colors in palette
+@each $colors in map-keys(map-get($palette, colors)) {
+    $v : map-deep-get($palette, 'colors', $colors);
+
+    // generate a variable in the color map for the main color (no specific tone or alpha applied)
+    $palette-stock: map-merge($palette-stock, ( #{$colors} : $v ));
+
+    // loop through tones
+    @each $tones in map-keys(map-get($palette, tones)) {
+
+        // darken or lighten the primary color based on the tone value being positive or negative
+        @if map-deep-get($palette, 'tones', $tones) > 0 {
+            $v : darken(map-deep-get($palette, 'colors', $colors),map-deep-get($palette, 'tones', $tones));
+        } @else {
+            $v : lighten(map-deep-get($palette, 'colors', $colors),abs(map-deep-get($palette, 'tones', $tones)));
+        }
+
+        $palette-stock: map-merge($palette-stock, ( #{$colors}-#{$tones} : $v ));
+
+        // for each tone of a primary color, loop through the alpha variations
+        @each $alpha in map-keys(map-get($palette, alpha)) {
+            // generate the class. first we darken or lighten the tone of the color, then we deassemble the color into
+            // rgb channels so that we can set the alpha channel using rgba
+            @if map-deep-get($palette, 'tones', $tones) > 0 {
+                $v : rgba(
+                        red(darken(map-deep-get($palette, 'colors', $colors),map-deep-get($palette, 'tones', $tones))),
+                        green(darken(map-deep-get($palette, 'colors', $colors),map-deep-get($palette, 'tones', $tones))),
+                        blue(darken(map-deep-get($palette, 'colors', $colors),map-deep-get($palette, 'tones', $tones))),
+                        map-deep-get($palette, 'alpha', $alpha));
+            } @else {
+                $v : rgba(
+                        red(lighten(map-deep-get($palette, 'colors', $colors),abs(map-deep-get($palette, 'tones', $tones)))),
+                        green(lighten(map-deep-get($palette, 'colors', $colors),abs(map-deep-get($palette, 'tones', $tones)))),
+                        blue(lighten(map-deep-get($palette, 'colors', $colors),abs(map-deep-get($palette, 'tones', $tones)))),
+                        map-deep-get($palette, 'alpha', $alpha));
+            }
+
+            $palette-stock: map-merge($palette-stock, ( #{$colors}-#{$tones}-#{$alpha} : $v ));
+        }
+
+    }
+}
+
+@if $palette-debug {
+    @each $color in $palette-stock {
+        @debug $color;
+    }
+}
+
+// Replace `$search` with `$replace` in `$string`
+// @author Hugo Giraudel
+// @param {String} $string - Initial string
+// @param {String} $search - Substring to replace
+// @param {String} $replace ('') - New value
+// @return {String} - Updated string
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+@mixin theme-header-color() {
+    @each $key, $color in $theme-colors {
+        &.header-bg-#{$key} {
+            //.emojionearea.focused { border-color: $color !important; }
+            .sidebar-wrap {
+                .sidebar-menu li.menu-item.current > a {  border-left-color: $color !important; }
+                .form-control {
+                    &:active,
+                    &:focus { border-color: $color !important; }
+                    .input-group-addon { background-color: $color !important; border-color: $color !important; }
+                }
+                .ui.checkbox.checkbox-fill input[type="checkbox"]:checked + label::after {background-color: $color !important;}
+                .ui.checkbox.radio input:checked + label::after {background-color: $color !important;}
+                .ui.checkbox.radio input:checked + label::before  {border-color: $color !important;}
+                .noUi-target.noUi-vertical .noUi-tooltip,
+                .noUi-target.noUi-horizontal .noUi-tooltip,
+                .noUi-horizontal .noUi-handle,
+                .noUi-vertical .noUi-handle
+                .noUi-vertical .noUi-handle,
+                .noUi-connect {
+                    background-color: $color;
+                }
+
+                .ui.checkbox.radio input:indeterminate + label::before { border-color: clr(body-dark)}
+            }
+
+        }
+    }
+}
+
+
+

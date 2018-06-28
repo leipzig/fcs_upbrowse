@@ -1,0 +1,22 @@
+{{#extend "layout-sidebar-option-2" current='page-starter-option-2'}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <!-- Place your HTML here -->
+
+            <section class="pl-7 pt-7 col-xl-11">
+                <div class="text-left c-gray pl-7 pt-7">
+                    <h2 class="fw-light bbw-1 bc-gray-lighter pb-3 mb-3">Start Page - Sidebar Option 2</h2>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+                </div>
+            </section>
+
+            <!-- end of your HTML-->
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/app');
+        </script>
+    {{/content}}
+{{/extend}}

@@ -1,0 +1,1210 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: Adapted Dropdown plugin
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+@import "variables";
+
+.ui.select-dropdown { cursor: pointer; position: relative; display: inline-block; outline: none; text-align: left;
+    transition: $ui-drop-transition; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*******************************
+            Content
+*******************************/
+
+/*--------------
+      Menu
+---------------*/
+
+.ui.select-dropdown .menu { @extend .dropdown-menu; @extend .dropdown-menu-content; will-change: transform, opacity; box-shadow: none !important; }
+.ui.select-dropdown .menu > * { white-space: nowrap; }
+
+/*--------------
+  Hidden Input
+---------------*/
+
+.ui.select-dropdown > input:not(.search):first-child,
+.ui.select-dropdown > select { display: none !important; }
+
+/*--------------
+ Dropdown Icon
+---------------*/
+
+.ui.select-dropdown > .select-dropdown.icon { position: relative; width: auto; font-size: $ui-drop-dropdown-icon-size; margin: $ui-drop-dropdown-icon-margin; }
+.ui.select-dropdown .menu > .item .select-dropdown.icon { width: auto; float: $ui-drop-item-dropdown-icon-float; margin: $ui-drop-item-dropdown-icon-margin; }
+.ui.select-dropdown .menu > .item .select-dropdown.icon + .text { margin-right: $ui-drop-item-dropdown-icon-distance; }
+
+/*--------------
+      Text
+---------------*/
+
+.ui.select-dropdown > .text {
+    display: inline-block;
+    transition: $ui-drop-text-transition;
+}
+
+/*--------------
+    Menu Item
+---------------*/
+
+.ui.select-dropdown .menu > .item { @extend .dropdown-item; position: relative; }
+.ui.select-dropdown .menu > .item:first-child { border-top-width: 0; }
+
+/*--------------
+  Floated Content
+---------------*/
+
+.ui.select-dropdown > .text > [class*="right floated"],
+.ui.select-dropdown .menu .item > [class*="right floated"] { float: right !important; margin-right: 0 !important; margin-left: $ui-drop-floated-distance !important; }
+.ui.select-dropdown > .text > [class*="left floated"],
+.ui.select-dropdown .menu .item > [class*="left floated"] { float: left !important; margin-left: 0 !important; margin-right: $ui-drop-floated-distance !important; }
+.ui.select-dropdown .menu .item > .icon.floated,
+.ui.select-dropdown .menu .item > .flag.floated,
+.ui.select-dropdown .menu .item > .image.floated,
+.ui.select-dropdown .menu .item > img.floated { margin-top: $ui-drop-item-line-height-offset; }
+.ui.select-dropdown .menu .item > .icon.floated { width: 1.1em; text-align: center; }
+
+/*--------------
+  Menu Divider
+---------------*/
+
+.ui.select-dropdown .menu > .header {
+    margin: $ui-drop-menu-header-margin;
+    padding: $ui-drop-menu-header-padding;
+    color: $ui-drop-menu-header-color;
+    font-size: $ui-drop-menu-header-font-size;
+    font-weight: $ui-drop-menu-header-font-weight;
+    text-transform: $ui-drop-menu-header-text-transform;
+}
+
+.ui.select-dropdown .menu > .divider {
+    border-top: $ui-drop-menu-divider-border;
+    height: 0;
+    margin: $ui-drop-menu-divider-margin;
+}
+
+.ui.select-dropdown .menu > .input {
+    width: auto;
+    display: flex;
+    margin: $ui-drop-menu-input-margin;
+    min-width: $ui-drop-menu-input-min-width;
+}
+.ui.select-dropdown .menu > .header + .input {
+    margin-top: 0;
+}
+.ui.select-dropdown .menu > .input:not(.transparent) input {
+    @extend .form-control;
+}
+.ui.select-dropdown .menu > .input:not(.transparent) .button,
+.ui.select-dropdown .menu > .input:not(.transparent) .icon,
+.ui.select-dropdown .menu > .input:not(.transparent) .label {
+    padding-top: $ui-drop-menu-input-vertical-padding;
+    padding-bottom: $ui-drop-menu-input-vertical-padding;
+}
+
+/*-----------------
+  Item Description
+-------------------*/
+
+.ui.select-dropdown > .text > .description,
+.ui.select-dropdown .menu > .item > .description {
+    float: $ui-drop-item-description-float;
+    margin: $ui-drop-item-description-margin;
+    color: $ui-drop-item-description-color;
+    font-size: $font-size-6-plus;
+}
+
+/*-----------------
+       Message
+-------------------*/
+
+.ui.select-dropdown .menu > .message {
+    padding: $ui-drop-message-padding;
+    font-weight: $ui-drop-message-font-weight;
+    line-height: $line-height-base;
+}
+.ui.select-dropdown .menu > .message:not(.ui) {
+    color: $ui-drop-message-color;
+}
+
+/*--------------
+    Sub Menu
+---------------*/
+
+.ui.select-dropdown .menu .menu {
+    top: $ui-drop-sub-menu-top !important;
+    left: $ui-drop-sub-menu-left !important;
+    right: $ui-drop-sub-menu-right !important;
+    margin: $ui-drop-sub-menu-margin !important;
+    z-index: $ui-drop-sub-menu-zindex !important;
+}
+
+/* Hide Arrow */
+.ui.select-dropdown .menu .menu:after {
+    display: none;
+}
+
+/*--------------
+   Sub Elements
+---------------*/
+
+/* Icons / Flags / Labels / Image */
+.ui.select-dropdown > .text > .icon,
+.ui.select-dropdown > .text > .label,
+.ui.select-dropdown > .text > .flag,
+.ui.select-dropdown > .text > img,
+.ui.select-dropdown > .text > .image {
+    margin-top: $ui-drop-text-line-height-offset;
+}
+.ui.select-dropdown .menu > .item > .icon,
+.ui.select-dropdown .menu > .item > .label,
+.ui.select-dropdown .menu > .item > .flag,
+.ui.select-dropdown .menu > .item > .image,
+.ui.select-dropdown .menu > .item > img  {
+    margin-top: $ui-drop-item-line-height-offset;
+}
+
+.ui.select-dropdown > .text > .icon,
+.ui.select-dropdown > .text > .label,
+.ui.select-dropdown > .text > .flag,
+.ui.select-dropdown > .text > img,
+.ui.select-dropdown > .text > .image,
+.ui.select-dropdown .menu > .item > .icon,
+.ui.select-dropdown .menu > .item > .label,
+.ui.select-dropdown .menu > .item > .flag,
+.ui.select-dropdown .menu > .item > .image,
+.ui.select-dropdown .menu > .item > img  {
+    margin-left: 0;
+    float: $ui-drop-item-element-float;
+    margin-right: $ui-drop-item-element-distance;
+}
+
+/*--------------
+     Image
+---------------*/
+
+.ui.select-dropdown > .text > img,
+.ui.select-dropdown > .text > .image,
+.ui.select-dropdown .menu > .item > .image,
+.ui.select-dropdown .menu > .item > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    max-height: $ui-drop-menu-image-max-height;
+    background-color: $white-darkest;
+    border-radius: 500rem;
+}
+
+
+/*******************************
+            Coupling
+*******************************/
+
+
+/*--------------
+      Menu
+---------------*/
+
+/* Remove Menu Item Divider */
+.ui.select-dropdown .ui.menu > .item:before,
+.ui.menu .ui.select-dropdown .menu > .item:before {
+    display: none;
+}
+
+/* Prevent Menu Item Border */
+.ui.menu .ui.select-dropdown .menu .active.item {
+    border-left: none;
+}
+
+/* Automatically float dropdown menu right on last menu item */
+.ui.menu .right.menu .select-dropdown:last-child .menu,
+.ui.menu .right.select-dropdown.item .menu,
+.ui.buttons > .ui.select-dropdown:last-child .menu {
+    left: auto;
+    right: 0;
+}
+
+/*--------------
+      Label
+---------------*/
+
+/* Dropdown Menu */
+.ui.label.select-dropdown .menu {
+    min-width: 100%;
+}
+
+/*--------------
+     Button
+---------------*/
+
+/* No Margin On Icon Button */
+.ui.select-dropdown.icon.button > .select-dropdown.icon {
+    margin: 0;
+}
+.ui.button.select-dropdown .menu {
+    min-width: 100%;
+}
+
+/*******************************
+              Types
+*******************************/
+
+/*--------------
+    Selection
+---------------*/
+
+/* Displays like a select box */
+.ui.selection.select-dropdown { cursor: pointer; word-wrap: break-word; white-space: normal; min-width: $ui-drop-selection-min-width;
+    display: inline-block !important; width: auto !important;  @extend .form-control; }
+.ui.selection.select-dropdown.visible,
+.ui.selection.select-dropdown.active { z-index: $ui-drop-selection-zindex; }
+
+select.ui.select-dropdown { @extend .ui.selection.select-dropdown; padding: 0.5em; height: 34px !important; color: $gray; }
+.ui.selection.select-dropdown > .search.icon,
+.ui.selection.select-dropdown > .delete.icon,
+.ui.selection.select-dropdown > .select-dropdown.icon {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    height: auto;
+    line-height: $ui-drop-search-selection-line-height;
+    top: $ui-drop-selection-vertical-padding;
+    right: $ui-drop-selection-horizontal-padding;
+    z-index: $ui-drop-selection-icon-zindex;
+    margin: $ui-drop-selection-icon-margin;
+    padding: $ui-drop-selection-icon-padding;
+    opacity: $ui-drop-selection-icon-opacity;
+    transition: $ui-drop-selection-icon-transition;
+}
+
+/* Compact */
+.ui.compact.select-dropdown,
+.ui.compact.select-dropdown .menu {
+    min-width:  0;
+}
+
+/*  Selection Menu */
+.ui.selection.select-dropdown .menu { overflow-x: hidden; overflow-y: auto; @extend .dropdown-menu }
+.ui.selection.select-dropdown .menu:after,
+.ui.selection.select-dropdown .menu:before { display: none; }
+
+/*--------------
+    Message
+---------------*/
+
+.ui.selection.select-dropdown .menu > .message {
+    padding: $ui-drop-selection-message-padding;
+}
+
+@media only screen and (max-width : map_get($grid-breakpoints, md) -1) {
+    .ui.selection.select-dropdown .menu {
+        max-height: $ui-drop-selection-mobile-max-menu-height;
+    }
+}
+@media only screen and (min-width:  map_get($grid-breakpoints, md)) {
+    .ui.selection.select-dropdown .menu {
+        max-height: $ui-drop-selection-tablet-max-menu-height;
+    }
+}
+@media only screen and (min-width:  map_get($grid-breakpoints, lg)) {
+    .ui.selection.select-dropdown .menu {
+        max-height: $ui-drop-selection-computer-max-menu-height;
+    }
+}
+@media only screen and (min-width:  map_get($grid-breakpoints, xl)) {
+    .ui.selection.select-dropdown .menu {
+        max-height: $ui-drop-selection-widescreen-max-menu-height;
+    }
+}
+
+/* Menu Item */
+.ui.selection.select-dropdown .menu > .item {
+    border-top: $ui-drop-selection-item-divider;
+    padding: $ui-drop-selection-item-padding !important;
+    //white-space: normal;
+    word-wrap: normal;
+    line-height: $line-height-6;
+}
+
+/* User Item */
+.ui.selection.select-dropdown .menu > .hidden.addition.item {
+    display: none;
+}
+
+/* Active */
+.ui.selection.active.select-dropdown {
+    @extend .form-control:focus;
+}
+.ui.selection.active.select-dropdown .menu {
+    border-color: $ui-drop-selection-visible-border-color;
+    box-shadow: $ui-drop-selection-visible-menu-box-shadow;
+}
+
+/* Focus */
+.ui.selection.select-dropdown:focus {
+    @extend .form-control:focus;
+}
+.ui.selection.select-dropdown:focus .menu {
+    border-color: $ui-drop-selection-focus-border-color;
+    box-shadow: $dropdown-box-shadow;
+}
+
+/* Visible */
+.ui.selection.visible.select-dropdown > .text:not(.default) {
+    font-weight: $ui-drop-selection-visible-text-font-weight;
+    color: $ui-drop-selection-visible-text-color;
+}
+
+/* Visible Hover */
+.ui.selection.active.select-dropdown:hover .menu {
+    border-color: $ui-drop-selection-active-hover-border-color;
+    box-shadow: $ui-drop-selection-active-hover-menu-box-shadow;
+}
+
+/* Dropdown Icon */
+.ui.active.selection.select-dropdown > .select-dropdown.icon,
+.ui.visible.selection.select-dropdown > .select-dropdown.icon {
+    opacity: $ui-drop-selection-visible-icon-opacity;
+    z-index: 3;
+}
+
+/* Empty Connecting Border */
+.ui.active.empty.selection.select-dropdown .menu {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/*--------------
+   Searchable
+---------------*/
+
+/* Search Selection */
+.ui.search.select-dropdown {
+}
+
+/* Search Dropdown */
+.ui.search.select-dropdown > input.search {
+    background: none transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    cursor: text;
+    top: 0;
+    left: $ui-drop-text-cursor-spacing;
+    width: 100%;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    padding: inherit;
+    color: inherit;
+}
+
+/* Text Layering */
+.ui.search.select-dropdown > input.search {
+    position: absolute;
+    z-index: 2;
+}
+.ui.search.select-dropdown > .text {
+    cursor: text;
+    position: relative;
+    left: $ui-drop-text-cursor-spacing;
+    z-index: 1;
+}
+
+/* Search Selection */
+.ui.search.selection.select-dropdown > input.search {
+    line-height: $ui-drop-search-selection-line-height;
+    padding: $ui-drop-search-selection-input-padding;
+}
+
+/* Used to size multi select input to character width */
+.ui.search.selection.select-dropdown > span.sizer {
+    line-height: $ui-drop-search-selection-line-height;
+    padding: $ui-drop-search-selection-input-padding;
+    display: none;
+    white-space: pre;
+}
+
+/* Active/Visible Search */
+.ui.search.select-dropdown.active > input.search,
+.ui.search.select-dropdown.visible > input.search {
+    cursor: auto;
+}
+.ui.search.select-dropdown.active > .text,
+.ui.search.select-dropdown.visible > .text {
+    pointer-events: none;
+}
+
+/* Filtered Text */
+.ui.active.search.select-dropdown input.search:focus + .text .icon,
+.ui.active.search.select-dropdown input.search:focus + .text .flag {
+    opacity: $ui-drop-selection-text-underlay-icon-opacity;
+}
+.ui.active.search.select-dropdown input.search:focus + .text {
+    opacity: .75
+}
+
+/* Search Menu */
+.ui.search.select-dropdown .menu {
+    overflow-x: hidden;
+    overflow-y: auto;
+    backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+@media only screen and (max-width : map_get($grid-breakpoints, md) - 1) {
+    .ui.search.select-dropdown .menu {
+        max-height: $ui-drop-search-mobile-max-menu-height;
+    }
+}
+@media only screen and (min-width:  map_get($grid-breakpoints, md)) {
+    .ui.search.select-dropdown .menu {
+        max-height: $ui-drop-search-tablet-max-menu-height;
+    }
+}
+@media only screen and (min-width:  map_get($grid-breakpoints, lg)) {
+    .ui.search.select-dropdown .menu {
+        max-height: $ui-drop-search-computer-max-menu-height;
+    }
+}
+@media only screen and (min-width:  map_get($grid-breakpoints, xl)) {
+    .ui.search.select-dropdown .menu {
+        max-height: $ui-drop-search-widescreen-max-menu-height;
+    }
+}
+
+/*--------------
+    Multiple
+---------------*/
+
+/* Multiple Selection */
+.ui.selection.multiple.select-dropdown {
+    padding: $ui-drop-multiple-selection-padding;
+}
+.ui.multiple.select-dropdown .menu {
+    cursor: auto;
+}
+
+/* Multiple Search Selection */
+.ui.multiple.search.select-dropdown,
+.ui.multiple.search.select-dropdown > input.search {
+    cursor: text;
+}
+
+/* Selection Label */
+.ui.select-dropdown > .label {
+    user-select: none;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    font-size: $ui-drop-label-size;
+    padding: $ui-drop-label-padding;
+    margin: $ui-drop-label-margin;
+    box-shadow: $ui-drop-label-box-shadow;
+}
+
+.ui.select-dropdown .badge-empty {
+    width: 10px;
+    height: 10px;
+    margin-right: .5rem;
+}
+
+
+/* Text */
+.ui.multiple.select-dropdown > .text {
+    position: static;
+    padding: 0;
+    max-width: 100%;
+    margin: $ui-drop-multiple-selection-child-margin;
+    line-height: $ui-drop-multiple-selection-child-line-height;
+}
+.ui.multiple.select-dropdown > .label ~ input.search {
+    margin-left: $ui-drop-multiple-selection-search-after-label-distance !important;
+}
+.ui.multiple.select-dropdown > .label ~ .text {
+    display: none;
+}
+
+/*-----------------
+  Multiple Search
+-----------------*/
+
+/* Prompt Text */
+.ui.multiple.search.select-dropdown > .text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: inherit;
+    margin: $ui-drop-multiple-selection-child-margin;
+    line-height: $ui-drop-multiple-selection-child-line-height;
+}
+
+.ui.multiple.search.select-dropdown > .label ~ .text {
+    display: none;
+}
+
+/* Search */
+.ui.multiple.search.select-dropdown > input.search {
+    position: static;
+    padding: 0;
+    max-width: 100%;
+    margin: $ui-drop-multiple-selection-child-margin;
+    width: $ui-drop-multiple-selection-search-start-width;
+    line-height: $ui-drop-multiple-selection-child-line-height;
+}
+
+
+/*--------------
+     Inline
+---------------*/
+
+.ui.inline.select-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    color: $ui-drop-inline-text-color;
+}
+.ui.inline.select-dropdown .select-dropdown.icon {
+    margin: $ui-drop-inline-icon-margin;
+    vertical-align: baseline;
+}
+.ui.inline.select-dropdown > .text {
+    font-weight: $ui-drop-inline-text-font-weight;
+}
+.ui.inline.select-dropdown .menu {
+    cursor: auto;
+    margin-top: $ui-drop-inline-menu-distance;
+}
+
+
+/*******************************
+            States
+*******************************/
+
+
+/*--------------------
+        Active
+----------------------*/
+
+
+/*--------------------
+        Hover
+----------------------*/
+
+
+/*--------------------
+       Loading
+---------------------*/
+
+.ui.loading.select-dropdown.selection > i.icon {
+    height: 1rem !important;
+    padding: 16rem / $fs 15rem / $fs !important;
+}
+.ui.loading.select-dropdown > i.icon:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+
+    margin: $ui-drop-loader-margin;
+    width: $ui-drop-loader-size;
+    height: $ui-drop-loader-size;
+
+    border-radius: $circular-radius;
+    border: $ui-drop-loader-line-width solid $ui-drop-loader-fill-color;
+}
+.ui.loading.select-dropdown > i.icon:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 0 0 1px transparent;
+
+    margin: $ui-drop-loader-margin;
+    width: $ui-drop-loader-size;
+    height: $ui-drop-loader-size;
+
+    animation: dropdown-spin $ui-drop-loader-speed linear;
+    animation-iteration-count: infinite;
+
+    border-radius: $circular-radius;
+
+    border-color: $ui-drop-loader-line-color transparent transparent;
+    border-style: solid;
+    border-width: $ui-drop-loader-line-width;
+}
+
+/* Coupling */
+.ui.loading.select-dropdown.button > i.icon:before,
+.ui.loading.select-dropdown.button > i.icon:after {
+    display: none;
+}
+
+@keyframes dropdown-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*--------------------
+     Default Text
+----------------------*/
+
+.ui.select-dropdown:not(.button) > .default.text,
+.ui.default.select-dropdown:not(.button) > .text {
+    color: $ui-drop-default-text-color;
+    font-style: italic;
+}
+.ui.select-dropdown:not(.button) > input:focus + .default.text,
+.ui.default.select-dropdown:not(.button) > input:focus + .text {
+    color: $ui-drop-default-text-focus-color;
+}
+/*--------------------
+        Loading
+----------------------*/
+
+.ui.loading.select-dropdown > .text {
+    transition: none;
+}
+
+/* Used To Check Position */
+.ui.select-dropdown .loading.menu {
+    display: block;
+    visibility: hidden;
+    z-index: $ui-drop-loading-zindex;
+}
+
+/*--------------------
+    Keyboard Select
+----------------------*/
+
+/* Selected Item */
+.ui.select-dropdown.selected { background: $component-active-bg; color: $component-active-color; }
+
+
+/*--------------------
+    Search Filtered
+----------------------*/
+
+/* Filtered Item */
+.ui.select-dropdown > .filtered.text {
+    visibility: hidden;
+}
+.ui.select-dropdown .filtered.item {
+    display: none !important;
+}
+
+
+/*--------------------
+        Error
+----------------------*/
+
+.ui.select-dropdown.error,
+.ui.select-dropdown.error > .text,
+.ui.select-dropdown.error > .default.text {
+    color: $ui-drop-error-text-color;
+}
+
+.ui.selection.select-dropdown.error {
+    background: $ui-drop-error-background-color;
+    border-color: $ui-drop-error-border-color;
+}
+.ui.selection.select-dropdown.error:hover {
+    border-color: $ui-drop-error-border-color;
+}
+
+.ui.select-dropdown.error > .menu,
+.ui.select-dropdown.error > .menu .menu {
+    border-color: $ui-drop-error-border-color;
+}
+.ui.select-dropdown.error > .menu > .item {
+    color: $ui-drop-error-item-text-color;
+}
+.ui.multiple.selection.error.select-dropdown > .label {
+    border-color: $ui-drop-error-border-color;
+}
+
+/* Item Hover */
+.ui.select-dropdown.error > .menu > .item:hover {
+    background-color: $ui-drop-error-item-hover-background;
+}
+
+/* Item Active */
+.ui.select-dropdown.error > .menu .active.item {
+    background-color: $ui-drop-error-item-active-background;
+}
+
+
+
+/*--------------------
+        Disabled
+----------------------*/
+
+/* Disabled */
+.ui.disabled.select-dropdown,
+.ui.select-dropdown .menu > .disabled.item {
+    cursor: default;
+    pointer-events: none;
+    opacity: .75;
+}
+
+/*--------------------
+        Active
+----------------------*/
+
+.ui.select-dropdown .menu > .active.item { font-weight: 400; }
+
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+    Direction
+---------------*/
+
+/* Flyout Direction */
+.ui.select-dropdown .menu {
+    left: 0;
+}
+
+.ui.select-dropdown > .left.menu {
+    left: auto;
+    right: 0;
+}
+
+/* Default Side (Right) */
+.ui.select-dropdown .right.menu > .menu,
+.ui.select-dropdown .menu .right.menu {
+    left: 100% !important;
+    right: auto !important;
+}
+
+/* Left Flyout Menu */
+.ui.select-dropdown > .left.menu .menu,
+.ui.select-dropdown .menu .left.menu {
+    left: auto !important;
+    right: 100% !important;
+}
+
+.ui.select-dropdown .item .left.select-dropdown.icon,
+.ui.select-dropdown .left.menu .item .select-dropdown.icon {
+    width: auto;
+    float: $ui-drop-left-menu-dropdown-icon-float;
+    margin: $ui-drop-left-menu-dropdown-icon-margin;
+}
+.ui.select-dropdown .item .left.select-dropdown.icon,
+.ui.select-dropdown .left.menu .item .select-dropdown.icon {
+    width: auto;
+    float: $ui-drop-left-menu-dropdown-icon-float;
+    margin: $ui-drop-left-menu-dropdown-icon-margin;
+}
+.ui.select-dropdown .item .left.select-dropdown.icon + .text,
+.ui.select-dropdown .left.menu .item .select-dropdown.icon + .text {
+    margin-left: $ui-drop-item-dropdown-icon-distance;
+}
+
+
+/*--------------
+     Upward
+---------------*/
+
+/* Upward Main Menu */
+.ui.upward.select-dropdown > .menu {
+    top: auto;
+    bottom: 100%;
+    box-shadow: $ui-drop-upward-menu-box-shadow;
+}
+
+/* Upward Sub Menu */
+.ui.select-dropdown .upward.menu {
+    top: auto !important;
+    bottom: 0 !important;
+}
+
+/* Selection */
+.ui.upward.selection.select-dropdown .menu {
+    border-top-width: $dropdown-border-color !important;
+    border-bottom-width: 0 !important;
+    box-shadow: $ui-drop-upward-selection-menu-box-shadow;
+}
+.ui.upward.selection.select-dropdown:hover {
+    box-shadow: $ui-drop-upward-selection-hover-box-shadow;
+}
+
+
+/* Visible Hover Upward */
+.ui.upward.active.selection.select-dropdown:hover {
+    box-shadow: $ui-drop-upward-selection-active-hover-box-shadow;
+}
+.ui.upward.active.selection.select-dropdown:hover .menu {
+    box-shadow: $ui-drop-upward-selection-active-hover-menu-box-shadow;
+}
+
+/*--------------
+     Simple
+---------------*/
+
+/*  Selection Menu */
+.ui.scrolling.select-dropdown .menu,
+.ui.select-dropdown .scrolling.menu {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.ui.scrolling.select-dropdown .menu {
+    overflow-x: hidden;
+    overflow-y: auto;
+    backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    min-width: 100% !important;
+    width: auto !important;
+}
+
+.ui.select-dropdown .scrolling.menu {
+    position: static;
+    overflow-y: auto;
+    border: none;
+    margin: 0 !important;
+    min-width: 100% !important;
+    width: auto !important;
+    border-top: $dropdown-border-width solid $dropdown-border-color;
+}
+.ui.scrolling.select-dropdown .menu .item.item.item,
+.ui.select-dropdown .scrolling.menu > .item.item.item {
+    border-top: $ui-drop-scrolling-menu-item-border;
+}
+.ui.scrolling.select-dropdown .menu .item:first-child,
+.ui.select-dropdown .scrolling.menu .item:first-child {
+    border-top: none;
+}
+.ui.select-dropdown > .animating.menu .scrolling.menu,
+.ui.select-dropdown > .visible.menu .scrolling.menu {
+    display: block;
+}
+
+/* Scrollbar in IE */
+@media all and (-ms-high-contrast:none) {
+    .ui.scrolling.select-dropdown .menu,
+    .ui.select-dropdown .scrolling.menu {
+        min-width: calc(100% - #{$ui-drop-scrollbar-width});
+    }
+}
+@media only screen and (max-width : map_get($grid-breakpoints, md) - 1) {
+    .ui.scrolling.select-dropdown .menu,
+    .ui.select-dropdown .scrolling.menu {
+        max-height: $ui-drop-scrolling-mobile-max-menu-height;
+    }
+}
+@media only screen and (min-width:  map_get($grid-breakpoints, md)) {
+    .ui.scrolling.select-dropdown .menu,
+    .ui.select-dropdown .scrolling.menu {
+        max-height: $ui-drop-scrolling-tablet-max-menu-height;
+    }
+}
+@media only screen and (min-width:  map_get($grid-breakpoints, lg)) {
+    .ui.scrolling.select-dropdown .menu,
+    .ui.select-dropdown .scrolling.menu {
+        max-height: $ui-drop-scrolling-computer-max-menu-height;
+    }
+}
+@media only screen and (min-width:  map_get($grid-breakpoints, xl)) {
+    .ui.scrolling.select-dropdown .menu,
+    .ui.select-dropdown .scrolling.menu {
+        max-height: $ui-drop-scrolling-widescreen-max-menu-height;
+    }
+}
+
+/*--------------
+     Simple
+---------------*/
+
+/* Displays without javascript */
+
+.ui.simple.select-dropdown .menu:before,
+.ui.simple.select-dropdown .menu:after {
+    display: none;
+}
+.ui.simple.select-dropdown .menu {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    top: -9999px !important;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: $ui-drop-simple-transition;
+}
+
+.ui.simple.active.select-dropdown,
+.ui.simple.select-dropdown:hover {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.ui.simple.active.select-dropdown > .menu,
+.ui.simple.select-dropdown:hover > .menu {
+    overflow: visible;
+    width: auto;
+    height: auto;
+    top: 100% !important;
+    opacity: 1;
+}
+.ui.simple.select-dropdown > .menu > .item:active > .menu,
+.ui.simple.select-dropdown:hover > .menu > .item:hover > .menu {
+    overflow: visible;
+    width: auto;
+    height: auto;
+    top: 0 !important;
+    left: 100% !important;
+    opacity: 1;
+}
+.ui.simple.disabled.select-dropdown:hover .menu {
+    display: none;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+/* Visible */
+.ui.simple.visible.select-dropdown > .menu {
+    display: block;
+}
+
+/*--------------
+      Fluid
+---------------*/
+
+.ui.fluid.select-dropdown { display: block !important; width: 100% !important; }
+.ui.fluid.select-dropdown > .select-dropdown.icon { float: right; }
+.ui.fluid.select-dropdown .menu { width: 100%; }
+
+
+/*--------------
+    Floating
+---------------*/
+
+//.ui.floating.select-dropdown .menu {
+//    left: 0;
+//    right: auto;
+//}
+//.ui.floating.left.select-dropdown .menu {
+//    left: auto;
+//    right: 0;
+//}
+.ui.floating.select-dropdown > .menu {
+    margin-top: $ui-drop-floating-menu-distance !important;
+}
+
+/*--------------
+     Pointing
+---------------*/
+
+.ui.pointing.select-dropdown > .menu {
+    top: 100%;
+    margin-top: $ui-drop-pointing-menu-distance;
+}
+
+.ui.pointing.select-dropdown > .menu:after {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    content: '';
+    visibility: visible;
+    transform: rotate(45deg);
+
+    width: $ui-drop-pointing-arrow-size;
+    height: $ui-drop-pointing-arrow-size;
+    box-shadow: $ui-drop-pointing-arrow-box-shadow;
+    background: $ui-drop-pointing-arrow-background;
+    z-index: $ui-drop-pointing-arrow-zindex;
+}
+
+.ui.pointing.select-dropdown > .menu:after {
+    top: $ui-drop-pointing-arrow-offset;
+    left: 50%;
+    margin: 0 0 0 $ui-drop-pointing-arrow-offset;
+}
+
+/* Top Left Pointing */
+.ui.top.left.pointing.select-dropdown > .menu {
+    top: 100%;
+    bottom: auto;
+    left: 0;
+    right: auto;
+    margin: $ui-drop-pointing-arrow-distance-from-edge 0 0;
+}
+.ui.top.left.pointing.select-dropdown > .menu {
+    top: 100%;
+    bottom: auto;
+    left: 0;
+    right: auto;
+    margin: $ui-drop-pointing-arrow-distance-from-edge 0 0;
+}
+.ui.top.left.pointing.select-dropdown > .menu:after {
+    top: $ui-drop-pointing-arrow-offset;
+    left: $ui-drop-pointing-arrow-distance-from-edge;
+    right: auto;
+    margin: 0;
+    transform: rotate(45deg);
+}
+/* Top Right  Pointing */
+.ui.top.right.pointing.select-dropdown > .menu {
+    top: 100%;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    margin: $ui-drop-pointing-arrow-distance-from-edge 0 0;
+}
+.ui.top.right.pointing.select-dropdown > .menu:after {
+    top: $ui-drop-pointing-arrow-offset;
+    left: auto;
+    right: $ui-drop-pointing-arrow-distance-from-edge;
+    margin: 0;
+    transform: rotate(45deg);
+}
+
+/* Left Pointing */
+.ui.left.pointing.select-dropdown > .menu {
+    top: 0;
+    left: 100%;
+    right: auto;
+    margin: 0 0 0 $ui-drop-pointing-arrow-distance-from-edge;
+}
+.ui.left.pointing.select-dropdown > .menu:after {
+    top: 1em;
+    left: $ui-drop-pointing-arrow-offset;
+    margin: 0 0 0 0;
+    transform: rotate(-45deg);
+}
+
+/* Right Pointing */
+.ui.right.pointing.select-dropdown > .menu {
+    top: 0;
+    left: auto;
+    right: 100%;
+    margin: 0 $ui-drop-pointing-arrow-distance-from-edge 0 0;
+}
+.ui.right.pointing.select-dropdown > .menu:after {
+    top: 1em;
+    left: auto;
+    right: $ui-drop-pointing-arrow-offset;
+    margin: 0 0 0 0;
+    transform: rotate(135deg);
+}
+
+/* Bottom Pointing */
+.ui.bottom.pointing.select-dropdown > .menu {
+    top: auto;
+    bottom: 100%;
+    left: 0;
+    right: auto;
+    margin: 0 0 $ui-drop-pointing-arrow-distance-from-edge ;
+}
+.ui.bottom.pointing.select-dropdown > .menu:after {
+    top: auto;
+    bottom: $ui-drop-pointing-arrow-offset;
+    right: auto;
+    margin: 0;
+    transform: rotate(-135deg);
+}
+/* Reverse Sub-Menu Direction */
+.ui.bottom.pointing.select-dropdown > .menu .menu {
+    top: auto !important;
+    bottom: 0 !important;
+}
+
+/* Bottom Left */
+.ui.bottom.left.pointing.select-dropdown > .menu {
+    left: 0;
+    right: auto;
+}
+.ui.bottom.left.pointing.select-dropdown > .menu:after {
+    left: $ui-drop-pointing-arrow-distance-from-edge;
+    right: auto;
+}
+
+/* Bottom Right */
+.ui.bottom.right.pointing.select-dropdown > .menu {
+    right: 0;
+    left: auto;
+}
+.ui.bottom.right.pointing.select-dropdown > .menu:after {
+    left: auto;
+    right: $ui-drop-pointing-arrow-distance-from-edge;
+}
+
+/* Upward pointing */
+.ui.upward.pointing.select-dropdown > .menu,
+.ui.upward.top.pointing.select-dropdown > .menu {
+    top: auto;
+    bottom: 100%;
+    margin: 0 0 $ui-drop-pointing-menu-distance;
+}
+.ui.upward.pointing.select-dropdown > .menu:after,
+.ui.upward.top.pointing.select-dropdown > .menu:after {
+    top: 100%;
+    bottom: auto;
+    box-shadow: $ui-drop-pointing-upward-arrow-box-shadow;
+    margin: $ui-drop-pointing-arrow-offset 0 0;
+}
+
+/* Right Pointing Upward */
+.ui.upward.right.pointing.select-dropdown:not(.top):not(.bottom) > .menu {
+    top: auto;
+    bottom: 0;
+    margin: 0 $ui-drop-pointing-arrow-distance-from-edge 0 0;
+}
+.ui.upward.right.pointing.select-dropdown:not(.top):not(.bottom) > .menu:after {
+    top: auto;
+    bottom: 0;
+    margin: 0 0 $ui-drop-pointing-arrow-distance-from-edge 0;
+    box-shadow: $ui-drop-pointing-arrow-box-shadow;
+}
+
+
+/* Left Pointing Upward */
+.ui.upward.left.pointing.select-dropdown:not(.top):not(.bottom) > .menu {
+    top: auto;
+    bottom: 0;
+    margin: 0 0 0 $ui-drop-pointing-arrow-distance-from-edge;
+}
+.ui.upward.left.pointing.select-dropdown:not(.top):not(.bottom) > .menu:after {
+    top: auto;
+    bottom: 0;
+    margin: 0 0 $ui-drop-pointing-arrow-distance-from-edge 0;
+    box-shadow: $ui-drop-pointing-arrow-box-shadow;
+}
+
+
+/*******************************
+         Theme Overrides
+*******************************/
+.ui.select-dropdown .select-dropdown.icon { display: inline-block; font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    height: 1em; width: 1.1em; backface-visibility: hidden; text-align: center; line-height: 1.5; }
+.ui.select-dropdown > .select-dropdown.icon:before { content: '\f107'; }
+/* Sub Menu */
+.ui.select-dropdown .menu .item .select-dropdown.icon:before { content: '\f105';/*rtl:'\f104'*/ }
+.ui.select-dropdown .item .left.select-dropdown.icon:before,
+.ui.select-dropdown .left.menu .item .select-dropdown.icon:before { content: '\f104';/*rtl:'\f105'*/}
+/* Vertical Menu Dropdown */
+.ui.vertical.menu .select-dropdown.item > .select-dropdown.icon:before {  content: '\f105';/*rtl:'\f104'*/}
+
+/* Icons for Reference
+.select-dropdown.down.icon {
+  content: "\f0d7";
+}
+.select-dropdown.up.icon {
+  content: "\f0d8";
+}
+.select-dropdown.left.icon {
+  content: "\f0d9";
+}
+.select-dropdown.icon.icon {
+  content: "\f0da";
+}
+*/

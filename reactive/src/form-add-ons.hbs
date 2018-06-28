@@ -1,0 +1,759 @@
+{{#extend "layout-1" current="form-add-ons"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Text Editor
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <h4 class="mb-1">Lite Text Editor</h4>
+                            <p class="lh-0 mb-2 fs-6-plus">Edit On Text Selection</p>
+                            <div class="form-control summernote text-edit-lite">
+                                <p class="text-indent">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when
+                                    looking at its layout. <span style="background-color: rgb(255, 255, 0);">The point of using this text is that it has a more-or-less normal distribution of
+                                    letters, as opposed to using "Content here, content here", making it look like readable English.</span>
+                                </p>
+                                <p class="text-indent">
+                                    <i>There are many variations of passages</i> of this text available, but the majority have suffered
+                                    alteration in some form. <a href="">Widgets</a> are easily editable. They can even be given <u>distinct user permissions.</u></p>
+                            </div>
+
+                            <h4 class="mt-7 mb-1">Simple Text Editor</h4>
+                            <p class="lh-0 mb-2 fs-6-plus">Minimal Toolbar</p>
+                            <div class="form-control summernote text-edit-simple">
+                                <p class="text-indent">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when
+                                    looking at its layout. The point of using this text is that it has a more-or-less normal distribution of
+                                    letters, as opposed to using "Content here, content here", making it look like readable English.
+                                </p>
+                                <p class="text-indent">
+                                    <i>There are many variations of passages</i> of this text available, but the majority have suffered
+                                    alteration in some form. <a href="">Widgets</a> are easily editable. They can even be given <u>distinct user permissions.</u></p>
+                            </div>
+
+                            <h4 class="mt-7 mb-3">Standard Text Editor</h4>
+                            <div class="form-control summernote text-edit-full">
+                                <p class="text-indent">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when
+                                    looking at its layout. The point of using this text is that it has a more-or-less normal distribution of
+                                    letters, as opposed to using "Content here, content here", making it look like readable English.
+                                </p>
+                                <p class="text-indent">
+                                    <i>There are many variations of passages</i> of this text available, but the majority have suffered
+                                    alteration in some form. <a href="">Widgets</a> are easily editable. They can even be given <u>distinct user permissions.</u></p>
+                            </div>
+
+                            <h4 class="mt-7 mb-3">Edit on Click</h4>
+                            <div class="mb-3">
+                                <a href="" class="btn btn-sm btn-info btn-text-edit-edit mr-2">Edit</a>
+                                <a href="" class="btn btn-sm btn-primary btn-text-edit-save">Save</a>
+                            </div>
+                            <div class="summernote text-edit-click">
+                                <p class="text-indent">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when
+                                    looking at its layout. The point of using this text is that it has a more-or-less normal distribution of
+                                    letters, as opposed to using "Content here, content here", making it look like readable English.
+                                </p>
+                                <p class="text-indent">
+                                    <i>There are many variations of passages</i> of this text available, but the majority have suffered
+                                    alteration in some form. <a href="">Widgets</a> are easily editable. They can even be given <u>distinct user permissions.</u></p>
+                            </div>
+
+                            <h4 class="mt-7 mb-1">Hints at Editing</h4>
+                            <p class="lh-0 mb-2 fs-6">Type <code>:a</code> for Emojis and <code>@</code> for names</p>
+                            <div class="form-control summernote text-edit-hint"></div>
+
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Ion Slider
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <section>
+                                <h4 class="mb-1">Simple</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Minimum features is used</p>
+                                <input type="text" class="form-control ion-range ion-range-simple" value="" />
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Negative</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Ranges of negative values</p>
+                                <input type="text" class="form-control ion-range ion-range-negative" value="" />
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Custom values</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Values are easy configurable</p>
+                                <input type="text" class="form-control ion-range ion-range-month" value="" />
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Popovers</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Flexible popovers on any position of the slider</p>
+                                <input type="text" class="form-control ion-range ion-range-no-grid" value="" />
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Locked handle</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">The left handle is locked</p>
+                                <input type="text" class="form-control ion-range ion-range-lock" value="" />
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Limits</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Limits could be in any side</p>
+                                <input type="text" class="form-control ion-range ion-range-limits" value="" />
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Time</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Configurable Time Interval with <code>moment.js</code></p>
+                                <input type="text" class="form-control ion-range ion-range-time" value="" />
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Dragable Interval</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Handels can ve moved separately or simultaneously</p>
+                                <input type="text" class="form-control ion-range ion-range-interval" value="" />
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Reset & Disable</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Slider could be disabled, updated or reseted</p>
+                                <input type="text" class="form-control ion-range ion-range-reset" value="" />
+                                <div class="mt-2">
+                                    <a href="" class="btn btn-default mt-1 btn-reset-ion-range-reset mr-3">Reset</a>
+                                    <a href="" class="btn btn-default mt-1 btn-update-ion-range-reset mr-3">Update</a>
+                                    <a href="" class="btn btn-default mt-1 btn-disable-ion-range-reset mr-3">Disable</a>
+                                    <a href="" class="btn btn-default mt-1 btn-enable-ion-range-reset">Enable</a>
+                                </div>
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Create</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Create Slider from inputs</p>
+                                <input type="text" class="form-control ion-range ion-range-create" value="C;H" />
+                                <div class="mt-2">
+                                    <a href="" class="btn btn-default mt-1 btn-create-ion-range-create mr-3">Create</a>
+                                    <a href="" class="btn btn-default mt-1 btn-update-ion-range-create mr-3">Update</a>
+                                    <a href="" class="btn btn-default mt-1 btn-destroy-ion-range-create">Destroy</a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item" id="panel-no-ui-slider">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                NoUI Slider
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <section>
+                                <h4 class="mb-1">Simple</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Minimum features is used</p>
+                                <div id="test-slider"></div>
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Single handle</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Big values</p>
+                                <div id="slider-huge"></div>
+                                <div id="huge-value"></div>
+                            </section>
+                            <section class="mt-7">
+                                <h4 class="mb-1">Soft Limits</h4>
+                                <p class="lh-0 mb-2 fs-6-plus">Edges of slider are disabled</p>
+                                <div id="soft-limits"></div>
+                            </section>
+                            <h4 class="mt-7 mb-1">Vertical Sliders</h4>
+                            <div class="d-flex justify-content-center">
+                                <div class="d-inline-block px-7">
+                                    <section class="mt-7">
+                                        <div class="no-ui-slider-danger" id="vertical-slider-danger"></div>
+                                    </section>
+                                </div>
+                                <div class="d-inline-block px-7">
+                                    <section class="mt-7">
+                                        <div class="no-ui-slider-warning" id="vertical-slider-warning"></div>
+                                    </section>
+                                </div>
+                                <div class="d-inline-block px-7">
+                                    <section class="mt-7">
+                                        <div class="no-ui-slider-success" id="vertical-slider-success"></div>
+                                    </section>
+                                </div>
+                                <div class="d-inline-block px-7">
+                                    <section class="mt-7">
+                                        <div class="no-ui-slider-info" id="vertical-slider-info"></div>
+                                    </section>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark pb-0">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Data Picker
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="row">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Simple</div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control bs-datepicker picker-simple">
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Customisable output</div>
+                                <div class="col-md-8">
+                                    <div class="input-group date bs-datepicker picker-format">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-th"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Date Range</div>
+                                <div class="col-md-8">
+                                    <div class="input-group bs-datepicker input-daterange picker-range">
+                                        <input type="text" class="form-control" value="2017-04-05">
+                                        <span class="input-group-addon px-3">To</span>
+                                        <input type="text" class="form-control" value="2017-04-19">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Disabled Dates</div>
+                                <div class="col-md-8">
+                                    <div class="input-group date bs-datepicker picker-disabled">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-th"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 pb-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Inline Mode</div>
+                                <div class="col-md-8">
+                                    <div class="bs-datepicker picker-simple"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Data Time Picker
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="row">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Simple</div>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control datetimepicker picker-simple" />
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Customisable output</div>
+                                <div class="col-md-8">
+                                    <div class="input-group date datetimepicker picker-format">
+                                        <input type="text" class="form-control datetimepicker picker-format" />
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-th"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Linked Pickers</div>
+                                <div class="col-md-8">
+                                    <div class="input-group datetimepicker picker-range input-daterange">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon px-3">To</span>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Disabled Dates & Hours</div>
+                                <div class="col-md-8">
+                                    <div class="input-group date datetimepicker picker-disabled">
+                                        <input type="text" class="form-control datetimepicker picker-disabled">
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-th"></span>
+                                        </div>
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">Meeting Time Planner</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Inline Mode</div>
+                                <div class="col-md-8">
+                                    <div class="datetimepicker picker-inline"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Time Picker
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="row">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Simple</div>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control timepicker picker-simple" />
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">With Seconds</div>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" class="form-control timepicker picker-second" />
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-clock-o"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">24 Hour Mode</div>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" class="form-control timepicker picker-twenty-four" />
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-clock-o"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Color Picker
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="row">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Simple</div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control color-picker picker-simple" value="#498033" />
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Fluid</div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control color-picker fluid picker-simple" value="ff8000" />
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Colour Palette</div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control color-picker picker-only-palette" />
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Palette & Picker</div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control color-picker picker-with-palette" />
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Palette & Toggleable Picker</div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control color-picker picker-toggle-palette" />
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">As input addon</div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" />
+                                        <div class="input-group-addon">
+                                            <input type="text" class="color-picker picker-simple" value="#498033" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                File Upload
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <h4 class="mb-1">In Container</h4>
+                            <p class="lh-0 mb-2 fs-6-plus">Files uploaded in the container</p>
+                            <form action="/" class="dropzone"></form>
+                            <h4 class="mt-7 mb-1">More control</h4>
+                            <p class="lh-0 mb-2 fs-6-plus">Control buttons and the upload lists</p>
+                            <div class="uploads">
+                                <div class="row mb-1">
+                                    <div class="col-sm-12">
+                                        <div class="drag-drop mb-3">
+                                            <h3>Drag & Drop Files Here</h3>
+                                            <h6>or cick to select files</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="files">
+                                            <ul class="list list-unstyled upload-list mb-0 upload-template dropzone-previews">
+                                                <li class="clearfix">
+                                                    <div class="row">
+                                                        <div class="col-sm-8">
+                                                            <img class="mr-3" data-dz-thumbnail width="50" height="50" alt="" src="assets/img/empty.png"/>
+                                                            <div class="d-inline-block">
+                                                                <span class="name mr-3" data-dz-name></span>
+                                                                <span class="error text-danger" data-dz-errormessage></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-2">
+                                                            <span class="size mr-4" data-dz-size></span>
+                                                        </div>
+                                                        <div class="col-sm-2">
+                                                            <a class="progress-circle start pull-right" href="">
+                                                                <i class="ion-ios-play-outline fs-4" data-success-icon="fa fa-check c-success" data-error-icon="fa fa-trash c-danger"></i>
+                                                            </a>
+                                                            <a href="" title="Click me to remove the file." data-dz-remove><span class="remove-btn btn-icon bw-1 br-circle bc-gray-lighter dz-error-mark btn-default c-danger">✘</span></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="actions">
+                                    <a href="" class="btn mr-3 btn-success mt-1 file-input-button">
+                                        <span><i class="fa fa-plus icon-mr"></i>Add</span>
+                                    </a>
+                                    <a href="" class="btn mr-3 btn-primary mt-1 file-start-button">
+                                        <span><i class="fa fa-upload icon-mr"></i>Upload</span>
+                                    </a>
+                                    <a href="" data-dz-remove class="btn btn-danger mt-1 file-delete-button">
+                                        <span><i class="fa fa-ban icon-mr"></i>Delete</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="mt-7 mb-1">Image Upload</h4>
+                            <p class="lh-0 mb-2 fs-6-plus">Browse or type a URL</p>
+                            <div class="imageupload">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#img-uploade-file" role="tab">Upload File</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#img-uploade-url" role="tab">Set URL</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content p-3 bw-1 bc-gray-lighter">
+                                    <div class="tab-pane active file-tab" id="img-uploade-file" role="tabpanel">
+                                        <div>
+                                            <label class="btn btn-default btn-file">
+                                                <span>Browse</span>
+                                                <!-- The file is stored here. -->
+                                                <input type="file" name="bt-modal-input-image-file">
+                                            </label>
+                                            <button type="button" class="btn btn-default">Remove</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane url-tab" id="img-uploade-url" role="tabpanel">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Image URL">
+                                            <div class="input-group-btn">
+                                                <button type="button" class="btn btn-default">Submit</button>
+                                            </div>
+                                            <!-- The URL is stored here. -->
+                                            <input type="hidden" name="bt-modal-input-image-url">
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-default">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                TouchSpin
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="row">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Simple</div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <input value="0" type="text" class="form-control mxw-50 text-center spin-simple">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">With Percent Postfix</div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <input value="10" type="text" class="form-control mxw-50 text-center spin-percent">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">With Dollar Prefix</div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <input value="20" type="text" class="form-control mxw-100 text-center spin-dollar">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">With Button</div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mxw-50 text-center spin-btn">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">Vertical Spins</div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <input value="0" type="text" class="form-control mxw-50 text-center spin-vertical form-control-lg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4 text-md-right mb-1 mb-md-0">With Button Group</div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control mxw-50 text-center spin-btn-group">
+                                        <div class="input-group-btn">
+                                            <div class="ui floating upward select-dropdown btn-labeled-icon left simple-select btn btn-default">
+                                                <i class="icon fa fa-globe"></i>
+                                                <span class="text">Select</span>
+                                                <div class="menu">
+                                                    <div class="item">Arabic</div>
+                                                    <div class="item">Chinese</div>
+                                                    <div class="item">Danish</div>
+                                                    <div class="item">Dutch</div>
+                                                    <div class="item">English</div>
+                                                    <div class="item">French</div>
+                                                    <div class="item">German</div>
+                                                    <div class="item">Greek</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Input Masks
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="row">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">Tax ID</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control tax-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">99-9999999</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">Dynamic mask</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control dynamic-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">9-a{1,3}-9{1,3}</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">Optional Mask</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control optional-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">999[-999]</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">Alternative Mask</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control alternator-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">(999)|(aaa)</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">Phone Number</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control phone-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">(999) 999-9999</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">Date</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control date-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">dd/mm/yyyy</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">Date & Time</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control date-time-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">mm/dd/yyyy hh:mm xm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel b-shadow-none bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Input Masks 2
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">URL Address</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control url-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">FTP, HTTP or HTTPS addresses</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">IP Address</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control ip-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">IP addresses</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">Email Address</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control email-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">Email addresses</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">MAC Address</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mac-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">MAC addresses</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">Currency</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control currency-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">$ 999,9 .99</p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3 text-md-right mb-1 mb-md-0">VIN</div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control vin-mask">
+                                    </div>
+                                    <p class="fs-6-plus mt-1 mb-0">Vehicle identification number</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/form-addon');
+        </script>
+    {{/content}}
+{{/extend}}

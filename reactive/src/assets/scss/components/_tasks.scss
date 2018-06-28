@@ -1,0 +1,59 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: tasks
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.task { padding: .5rem 1rem; position: relative; font-size: $font-size-7; color: $gray; @include border-radius(4px);
+    .author { position: absolute; right: -20px; top: -20px;
+        .image { float: left; width: 40px; height: 40px; text-align: center; line-height: 40px; background-repeat: no-repeat; background-color: $gray-lightest; background-size: cover; border-radius: 50rem;}
+        .name { float: left; margin-right: .7em }
+    }
+    .description { @include clearfix();
+        .tags { display: block; margin-bottom: .5rem;
+            .badge-wrap { margin-right: .5em;
+                &:last-child { margin-right: 0; }
+                .badge { line-height: 1.4; }
+            }
+        }
+        .text { font-size: $font-size-6; margin-bottom: 1em; display: block; padding-right: 1em; }
+    }
+    footer { padding-top: .5rem; @include clearfix();
+        .date { display: block; }
+        .metadata { float: right; padding-top: .2em;
+            .action { margin-left: 1em;
+                &:first-child { margin-left: 0; }
+            }
+        }
+    }
+    a:hover { color: $gray-dark; }
+}
+
+.new-task,
+.new-comment {
+    .form-control,
+    .btn-default { background: $white-dark; }
+    textarea { height: 7em; line-height: $line-height-6; }
+}
+
+.task-comment { padding: .5rem 1rem .5rem 2.5rem; position: relative; font-size: $font-size-7; color: $gray;
+    .author { @include clearfix();
+        .image { position: absolute; left: -20px; top: 10px; width: 40px; height: 40px; text-align: center; line-height: 40px; background-repeat: no-repeat; background-color: $gray-lightest; background-size: cover; border-radius: 50rem;}
+        .date { display: block; margin-bottom: .4em; }
+    }
+    .description { @include clearfix();
+        .text { font-size: $font-size-6; margin-bottom: 1em; display: block; padding-right: 1em; }
+    }
+    footer { padding-top: .5rem; @include clearfix();
+        .metadata { float: right; padding-top: .2em;
+            a { margin-left: 1em;
+                &:first-child { margin-left: 0; }
+            }
+        }
+    }
+    a:hover { color: $gray-dark; }
+}
+
+
+

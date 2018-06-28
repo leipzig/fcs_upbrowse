@@ -1,0 +1,177 @@
+/*******************************
+            Checkbox
+*******************************/
+
+$ui-check-checkbox-size: 1.45rem !default;
+$ui-check-checkbox-color: $gray-dark !default;
+$ui-check-checkbox-line-height: $ui-check-checkbox-size !default;
+
+
+/* Label */
+$ui-check-label-distance: $ui-check-checkbox-size + 1rem !default;
+
+/* Checkbox */
+$ui-check-checkbox-background: $white-dark !default;
+$ui-check-checkbox-border: 1px solid $gray-lighter !default;
+$ui-check-checkbox-transition: border $default-duration $default-easing, opacity $default-duration $default-easing,
+transform $default-duration $default-easing, box-shadow $default-duration $default-easing !default;
+
+/* Checkmark */
+$ui-check-checkbox-check-font-size: 0.83rem !default;
+$ui-check-checkbox-check-top: 0 !default;
+$ui-check-checkbox-check-left: 0 !default;
+$ui-check-checkbox-check-size: $ui-check-checkbox-size !default;
+
+/* Label */
+$ui-check-label-font-size: $font-size-6 !default;
+$ui-check-label-color: $gray-dark !default;
+$ui-check-label-transition: color $default-duration $default-easing !default;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+$ui-check-checkbox-hover-background: $ui-check-checkbox-background !default;
+$ui-check-checkbox-hover-border-color: $gray-lighter !default;
+$ui-check-label-hover-color: $gray-dark !default;
+
+/* Pressed */
+$ui-check-checkbox-pressed-background: $white-darker !default;
+$ui-check-checkbox-pressed-border-color: $gray-lighter !default;
+$ui-check-checkbox-pressed-color: $gray-dark !default;
+$ui-check-label-pressed-color: $gray-dark !default;
+
+/* Focus */
+$ui-check-checkbox-focus-background: $white-dark !default;
+$ui-check-checkbox-focus-border-color: $gray !default;
+$ui-check-checkbox-focus-check-color: $gray-dark !default;
+$ui-check-label-focus-color: $gray-dark !default;
+
+/* Active */
+$ui-check-label-active-color: $gray-dark !default;
+$ui-check-checkbox-active-background: $white-dark !default;
+$ui-check-checkbox-active-border-color: $gray !default;
+$ui-check-checkbox-active-check-color: $gray-dark !default;
+$ui-check-checkbox-active-check-opacity: 1 !default;
+
+/* Active Focus */
+$ui-check-checkbox-active-focus-background: $white-dark !default;
+$ui-check-checkbox-active-focus-border-color: $ui-check-checkbox-focus-border-color !default;
+$ui-check-checkbox-active-focus-check-color: $gray-dark !default;
+
+/* Indeterminate */
+$ui-check-checkbox-indeterminate-background: $ui-check-checkbox-active-background !default;
+$ui-check-checkbox-indeterminate-border-color: $ui-check-checkbox-active-border-color !default;
+$ui-check-checkbox-indeterminate-check-opacity: 1 !default;
+$ui-check-checkbox-indeterminate-check-color: $ui-check-checkbox-active-check-color !default;
+
+/* Disabled */
+$ui-check-disabled-checkbox-opacity: 0.75 !default;
+$ui-check-disabled-checkbox-label-color: $gray !default;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Radio */
+/* Uses px to avoid rounding issues with circles */
+
+$ui-check-radio-size: 1.45rem !default;
+$ui-check-radio-top: 1px !default;
+$ui-check-radio-left: 0 !default;
+$ui-check-radio-label-distance: $ui-check-label-distance !default;
+
+$ui-check-bullet-top: 1px !default;
+$ui-check-bullet-left: 0 !default;
+$ui-check-bullet-scale: (8 / 16) !default; /* 8px as unitless value from radio size */
+$ui-check-bullet-color: $gray-dark !default;
+$ui-check-bullet-radius: $circular-radius !default;
+
+$ui-check-radio-focus-background: $ui-check-checkbox-focus-background !default;
+$ui-check-radio-focus-bullet-color: $ui-check-checkbox-focus-check-color !default;
+
+$ui-check-radio-active-background: $ui-check-checkbox-active-background !default;
+$ui-check-radio-active-bullet-color: $ui-check-checkbox-active-check-color !default;
+
+$ui-check-radio-active-focus-background: $ui-check-checkbox-active-focus-background !default;
+$ui-check-radio-active-focus-bullet-color: $ui-check-checkbox-active-focus-check-color !default;
+
+/* Slider & Toggle Handle */
+$ui-check-handle-background: $white-dark linear-gradient(transparent, $transparent-black) !default;
+$ui-check-handle-box-shadow: 0 1px 2px 0 $gray-lighter, 0 0 0 1px $gray-lighter inset !default;
+
+/* Slider */
+$ui-check-slider-handle-size: 1.45rem !default;
+$ui-check-slider-line-width: 3.5rem !default;
+$ui-check-slider-transition-duration: 0.3s !default;
+
+$ui-check-slider-handle-offset: (1rem - $ui-check-slider-handle-size) / 2 !default;
+$ui-check-slider-handle-transition: left $ui-check-slider-transition-duration $default-easing !default;
+
+$ui-check-slider-width: $ui-check-slider-line-width !default;
+$ui-check-slider-height: ($ui-check-slider-handle-size + $ui-check-slider-handle-offset) !default;
+
+$ui-check-slider-line-height: 4rem / $fs !default;
+$ui-check-slider-line-vertical-offset: 0.4rem !default;
+$ui-check-slider-line-color: $transparent-black !default;
+$ui-check-slider-line-radius: $circular-radius !default;
+$ui-check-slider-line-transition: background $ui-check-slider-transition-duration $default-easing !default;
+
+$ui-check-slider-travel-distance: $ui-check-slider-line-width - $ui-check-slider-handle-size !default;
+
+$ui-check-slider-label-distance: $ui-check-slider-line-width + 1rem !default;
+$ui-check-slider-off-label-color: $gray-light !default;
+
+$ui-check-slider-label-line-height: 1rem !default;
+
+/* Slider States */
+$ui-check-slider-hover-lane-background: $very-strong-transparent-black !default;
+$ui-check-slider-hover-label-color: $gray-dark !default;
+
+$ui-check-slider-on-line-color: $gray-light !default;
+$ui-check-slider-on-label-color: $gray-dark !default;
+
+$ui-check-slider-on-focus-line-color: $gray !default;
+$ui-check-slider-on-focus-label-color: $ui-check-slider-on-label-color !default;
+
+
+
+/* Toggle */
+$ui-check-toggle-lane-width: 3.5rem !default;
+$ui-check-toggle-handle-size: 1.45rem !default;
+$ui-check-toggle-transition-duration: 0.3s !default;
+
+$ui-check-toggle-width: $ui-check-toggle-lane-width !default;
+$ui-check-toggle-height: $ui-check-toggle-handle-size !default;
+
+$ui-check-toggle-handle-radius: $circular-radius !default;
+$ui-check-toggle-handle-offset: 0 !default;
+$ui-check-toggle-handle-transition: background $ui-check-slider-transition-duration $default-easing,
+left $ui-check-slider-transition-duration $default-easing !default;
+
+$ui-check-toggle-lane-background: $strong-transparent-black !default;
+$ui-check-toggle-lane-height: $ui-check-toggle-handle-size !default;
+$ui-check-toggle-lane-box-shadow: none !default;
+$ui-check-toggle-lane-vertical-offset: 0 !default;
+$ui-check-toggle-off-offset: -0.05rem !default;
+$ui-check-toggle-on-offset: ($ui-check-toggle-lane-width - $ui-check-toggle-handle-size) + 0.15rem !default;
+
+$ui-check-toggle-label-distance: $ui-check-toggle-lane-width + 1rem !default;
+$ui-check-toggle-label-line-height: 1.5rem !default;
+$ui-check-toggle-label-offset: 0.15em !default;
+
+
+$ui-check-toggle-focus-color: $very-strong-transparent-black !default;
+$ui-check-toggle-hover-color: $ui-check-toggle-focus-color !default;
+
+$ui-check-toggle-off-label-color: $ui-check-checkbox-color !default;
+$ui-check-toggle-off-handle-box-shadow: none !default;
+
+$ui-check-toggle-on-label-color: $gray-dark !default;
+$ui-check-toggle-on-lane-color: $brand-primary !default;
+
+$ui-check-toggle-on-handle-box-shadow: none !default;
+
+$ui-check-toggle-on-focus-lane-color: darken($brand-primary, 10%) !default;
+$ui-check-toggle-on-focus-label-color: $ui-check-toggle-on-label-color !default;

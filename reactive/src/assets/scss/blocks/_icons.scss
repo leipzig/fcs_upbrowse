@@ -1,0 +1,303 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: brand Icons
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.icons-header { padding: 2.5rem 0 1.5rem }
+.icon-list-item { @include clearfix(); padding: .5rem 0; height: 63px;
+    .icon { margin-right: 2rem; float: left; font-size: $font-size-3; }
+    .desc { overflow-y: hidden;
+        span { display: block; }
+        span.click { display: none; }
+    }
+}
+.devicons { position: relative; top: 1px; }
+
+.c-youtube { color: $color-youtube !important; }
+.c-youtube-square { color: $color-youtube-square !important; }
+.c-youtube-play { color: $color-youtube-play !important; }
+.c-yelp { color: $color-yelp !important; }
+.c-y-combinator { color: $color-y-combinator !important; }
+.c-yc { color: $color-yc !important; }
+.c-yahoo { color: $color-yahoo !important; }
+.c-xing { color: $color-xing !important; }
+.c-xing-square { color: $color-xing-square !important; }
+.c-wordpress { color: $color-wordpress !important; }
+.c-windows { color: $color-windows !important; }
+.c-wikipedia-w { color: $color-wikipedia-w !important; }
+.c-wechat { color: $color-wechat !important; }
+.c-weixin { color: $color-weixin !important; }
+.c-weibo { color: $color-weibo !important; }
+.c-vk { color: $color-vk !important; }
+.c-vine { color: $color-vine !important; }
+.c-vimeo { color: $color-vimeo !important; }
+.c-vimeo-square { color: $color-vimeo-square !important; }
+.c-viacoin { color: $color-viacoin !important; }
+.c-twitter { color: $color-twitter !important; }
+.c-twitter-square { color: $color-twitter-square !important; }
+.c-twitch { color: $color-twitch !important; }
+.c-tumblr { color: $color-tumblr !important; }
+.c-tumblr-square { color: $color-tumblr-square !important; }
+.c-tripadvisor { color: $color-tripadvisor !important; }
+.c-trello { color: $color-trello !important; }
+.c-tencent-weibo { color: $color-tencent-weibo !important; }
+.c-stumbleupon { color: $color-stumbleupon !important; }
+.c-stumbleupon-circle { color: $color-stumbleupon-circle !important; }
+.c-steam { color: $color-steam !important; }
+.c-steam-square { color: $color-steam-square !important; }
+.c-stack-overflow { color: $color-stack-overflow !important; }
+.c-stack-exchange { color: $color-stack-exchange !important; }
+.c-spotify { color: $color-spotify !important; }
+.c-soundcloud { color: $color-soundcloud !important; }
+.c-slideshare { color: $color-slideshare !important; }
+.c-slack { color: $color-slack !important; }
+.c-skype { color: $color-skype !important; }
+.c-skyatlas { color: $color-skyatlas !important; }
+.c-simplybuilt { color: $color-simplybuilt !important; }
+.c-shirtsinbulk { color: $color-shirtsinbulk !important; }
+.c-share-alt { color: $color-share-alt !important; }
+.c-share-alt-square { color: $color-share-alt-square !important; }
+.c-sellsy { color: $color-sellsy !important; }
+.c-safari { color: $color-safari !important; }
+.c-renren { color: $color-renren !important; }
+.c-reddit { color: $color-reddit !important; }
+.c-reddit-square { color: $color-reddit-square !important; }
+.c-ra { color: $color-ra !important; }
+.c-rebel { color: $color-rebel !important; }
+.c-qq { color: $color-qq !important; }
+.c-pinterest { color: $color-pinterest !important; }
+.c-pinterest-square { color: $color-pinterest-square !important; }
+.c-pinterest-p { color: $color-pinterest-p !important; }
+.c-pied-piper { color: $color-pied-piper !important; }
+.c-pied-piper-square { color: $color-pied-piper-square !important; }
+.c-pied-piper-alt { color: $color-pied-piper-alt !important; }
+.c-paypal { color: $color-paypal !important; }
+.c-pagelines { color: $color-pagelines !important; }
+.c-optin-monster { color: $color-optin-monster !important; }
+.c-opera { color: $color-opera !important; }
+.c-openid { color: $color-openid !important; }
+.c-opencart { color: $color-opencart !important; }
+.c-odnoklassniki { color: $color-odnoklassniki !important; }
+.c-odnoklassniki-square { color: $color-odnoklassniki-square !important; }
+.c-medium { color: $color-medium !important; }
+.c-meanpath { color: $color-meanpath !important; }
+.c-maxcdn { color: $color-maxcdn !important; }
+.c-linux { color: $color-linux !important; }
+.c-linkedin { color: $color-linkedin !important; }
+.c-linkedin-square { color: $color-linkedin-square !important; }
+.c-leanpub { color: $color-leanpub !important; }
+.c-lastfm { color: $color-lastfm !important; }
+.c-lastfm-square { color: $color-lastfm-square !important; }
+.c-jsfiddle { color: $color-jsfiddle !important; }
+.c-joomla { color: $color-joomla !important; }
+.c-ioxhost { color: $color-ioxhost !important; }
+.c-internet-explorer { color: $color-internet-explorer !important; }
+.c-instagram { color: $color-instagram !important; }
+.c-html5 { color: $color-html5 !important; }
+.c-houzz { color: $color-houzz !important; }
+.c-hacker-news { color: $color-hacker-news !important; }
+.c-google { color: $color-google !important; }
+.c-google-wallet { color: $color-google-wallet !important; }
+.c-google-plus { color: $color-google-plus !important; }
+.c-google-plus-square { color: $color-google-plus-square !important; }
+.c-gittip { color: $color-gittip !important; }
+.c-git { color: $color-git !important; }
+.c-github { color: $color-github !important; }
+.c-github-square { color: $color-github-square !important; }
+.c-github-alt { color: $color-github-alt !important; }
+.c-git-square { color: $color-git-square !important; }
+.c-gg { color: $color-gg !important; }
+.c-gg-circle { color: $color-gg-circle !important; }
+.c-get-pocket { color: $color-get-pocket !important; }
+.c-ge { color: $color-ge !important; }
+.c-foursquare { color: $color-foursquare !important; }
+.c-forumbee { color: $color-forumbee !important; }
+.c-fonticons { color: $color-fonticons !important; }
+.c-flickr { color: $color-flickr !important; }
+.c-firefox { color: $color-firefox !important; }
+.c-facebook { color: $color-facebook !important; }
+.c-facebook-square { color: $color-facebook-square !important; }
+.c-facebook-official { color: $color-facebook-official !important; }
+.c-expeditedssl { color: $color-expeditedssl !important; }
+.c-empire { color: $color-empire !important; }
+.c-drupal { color: $color-drupal !important; }
+.c-dropbox { color: $color-dropbox !important; }
+.c-dribbble { color: $color-dribbble !important; }
+.c-digg { color: $color-digg !important; }
+.c-deviantart { color: $color-deviantart !important; }
+.c-delicious { color: $color-delicious !important; }
+.c-dashcube { color: $color-dashcube !important; }
+.c-css3 { color: $color-css3 !important; }
+.c-creative-commons { color: $color-creative-commons !important; }
+.c-contao { color: $color-contao !important; }
+.c-connectdevelop { color: $color-connectdevelop !important; }
+.c-codepen { color: $color-codepen !important; }
+.c-chrome { color: $color-chrome !important; }
+.c-cc-visa { color: $color-cc-visa !important; }
+.c-cc-stripe { color: $color-cc-stripe !important; }
+.c-cc-paypal { color: $color-cc-paypal !important; }
+.c-cc-mastercard { color: $color-cc-mastercard !important; }
+.c-cc-jcb { color: $color-cc-jcb !important; }
+.c-cc-discover { color: $color-cc-discover !important; }
+.c-cc-diners-club { color: $color-cc-diners-club !important; }
+.c-cc-amex { color: $color-cc-amex !important; }
+.c-buysellads { color: $color-buysellads !important; }
+.c-bitcoin { color: $color-bitcoin !important; }
+.c-btc { color: $color-btc !important; }
+.c-black-tie { color: $color-black-tie !important; }
+.c-bitbucket { color: $color-bitbucket !important; }
+.c-bitbucket-square { color: $color-bitbucket-square !important; }
+.c-behance { color: $color-behance !important; }
+.c-behance-square { color: $color-behance-square !important; }
+.c-apple { color: $color-apple !important; }
+.c-angellist { color: $color-angellist !important; }
+.c-android { color: $color-android !important; }
+.c-amazon { color: $color-amazon !important; }
+.c-adn { color: $color-adn !important; }
+.c-500px { color: $color-500px !important; }
+
+.bgc-500px { background-color: $color-500px !important; color: $white-dark !important; }
+.bgc-adn { background-color: $color-adn !important; color: $white-dark !important; }
+.bgc-amazon { background-color: $color-amazon !important; color: $white-dark !important; }
+.bgc-android { background-color: $color-android !important; color: $white-dark !important; }
+.bgc-angellist { background-color: $color-angellist !important; color: $white-dark !important; }
+.bgc-apple { background-color: $color-apple !important; color: $white-dark !important; }
+.bgc-behance { background-color: $color-behance !important; color: $white-dark !important; }
+.bgc-behance-square { background-color: $color-behance-square !important; color: $white-dark !important; }
+.bgc-bitbucket { background-color: $color-bitbucket !important; color: $white-dark !important; }
+.bgc-bitbucket-square { background-color: $color-bitbucket-square !important; color: $white-dark !important; }
+.bgc-bitcoin { background-color: $color-bitcoin !important; color: $white-dark !important; }
+.bgc-black-tie { background-color: $color-black-tie !important; color: $white-dark !important; }
+.bgc-btc { background-color: $color-btc !important; color: $white-dark !important; }
+.bgc-buysellads { background-color: $color-buysellads !important; color: $white-dark !important; }
+.bgc-cc-amex { background-color: $color-cc-amex !important; color: $white-dark !important; }
+.bgc-cc-diners-club { background-color: $color-cc-diners-club !important; color: $white-dark !important; }
+.bgc-cc-discover { background-color: $color-cc-discover !important; color: $white-dark !important; }
+.bgc-cc-jcb { background-color: $color-cc-jcb !important; color: $white-dark !important; }
+.bgc-cc-mastercard { background-color: $color-cc-mastercard !important; color: $white-dark !important; }
+.bgc-cc-paypal { background-color: $color-cc-paypal !important; color: $white-dark !important; }
+.bgc-cc-stripe { background-color: $color-cc-stripe !important; color: $white-dark !important; }
+.bgc-cc-visa { background-color: $color-cc-visa !important; color: $white-dark !important; }
+.bgc-chrome { background-color: $color-chrome !important; color: $white-dark !important; }
+.bgc-codepen { background-color: $color-codepen !important; color: $white-dark !important; }
+.bgc-connectdevelop { background-color: $color-connectdevelop !important; color: $white-dark !important; }
+.bgc-contao { background-color: $color-contao !important; color: $white-dark !important; }
+.bgc-creative-commons  { background-color: $color-creative-commons !important; color: $white-dark !important; }
+.bgc-css3 { background-color: $color-css3 !important; color: $white-dark !important; }
+.bgc-dashcube { background-color: $color-dashcube !important; color: $white-dark !important; }
+.bgc-delicious { background-color: $color-delicious !important; color: $white-dark !important; }
+.bgc-deviantart { background-color: $color-deviantart !important; color: $white-dark !important; }
+.bgc-digg { background-color: $color-digg !important; color: $white-dark !important; }
+.bgc-dribbble { background-color: $color-dribbble !important; color: $white-dark !important; }
+.bgc-dropbox { background-color: $color-dropbox !important; color: $white-dark !important; }
+.bgc-drupal { background-color: $color-drupal !important; color: $white-dark !important; }
+.bgc-empire { background-color: $color-empire !important; color: $white-dark !important; }
+.bgc-expeditedssl { background-color: $color-expeditedssl !important; color: $white-dark !important; }
+.bgc-facebook { background-color: $color-facebook !important; color: $white-dark !important; }
+.bgc-facebook-official { background-color: $color-facebook-official !important; color: $white-dark !important; }
+.bgc-facebook-square { background-color: $color-facebook-square !important; color: $white-dark !important; }
+.bgc-firefox { background-color: $color-firefox !important; color: $white-dark !important; }
+.bgc-flickr { background-color: $color-flickr !important; color: $white-dark !important; }
+.bgc-fonticons { background-color: $color-fonticons !important; color: $white-dark !important; }
+.bgc-forumbee { background-color: $color-forumbee !important; color: $white-dark !important; }
+.bgc-foursquare { background-color: $color-foursquare !important; color: $white-dark !important; }
+.bgc-ge { background-color: $color-ge !important; color: $white-dark !important; }
+.bgc-get-pocket { background-color: $color-get-pocket !important; color: $white-dark !important; }
+.bgc-gg { background-color: $color-gg !important; color: $white-dark !important; }
+.bgc-gg-circle { background-color: $color-gg-circle !important; color: $white-dark !important; }
+.bgc-git { background-color: $color-git !important; color: $white-dark !important; }
+.bgc-git-square { background-color: $color-git-square !important; color: $white-dark !important; }
+.bgc-github { background-color: $color-github !important; color: $white-dark !important; }
+.bgc-github-alt { background-color: $color-github-alt !important; color: $white-dark !important; }
+.bgc-github-square { background-color: $color-github-square !important; color: $white-dark !important; }
+.bgc-gittip { background-color: $color-gittip !important; color: $white-dark !important; }
+.bgc-google { background-color: $color-google !important; color: $white-dark !important; }
+.bgc-google-plus { background-color: $color-google-plus !important; color: $white-dark !important; }
+.bgc-google-plus-square { background-color: $color-google-plus-square !important; color: $white-dark !important; }
+.bgc-google-wallet { background-color: $color-google-wallet !important; color: $white-dark !important; }
+.bgc-hacker-news { background-color: $color-hacker-news !important; color: $white-dark !important; }
+.bgc-houzz  { background-color: $color-houzz !important; color: $white-dark !important; }
+.bgc-html5 { background-color: $color-html5 !important; color: $white-dark !important; }
+.bgc-instagram { background-color: $color-instagram !important; color: $white-dark !important; }
+.bgc-internet-explorer { background-color: $color-internet-explorer !important; color: $white-dark !important; }
+.bgc-ioxhost { background-color: $color-ioxhost !important; color: $white-dark !important; }
+.bgc-joomla { background-color: $color-joomla !important; color: $white-dark !important; }
+.bgc-jsfiddle { background-color: $color-jsfiddle !important; color: $white-dark !important; }
+.bgc-lastfm { background-color: $color-lastfm !important; color: $white-dark !important; }
+.bgc-lastfm-square { background-color: $color-lastfm-square !important; color: $white-dark !important; }
+.bgc-leanpub { background-color: $color-leanpub !important; color: $white-dark !important; }
+.bgc-linkedin { background-color: $color-linkedin !important; color: $white-dark !important; }
+.bgc-linkedin-square { background-color: $color-linkedin-square !important; color: $white-dark !important; }
+.bgc-linux { background-color: $color-linux !important; color: $white-dark !important; }
+.bgc-maxcdn { background-color: $color-maxcdn !important; color: $white-dark !important; }
+.bgc-meanpath { background-color: $color-meanpath !important; color: $white-dark !important; }
+.bgc-medium { background-color: $color-medium !important; color: $white-dark !important; }
+.bgc-odnoklassniki  { background-color: $color-odnoklassniki !important; color: $white-dark !important; }
+.bgc-odnoklassniki-square  { background-color: $color-odnoklassniki-square !important; color: $white-dark !important; }
+.bgc-opencart { background-color: $color-opencart !important; color: $white-dark !important; }
+.bgc-openid { background-color: $color-openid !important; color: $white-dark !important; }
+.bgc-opera  { background-color: $color-opera !important; color: $white-dark !important; }
+.bgc-optin-monster { background-color: $color-optin-monster !important; color: $white-dark !important; }
+.bgc-pagelines { background-color: $color-pagelines !important; color: $white-dark !important; }
+.bgc-paypal { background-color: $color-paypal !important; color: $white-dark !important; }
+.bgc-pied-piper { background-color: $color-pied-piper !important; color: $white-dark !important; }
+.bgc-pied-piper-alt { background-color: $color-pied-piper-alt !important; color: $white-dark !important; }
+.bgc-pied-piper-square { background-color: $color-pied-piper-square !important; color: $white-dark !important; }
+.bgc-pinterest { background-color: $color-pinterest !important; color: $white-dark !important; }
+.bgc-pinterest-p { background-color: $color-pinterest-p !important; color: $white-dark !important; }
+.bgc-pinterest-square { background-color: $color-pinterest-square !important; color: $white-dark !important; }
+.bgc-qq { background-color: $color-qq !important; color: $white-dark !important; }
+.bgc-ra { background-color: $color-ra !important; color: $white-dark !important; }
+.bgc-rebel { background-color: $color-rebel !important; color: $white-dark !important; }
+.bgc-reddit { background-color: $color-reddit !important; color: $white-dark !important; }
+.bgc-reddit-square { background-color: $color-reddit-square !important; color: $white-dark !important; }
+.bgc-renren { background-color: $color-renren !important; color: $white-dark !important; }
+.bgc-safari  { background-color: $color-safari !important; color: $white-dark !important; }
+.bgc-sellsy { background-color: $color-sellsy !important; color: $white-dark !important; }
+.bgc-share-alt { background-color: $color-share-alt !important; color: $white-dark !important; }
+.bgc-share-alt-square { background-color: $color-share-alt-square !important; color: $white-dark !important; }
+.bgc-shirtsinbulk { background-color: $color-shirtsinbulk !important; color: $white-dark !important; }
+.bgc-simplybuilt { background-color: $color-simplybuilt !important; color: $white-dark !important; }
+.bgc-skyatlas { background-color: $color-skyatlas !important; color: $white-dark !important; }
+.bgc-skype { background-color: $color-skype !important; color: $white-dark !important; }
+.bgc-slack { background-color: $color-slack !important; color: $white-dark !important; }
+.bgc-slideshare { background-color: $color-slideshare !important; color: $white-dark !important; }
+.bgc-soundcloud { background-color: $color-soundcloud !important; color: $white-dark !important; }
+.bgc-spotify { background-color: $color-spotify !important; color: $white-dark !important; }
+.bgc-stack-exchange { background-color: $color-stack-exchange !important; color: $white-dark !important; }
+.bgc-stack-overflow { background-color: $color-stack-overflow !important; color: $white-dark !important; }
+.bgc-steam { background-color: $color-steam !important; color: $white-dark !important; }
+.bgc-steam-square { background-color: $color-steam-square !important; color: $white-dark !important; }
+.bgc-stumbleupon { background-color: $color-stumbleupon !important; color: $white-dark !important; }
+.bgc-stumbleupon-circle { background-color: $color-stumbleupon-circle !important; color: $white-dark !important; }
+.bgc-tencent-weibo { background-color: $color-tencent-weibo !important; color: $white-dark !important; }
+.bgc-trello { background-color: $color-trello !important; color: $white-dark !important; }
+.bgc-tripadvisor  { background-color: $color-tripadvisor !important; color: $white-dark !important; }
+.bgc-tumblr { background-color: $color-tumblr !important; color: $white-dark !important; }
+.bgc-tumblr-square { background-color: $color-tumblr-square !important; color: $white-dark !important; }
+.bgc-twitch { background-color: $color-twitch !important; color: $white-dark !important; }
+.bgc-twitter { background-color: $color-twitter !important; color: $white-dark !important; }
+.bgc-twitter-square { background-color: $color-twitter-square !important; color: $white-dark !important; }
+.bgc-viacoin { background-color: $color-viacoin !important; color: $white-dark !important; }
+.bgc-vimeo  { background-color: $color-vimeo !important; color: $white-dark !important; }
+.bgc-vimeo-square { background-color: $color-vimeo-square !important; color: $white-dark !important; }
+.bgc-vine { background-color: $color-vine !important; color: $white-dark !important; }
+.bgc-vk { background-color: $color-vk !important; color: $white-dark !important; }
+.bgc-wechat { background-color: $color-wechat !important; color: $white-dark !important; }
+.bgc-weibo { background-color: $color-weibo !important; color: $white-dark !important; }
+.bgc-weixin { background-color: $color-weixin !important; color: $white-dark !important; }
+.bgc-wikipedia-w { background-color: $color-wikipedia-w !important; color: $white-dark !important; }
+.bgc-windows { background-color: $color-windows !important; color: $white-dark !important; }
+.bgc-wordpress { background-color: $color-wordpress !important; color: $white-dark !important; }
+.bgc-xing { background-color: $color-xing !important; color: $white-dark !important; }
+.bgc-xing-square { background-color: $color-xing-square !important; color: $white-dark !important; }
+.bgc-y-combinator { background-color: $color-y-combinator !important; color: $white-dark !important; }
+.bgc-yc { background-color: $color-yc !important; color: $white-dark !important; }
+.bgc-yahoo { background-color: $color-yahoo !important; color: $white-dark !important; }
+.bgc-yelp { background-color: $color-yelp !important; color: $white-dark !important; }
+.bgc-youtube { background-color: $color-youtube !important; color: $white-dark !important; }
+.bgc-youtube-play { background-color: $color-youtube-play !important; color: $white-dark !important; }
+.bgc-youtube-square { background-color: $color-youtube-square !important; color: $white-dark !important; }
+

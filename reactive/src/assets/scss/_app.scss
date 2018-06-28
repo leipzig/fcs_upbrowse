@@ -1,0 +1,55 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: App
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+/*-------------------------------*/
+/*          Layout Styles        */
+/*-------------------------------*/
+
+html,
+body,
+.reactive-app { height: 100%; }
+.main-wrap { min-height: calc(100% - #{$footer-height} - #{$header-height} - #{$page-title-height}); }
+
+html { font-size: $font-size-root; width: 100%; }
+body { background: $white-darkest; overflow-x: hidden;}
+.reactive-app { background: clr( body-dark ); z-index: 0; position: relative; right: 0; left: 0; }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: $gray-lighter; }
+::-webkit-scrollbar-thumb { background: $gray-light; }
+::-webkit-scrollbar-thumb:window-inactive { background: $gray-light; }
+
+.full-width { margin-left: 63px; }
+.overlay { position: fixed; display: none; }
+.dash-finance-row { margin: 0 60px 0 0; }
+.main-wrap { position: relative; z-index: auto;  }
+.content-wrap { /*box-shadow: 3px -3px 7px rgba(15, 16, 21, .2) inset; */padding: $grid-gutter-width / 2 $grid-gutter-width $grid-gutter-width / 2 $grid-gutter-width + $grid-gutter-width / 2; }
+.empty-page { padding-left: 0 !important;
+    .main { height: 100%; }
+}
+
+.image-lazy { opacity: 1; transition: opacity .4s; }
+.image-lazy.loading { opacity: 0; }
+
+.empty-page .content-wrap { display: flex; flex-flow: row wrap; overflow-x: hidden; min-height: 100%;
+    > .central-block,
+    > footer { flex: 1 100%; text-align: center }
+    .central-block { align-self: center; }
+    footer { align-self: flex-end; }
+    .login-icons { display: flex; justify-content: space-around; }
+    .empty-page-content { max-width: 450px !important; }
+}
+@include media-breakpoint-down(md) {
+    .content-wrap { padding: 10px 20px; }
+}
+@include media-breakpoint-down(sm) {
+    .content-wrap { padding: 5px 10px; }
+    .dash-finance-row h2 {
+        font-size: 1rem;
+    }
+}
+

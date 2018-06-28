@@ -1,0 +1,106 @@
+@import 'variables';
+
+@mixin list-plus-nested-list($item, $theme) {
+    /*--------------------
+        Nested List
+    ---------------------*/
+    margin: map-get($theme, margin); padding: map-get($theme, padding);
+    &:before { position: absolute; top: 0; left: 0; }
+    #{$item} { border: map-get($theme, border); border-top: map-get($theme, divider); background: map-get($theme, background); }
+}
+
+@mixin list-plus-item($theme) {
+    /*--------------
+         Item
+    ---------------*/
+    display:block; position: relative; background: map-get($theme, background); margin: map-get($theme, margin); padding: map-get($theme, padding); border: map-get($theme, border); border-top: map-get($theme, divider); line-height: map-get($theme, line-height);
+    &:first-child { margin-top: map-get($theme, first-margin); padding-top: map-get($theme, first-padding); }
+}
+
+@mixin list-plus-avatar($theme) {
+    /*--------------
+          Avatar
+     ---------------*/
+    display: map-get($theme, display); width: map-get($theme, width); height: map-get($theme, height); float: map-get($theme, float); margin: map-get($theme, margin);
+        border-radius: map-get($theme, border-radius); background: map-get($theme, background); text-align: center; line-height: map-get($theme, height); font-size: map-get($theme, font-size);
+    img { display: block; margin: 0 auto; width: 100%; height: 100%;}
+}
+
+@mixin list-plus-content($theme) {
+    /*--------------
+         Content
+    ---------------*/
+    display: block; margin-left: map-get($theme, margin) !important;
+}
+
+@mixin list-plus-author($theme) {
+    /*--------------
+         Author
+    ---------------*/
+    font-size: map-get($theme, font-size); color: map-get($theme, color); font-weight: map-get($theme, font-weight); cursor: pointer;
+    &:hover { color: map-get($theme, hover-color); }
+}
+
+@mixin list-plus-metadata($theme) {
+    /*--------------
+         Metadata
+    ---------------*/
+    display: map-get($theme, display); margin-left: map-get($theme, spacing); color: map-get($theme, color); font-size: map-get($theme, font-size);
+    > * { display: inline-block; margin: 0 map-get($theme, content-spacing) 0 0; }
+    > :last-child { margin-right: 0; }
+}
+
+@mixin list-plus-text($theme) {
+    /*--------------------
+          Text
+    ---------------------*/
+    margin: map-get($theme, margin); font-size: map-get($theme, font-size); word-wrap: map-get($theme, word-wrap); color: $gray-dark; line-height: map-get($theme, line-height);
+}
+
+@mixin list-plus-actions($theme) {
+    /*--------------------
+         Actions
+    ---------------------*/
+    font-size: map-get($theme, font-size);
+    .action {
+        margin: 0 map-get($theme, content-distance) 0 0;
+        &:last-child { margin-right: 0; }
+    }
+    .action,
+    .action > a { cursor: pointer; display: inline-block; color: map-get($theme, link-color);
+        &.active,
+        &:hover { color: map-get($theme, link-hover-color); }
+    }
+}
+
+@mixin list-plus-reply($theme) {
+    /*--------------------
+          Reply
+    ---------------------*/
+    margin: map-get($theme, margin);
+    textarea { font-size: map-get($theme, font-size); height: map-get($theme, height); line-height: $line-height-6; }
+}
+
+@mixin list-plus-threaded($item, $theme) {
+    /*--------------------
+            Threaded
+    ---------------------*/
+    margin-left: map-get($theme, width) / 2; padding: map-get($theme, padding); border-left: map-get($theme, border-left);
+    #{$item} { margin-left: -(map-get($theme, width) / 2); }
+}
+
+@mixin list-plus-sizes($theme) {
+    /*--------------------
+           Sizes
+    ---------------------*/
+    &.small { font-size: $font-size-7; }
+    & { font-size: $font-size-6; }
+    &.large { font-size: $font-size-5; }
+    &.huge { font-size: $font-size-4; }
+}
+
+// Layout and theme mixin
+@mixin list-plus($theme) { margin: map-get($theme, container-margin); max-width: map-get($theme, container-max-width);
+    &:first-child { margin-top: 0; }
+    &:last-child { margin-bottom: 0; }
+}

@@ -1,0 +1,669 @@
+{{#extend "layout-1" current="widgets"}}
+{{! append html code into the content block declared in the layout partial }}
+
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack">
+                <section class="grid-stack-item col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix grid-stack-handle panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                4 COMMENTS
+                            </h2>
+                            <div class="dropdown pull-left">
+                                <a href="#" class="panel-header-link" id="panelDropdownMenu1" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>Selectable</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu lh-5" aria-labelledby="panelDropdownMenu1">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="comments">
+                                <div class="comment clearfix">
+                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                    <div class="content">
+                                        <a class="author" href="">Reece Collins</a>
+                                        <div class="metadata">
+                                            <span class="date">Sep 15, 2020</span>
+                                            <span class="hour">10:28 Am</span>
+                                        </div>
+                                    </div>
+                                    <p class="content text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                    </p>
+                                    <div class="content actions clearfix">
+                                        <div class="pull-left">
+                                            <a class="action" href=""><i class="fa fa-check icon-mr-ch"></i><span class="text">Approve</span></a>
+                                            <a class="action" href=""><i class="fa fa-ban icon-mr-ch"></i><span class="text">Spam</span></a>
+                                            <a class="action" href=""><i class="fa fa-trash icon-mr-ch"></i><span class="text">Delete</span></a>
+                                            <a class="action" href=""><i class="fa fa-heart icon-mr-ch"></i><span class="text">102</span></a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="btn btn-default btn-sm">Reply</a>
+                                        </div>
+                                    </div>
+                                    <div class="comments">
+                                        <div class="comment clearfix">
+                                            <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                            <div class="content">
+                                                <a class="author" href="">Reece Collins</a>
+                                                <div class="metadata">
+                                                    <span class="date">Sep 15, 2020</span>
+                                                    <span class="hour">10:28 Am</span>
+                                                </div>
+                                            </div>
+                                            <p class="content text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo
+                                                consequat.
+                                            </p>
+                                            <div class="content actions clearfix">
+                                                <div class="pull-left">
+                                                    <a class="action" href=""><i class="fa fa-check icon-mr-ch"></i><span class="text">Approve</span></a>
+                                                    <a class="action" href=""><i class="fa fa-ban icon-mr-ch"></i><span class="text">Spam</span></a>
+                                                    <a class="action" href=""><i class="fa fa-trash icon-mr-ch"></i><span class="text">Delete</span></a>
+                                                    <a class="action" href=""><i class="fa fa-heart icon-mr-ch"></i><span class="text">102</span></a>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <a href="" class="btn btn-default btn-sm">Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment clearfix">
+                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                    <div class="content">
+                                        <a class="author" href="">Reece Collins</a>
+                                        <div class="metadata">
+                                            <span class="date">Sep 15, 2020</span>
+                                            <span class="hour">10:28 Am</span>
+                                        </div>
+                                    </div>
+                                    <p class="content text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                    </p>
+                                    <div class="content actions clearfix">
+                                        <div class="pull-left">
+                                            <a class="action" href=""><i class="fa fa-check icon-mr-ch"></i><span class="text">Approve</span></a>
+                                            <a class="action" href=""><i class="fa fa-ban icon-mr-ch"></i><span class="text">Spam</span></a>
+                                            <a class="action" href=""><i class="fa fa-trash icon-mr-ch"></i><span class="text">Delete</span></a>
+                                            <a class="action" href=""><i class="fa fa-heart icon-mr-ch"></i><span class="text">102</span></a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="btn btn-default btn-sm">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment clearfix">
+                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                    <div class="content">
+                                        <a class="author" href="">Reece Collins</a>
+                                        <div class="metadata">
+                                            <span class="date">Sep 15, 2020</span>
+                                            <span class="hour">10:28 Am</span>
+                                        </div>
+                                    </div>
+                                    <p class="content text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud.
+                                    </p>
+                                    <div class="content actions clearfix">
+                                        <div class="pull-left">
+                                            <a class="action" href=""><i class="fa fa-check icon-mr-ch"></i><span class="text">Approve</span></a>
+                                            <a class="action" href=""><i class="fa fa-ban icon-mr-ch"></i><span class="text">Spam</span></a>
+                                            <a class="action" href=""><i class="fa fa-trash icon-mr-ch"></i><span class="text">Delete</span></a>
+                                            <a class="action" href=""><i class="fa fa-heart icon-mr-ch"></i><span class="text">102</span></a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="btn btn-default btn-sm">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="reply clearfix">
+                                    <div class="mb-3">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <a href="" class="btn btn-primary pull-right">Add Reply</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-12 col-lg-6">
+                    <!--Start Panel-->
+                    <div class="panel todoapp bgc-white-dark">
+                        <div class="panel-header grid-stack-handle  panel-header-p bgc-white-dark panel-header-md">
+                            <h2 class="pull-left">
+                                Todos
+                            </h2>
+                            <div class="new-wrap panel-input">
+                                <input class="new-todo form-control" placeholder="What needs to be done?" autofocus>
+                            </div>
+                            {{#embed "panel-icons" class="bgc-white-dark" slide="1"}}{{/embed}}
+                        </div>
+                        <div class="panel-body pt-1">
+                            <section class="todo-list-wrap">
+                                <footer class="footer">
+                                    <div class="toggle-wrap">
+                                        <label class="custom-control custom-checkbox mb-0 mr-0">
+                                            <input type="checkbox" class="toggle-all custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </div>
+                                    <span class="todo-count"></span>
+                                    <div class="filters">
+                                        <a href="#" data-id="all" class="selected">All</a>
+                                        <a href="#" data-id="active">Active</a>
+                                        <a href="#" data-id="completed">Completed</a>
+                                    </div>
+                                    <button class="btn btn-sm btn-default clear-completed">Clear completed</button>
+                                </footer>
+                                <ul class="todo-list"></ul>
+                                <footer class="footer">
+                                    <div class="toggle-wrap">
+                                        <label class="custom-control custom-checkbox mb-0 mr-0">
+                                            <input type="checkbox" class="toggle-all custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </div>
+                                    <span class="todo-count"></span>
+                                    <div class="filters">
+                                        <a href="#" data-id="all" class="selected">All</a>
+                                        <a href="#" data-id="active">Active</a>
+                                        <a href="#" data-id="completed">Completed</a>
+                                    </div>
+                                    <button class="btn btn-sm btn-default clear-completed">Clear completed</button>
+                                </footer>
+                            </section>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-12 col-lg-6">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Latest Reviews
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="#" class="panel-header-link" id="panelDropdownMenu3" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>Selectable</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu lh-5" aria-labelledby="panelDropdownMenu3">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="reviews">
+                                <div class="review clearfix">
+                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                    <div class="content">
+                                        <a class="author" href="">Reece Collins</a>
+                                        <div class="star rating rating-disable fs-5 float-sm-right" data-rating="3"
+                                             data-max-rating="5"></div>
+                                    </div>
+                                    <div class="content text text-indent">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Lorem Ipsum is simply
+                                        dummy text of the printing and typesetting industry.
+                                    </div>
+                                    <div class="content metadata">
+                                        <span class="date">Sep 15, 2020</span>
+                                        <span class="hour">10:28 Am</span>
+                                    </div>
+                                </div>
+                                <div class="review clearfix">
+                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                    <div class="content">
+                                        <a class="author" href="">James Foster</a>
+                                        <div class="star rating rating-disable fs-5 float-sm-right" data-rating="4"
+                                             data-max-rating="5"></div>
+                                    </div>
+                                    <div class="content text text-indent">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                                        Lorem Ipsum is simply
+                                        dummy text of the printing and typesetting industry.
+                                    </div>
+                                    <div class="content metadata">
+                                        <span class="date">Sep 14, 2020</span>
+                                        <span class="hour">13:21 Am</span>
+                                    </div>
+                                </div>
+                                <form class="new-review clearfix">
+                                    <div class="mb-3">
+                                        <div class="star rating rating-enable small mb-2" data-max-rating="5"></div>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <a href="" class="btn btn-default pull-right">Add Review</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-12 col-lg-6">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle  panel-header-p bgc-primary panel-header-sm">
+                            <h2 class="pull-left">
+                                Timeline
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-primary bgc-active-dark-trans"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-3">
+                            <div class="time-line threaded">
+                                <div class="tm-line-item">
+                                    <div class="tm-icon c-primary"><i class="fa fa-envelope"></i></div>
+                                    <div class="content">
+                                        <div class="metadata">
+                                            <span class="date">Today</span>
+                                            <span class="hour">10:30 PM</span>
+                                        </div>
+                                        <p class="text">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tm-line-item">
+                                    <div class="tm-icon c-danger"><i class="fa fa-exclamation-circle"></i></div>
+                                    <div class="content">
+                                        <div class="metadata">
+                                            <span class="date">Yesterday</span>
+                                            <span class="hour">23:33 AM</span>
+                                        </div>
+                                        <p class="text">
+                                            Consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tm-line-item">
+                                    <div class="tm-icon c-warning"><i class="fa fa-life-bouy"></i></div>
+                                    <div class="content">
+                                        <div class="metadata">
+                                            <span class="date">Sep 2, 2016</span>
+                                            <span class="hour">13:20 PM</span>
+                                        </div>
+                                        <p class="text">
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                            doloremque laudantium
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tm-line-item">
+                                    <div class="tm-icon c-info"><i class="fa fa-bitbucket"></i></div>
+                                    <div class="content">
+                                        <div class="metadata">
+                                            <span class="date">Aug 25, 2016</span>
+                                            <span class="hour">05:56 PM</span>
+                                        </div>
+                                        <p class="text">
+                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tm-line-item">
+                                    <div class="tm-icon c-primary"><i class="fa fa-shopping-bag"></i></div>
+                                    <div class="content">
+                                        <div class="metadata">
+                                            <span class="date">Jul 5, 2016</span>
+                                            <span class="hour">11:10 AM</span>
+                                        </div>
+                                        <p class="text">
+                                            Sed quia non numquam eius
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Sortable List
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p p-0">
+                            <div class="sortable-containment">
+                                <div class="pb-1"></div>
+                                <div class="list sortable-list celled m-0">
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="ui checked-list-checkbox child checkbox">
+                                            <input type="checkbox" name="apple">
+                                        </div>
+                                        <div class="checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-4">_manual.pdf</div>
+                                                <div class="col-sm-2">25 MB</div>
+                                                <div class="col-sm-2">10 sec</div>
+                                                <div class="col-sm-4">
+                                                    <div class="progress mt-1">
+                                                        <div class="progress-bar bg-info progress-bar-xs"
+                                                             style="width: 30%;" role="progressbar" aria-valuenow="30"
+                                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="ui checked-list-checkbox child checkbox">
+                                            <input type="checkbox" name="apple">
+                                        </div>
+                                        <div class="checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-4">bowhunting.txt</div>
+                                                <div class="col-sm-2">5 KB</div>
+                                                <div class="col-sm-2">3 sec</div>
+                                                <div class="col-sm-4">
+                                                    <div class="progress mt-1">
+                                                        <div class="progress-bar bg-info progress-bar-xs"
+                                                             style="width: 70%;" role="progressbar" aria-valuenow="70"
+                                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="ui checked-list-checkbox child checkbox">
+                                            <input type="checkbox" name="apple">
+                                        </div>
+                                        <div class="checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-4">funny_jokes.pdf</div>
+                                                <div class="col-sm-2">10 MB</div>
+                                                <div class="col-sm-2"><i class="fa fa-check"></i></div>
+                                                <div class="col-sm-4">
+                                                    <div class="progress mt-1">
+                                                        <div class="progress-bar bg-info progress-bar-xs"
+                                                             style="width: 100%;" role="progressbar" aria-valuenow="100"
+                                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="ui checked-list-checkbox child checkbox">
+                                            <input type="checkbox" name="apple">
+                                        </div>
+                                        <div class="checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-4">jane_straus.pdf</div>
+                                                <div class="col-sm-2">20 MB</div>
+                                                <div class="col-sm-2">20 sec</div>
+                                                <div class="col-sm-4">
+                                                    <div class="progress mt-1">
+                                                        <div class="progress-bar bg-info progress-bar-xs"
+                                                             style="width: 15%;" role="progressbar" aria-valuenow="15"
+                                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sortable-list-item checked-list-item p-0">
+                                        <div class="ui checked-list-checkbox child checkbox">
+                                            <input type="checkbox" name="apple">
+                                        </div>
+                                        <div class="checked-list-details sortable-list-handle">
+                                            <div class="row">
+                                                <div class="col-sm-4">hello_dolly.mp3</div>
+                                                <div class="col-sm-2">5 MB</div>
+                                                <div class="col-sm-2">15 sec</div>
+                                                <div class="col-sm-4">
+                                                    <div class="progress mt-1">
+                                                        <div class="progress-bar bg-info progress-bar-xs"
+                                                             style="width: 50%;" role="progressbar" aria-valuenow="50"
+                                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-1"></div>
+                            </div>
+                            <div class="panel-body-p text-indent">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Commodi
+                                consequatur ducimus, ea enim fugit ipsum laborum magnam perferendis quod saepe.
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Cart
+                            </h2>
+                            {{#embed 'panel-icons' slide='1' class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p p-0">
+                            <div class="panel-body-p text-indent">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Commodi
+                                consequatur ducimus, ea enim fugit ipsum laborum magnam perferendis quod saepe.
+                            </div>
+                            <div class="list celled mt-3">
+                                <div class="item checked-list-item p-0">
+                                    <div class="checked-list-checkbox">
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </div>
+                                    <div class="checked-list-details sortable-list-handle">
+                                        <div class="row">
+                                            <div class="col-sm-3">Molestias</div>
+                                            <div class="col-sm-3 mt-2 mt-sm-0"><img src="assets/img/products/p1.jpg" alt=""></div>
+                                            <div class="col-sm-4 mt-2 mt-sm-0">
+                                                <input id="max-qty" class="spin form-control" value="14"
+                                                       placeholder="Enter Number">
+                                            </div>
+                                            <div class="col-sm-2 mt-2 mt-sm-0">$250</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item checked-list-item p-0">
+                                    <div class="checked-list-checkbox">
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </div>
+                                    <div class="checked-list-details sortable-list-handle">
+                                        <div class="row">
+                                            <div class="col-sm-3">Excepturi</div>
+                                            <div class="col-sm-3 mt-2 mt-sm-0"><img src="assets/img/products/p2.jpg" alt=""></div>
+                                            <div class="col-sm-4 mt-2 mt-sm-0">
+                                                <input id="max-qty1" class="spin form-control" value="2"
+                                                       placeholder="Enter Number">
+                                            </div>
+                                            <div class="col-sm-2 mt-2 mt-sm-0">$400</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item checked-list-item p-0">
+                                    <div class="checked-list-checkbox">
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </div>
+                                    <div class="checked-list-details sortable-list-handle">
+                                        <div class="row">
+                                            <div class="col-sm-3">Similique</div>
+                                            <div class="col-sm-3 mt-2 mt-sm-0"><img src="assets/img/products/p3.jpg" alt=""></div>
+                                            <div class="col-sm-4 mt-2 mt-sm-0">
+                                                <input id="max-qty2" class="spin form-control" value="10"
+                                                       placeholder="Enter Number">
+                                            </div>
+                                            <div class="col-sm-2 mt-2 mt-sm-0">$2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item checked-list-item p-0">
+                                    <div class="checked-list-checkbox">
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </div>
+                                    <div class="checked-list-details sortable-list-handle">
+                                        <div class="row">
+                                            <div class="col-sm-3">Mollitia</div>
+                                            <div class="col-sm-3 mt-2 mt-sm-0"><img src="assets/img/products/no-img.jpg" alt=""></div>
+                                            <div class="col-sm-4 mt-2 mt-sm-0">
+                                                <input id="max-qty3" class="spin form-control" value="8"
+                                                       placeholder="Enter Number">
+                                            </div>
+                                            <div class="col-sm-2 mt-2 mt-sm-0">21$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix panel-body-p">
+                                <a href="" class="btn btn-success pull-right ml-4">Checkout</a>
+                                <a href="" class="btn btn-primary pull-right">Update</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="40" class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                    <!--Start Panel-->
+                    <div class="panel weather-lg c-white-dark pb-0">
+                        <canvas class="weather-bg" id="weather-bg"></canvas>
+                        <div class="panel-header grid-stack-handle  panel-header-p panel-header-lg">
+                            <h2 class="pull-left">
+                                SHANGHAI
+                            </h2>
+                            <a href="" class="panel-header-link ml-1 hidden-xs-down bgc-active-light-trans">Monday, Sep 15</a>
+                            {{#embed "panel-icons" slide="1" class="hidden-xs-down bgc-light-trans bgc-active-light-trans"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="row today">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="day mb-2">
+                                        <i class="wi wi-day-cloudy-gusts"></i>
+                                        <span class="ml-4 fs-1">22 °C</span>
+                                    </div>
+                                    <div class="night">
+                                        <i class="fs-3 wi wi-night-clear"></i>
+                                        <span class="ml-4 fs-3">10 °C</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="weather-details fs-5 lh-5">
+                                        <div class="humidity">
+                                            <i class="wi wi-raindrop"></i>
+                                            <span>80 %</span>
+                                        </div>
+                                        <div class="pressure">
+                                            <i class="wi wi-barometer"></i>
+                                            <span>750 mmHg</span>
+                                        </div>
+                                        <div class="wind">
+                                            <i class="wi wi-strong-wind"></i>
+                                            <span>5 mph SE</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="week-weather bgc-white-dark">
+                                <div class="row">
+                                    <div class="col-sm-3 col-6 text-center">
+                                        <div class="week-day mb-1 text-uppercase">Tue</div>
+                                        <div class="day-time"><i class="fs-4 lh-5 wi wi-day-cloudy-windy"></i><span>21 °C</span>
+                                        </div>
+                                        <div class="nighttime"><i class="fs-4 lh-5 wi wi-night-alt-cloudy"></i><span>13 °C</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-6 text-center">
+                                        <div class="week-day mb-1 text-uppercase">Wed</div>
+                                        <div class="day-time"><i
+                                            class="fs-4 lh-5 wi wi-day-sunny"></i><span>20 °C</span></div>
+                                        <div class="nighttime"><i
+                                            class="fs-4 lh-5 wi wi-night-alt-hail"></i><span>11 °C</span></div>
+                                    </div>
+                                    <div class="col-sm-3 hidden-xs-down text-center">
+                                        <div class="week-day mb-1 text-uppercase">Thu</div>
+                                        <div class="day-time"><i class="fs-4 lh-5 wi wi-day-rain"></i><span>23 °C</span>
+                                        </div>
+                                        <div class="nighttime"><i class="fs-4 lh-5 wi wi-night-alt-lightning"></i><span>12 °C</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 hidden-xs-down text-center">
+                                        <div class="week-day mb-1 text-uppercase">Fri</div>
+                                        <div class="day-time"><i
+                                            class="fs-4 lh-5 wi wi-day-sunny"></i><span>24 °C</span></div>
+                                        <div class="nighttime"><i
+                                            class="fs-4 lh-5 wi wi-night-cloudy"></i><span>14 °C</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="panel-wrap panel-grid-item grid-stack-item col-sm-12 col-md-12 col-lg-6">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark calendar-widget">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-sm">
+                            <h2 class="pull-left">
+                                Calendar
+                            </h2>
+                            {{#embed "panel-icons" class="bgc-white-dark" slide="1"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-1">
+                            <div id='calendar' class="calendar"></div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/widget');
+        </script>
+    {{/content}}
+{{/extend}}

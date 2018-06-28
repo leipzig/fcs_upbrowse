@@ -1,0 +1,167 @@
+/*******************************
+             List
+*******************************/
+
+/*-------------------
+         View
+--------------------*/
+
+/* List */
+$list-style-type: none !default;
+$list-style-position: outside !default;
+$margin: 0 !default;
+$vertical-padding: 0 !default;
+$ui-list-horizontal-padding: 0 !default;
+
+/* List Item */
+$ui-list-item-vertical-padding: 0 !default;
+$ui-list-item-horizontal-padding: 0 !default;
+$ui-list-item-padding: $ui-list-item-vertical-padding $ui-list-item-horizontal-padding !default;
+$ui-list-item-line-height: $line-height-lg !default;
+
+/* Child List */
+$ui-list-child-list-padding: 0.5em 0 0.25em 0.5em !default;
+$ui-list-child-list-indent: 1em !default;
+
+/*-------------------
+      Elements
+--------------------*/
+
+/* Icon */
+$ui-list-icon-distance: 0 !default;
+$ui-list-icon-offset: (($ui-list-item-line-height - 1rem) / 2) !default;
+$ui-list-icon-transition: color $default-duration $default-easing !default;
+$ui-list-icon-vertical-align: top !default;
+$ui-list-icon-content-vertical-align: top !default;
+
+/* Image */
+$ui-list-image-distance: 0.5em !default;
+$ui-list-image-align: top !default;
+
+/* Content */
+$ui-list-content-distance: 1em !default;
+$ui-list-content-line-height: $ui-list-item-line-height !default;
+$ui-list-content-line-height-offset: ($ui-list-content-line-height - 1em) / 2 !default;
+$ui-list-content-vertical-align: top !default;
+
+/* Header */
+$ui-list-item-header-font-size: $font-size-6 !default;
+$ui-list-item-header-color: $link-color !default;
+
+/* Description */
+$ui-list-item-description-color: $gray-dark !default;
+
+/* Link */
+$ui-list-item-link-color: $link-color !default;
+$ui-list-item-link-hover-color: $link-hover-color !default;
+
+/* Header Link */
+$ui-list-item-header-link-color: $ui-list-item-link-color !default;
+$ui-list-item-header-link-hover-color: $ui-list-item-link-hover-color !default;
+
+/* Linked Icon */
+$ui-list-item-link-icon-color: $gray !default;
+$ui-list-item-link-icon-hover-color: $gray-dark !default;
+
+/*-------------------
+        States
+--------------------*/
+
+$ui-list-disabled-color: $gray !default;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Float */
+$ui-list-float-distance: 1em !default;
+$ui-list-left-float-margin: 0 $ui-list-float-distance 0 0 !default;
+$ui-list-right-float-margin: 0 $ui-list-float-distance !default;
+
+/* Horizontal */
+$ui-list-horizontal-spacing: 1em !default;
+$ui-list-horizontal-icon-distance: 0.25em !default;
+$ui-list-horizontal-vertical-align: middle !default;
+
+/* Link List */
+$ui-list-link-list-item-color: $gray-dark !default;
+$ui-list-link-list-item-hover-color: $gray-dark !default;
+$ui-list-link-list-item-down-color: $gray-dark !default;
+$ui-list-link-list-item-active-color: $gray-dark !default;
+$ui-list-link-list-transition: $default-duration color $default-easing !default;
+
+
+/* Selection List */
+$ui-list-selection-list-item-margin: 0 !default;
+$ui-list-selection-list-item-vertical-padding: 0.7em !default;
+$ui-list-selection-list-item-horizontal-padding: 0.5em !default;
+$ui-list-selection-list-transition: $default-duration color $default-easing, $default-duration padding-left $default-easing, $default-duration background-color $default-easing !default;
+
+/* Selection List States */
+$ui-list-selection-list-background: transparent !default;
+$ui-list-selection-list-color: $gray-dark !default;
+$ui-list-selection-list-hover-background: $white-darker !default;
+$ui-list-selection-list-hover-color: $gray-dark !default;
+$ui-list-selection-list-down-background: none !default;
+$ui-list-selection-list-down-color: $gray-dark !default;
+$ui-list-selection-list-active-background: $white-darkest !default;
+$ui-list-selection-list-active-color: $gray-dark !default;
+
+/* Animated List */
+$ui-list-animated-duration: 0.25s !default;
+$ui-list-animated-delay: 0s !default;
+$ui-list-animated-list-transition: color $default-easing $ui-list-animated-duration $ui-list-animated-delay, padding-left $default-easing $ui-list-animated-duration $ui-list-animated-delay, background-color $default-easing $ui-list-animated-duration $ui-list-animated-delay !default;
+$ui-list-animated-list-indent: 1em !default;
+
+/* Bulleted */
+$ui-list-bullet-distance: 1.5rem !default;
+$ui-list-bullet-offset: -$ui-list-bullet-distance !default;
+
+$ui-list-bullet-opacity: 1 !default;
+$ui-list-bullet-character: '•' !default;
+$ui-list-bullet-color: inherit !default;
+$ui-list-bullet-link-color: $gray-dark !default;
+$ui-list-bullet-vertical-align: top !default;
+$ui-list-bullet-child-distance: 3em !default;
+
+/* Horizontal Bullets */
+$ui-list-horizontal-bullet-color: $gray-dark !default;
+$ui-list-horizontal-bullet-spacing: $ui-list-bullet-distance + 0.5rem !default;
+
+/* Ordered List */
+$ui-list-ordered-count-name: ordered !default;
+$ui-list-ordered-count-content: counters(ordered, ".") " " !default;
+$ui-list-ordered-count-color: $gray-dark !default;
+$ui-list-ordered-count-distance: 1.5rem !default;
+$ui-list-ordered-count-opacity: 0.8 !default;
+$ui-list-ordered-count-text-align: right !default;
+$ui-list-ordered-count-vertical-align: middle !default;
+
+$ui-list-ordered-child-count-distance: 3em !default;
+$ui-list-ordered-child-count-offset: -2em !default;
+
+/* Horizontal Ordered */
+$ui-list-horizontal-ordered-count-distance: 0.5em !default;
+
+/* Divided */
+$ui-list-divided-border-width: 1px !default;
+$ui-list-divided-border: $ui-list-divided-border-width solid $gray-lighter !default;
+$ui-list-divided-inverted-border-color: $gray-lighter !default;
+$ui-list-divided-child-list-border: none !default;
+$ui-list-divided-child-item-border: none !default;
+
+/* Divided Horizontal */
+$ui-list-horizontal-divided-spacing: ($ui-list-horizontal-spacing / 2) !default;
+$ui-list-horizontal-divided-line-height: 0.6 !default;
+
+/* Divided */
+$ui-list-celled-border-width: 1px !default;
+$ui-list-celled-border: $ui-list-celled-border-width solid $gray-lighter !default;
+$ui-list-celled-inverted-border: $ui-list-divided-border-width solid $gray-lighter !default;
+$ui-list-celled-horizontal-padding: 0.5em !default;
+$ui-list-celled-child-list-border: none !default;
+$ui-list-celled-child-item-border: none !default;
+
+/* Divided Horizontal */
+$ui-list-horizontal-celled-spacing: ($ui-list-horizontal-spacing / 2) !default;
+$ui-list-horizontal-celled-line-height: 0.6 !default;

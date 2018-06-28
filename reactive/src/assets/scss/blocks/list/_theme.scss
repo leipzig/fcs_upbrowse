@@ -1,0 +1,376 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: Adapted List plugin
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+@import 'variables';
+
+ul.list,
+ol.list,
+.list { list-style-type: $list-style-type; margin: $margin; padding: $vertical-padding $ui-list-horizontal-padding; }
+
+ul.list:first-child,
+ol.list:first-child,
+.list:first-child { margin-top: 0; padding-top: 0; }
+
+ul.list:last-child,
+ol.list:last-child,
+.list:last-child { margin-bottom: 0; padding-bottom: 0; }
+
+ol.list li[value]:before { font-family: FontAwesome; content: attr(value); }
+.list.list-unstyled {margin-left: 0}
+.list.list-unstyled>li:before {content: ''}
+
+
+/*******************************
+            Content
+*******************************/
+
+/* List Item */
+ul.list li,
+ol.list li,
+.list > .item,
+.list .list > .item { display: list-item; table-layout: fixed; list-style: $list-style-type $list-style-position; padding: $ui-list-item-vertical-padding $ui-list-item-horizontal-padding .1em; line-height: $ui-list-item-line-height; position: relative; }
+
+ul.list > li:first-child:after,
+ol.list > li:first-child:after,
+.list > .list > .item,
+.list > .item:after { content: ''; display: block; height: 0; clear: both; visibility: hidden; }
+
+ul.list li:first-child,
+ol.list li:first-child,
+.list .list > .item:first-child,
+.list > .item:first-child { padding-top: 0; }
+ul.list li:last-child,
+ol.list li:last-child,
+.list .list > .item:last-child,
+.list > .item:last-child { padding-bottom: 0; }
+
+/* Child List */
+ul.list ul,
+ol.list ol,
+.list .list { clear: both; margin: 0; padding: $ui-list-child-list-padding; }
+
+/* Icon */
+.list .list > .item .icon,
+.list > .item .icon { display: table-cell; margin: 0; padding-top: $ui-list-icon-offset; padding-right: $ui-list-icon-distance; vertical-align: $ui-list-icon-content-vertical-align;
+    transition: $ui-list-icon-transition; width: 1.2em; text-align: center;}
+.list .list > .item [class*="top aligned"].icon,
+.list > .item > [class*="top aligned"].icon { vertical-align: top; }
+.list .list > .item .icon:only-child,
+.list > .item .icon:only-child { display: inline-block; vertical-align: $ui-list-icon-vertical-align; }
+
+
+/* Image */
+.list .list > .item .image,
+.list > .item .image { display: table-cell; margin: 0; margin-right: $ui-list-image-distance; vertical-align: $ui-list-image-align; width: 50px}
+.list .list > .item > [class*="top aligned"].image,
+.list > .item > [class*="top aligned"].image { vertical-align: top; }
+.list .list > .item .image img,
+.list > .item .image img { vertical-align: $ui-list-image-align; }
+
+.list .list > .item > img.image,
+.list .list > .item .image:only-child,
+.list > .item > img.image,
+.list > .item .image:only-child { display: inline-block; padding-right: 0; }
+
+/* Content */
+.list .list > .item .content,
+.list > .item .content { line-height: $ui-list-content-line-height; }
+.list .list > .item .image + .content,
+.list .list > .item .icon + .content,
+.list > .item .image + .content,
+.list > .item .icon + .content { display: table-cell; padding-left: $ui-list-content-distance; vertical-align: $ui-list-content-vertical-align; }
+.list .list > .item > img.image + .content,
+.list > .item > img.image + .content { display: inline-block; }
+.list .list > .item [class*="top aligned"].content,
+.list > .item > [class*="top aligned"].content { vertical-align: top; }
+.list .list > .item .content > .list,
+.list > .item .content > .list { margin-left: 0; padding-left: 0; }
+
+/* Item Link */
+.list .list > a.item,
+.list > a.item { cursor: pointer; color: $ui-list-item-link-color; position: relative; display: block; }
+.list .list > a.item:hover,
+.list > a.item:hover { color: $ui-list-item-link-hover-color; }
+
+/* Linked Item Icons */
+.list .list > a.item .icon,
+.list > a.item .icon { color: $ui-list-item-link-icon-color; }
+
+
+/* Header */
+.list .list > .item .header,
+.list > .item .header {display: block; margin: 0; font-size: $ui-list-item-header-font-size; }
+.list .list > .item .description,
+.list > .item .description {display: block; color: $ui-list-item-description-color; }
+
+/* Floated Content */
+.list .list > .item [class*="left floated"],
+.list > .item [class*="left floated"] {float: left; margin: $ui-list-left-float-margin; }
+.list .list > .item [class*="right floated"],
+.list > .item [class*="right floated"] {float: right; margin: $ui-list-right-float-margin; }
+
+/*******************************
+            Coupling
+*******************************/
+
+.menu .list > .item,
+.menu .list .list > .item {display: list-item; table-layout: fixed; list-style: $list-style-type $list-style-position; padding: $ui-list-item-vertical-padding $ui-list-item-horizontal-padding; line-height: $ui-list-item-line-height; }
+.menu .list .list > .item:before,
+.menu .list > .item:before { border: 0; background: none; }
+.menu .list .list > .item:first-child,
+.menu .list > .item:first-child { padding-top: 0; }
+.menu .list .list > .item:last-child,
+.menu .list > .item:last-child { padding-bottom: 0; }
+
+
+/*******************************
+            Types
+*******************************/
+
+/*-------------------
+      Horizontal
+--------------------*/
+
+.horizontal.list {display: inline-block; }
+.horizontal.list > .item {display: inline-block; margin-left: $ui-list-horizontal-spacing; }
+//.horizontal.list > .item:first-child {margin-left: 0 !important; padding-left: 0 !important; }
+.horizontal.list .list {padding-left: 0; padding-bottom: 0; }
+
+/* Horizontal List */
+.horizontal.list > .item .icon {margin: 0; padding: 0 $ui-list-horizontal-icon-distance 0 0; }
+.horizontal.list > .item .icon,
+.horizontal.list > .item .icon + .content {float: none; display: inline-block; }
+
+
+/*******************************
+             States
+*******************************/
+
+/*-------------------
+       Disabled
+--------------------*/
+
+.list .list > .disabled.item,
+.list > .disabled.item {pointer-events: none; color: $ui-list-disabled-color !important; }
+
+/*-------------------
+        Hover
+--------------------*/
+
+.list .list > a.item:hover .icon,
+.list > a.item:hover .icon {color: $ui-list-item-link-icon-hover-color; }
+
+
+/*******************************
+           Variations
+*******************************/
+/*-------------------
+       Link
+--------------------*/
+
+.link.list .item,
+.link.list a.item,
+.link.list .item a {color: $ui-list-link-list-item-color; transition: $ui-list-link-list-transition; }
+.link.list a.item:hover,
+.link.list .item a:hover {color: $ui-list-link-list-item-hover-color; }
+.link.list a.item:active,
+.link.list .item a:active {color: $ui-list-link-list-item-down-color; }
+.link.list .active.item,
+.link.list .active.item a {color: $ui-list-link-list-item-active-color; }
+
+/*-------------------
+      Selection
+--------------------*/
+
+.selection.list .list > .item,
+.selection.list > .item {cursor: pointer; background: $ui-list-selection-list-background; padding: $ui-list-selection-list-item-vertical-padding $ui-list-selection-list-item-horizontal-padding; margin: $ui-list-selection-list-item-margin; color: $ui-list-selection-list-color; transition: $ui-list-selection-list-transition; }
+.selection.list .list > .item:last-child,
+.selection.list > .item:last-child {margin-bottom: 0; }
+.selection.list.list >  .item:hover,
+.selection.list > .item:hover {background: $ui-list-selection-list-hover-background; color: $ui-list-selection-list-hover-color; }
+.selection.list .list > .item:active,
+.selection.list > .item:active {background: $ui-list-selection-list-down-background; color: $ui-list-selection-list-down-color; }
+.selection.list .list > .item.active,
+.selection.list > .item.active {background: $ui-list-selection-list-active-background; color: $ui-list-selection-list-active-color; }
+
+/* Celled / Divided Selection List */
+.celled.selection.list .list > .item,
+.divided.selection.list .list > .item,
+.celled.selection.list > .item,
+.divided.selection.list > .item {border-radius: 0; }
+
+/*-------------------
+       Animated
+--------------------*/
+
+.animated.list > .item {transition: $ui-list-animated-list-transition; }
+.animated.list:not(.horizontal) > .item:hover {padding-left: $ui-list-animated-list-indent; }
+
+/*-------------------
+       Fitted
+--------------------*/
+.fitted.list:not(.selection) .list > .item,
+.fitted.list:not(.selection) > .item {padding-left: 0; padding-right: 0; }
+.fitted.selection.list .list > .item,
+.fitted.selection.list > .item {margin-left: -$ui-list-selection-list-item-horizontal-padding; margin-right: -$ui-list-selection-list-item-horizontal-padding; }
+
+/*-------------------
+      Bulleted
+--------------------*/
+
+ul.list,
+.bulleted.list {margin-left: $ui-list-bullet-distance; }
+ul.list li,
+.bulleted.list .list > .item,
+.bulleted.list > .item {position: relative; }
+ul.list li:before,
+.bulleted.list .list > .item:before,
+.bulleted.list > .item:before {position: absolute; top: auto; left: auto; margin-left: $ui-list-bullet-offset; content: $ui-list-bullet-character; opacity: $ui-list-bullet-opacity; color: $ui-list-bullet-color; vertical-align: $ui-list-bullet-vertical-align; }
+
+ul.list ul,
+.bulleted.list .list {padding-left: $ui-list-bullet-child-distance; }
+
+/* Horizontal Bulleted */
+ul.horizontal.bulleted.list,
+.horizontal.bulleted.list {margin-left: 0; }
+ul.horizontal.bulleted.list li,
+.horizontal.bulleted.list > .item {margin-left: $ui-list-horizontal-bullet-spacing; }
+ul.horizontal.bulleted.list li:first-child,
+.horizontal.bulleted.list > .item:first-child {margin-left: 0; }
+ul.horizontal.bulleted.list li:first-child::before,
+.horizontal.bulleted.list > .item:first-child::before {display: none; }
+
+/*-------------------
+       Ordered
+--------------------*/
+
+ol.list,
+.ordered.list,
+.ordered.list .list,
+ol.list ol { counter-reset: ordered; margin-left: $ui-list-ordered-count-distance; list-style-type: none; }
+ol.list li,
+.ordered.list .list > .item,
+.ordered.list > .item { list-style-type: none; position: relative; }
+ol.list li:before,
+.ordered.list .list > .item:before,
+.ordered.list > .item:before { position: absolute; top: auto; left: auto; margin-left: -($ui-list-ordered-count-distance); counter-increment: $ui-list-ordered-count-name; content: $ui-list-ordered-count-content; text-align: $ui-list-ordered-count-text-align; color: $ui-list-ordered-count-color; vertical-align: $ui-list-ordered-count-vertical-align; opacity: $ui-list-ordered-count-opacity;}
+
+
+/* Child Lists */
+ol.list ol,
+.ordered.list .list { margin-left: $ui-list-ordered-child-count-distance; }
+ol.list ol li:before,
+.ordered.list .list > .item:before { margin-left: $ui-list-ordered-child-count-offset; }
+
+/* Horizontal Ordered */
+ol.horizontal.list,
+.ordered.horizontal.list { margin-left: 0; }
+ol.horizontal.list li:before,
+.ordered.horizontal.list .list > .item:before,
+.ordered.horizontal.list > .item:before { position: static; margin: 0 $ui-list-horizontal-ordered-count-distance 0 0; }
+
+.checked-list-item { position: relative;
+    .checked-list-checkbox { min-height: 50px; display: flex!important; float: left; justify-content: center; align-items: center;
+        position: absolute!important; height: 100%;  width: 62px;
+        label { margin: 0; padding: ($ui-check-label-distance - 1rem) 0 0 ($ui-check-label-distance - 1rem) !important;}
+    }
+    .checked-list-details { margin-left: 64px; padding: 18px 28px 18px 0; display: block;
+        > * { display: flex; align-items: center; }
+    }
+}
+.sortable-list-item { transition: background .2s;
+    .sortable-list-handle { position: relative; }
+    &.ui-sortable-helper { background: $white-darker; border: 1px dashed $white-darkest !important; }
+}
+
+/*-------------------
+       Divided
+--------------------*/
+
+.divided.list > .item { border-top: $ui-list-divided-border; }
+.divided.list .list > .item { border-top: $ui-list-divided-child-list-border; }
+.divided.list .item .list > .item { border-top: $ui-list-divided-child-item-border; }
+.divided.list .list > .item:first-child,
+.divided.list > .item:first-child { border-top: 0; }
+
+/* Sub Menu */
+.divided.list:not(.horizontal) .list > .item:first-child { border-top-width: $ui-list-divided-border-width; }
+
+/* Divided bulleted */
+.divided.bulleted.list:not(.horizontal),
+.divided.bulleted.list .list { margin-left: 0; padding-left: 0; }
+.divided.bulleted.list .list > .item:not(.horizontal),
+.divided.bulleted.list > .item:not(.horizontal) { padding-left: $ui-list-bullet-distance; }
+
+/* Divided Ordered */
+.divided.ordered.list { margin-left: 0; }
+.divided.ordered.list .list > .item,
+.divided.ordered.list > .item { padding-left: $ui-list-ordered-count-distance; }
+.divided.ordered.list .item .list { margin-left: 0; margin-right: 0; padding-bottom: $ui-list-item-vertical-padding; }
+.divided.ordered.list .item .list > .item { padding-left: $ui-list-ordered-child-count-distance; }
+
+/* Divided Selection */
+.divided.selection.list .list > .item,
+.divided.selection.list > .item { margin: 0; border-radius: 0; }
+
+/* Divided horizontal */
+.divided.horizontal.list { margin-left: 0; }
+.divided.horizontal.list > .item { border-top: 0; border-left: $ui-list-divided-border; margin: 0; padding-left: $ui-list-horizontal-divided-spacing; padding-right: $ui-list-horizontal-divided-spacing; line-height: $ui-list-horizontal-divided-line-height; }
+.horizontal.divided.list > .item:first-child { border-left: 0; }
+.horizontal.list .list>.item>.content,
+.horizontal.list .list>.item>.icon,
+.horizontal.list .list>.item>.image,
+.horizontal.list>.item>.content,
+.horizontal.list>.item>.icon,
+.horizontal.list>.item>.image { vertical-align: middle; }
+
+/* Inverted */
+.divided.inverted.list > .item,
+.divided.inverted.list > .list,
+.divided.inverted.horizontal.list > .item { border-color: $ui-list-divided-inverted-border-color; }
+
+
+/*-------------------
+        Celled
+--------------------*/
+.celled.list > .item,
+.celled.list > .list { border-top: $ui-list-celled-border; padding-left: $ui-list-celled-horizontal-padding; padding-right: $ui-list-celled-horizontal-padding; }
+.celled.list > .item:last-child { border-bottom: $ui-list-celled-border; }
+
+/* Padding on all elements */
+.celled.list > .item:first-child,
+.celled.list > .item:last-child { padding-top: $ui-list-item-vertical-padding; padding-bottom: $ui-list-item-vertical-padding; }
+
+/* Sub Menu */
+.celled.list .item .list > .item { border-width: 0; }
+.celled.list .list > .item:first-child { border-top-width: 0; }
+
+/* Celled Bulleted */
+.celled.bulleted.list { margin-left: 0; }
+.celled.bulleted.list .list > .item,
+.celled.bulleted.list > .item { padding-left: ($ui-list-bullet-distance); }
+.celled.bulleted.list .item .list { margin-left: -($ui-list-bullet-distance); margin-right: -($ui-list-bullet-distance); padding-bottom: $ui-list-item-vertical-padding; }
+
+/* Celled Ordered */
+.celled.ordered.list { margin-left: 0; }
+.celled.ordered.list .list > .item,
+.celled.ordered.list > .item { padding-left: $ui-list-ordered-count-distance; }
+.celled.ordered.list .item .list { margin-left: 0; margin-right: 0; padding-bottom: $ui-list-item-vertical-padding; }
+.celled.ordered.list .list > .item { padding-left: $ui-list-ordered-child-count-distance; }
+
+/* Celled Horizontal */
+.horizontal.celled.list { margin-left: 0; }
+.horizontal.celled.list .list > .item,
+.horizontal.celled.list > .item { border-top: 0; border-left: $ui-list-celled-border; margin: 0; padding-left: $ui-list-horizontal-celled-spacing; padding-right: $ui-list-horizontal-celled-spacing; line-height: $ui-list-horizontal-celled-line-height; }
+.horizontal.celled.list .list > .item:last-child,
+.horizontal.celled.list > .item:last-child { border-bottom: 0; border-right: $ui-list-celled-border; }
+
+/* Inverted */
+.celled.inverted.list > .item,
+.celled.inverted.list > .list { border-color: $ui-list-celled-inverted-border; }
+.celled.inverted.horizontal.list .list > .item,
+.celled.inverted.horizontal.list > .item { border-color: $ui-list-celled-inverted-border; }

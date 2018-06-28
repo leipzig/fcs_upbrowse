@@ -1,0 +1,93 @@
+#fine-uploader-s3 .preview-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* to ensure consistent size of tiles - only display status text before auto-retry or after failure */
+.qq-gallery .qq-choice-text {
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-top: 2px;
+    width: inherit;
+    display: block;
+    text-align: left;
+}
+
+#experiment {
+    position: relative;
+    min-height: 100px;
+    max-height: 200px;
+    overflow-y: hidden;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px dashed #CCCCCC;
+    background-color: #FAFAFA;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    color: #686868;
+}
+
+
+
+.experiment-date { color:#000000;}
+.experiment-moniker { color:#000000;}
+.experiment-id  { color:#000000;}
+
+
+
+.sidebar-nav h3 {
+    position: relative;
+    display: block;
+    padding: 13px 15px;
+    color: #adb5bd;
+    outline-width: 0;
+    transition: all .3s ease-out;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.has-arrow:active,.has-arrow:focus{
+   color: #f8f9fa;
+    text-decoration: none;
+    background: #0b7285;
+}
+
+.activated{
+    color: #f8f9fa;
+    text-decoration: none;
+    background: #0b7285;
+}
+
+.choicearea {
+    display: block;
+    position: relative;
+    min-height: 20px;
+    max-height: 50px;
+    overflow-y: hidden;
+    width: inherit;
+    border-radius: 6px;
+    border: 1px dashed #CCCCCC;
+    background-color: #FAFAFA;
+    padding: 5px;
+}
+
+.choicearea h3 {        
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:inline;
+}
+
+.choicearea .h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:inline;
+}
+
+#stagefile {
+        float:right;
+}

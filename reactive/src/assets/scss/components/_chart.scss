@@ -1,0 +1,69 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: chart
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.chart-wrap { position: relative; overflow: hidden; width: 100%; }
+.chart-labels {
+    .item { margin-right: 2rem; margin-left: 0; font-size: $font-size-7;
+        &:last-child { margin-right: 0 !important; }
+    }
+}
+
+/* Specific mapael css class are below
+* 'mapael' class is added by plugin
+*/
+
+.world-map { opacity: 0; min-height: 600px; }
+.world-map.mapael { position: relative; opacity: 1;
+    .search { display: block;  transition: opacity .3s; max-width: 350px;  width: 100%; right: 90px; z-index: 11; opacity: 0.9; position: absolute;
+        &:hover { opacity: 1; }
+        .panel-header { background: $white-dark; }
+        .panel-body { height: auto !important; }
+    }
+    .mapTooltip { position: absolute; background-color: clr( body-darkest ); opacity: .8; border-radius: 4px;
+        padding: 10px; z-index: 1000; max-width: 200px; display: none; color: $white-dark; }
+    .map { position: relative; }
+    /* For all zoom buttons */
+    .zoomButton { @extend .btn-sm-icon; @extend .btn-default; position: absolute; top: 0; font-weight: bold; left: 10px; user-select: none; }
+    /* Reset Zoom button first */
+    .zoomReset { top: 10px; }
+    /* Then Zoom In button */
+    .zoomIn { top: 50px; }
+    /* Then Zoom Out button */
+    .zoomOut { top: 90px; }
+    .hamburger-btn:hover { background: none !important; }
+}
+
+@include media-breakpoint-down(lg) {
+    .world-map.mapael .search { position: relative; right: auto; max-width: none;
+        .panel-header { border-bottom: 1px solid $gray-lighter; background: $white-darkest; }
+    }
+    .world-map.mapael .search-results { display: inline-block !important; visibility: visible !important; }
+}
+@include media-breakpoint-down(xs) {
+    .world-map.mapael .map { min-height: 150px; }
+    .chart-labels {
+        .item { margin-left: 0 !important; margin-right: .5rem;
+            span { margin: 0 0 -.2em 0; }
+        }
+    }
+}
+
+.spark-line-full { display: block; }
+.spark-line-inline { position: relative; top: .15em; }
+.spark-widget { cursor: pointer; @include clearfix; position: relative;
+    &.bgc-warning:hover { background: darken($brand-warning, 2) !important; }
+    &.bgc-danger:hover { background: darken($brand-danger, 2) !important; }
+    &.bgc-primary:hover { background: darken($brand-primary, 2) !important; }
+    &.bgc-info:hover { background: darken($brand-info, 2) !important; }
+    &.bgc-success:hover { background: darken($brand-success, 2) !important; }
+}
+
+.easy-pie { position: relative;
+    .percent { position: absolute; text-align: center; width: 100%; left: 0; top: calc(50% - 1em); align-self: center; }
+}
+
+

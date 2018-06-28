@@ -1,0 +1,45 @@
+/*!
+ * @version: 1.1.1
+ * @name: Calendar
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+@import "variables";
+.calendar-widget {
+    .fc.calendar { margin: $calendar-margin; max-width: $calendar-max-width;
+        // static background
+        // background: url('../img/skylg.jpg') center right;  background-size: cover;
+        .fc-toolbar.fc-header-toolbar button {margin: $calendar-header-margin}
+        //.fc-title { color: }
+
+        /*-------------------
+              body
+        --------------------*/
+        .fc-month-view th,
+        .fc-month-view td { border: 0; text-align: center; vertical-align: middle; background: none; }
+        th,
+        td { background: none; }
+        th { text-transform: capitalize; font-size: $calendar-th-fs; font-weight: 400; line-height: $calendar-th-lh;}
+        &.fc-ltr .fc-basic-view .fc-day-top .fc-day-number { float: none; display: inline-block; height: $calendar-today-height;
+            width: $calendar-today-height; line-height: $calendar-today-height;}
+        .fc-basic-view .fc-body .fc-row { min-height: 0; }
+        .fc-day-top.fc-today.fc-state-highlight { background-color: $white-darkest; border-radius: $calendar-today-border-radius; }
+        .fc-day-top.fc-today.fc-state-highlight .fc-day-number { background-color: $calendar-today-bg; color: $white-dark;
+            border-radius: $calendar-today-border-radius; }
+        .fc-event-container {display: none}
+        .current-week { border-radius: $calendar-today-border-radius; margin: 6px 0; }
+        button { text-transform: capitalize; }
+        .fc-state-down, .fc-state-active { background-color: $white-darkest !important; }
+        .fc-scroller {overflow: visible !important;}
+    }
+}
+
+.panel-wrap[max-width~="732px"] {
+    .fc.calendar .fc-toolbar {
+        .fc-right,
+        .fc-left { display: block; width: 100%; }
+        .fc-right { margin-top: 1rem; }
+        .btn { padding-left: 1.2rem; padding-right: 1.2rem; }
+    }
+}

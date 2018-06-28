@@ -1,0 +1,96 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: buttons
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+@import "variables";
+
+/*--------------
+  Labeled Button
+---------------*/
+.btn-labeled-icon .btn,
+.btn-labeled-icon.btn { position: relative; }
+
+/* Left Labeled */
+.btn-labeled-icon > .btn > .icon,
+.btn-labeled-icon.btn > .icon {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    margin: $btn-labeled-icon-margin;
+    width: $btn-labeled-icon-width;
+    background-color: $btn-labeled-icon-background-color;
+    top: 0;
+    left: 0;
+    line-height: $btn-labeled-icon-line-height;
+}
+.btn-labeled-icon.btn-xs > .btn > .icon,
+.btn-labeled-icon.btn.btn-xs > .icon { width: $btn-labeled-icon-width-xs; line-height: $btn-labeled-icon-line-height-xs; }
+.btn-labeled-icon.btn-sm > .btn > .icon,
+.btn-labeled-icon.btn.btn-sm > .icon { width: $btn-labeled-icon-width-sm; line-height: $btn-labeled-icon-line-height-sm; }
+.btn-labeled-icon.btn-lg > .btn > .icon,
+.btn-labeled-icon.btn.btn-lg > .icon { width: $btn-labeled-icon-width-lg; line-height: $btn-labeled-icon-line-height-lg; }
+
+.btn-labeled-icon.left {
+    padding-left: $btn-labeled-icon-padding !important;
+    &.btn-xs { padding-left: $btn-labeled-icon-padding-xs !important; }
+    &.btn-sm { padding-left: $btn-labeled-icon-padding-sm !important; }
+    &.btn-lg { padding-left: $btn-labeled-icon-padding-lg !important; }
+}
+.btn-labeled-icon.left > .icon {
+    right: auto;
+    left: 0;
+    border-radius: 0;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+/* Right Labeled */
+.btn-labeled-icon.right {
+    padding-right: $btn-labeled-icon-padding !important;
+    &.btn-xs { padding-right: $btn-labeled-icon-padding-xs !important; }
+    &.btn-sm { padding-right: $btn-labeled-icon-padding-sm !important; }
+    &.btn-lg { padding-right: $btn-labeled-icon-padding-lg !important; }
+}
+.btn-labeled-icon.right > .icon {
+    left: auto;
+    right: 0;
+    border-radius: 0;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+
+.btn-labeled-icon > .btn > .icon:before,
+.btn-labeled-icon.btn > .icon:before,
+.btn-labeled-icon > .btn > .icon:after,
+.btn-labeled-icon.btn > .icon:after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.btn-labeled-icon .btn > .icon {
+    border-radius: 0;
+}
+.btn-labeled-icon .btn:first-child > .icon {
+    border-top-left-radius: $btn-border-radius;
+    border-bottom-left-radius: $btn-border-radius;
+}
+.btn-labeled-icon .btn:last-child > .icon {
+    border-top-right-radius: $btn-border-radius;
+    border-bottom-right-radius: $btn-border-radius;
+}
+.vertical .btn-labeled-icon.btn:first-child > .icon {
+    border-radius: 0;
+    border-top-left-radius: $btn-border-radius;
+}
+.vertical .btn-labeled-icon.btn:last-child > .icon {
+    border-radius: 0;
+    border-bottom-left-radius: $btn-border-radius;
+}

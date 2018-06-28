@@ -1,0 +1,284 @@
+/*******************************
+         Select Dropdown
+*******************************/
+$ui-drop-scrollbar-width: 1rem !default;
+
+$ui-drop-error-background-color: $white-darkest !default;
+$ui-drop-error-color: $brand-danger !default;
+$ui-drop-error-border-color: $brand-danger !default;
+$ui-drop-error-text-color: $brand-danger !default;
+
+/* Default Text */
+$ui-drop-default-text-color: $gray !default;
+$ui-drop-default-text-focus-color: $gray !default;
+
+/* Loading */
+$ui-drop-loading-zindex: -1 !default;
+
+/* Error */
+$ui-drop-error-item-text-color: $brand-danger !default;
+$ui-drop-error-item-hover-background: mix(clr( danger-lightest ), $white-dark, 15%) !default;
+$ui-drop-error-item-active-background: $state-danger-bg !default;
+
+/*-------------------
+       Loader
+--------------------*/
+$ui-drop-loader-size: $font-size-5 !default;
+$ui-drop-loader-speed: 0.6s !default;
+$ui-drop-loader-line-width: 0.2em !default;
+$ui-drop-loader-fill-color: rgba(0, 0, 0, 0.1) !default;
+$ui-drop-loader-line-color: $gray !default;
+$ui-drop-loader-offset : -($ui-drop-loader-size / 2) !default;
+$ui-drop-loader-margin : $ui-drop-loader-offset 0 0 $ui-drop-loader-offset !default;
+
+/*-------------------
+       Element
+--------------------*/
+
+$ui-drop-transition: box-shadow $default-duration $default-easing, width $default-duration $default-easing !default;
+$ui-drop-border-color: $gray-lighter !default;
+$ui-drop-raised-shadow: 0 2px 3px 0 $ui-drop-border-color !default;
+
+
+/* Dropdown Icon */
+$ui-drop-dropdown-icon-size: $font-size-5 !default;
+$ui-drop-dropdown-icon-margin: 0 0 0 $font-size-8 !default;
+
+/* Sub-Menu Dropdown Icon */
+$ui-drop-item-dropdown-icon-distance: $font-size-8 !default;
+$ui-drop-item-dropdown-icon-float: right !default;
+$ui-drop-item-dropdown-icon-margin: 0 0 0 $ui-drop-item-dropdown-icon-distance !default;
+
+/*-------------------
+       Content
+--------------------*/
+
+/* Current Text */
+$ui-drop-text-transition: none !default;
+
+/* Menu */
+
+/* Text */
+$ui-drop-text-line-height: 1em !default;
+$ui-drop-text-line-height-offset: ($ui-drop-text-line-height - 1em) !default;
+$ui-drop-text-cursor-spacing: 1px !default;
+
+/* Menu Item */
+$ui-drop-item-vertical-padding: 8rem / $fs !default;
+$ui-drop-item-horizontal-padding: $dropdown-item-padding-x !default;
+$ui-drop-item-line-height: 1 !default;
+$ui-drop-item-line-height-offset: ($ui-drop-item-line-height - 1em) !default;
+
+/* Sub Menu */
+$ui-drop-sub-menu-top: 0 !default;
+$ui-drop-sub-menu-left: 100% !default;
+$ui-drop-sub-menu-right: auto !default;
+$ui-drop-sub-menu-distance-away: 0 !default;
+$ui-drop-sub-menu-margin: 0 0 0 $ui-drop-sub-menu-distance-away !default;
+$ui-drop-sub-menu-zindex: 21 !default;
+
+/* Menu Header */
+$ui-drop-menu-header-color: $gray-dark !default;
+$ui-drop-menu-header-font-size: 11px !default;
+$ui-drop-menu-header-font-weight: 600 !default;
+$ui-drop-menu-header-text-transform: uppercase !default;
+$ui-drop-menu-header-margin: 1rem 0 0.75rem !default;
+$ui-drop-menu-header-padding: 0 $ui-drop-item-horizontal-padding !default;
+
+/* Menu Divider */
+$ui-drop-menu-divider-margin: 0.5em 0 !default;
+$ui-drop-menu-divider-color: $gray-lighter !default;
+$ui-drop-menu-divider-size: 1px !default;
+$ui-drop-menu-divider-border: $ui-drop-menu-divider-size solid $ui-drop-menu-divider-color !default;
+
+/* Menu Input */
+$ui-drop-menu-input-margin: $font-size-5 1.3rem !default;
+$ui-drop-menu-input-min-width: 10rem !default;
+$ui-drop-menu-input-vertical-padding: 0.5em !default;
+
+/* Menu Image */
+$ui-drop-menu-image-max-height: 2em !default;
+
+/* Item Sub-Element */
+$ui-drop-item-element-float: none !default;
+$ui-drop-item-element-distance: $font-size-7 !default;
+
+/* Description */
+$ui-drop-item-description-float: right !default;
+$ui-drop-item-description-margin: 0 0 0 1em !default;
+$ui-drop-item-description-color: $gray !default;
+
+/* Floated Content */
+$ui-drop-floated-distance: 1em !default;
+
+/* Flyout Direction */
+$ui-drop-left-menu-dropdown-icon-float: left !default;
+$ui-drop-left-menu-dropdown-icon-margin: $ui-drop-item-line-height-offset $ui-drop-item-element-distance 0 0 !default;
+
+/*-------------------
+        Types
+--------------------*/
+
+/*------------
+   Selection
+--------------*/
+
+$ui-drop-selection-item-horizontal-padding: $ui-drop-item-horizontal-padding !default;
+$ui-drop-selection-item-vertical-padding: $ui-drop-item-vertical-padding !default;
+$ui-drop-selection-item-padding: $ui-drop-selection-item-vertical-padding $ui-drop-selection-item-horizontal-padding !default;
+
+/* Message */
+$ui-drop-message-padding: $ui-drop-selection-item-padding !default;
+$ui-drop-message-font-weight: normal !default;
+$ui-drop-message-color: $gray !default;
+
+$ui-drop-selection-min-width: 14em !default;
+$ui-drop-selection-vertical-padding: $input-padding-y !default;
+$ui-drop-selection-horizontal-padding: 1rem !default;
+$ui-drop-selection-icon-distance: 2em !default;
+$ui-drop-selection-zindex: 10 !default;
+
+$ui-drop-selection-item-divider: none !default;
+$ui-drop-selection-message-padding: $ui-drop-selection-item-padding !default;
+
+/* <select> */
+$ui-drop-selection-text-underlay-icon-opacity: .75 !default;
+$ui-drop-selection-text-underlay-color: $gray !default;
+
+$ui-drop-selection-icon-opacity: 0.8 !default;
+$ui-drop-selection-icon-zindex: 3 !default;
+$ui-drop-selection-icon-hitbox: $ui-drop-selection-vertical-padding !default;
+$ui-drop-selection-icon-margin: -$ui-drop-selection-icon-hitbox !default;
+$ui-drop-selection-icon-padding: $ui-drop-selection-icon-hitbox !default;
+$ui-drop-selection-icon-transition: opacity $default-duration $default-easing !default;
+
+/* Responsive */
+$ui-drop-selection-mobile-max-items: 3 !default;
+$ui-drop-selection-tablet-max-items: 4 !default;
+$ui-drop-selection-computer-max-items: 8 !default;
+$ui-drop-selection-widescreen-max-items: 10 !default;
+
+/* Derived */
+$ui-drop-selected-border-emwidth: 1rem / $fs !default; /* 1px / em size */
+$ui-drop-selection-item-height: ($ui-drop-selection-item-vertical-padding * 2) + $ui-drop-item-line-height + $ui-drop-selected-border-emwidth !default;
+$ui-drop-selection-mobile-max-menu-height: ($ui-drop-selection-item-height * $ui-drop-selection-mobile-max-items) !default;
+$ui-drop-selection-tablet-max-menu-height: ($ui-drop-selection-item-height * $ui-drop-selection-tablet-max-items) !default;
+$ui-drop-selection-computer-max-menu-height: ($ui-drop-selection-item-height * $ui-drop-selection-computer-max-items) !default;
+$ui-drop-selection-widescreen-max-menu-height: ($ui-drop-selection-item-height * $ui-drop-selection-widescreen-max-items) !default;
+
+/* Focus */
+$ui-drop-selection-focus-border-color: $gray-lighter !default;
+
+/* Visible */
+$ui-drop-selection-visible-text-font-weight: normal !default;
+$ui-drop-selection-visible-text-color: $gray-dark !default;
+
+$ui-drop-selection-visible-border-color: $gray-lighter !default;
+$ui-drop-selection-visible-menu-box-shadow: $ui-drop-raised-shadow !default;
+
+/* Visible Hover */
+$ui-drop-selection-active-hover-border-color: $gray-lighter !default;
+$ui-drop-selection-active-hover-menu-box-shadow: $ui-drop-selection-visible-menu-box-shadow !default;
+
+$ui-drop-selection-visible-icon-opacity: 1 !default;
+
+/*--------------
+     Search
+--------------*/
+
+/* Search Selection */
+$ui-drop-search-selection-line-height: $input-line-height !default;
+$ui-drop-search-selection-line-height-offset: (($ui-drop-search-selection-line-height - 1rem) / 2) !default;
+$ui-drop-search-selection-vertical-padding: ($ui-drop-selection-vertical-padding - $ui-drop-search-selection-line-height-offset) !default;
+$ui-drop-search-selection-input-padding: $ui-drop-search-selection-vertical-padding $ui-drop-selection-icon-distance $ui-drop-search-selection-vertical-padding $input-padding-x !default;
+
+$ui-drop-search-mobile-max-menu-height: $ui-drop-selection-mobile-max-menu-height !default;
+$ui-drop-search-tablet-max-menu-height: $ui-drop-selection-tablet-max-menu-height !default;
+$ui-drop-search-computer-max-menu-height: $ui-drop-selection-computer-max-menu-height !default;
+$ui-drop-search-widescreen-max-menu-height: $ui-drop-selection-widescreen-max-menu-height !default;
+
+/* Inline */
+$ui-drop-inline-icon-margin: 0 7px 0 3px !default;
+$ui-drop-inline-text-color: inherit !default;
+$ui-drop-inline-text-font-weight: 600 !default;
+$ui-drop-inline-menu-distance: 3px !default;
+
+
+/*--------------
+    Multiple
+--------------*/
+
+/* Split Actual Padding Between Child and Parent (allows for label spacing) */
+$ui-drop-multiple-selection-left-padding: $input-padding-x !default;
+$ui-drop-multiple-selection-right-padding: $ui-drop-selection-icon-distance !default;
+$ui-drop-multiple-selection-padding: .25rem $ui-drop-multiple-selection-right-padding .25rem $ui-drop-multiple-selection-left-padding !default;
+
+/* Child Elements */
+$ui-drop-multiple-selection-child-vertical-margin: ($ui-drop-search-selection-vertical-padding * (2/3)) !default;
+$ui-drop-multiple-selection-child-left-margin: (1rem - $ui-drop-multiple-selection-left-padding) !default;
+$ui-drop-multiple-selection-child-margin: $ui-drop-multiple-selection-child-vertical-margin 0 $ui-drop-multiple-selection-child-vertical-margin $ui-drop-multiple-selection-child-left-margin !default;
+$ui-drop-multiple-selection-child-line-height: 17px !default;
+$ui-drop-multiple-selection-search-start-width: (1.1em * 2) !default;
+
+/* select-Dropdown Icon */
+$ui-drop-multiple-selection-search-after-label-distance: 2px !default;
+
+/* Selection Label */
+$ui-drop-label-size: Medium !default;
+$ui-drop-label-horizontal-margin: 4px !default;
+$ui-drop-label-vertical-margin: 2px !default;
+$ui-drop-label-margin: $ui-drop-label-vertical-margin $ui-drop-label-horizontal-margin $ui-drop-label-vertical-margin 0 !default;
+$ui-drop-label-border-width: 1px !default;
+$ui-drop-label-box-shadow: 0 0 0 $ui-drop-label-border-width $ui-drop-border-color inset !default;
+
+$ui-drop-label-vertical-padding: 5px !default;
+$ui-drop-label-horizontal-padding: Mini !default;
+$ui-drop-label-padding: $ui-drop-label-vertical-padding $ui-drop-label-horizontal-padding !default;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Scrolling */
+$ui-drop-scrolling-menu-item-border: none !default;
+
+$ui-drop-scrolling-mobile-max-items: 4 !default;
+$ui-drop-scrolling-tablet-max-items: 6 !default;
+$ui-drop-scrolling-computer-max-items: 8 !default;
+$ui-drop-scrolling-widescreen-max-items: 12 !default;
+
+$ui-drop-scrolling-border-emwidth: 0 !default; /* 0 / em size */
+$ui-drop-scrolling-item-height: ($ui-drop-item-vertical-padding * 2) + $ui-drop-item-line-height + $ui-drop-scrolling-border-emwidth !default;
+$ui-drop-scrolling-mobile-max-menu-height: ($ui-drop-scrolling-item-height * $ui-drop-scrolling-mobile-max-items) !default;
+$ui-drop-scrolling-tablet-max-menu-height: ($ui-drop-scrolling-item-height * $ui-drop-scrolling-tablet-max-items) !default;
+$ui-drop-scrolling-computer-max-menu-height: ($ui-drop-scrolling-item-height * $ui-drop-scrolling-computer-max-items) !default;
+$ui-drop-scrolling-widescreen-max-menu-height: ($ui-drop-scrolling-item-height * $ui-drop-scrolling-widescreen-max-items) !default;
+
+/* Upward */
+$ui-drop-upward-menu-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.08) !default;
+$ui-drop-upward-selection-menu-box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.08) !default;
+$ui-drop-upward-selection-hover-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.05) !default;
+$ui-drop-upward-selection-visible-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.08) !default;
+$ui-drop-upward-selection-active-hover-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05) !default;
+$ui-drop-upward-selection-active-hover-menu-box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.08) !default;
+
+/* Simple */
+$ui-drop-simple-transition-duration: $default-duration !default;
+$ui-drop-simple-transition: opacity $ui-drop-simple-transition-duration $default-easing !default;
+
+/* Floating */
+$ui-drop-floating-menu-distance: 0.2em !default;
+
+/* Pointing */
+$ui-drop-pointing-arrow-size: 7px !default;
+$ui-drop-pointing-arrow-offset: -($ui-drop-pointing-arrow-size / 2) !default;
+$ui-drop-pointing-arrow-distance-from-edge: 1em !default;
+
+$ui-drop-pointing-arrow-background: $white-dark !default;
+$ui-drop-pointing-arrow-zindex: 2 !default;
+
+$ui-drop-pointing-menu-distance: $font-size-7 !default;
+$ui-drop-pointing-arrow-box-shadow: -$dropdown-border-width -$dropdown-border-width 0 $dropdown-border-width $dropdown-border-color !default;
+
+/* Pointing Upward */
+$ui-drop-pointing-upward-arrow-box-shadow: $dropdown-border-width $dropdown-border-width 0 $dropdown-border-width $dropdown-border-color !default;

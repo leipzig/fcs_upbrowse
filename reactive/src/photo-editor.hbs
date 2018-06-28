@@ -1,0 +1,129 @@
+{{#extend "layout-1" current="photo-editor"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack" id="panel-grid">
+                <section data-gs-height="84" class="col-sm-12 col-md-12 col-lg-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header grid-stack-handle bgc-white-dark panel-header-p panel-header-md">
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-0 mb-4">
+                            <section class="photo-editor mb-6">
+                                <div class="photo-editor-erea">
+                                    <div class="photo-editor-upload photo-editor-upload-trigger">
+                                        <p>Drop image here or Select from list or
+                                            <label class="browse">browse...<input id="file" type="file" accept="image/*" class="sr-only"></label>
+                                        </p>
+                                    </div>
+                                    <div class="canvas photo-editor-editable">
+                                        <div class="editor">
+                                            <img src="assets/img/empty.png" alt="">
+                                        </div>
+                                        <div class="photo-editor-toolbar">
+                                            <button data-action="move" title="Move (M)" class="toolbar__button">
+                                                <span class="fa fa-arrows"></span>
+                                            </button>
+                                            <button data-action="crop" title="Crop (C)" class="toolbar__button">
+                                                <span class="fa fa-crop"></span>
+                                            </button>
+                                            <button data-action="zoom-in" title="Zoom In (I)" class="toolbar__button">
+                                                <span class="fa fa-search-plus"></span>
+                                            </button>
+                                            <button data-action="zoom-out" title="Zoom Out (O)" class="toolbar__button">
+                                                <span class="fa fa-search-minus"></span>
+                                            </button>
+                                            <button data-action="rotate-left" title="Rotate Left (L)" class="toolbar__button">
+                                                <span class="fa fa-rotate-left"></span>
+                                            </button>
+                                            <button data-action="rotate-right" title="Rotate Right (R)" class="toolbar__button">
+                                                <span class="fa fa-rotate-right"></span>
+                                            </button>
+                                            <button data-action="flip-horizontal" title="Flip Horizontal (H)" class="toolbar__button">
+                                                <span class="fa fa-arrows-h"></span>
+                                            </button>
+                                            <button data-action="flip-vertical" title="Flip Vertical (V)" class="toolbar__button">
+                                                <span class="fa fa-arrows-v"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="footer">
+                                    <span class="pl-2 croping-size"></span>
+                                    <div class="menu photo-editor-buttons">
+                                        <label for="file" title="Upload" class="menu__button photo-editor-upload-trigger">
+                                            <span class="fa fa-upload"></span>
+                                        </label>
+
+                                        <button data-action="restore" title="Undo (Ctrl + Z)" class="menu__button">
+                                            <span class="fa fa-undo"></span>
+                                        </button>
+
+                                        <button data-action="remove" title="Delete (Delete)" class="menu__button menu__button--danger">
+                                            <span class="fa fa-trash"></span>
+                                        </button>
+
+                                        <button data-action="clear" title="Cancel (Esc)" class="menu__button menu__button--danger">
+                                            <span class="fa fa-ban"></span>
+                                        </button>
+
+                                        <button data-action="crop" title="OK (Enter)" class="menu__button menu__button--success">
+                                            <span class="fa fa-check"></span>
+                                        </button>
+                                        <button data-action="download" title="Save" class="menu__button product-save-image">
+                                            <span class="fa fa-save"></span>
+                                        </button>
+                                    </div>
+                                </footer>
+                            </section>
+                            <div class="product-images">
+                                <ul class="nav nav-pills  mb-3 " role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#this-prod-images" role="tab">This Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#all-images" role="tab">All Images</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content bc-primary pb-3">
+                                    <div class="tab-pane active" id="this-prod-images" role="tabpanel">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p3-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p3-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p3-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                    </div>
+                                    <div class="tab-pane" id="all-images" role="tabpanel">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p3-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p2-md.jpg" alt="" height="200">
+                                        <img src="assets/img/products/p1-md.jpg" alt="" height="200">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/photo');
+        </script>
+    {{/content}}
+{{/extend}}

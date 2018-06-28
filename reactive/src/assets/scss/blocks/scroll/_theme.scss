@@ -1,0 +1,69 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: scroll
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+@import "variables";
+@import 'jspm:perfect-scrollbar/src/css/mixins';
+@import 'jspm:perfect-scrollbar/src/css/themes';
+
+.ps-theme-main-theme {
+    @include ps-container(map-merge($ps-theme-default, (
+        bar-container-hover-bg: $gray-light,
+        bar-hover-bg: $gray-light,
+        rail-hover-bg: $gray-lighter,
+        scrollbar-y-rail-right: 1px !important
+    )));
+}
+
+.ps-theme-top-theme {
+    @include ps-container(map-merge($ps-theme-default, (
+        bar-container-hover-bg: $gray-light,
+        bar-hover-bg: $gray-light,
+        rail-hover-bg: $gray-lighter,
+        rail-default-opacity: 0.4
+    )));
+}
+
+
+.ps-theme-visible-theme {
+    @include ps-container(map-merge($ps-theme-default, (
+        bar-container-hover-bg: $gray-light,
+        bar-hover-bg: $gray-light,
+        rail-hover-bg: $gray-lighter,
+        rail-default-opacity: 0.6,
+        scrollbar-x-hover-height: $ps-scrollbar-x-height,
+        scrollbar-x-rail-height: $ps-scrollbar-x-rail-height,
+        bar-bg: $gray-lighter,
+    )));
+}
+
+.ps-theme-panel-theme {
+    @include ps-container(map-merge($ps-theme-default, (
+        bar-container-hover-bg: $gray-lighter,
+        bar-hover-bg: $gray-lighter,
+        rail-hover-bg: $gray-lighter,
+        rail-default-opacity: 0,
+        bar-bg: $white-darkest,
+        scrollbar-y-rail-right: 1px !important,
+    )));
+}
+
+.ps-scrollbar-y-rail { z-index: 11; }
+.ps-scrollbar-x:after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    bottom: 0;
+    width: 100%;
+}
+.ps-scrollbar-y:before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    right: 0;
+    height: 100%;
+}

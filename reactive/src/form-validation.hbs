@@ -1,0 +1,656 @@
+{{#extend "layout-1" current="form-validation"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Prompts on Change
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation">
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp1" placeholder="Enter email" name="email">
+                                    <small id="emailHelp1" class="form-text text-muted">We'll never share your email with
+                                        anyone else.
+                                    </small>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                                </div>
+                                <div class="form-check form-group mb-4">
+                                    <label class="custom-control custom-checkbox ui checkbox d-block">
+                                        <input type="checkbox" class="form-control custom-control-input" name="checked">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description ml-2">Agree to the terms and conditions</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <a href="" class="btn btn-default reset">Reset</a>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Prompts on Submit
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation-submit">
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputEmail2">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp2" placeholder="Enter email" name="email">
+                                    <small id="emailHelp2" class="form-text text-muted">We'll never share your email with
+                                        anyone else.
+                                    </small>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputPassword2">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" name="password">
+                                </div>
+                                <div class="form-check form-group mb-4">
+                                    <label class="custom-control custom-checkbox ui checkbox d-block">
+                                        <input type="checkbox" class="form-control custom-control-input" name="checked">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description ml-2">Agree to the terms and conditions</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <a href="" class="btn btn-default reset">Reset</a>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Prompts on Blur
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation-blur">
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp3" placeholder="Enter email" name="email">
+                                    <small id="emailHelp3" class="form-text text-muted">We'll never share your email with
+                                        anyone else.
+                                    </small>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password" name="password">
+                                </div>
+                                <div class="form-check form-group mb-4">
+                                    <label class="custom-control custom-checkbox ui checkbox d-block">
+                                        <input type="checkbox" class="form-control custom-control-input" name="checked">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description ml-2">Agree to the terms and conditions</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <a href="" class="btn btn-default reset">Reset</a>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                With Modal
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation-error-list">
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputEmail4">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp4" placeholder="Enter email" name="email">
+                                    <small id="emailHelp4" class="form-text text-muted">We'll never share your email with
+                                        anyone else.
+                                    </small>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputPassword4">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password" name="password">
+                                </div>
+                                <div class="form-check form-group mb-4">
+                                    <label class="custom-control custom-checkbox ui checkbox d-block">
+                                        <input type="checkbox" class="form-control custom-control-input" name="checked">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description ml-2">Agree to the terms and conditions</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <a href="" class="btn btn-default reset">Reset</a>
+                                <div class="modal">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content bc-warning">
+                                            <div class="modal-header bgc-warning">
+                                                <h3 class="modal-title">Oops!</h3>
+                                                <button type="button" class="close c-white-dark" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body px-4 py-2">
+                                                <h5 class="mb-2">Error List</h5>
+                                                <div class="error message mb-4"></div>
+                                                <h6 class="fs-5 c-info">
+                                                    <i class="icon-exclamation fs-3 align-middle"></i><span class="ml-2">Lorem ipsum dolor sit amet, consectetur adipisicing.</span></h6>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                                <button type="button" class="btn btn-default btn-lg"><i class="fa fa-question-circle-o icon-mr-ch"></i> Help</button>
+                                                <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">I Understood</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Validation Rules
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation-blur">
+                                <div class="row">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">
+                                        <h4 class="mb-5">Simple Rules</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0"></div>
+                                    <div class="col-sm-8">
+                                        <a href="" class="submit btn btn-primary">Submit</a>
+                                        <a href="" class="reset btn btn-default">Reset</a>
+                                        <a href="" class="clear btn btn-default">Clear</a>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should not be <code>empty</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-1" class="form-control-label">Name</label>
+                                            <input class="form-control" id="form-valid-1" placeholder="First Name" name="name" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should not be <code>empty</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-20" class="form-control-label">Gender</label>
+                                            <select id="form-valid-20" class="ui simple-select select-dropdown fluid" name="gender">
+                                                <option value="">Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be checked</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <div class="ui dynamic checkbox d-block">
+                                                <input class="form-control" id="form-valid-23" type="checkbox" name="checked">
+                                                <label for="form-valid-23" class="form-control-label has-state">I agree to the terms and conditions</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be an <code>email</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-2" class="form-control-label">Email</label>
+                                            <input class="form-control" id="form-valid-2" placeholder="Email" name="email" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be a <code>url</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-3" class="form-control-label">Url</label>
+                                            <input class="form-control" id="form-valid-3" placeholder="Url" name="url" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be a <code>number</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-4" class="form-control-label">Number</label>
+                                            <input class="form-control" id="form-valid-4" placeholder="Number" name="number" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be a <code>decimal</code> number</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-5" class="form-control-label">Decimal</label>
+                                            <input class="form-control" value="" id="form-valid-5" placeholder="Decimal" name="decimal" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be an <code>integer</code> number</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-6" class="form-control-label">Integer</label>
+                                            <input class="form-control" id="form-valid-6" placeholder="Integer" name="integer" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Validation Rules
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation-blur">
+                                <div class="row">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">
+                                        <h4 class="mb-5">Selection Rules</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0"></div>
+                                    <div class="col-sm-8">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <a href="" class="reset btn btn-default">Reset</a>
+                                        <a href="" class="clear btn btn-default">Clear</a>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be selected <code>at least two</code> skills</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-25" class="form-control-label">Skills</label>
+                                            <select id="form-valid-25" name="minCount" multiple="" class="ui simple-select select-dropdown fluid">
+                                                <option value="">Select Skills</option>
+                                                <option value="css">CSS</option>
+                                                <option value="html">HTML</option>
+                                                <option value="javascript">Javascript</option>
+                                                <option value="design">Graphic Design</option>
+                                                <option value="plumbing">Plumbing</option>
+                                                <option value="mech">Mechanical Engineering</option>
+                                                <option value="repair">Kitchen Repair</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>at most two</code> skills</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-26" class="form-control-label">Skills</label>
+                                            <select id="form-valid-26" name="maxCount" multiple="" class="ui simple-select select-dropdown fluid">
+                                                <option value="">Select Skills</option>
+                                                <option value="css">CSS</option>
+                                                <option value="html">HTML</option>
+                                                <option value="javascript">Javascript</option>
+                                                <option value="design">Graphic Design</option>
+                                                <option value="plumbing">Plumbing</option>
+                                                <option value="mech">Mechanical Engineering</option>
+                                                <option value="repair">Kitchen Repair</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>exactly two</code> skills</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-27" class="form-control-label">Skills</label>
+                                            <select id="form-valid-27" name="exactCount" multiple="" class="ui simple-select select-dropdown fluid">
+                                                <option value="">Select Skills</option>
+                                                <option value="css">CSS</option>
+                                                <option value="html">HTML</option>
+                                                <option value="javascript">Javascript</option>
+                                                <option value="design">Graphic Design</option>
+                                                <option value="plumbing">Plumbing</option>
+                                                <option value="mech">Mechanical Engineering</option>
+                                                <option value="repair">Kitchen Repair</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Validation Rules
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation">
+                                <div class="row">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">
+                                        <h4 class="mb-5">More Advanced Rules</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0"></div>
+                                    <div class="col-sm-8">
+                                        <a href="" class="reset btn btn-default">Reset</a>
+                                        <a href="" class="clear btn btn-default">Clear</a>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>at least six</code> characters</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-21" class="form-control-label">Password</label>
+                                            <input class="form-control" id="form-valid-21" placeholder="Password" type="password" name="password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>at least six</code> characters</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-22" class="form-control-label">Text Area</label>
+                                            <textarea class="form-control h-sm" id="form-valid-22" placeholder="Type Something" name="minLength"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be<code>exactly six</code> characters</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-28" class="form-control-label">Password</label>
+                                            <input class="form-control" id="form-valid-28" placeholder="Password" type="password" name="exactLength">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>at most six</code> characters</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-29" class="form-control-label">Password</label>
+                                            <input class="form-control" id="form-valid-29" placeholder="Password" type="password" name="maxLength">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be a <code>RGB color</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-24" class="form-control-label has-state">Color</label>
+                                            <input class="form-control" id="form-valid-24" placeholder="Enter rgb Color" name="color" type="text" value="rgb(255, 255, 255)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Regex <code>regExp[/^[a-z0-9_-]{4,16}$/]</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-7" class="form-control-label">4-16 letter username</label>
+                                            <input class="form-control" id="form-valid-7" placeholder="Username" name="regex" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Validation Rules
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation">
+                                <div class="row">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">
+                                        <h4 class="mb-5">Match & Different Rules</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0"></div>
+                                    <div class="col-sm-8">
+                                        <a href="" class="reset btn btn-default">Reset</a>
+                                        <a href="" class="clear btn btn-default">Clear</a>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should <code>match</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-30" class="form-control-label has-state">Match</label>
+                                            <input class="form-control" id="form-valid-30" placeholder="Value" name="match1" type="text">
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label for="form-valid-31" class="form-control-label has-state">Match</label>
+                                            <input class="form-control" id="form-valid-31" placeholder="Repeat Previous Value" name="match2" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>different</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-32" class="form-control-label has-state">Different</label>
+                                            <input class="form-control" id="form-valid-32" placeholder="Value" name="different1" type="text">
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label for="form-valid-33" class="form-control-label has-state">Different</label>
+                                            <input class="form-control" id="form-valid-33" placeholder="Don't Repeat Previous Value" name="different2" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Validation Rules
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-validation">
+                                <div class="row">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">
+                                        <h4 class="mb-5">Card Numbers Rules</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0"></div>
+                                    <div class="col-sm-8">
+                                        <a href="" class="reset btn btn-default">Reset</a>
+                                        <a href="" class="clear btn btn-default">Clear</a>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be a <code>card</code> number</div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-8" class="form-control-label">Card Number</label>
+                                            <input class="form-control" id="form-valid-8" placeholder="Card Number" name="card" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>Visa</code> or <code>American Express</code> or <code>Maestro</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-9" class="form-control-label">Combined Card Numbers</label>
+                                            <input class="form-control" id="form-valid-9" placeholder="Visa or American Express or Maestro" name="exact-card" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>American Express</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-10" class="form-control-label">American Expres Card Number</label>
+                                            <input class="form-control" id="form-valid-10" placeholder="American Express Card Number" name="amex" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>Visa</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-11" class="form-control-label">Visa Card Number</label>
+                                            <input class="form-control" id="form-valid-11" placeholder="Visa Card Number" name="visa" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>Mastercard</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-12" class="form-control-label">Mastercard Card Number</label>
+                                            <input class="form-control" id="form-valid-12" placeholder="Mastercard Card Number" name="mastercard" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>Discover</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-13" class="form-control-label">Discover Card Number</label>
+                                            <input class="form-control" id="form-valid-13" placeholder="Discover Card Number" name="discover" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>Unionpay</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-14" class="form-control-label">Unionpay Card Number</label>
+                                            <input class="form-control" id="form-valid-14" placeholder="Unionpay Card Number" name="unionpay" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>JCB</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-15" class="form-control-label">JCB Card Number</label>
+                                            <input class="form-control" id="form-valid-15" placeholder="JCB Card Number" name="jcb" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>Diner's Club</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-16" class="form-control-label">Diner's Club Card Number</label>
+                                            <input class="form-control" id="form-valid-16" placeholder="Diner's Club Card Number" name="dinersClub" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>Maestro</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-17" class="form-control-label">Maestro Card Number</label>
+                                            <input class="form-control" id="form-valid-17" placeholder="Maestro Card Number" name="maestro" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>Laser</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-18" class="form-control-label">Laser Card Number</label>
+                                            <input class="form-control" id="form-valid-18" placeholder="Laser Card Number" name="laser" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0">Should be <code>Visa Electron</code></div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="form-valid-19" class="form-control-label">Visa Electron Card Number</label>
+                                            <input class="form-control" id="form-valid-19" placeholder="Visa Electron Card Number" name="visaElectron" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 text-sm-right mb-1 mb-sm-0"></div>
+                                    <div class="col-sm-8">
+                                        <a href="" class="submit btn btn-primary">Submit</a>
+                                        <a href="" class="reset btn btn-default">Reset</a>
+                                        <a href="" class="clear btn btn-default">Clear</a>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/form-addon');
+        </script>
+    {{/content}}
+{{/extend}}

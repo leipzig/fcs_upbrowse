@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    {{#block "head"}}
+        <title>{{title current}} - reactive admin template</title>
+    {{/block}}
+    <!-- inject-head:css -->
+    <!-- endinject -->
+</head>
+<body>
+<div id="app" class="empty-page reactive-app">
+    <!-- inject-body-start:js -->
+    <!-- endinject -->
+
+    <div id="main" class="main">
+        <!--Begin Content-->
+        <section id="content" class="content-wrap bgc-white-darkest" role="main">
+            {{#block "content"}}{{/block}}
+        </section>
+        <!--End Content-->
+    </div>
+</div>
+{{#block "foot"}}
+<!-- inject-body-end:js -->
+<!-- endinject -->
+{{/block}}
+</body>
+</html>

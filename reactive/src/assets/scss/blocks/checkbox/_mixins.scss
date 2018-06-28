@@ -1,0 +1,24 @@
+@mixin ui-checkbox-variant($class, $color) {
+    &#{$class} input[type="checkbox"]:checked + label,
+    &#{$class} input[type="checkbox"]:indeterminate + label {
+        &::before { border-color: $color; }
+        &::after { color: $color; }
+    }
+    &.checkbox-fill {
+        &#{$class} input[type="checkbox"]:checked + label {
+            &::after { background-color: $color; color: $white-dark; }
+        }
+    }
+    &#{$class}.radio input:checked + label,
+    &#{$class}.radio input:indeterminate + label {
+        &::after { background-color: $color; }
+        &::before { border-color: $color; }
+    }
+    &#{$class}.slider input:checked + label,
+    &#{$class}.slider input:indeterminate + label,
+    &#{$class}.toggle input:checked + label,
+    &#{$class}.toggle input:indeterminate + label {
+        &::before { background-color: $color !important; }
+    }
+}
+

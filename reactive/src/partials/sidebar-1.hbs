@@ -1,0 +1,588 @@
+{{#block "sidebar"}}
+    <div class="sidebar-content">
+        <a href="/" class="app-name">
+            <span class="full-name">Reactive</span>
+            <span class="compact-name"><i class="icon-layers"></i></span>
+        </a>
+        <div class="profile">
+            <div class="details">
+                <div class="clearfix">
+                    <div class="picture rounded-circle pull-left" style="background-image: url('assets/img/avatar.jpg');"></div>
+                    <div class="about pull-left">
+                        <a href="" class="clear-style sbg-settings"><i class="fa fa-edit"></i></a>
+                        <a href="chat-profile.html"><h3 class="name">Jennifer Doe</h3></a>
+                        <a href="" class="clear-style settings"><i class="fa fa-gear icon-mr-ch"></i>My Profile</a>
+                        <a href="chat-profile.html" class="clear-style sbg-title">Product Manager</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-links">
+            <ul class="clear-style li-left nav nav-tabs border-0" role="tablist">
+                <li class="nav-item">
+                    <a href="#side-home" class="bc-success active" data-toggle="tab" role="tab"><i class="fa fa-list"><span class="tab-title">Menu</span></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#side-comments" class="bc-primary" data-toggle="tab" role="tab"><i class="fa fa-comments"><span class="tab-title">Comments</span></i>
+                        <span class="badge fs-8 badge-pill bgc-primary-lighter waves bc-primary">14</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#side-messages" class="bc-warning" data-toggle="tab" role="tab"><i class="fa fa-envelope"><span class="tab-title">Inbox</span></i>
+                        <span class="badge fs-8 badge-pill waves bc-warning bgc-warning-lighter">32</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#side-alerts" class="bc-danger" data-toggle="tab" role="tab"><i class="fa fa-warning"><span class="tab-title">Alert</span></i>
+                        <span class="badge fs-8 badge-pill waves bc-danger bgc-danger-lighter badge-counter transition hidden" data-counter="100" data-duration="400000"><span class="text"></span></span>
+                    </a>
+                </li>
+                <li class="nav-item tab-link-add">
+                    <a href="#side-settings" class="bc-success" data-toggle="tab" role="tab"><i class="fa fa-gear"><span class="tab-title">Settings</span></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane active" id="side-home" role="tabpanel">
+                <nav class="sidebar-menu pb-3" role="navigation">
+                    <ul class="clear-style">
+                        {{#embed "sidebar_menu" current=current}}{{/embed}}
+                        <li class="header mb-1">Projects</li>
+                        <li class="nav-addon">
+                            <a href="" class="mb-3 c-body-inverse-darkest menu-pad">
+                                <div class="clearfix">
+                                    <p class="fs-7 mb-1 pull-left">Project Masonry Sidebar ...</p>
+                                    <span class="badge bgc-body-darker fs-7 mb-1 pull-right">25%</span>
+                                </div>
+                                <div class="progress bgc-body-darker">
+                                    <div class="progress-bar bgc-success" role="progressbar" style="width: 25%; height: 8px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </a>
+                            <a href="" class="mb-3 c-body-inverse-darkest menu-pad">
+                                <div class="clearfix">
+                                    <p class="fs-7 mb-1 pull-left">Project Bizarre Footer ...</p>
+                                    <span class="badge bgc-body-darker fs-7 mb-1 pull-right">75%</span>
+                                </div>
+                                <div class="progress bgc-body-darker">
+                                    <div class="progress-bar bgc-success" role="progressbar" style="width: 75%; height: 8px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header mb-1">Profile</li>
+                        <li class="nav-addon">
+                            <a href="" class="mb-7 c-body-inverse-darkest menu-pad">
+                                <div class="clearfix">
+                                    <p class="fs-7 mb-1 pull-left">Fill Profile</p>
+                                    <span class="badge bgc-body-darker fs-7 mb-1 pull-right">50%</span>
+                                </div>
+                                <div class="progress bgc-body-darker">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%; height: 8px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="tab-pane px-3 pb-5" id="side-comments" role="tabpanel">
+                <div class="input-group input-right-icon mt-4">
+                    <input type="text" class="form-control search-control br-circle bbw-0" data-list=".sidebar-comment-list" placeholder="Search">
+                    <i class="input-icon fa fa-search"></i>
+                </div>
+                <span class="sidebar-header pt-2">New Comments</span>
+                <div class="sidebar-comments">
+                    <div class="list sidebar-comment-list">
+                        <a href="chat.html" class="item mb-5 p-0">
+                            <span class="message-count on-line">3</span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic6.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Jamie Jones</span>
+                                <div class="description">" Sed ut perspiciatis un ...</div>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="item mb-5 p-0">
+                            <span class="message-count on-line">2</span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic5.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Jamie Jones</span>
+                                <div class="description">The master-builder of ca ...</div>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="item mb-5 p-0">
+                            <span class="message-count on-line">2</span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Taylor Fletcher</span>
+                                <div class="description">All this mistaken idea g ...</div>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="item mb-5 p-0">
+                            <span class="message-count on-line"></span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Rhys Brooks</span>
+                                <div class="description">Denouncing pleasure ...</div>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="item mb-5 p-0">
+                            <span class="message-count on-line">1</span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic2.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Jamie Jones</span>
+                                <div class="description">Expound the actual tea ...</div>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="item mb-5 p-0">
+                            <span class="message-count on-line"></span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Brock Giles</span>
+                                <div class="description">Praising pain was born ...</div>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="item mb-5 p-0">
+                            <span class="message-count"></span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic6.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Dariel Wallace</span>
+                                <div class="description">Will give you a complete ...</div>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="item mb-5 p-0">
+                            <span class="message-count"></span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic5.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Jared Allison</span>
+                                <div class="description">Expound the actual te ...</div>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="item mb-5 p-0">
+                            <span class="message-count"></span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Jamie Jones</span>
+                                <div class="description">Praising pain was born ...</div>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="item p-0">
+                            <span class="message-count"></span>
+                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                            <div class="content pl-1">
+                                <span class="header">Hunter Atkins</span>
+                                <div class="description">The great explorer of th ...</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane px-3 pb-5" id="side-messages" role="tabpanel">
+                <span class="sidebar-header">Latest Emails</span>
+                <div class="sidebar-email">
+                    <div class="list">
+                        <a href="mail-inbox.html" class="item mb-5 p-0">
+                            <div class="content">
+                                <div class="header"><span>Jamie Jones</span><span class="fs-7 pull-right">Sep 15</span>
+                                </div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                        <i class="fa fa-star c-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="description">A alias aperiam corporis doloremque eligendi error, in
+                                    laudantium minus molestiae ...
+                                </div>
+                            </div>
+                        </a>
+                        <a href="mail-inbox.html" class="item mb-5 p-0">
+                            <div class="content">
+                                <div class="header"><span>Jamie Jones</span><i class="fa icon-ml fa-paperclip"></i><span
+                                    class="fs-7 pull-right">Sep 15</span></div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                        <i class="fa fa-exclamation-circle c-danger"></i>
+                                        <i class="fa fa-star c-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="description">Animi dolorum facere iure minus nam placeat quasi, sapiente
+                                    temporibus ullam ut ...
+                                </div>
+                            </div>
+                        </a>
+                        <a href="mail-inbox.html" class="item mb-5 p-0">
+                            <div class="content">
+                                <div class="header"><span>Taylor Fletcher</span><span
+                                    class="fs-7 pull-right">Sep 15</span></div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                        <i class="fa fa-tags c-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="description">A ad, assumenda at culpa dolorem doloribus enim et expedita
+                                    ipsa iste minima ...
+                                </div>
+                            </div>
+                        </a>
+                        <a href="mail-inbox.html" class="item mb-5 p-0">
+                            <div class="content">
+                                <div class="header"><span>Rhys Brooks</span><span class="fs-7 pull-right">Sep 15</span>
+                                </div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                        <i class="fa fa-tags c-primary"></i>
+                                        <i class="fa fa-exclamation-circle c-danger"></i>
+                                    </div>
+                                </div>
+                                <div class="description">Accusantium debitis distinctio ipsam iure natus, possimus,
+                                    ratione reiciendis similique soluta sunt ...
+                                </div>
+                            </div>
+                        </a>
+                        <a href="mail-inbox.html" class="item mb-5 p-0">
+                            <div class="content">
+                                <div class="header"><span>Jamie Jones</span><span class="fs-7 pull-right">Sep 15</span>
+                                </div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                        <i class="fa fa-star c-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="description">Atque, aut beatae deserunt doloribus eius error est laborum
+                                    libero natus omnis quibusdam ...
+                                </div>
+                            </div>
+                        </a>
+                        <a href="mail-inbox.html" class="item mb-5 p-0">
+                            <div class="content">
+                                <div class="header"><span>Brock Giles</span><span class="fs-7 pull-right">Sep 15</span>
+                                </div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                    </div>
+                                </div>
+                                <div class="description">A ab consequuntur dignissimos doloribus et eum eveniet
+                                    expedita, incidunt iste, iur ...
+                                </div>
+                            </div>
+                        </a>
+                        <a href="mail-inbox.html" class="item mb-5 p-0">
+                            <div class="content">
+                                <div class="header"><span>Dariel Wallace</span><span
+                                    class="fs-7 pull-right">Sep 15</span></div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                        <i class="fa fa-tags c-primary"></i>
+                                        <i class="fa fa-exclamation-circle c-danger"></i>
+                                        <i class="fa fa-star c-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="description">Consequatur error id laborum nihil. Aliquam animi, doloremque
+                                    fugit non quasi quis ...
+                                </div>
+                            </div>
+                        </a>
+                        <a href="mail-inbox.html" class="item mb-5 p-0">
+                            <div class="content">
+                                <div class="header"><span>Jared Allison</span><span
+                                    class="fs-7 pull-right">Sep 15</span></div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                        <i class="fa fa-star c-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="description">Accusamus dolor, doloribus ducimus eum eveniet expedita facilis
+                                    perspiciatis quaerat?
+                                </div>
+                            </div>
+                        </a>
+                        <a href="mail-inbox.html" class="item mb-5 p-0">
+                            <div class="content">
+                                <div class="header"><span>Jamie Jones</span><span class="fs-7 pull-right">Sep 15</span>
+                                </div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                        <i class="fa fa-tags c-primary"></i>
+                                        <i class="fa fa-exclamation-circle c-danger"></i>
+                                    </div>
+                                </div>
+                                <div class="description">Accusantium ad blanditiis corporis deleniti ducimus, eaque
+                                    earum eveniet hic illum, nisi ...
+                                </div>
+                            </div>
+                        </a>
+                        <a href="mail-inbox.html" class="item p-0">
+                            <div class="content">
+                                <div class="header"><span>Hunter Atkins</span><span
+                                    class="fs-7 pull-right">Sep 15</span></div>
+                                <div class="subject"><span>Lorem ipsum.</span>
+                                    <div class="icons">
+                                        <i class="fa fa-star c-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="description">Animi architecto at consequuntur deleniti doloribus earum et
+                                    facilis minima modi officia speriores ...
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane px-3 pb-5" id="side-alerts" role="tabpanel">
+                <span class="sidebar-header">Last Alerts</span>
+                <div class="sidebar-warning threaded">
+                    <a href="project-task.html" class="tm-line-item">
+                        <div class="tm-icon bgc-primary"><i class="fa fa-envelope"></i></div>
+                        <div class="content">
+                            <div class="metadata">
+                                <span class="date">Today</span>
+                                <span class="hour">10:30 PM</span>
+                            </div>
+                            <p class="text">
+                                Lorem Ipsum is simply dummy text of industry.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="project-task.html" class="tm-line-item">
+                        <div class="tm-icon-empty bgc-primary"></div>
+                        <div class="content">
+                            <div class="metadata">
+                                <span class="hour">11:33 AM</span>
+                            </div>
+                            <p class="text">
+                                Consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="project-task.html" class="tm-line-item">
+                        <div class="tm-icon-empty bgc-primary"></div>
+                        <div class="content">
+                            <div class="metadata">
+                                <span class="hour">13:20 PM</span>
+                            </div>
+                            <p class="text">
+                                Sed ut perspiciatis unde omnis.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <span class="sidebar-header">Code Errors</span>
+                <div class="sidebar-warning threaded">
+                    <a href="project-task.html" class="tm-line-item">
+                        <div class="tm-icon bgc-danger"><i class="fa fa-bug"></i></div>
+                        <div class="content">
+                            <div class="metadata">
+                                <span class="date">Yesterday</span>
+                                <span class="hour">05:56 PM</span>
+                            </div>
+                            <p class="text">
+                                Nemo enim ipsam voluptatem quia.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="project-task.html" class="tm-line-item">
+                        <div class="tm-icon-empty bgc-danger"><i class="fa fa-bag"></i></div>
+                        <div class="content">
+                            <div class="metadata">
+                                <span class="date">Today</span>
+                                <span class="hour">11:10 AM</span>
+                            </div>
+                            <p class="text">
+                                Sed quia non numquam eius!
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sidebar-warning threaded mt-6">
+                    <a href="project-task.html" class="tm-line-item">
+                        <div class="tm-icon bgc-warning"><i class="fa fa-exclamation-circle"></i></div>
+                        <div class="content">
+                            <div class="metadata">
+                                <span class="date">Sep 2, 2016</span>
+                                <span class="hour">13:20 PM</span>
+                            </div>
+                            <p class="text">
+                                Sed ut perspiciatis unde accusantium doloremque
+                            </p>
+                        </div>
+                    </a>
+                    <a href="project-task.html" class="tm-line-item">
+                        <div class="tm-icon bgc-info"><i class="fa fa-life-bouy"></i></div>
+                        <div class="content">
+                            <div class="metadata">
+                                <span class="date">Aug 25, 2016</span>
+                                <span class="hour">05:56 PM</span>
+                            </div>
+                            <p class="text">
+                                Nemo enim ipsam quia aut odit aut fugit!
+                            </p>
+                        </div>
+                    </a>
+                    <a href="project-task.html" class="tm-line-item">
+                        <div class="tm-icon-empty bgc-info"></div>
+                        <div class="content">
+                            <div class="metadata">
+                                <span class="date">Aug 25, 2016</span>
+                                <span class="hour">05:56 PM</span>
+                            </div>
+                            <p class="text">
+                                Nemo enim ipsam quia aut odit aut fugit!
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane px-3 pb-5 c-body-lightest" id="side-settings" role="tabpanel">
+                <span class="sidebar-header">Grid Settings</span>
+                <div>
+                    <a href="" class="w-100 mb-2 btn btn-outline-sidebar restore-grid"><i class="icon-mr menu-icon fa fa-refresh"></i><span>Restore Grid</span></a>
+                    <a href="" class="w-100 mb-2 btn btn-outline-sidebar destroy-grid"><i class="icon-mr menu-icon fa fa-close"></i><span>Destroy Grid</span></a>
+                    <a href="" class="w-100 mb-2 btn btn-outline-sidebar remove-data"><i class="icon-mr menu-icon icon-trash"></i><span>Remove Data</span></a>
+                </div>
+                <span class="sidebar-header">Input Settings</span>
+                <div class="form-group mb-4">
+                    <label class="c-body-inverse-dark" for="sidebarInputSettings1">New Settings</label>
+                    <input type="email" class="form-control" id="sidebarInputSettings1" placeholder="New Value">
+                </div>
+                <div class="form-group mb-4">
+                    <label class="c-body-inverse-dark" for="sidebarInputSettings2">Another Settings</label>
+                    <input type="email" class="form-control" id="sidebarInputSettings2" placeholder="Your email">
+                </div>
+                <span class="sidebar-header">Dropdown Settings</span>
+                <div class="ui fluid selection simple-select select-dropdown mb-4">
+                    <input type="hidden" name="gender">
+                    <i class="select-dropdown icon"></i>
+                    <div class="default text">Profession</div>
+                    <div class="menu">
+                        <div class="item" data-value="2">Manager</div>
+                        <div class="item" data-value="1">Designer</div>
+                        <div class="item" data-value="0">Architecture</div>
+                    </div>
+                </div>
+                <select class="ui fluid simple-select select-dropdown mb-4">
+                    <option value="">Gender</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+                <span class="sidebar-header d-block">Checkboxes</span>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox checkbox-fill mb-1">
+                        <input type="checkbox" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>Hotels</label>
+                    </div>
+                    <span class="pull-right">45</span>
+                </div>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox checkbox-fill mb-1">
+                        <input type="checkbox" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>Hotels</label>
+                    </div>
+                    <span class="pull-right">45</span>
+                </div>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox checkbox-fill mb-1">
+                        <input type="checkbox" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>Shopping</label>
+                    </div>
+                    <span class="pull-right">39</span>
+                </div>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox checkbox-fill mb-1">
+                        <input type="checkbox" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>Restaurant</label>
+                    </div>
+                    <span class="pull-right">62</span>
+                </div>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox checkbox-fill mb-1">
+                        <input type="checkbox" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>Beauty & Spa</label>
+                    </div>
+                    <span class="pull-right">105</span>
+                </div>
+                <span class="sidebar-header">Input Settings</span>
+                <div class="form-group mb-3">
+                    <label class="c-body-inverse-dark" for="sidebarInputSettings3">New Settings</label>
+                    <input type="email" class="form-control" id="sidebarInputSettings3" placeholder="New Value">
+                </div>
+                <span class="sidebar-header">Date of Sell</span>
+                <section class="mb-4">
+                    <div id="year-slider"></div>
+                    <div class="handles fs-6-plus mt-3 d-flex justify-content-center">
+                        <div class="text-right pr-2 brw-1 bc-body">
+                            <span class="d-block fs-7">Min</span>
+                            <span class="d-block handle-0 fs-6 c-body-inverse"></span>
+                        </div>
+                        <div class="text-left pl-2">
+                            <span class="d-block fs-7">Max</span>
+                            <span class="d-block handle-1 fs-6 c-body-inverse"></span>
+                        </div>
+                    </div>
+                </section>
+                <span class="sidebar-header d-block">Radios</span>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox radio checkbox-fill mb-1">
+                        <input type="radio" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>With Swimming Pool</label>
+                    </div>
+                    <span class="pull-right">45</span>
+                </div>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox radio checkbox-fill mb-1">
+                        <input type="radio" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>With Garage</label>
+                    </div>
+                    <span class="pull-right">45</span>
+                </div>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox radio checkbox-fill mb-1">
+                        <input type="radio" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>Tree Room & Lodge</label>
+                    </div>
+                    <span class="pull-right">39</span>
+                </div>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox radio checkbox-fill mb-1">
+                        <input type="radio" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>With 2 Bathroom</label>
+                    </div>
+                    <span class="pull-right">62</span>
+                </div>
+                <div class="clerfix">
+                    <div class="ui dynamic checkbox radio checkbox-fill mb-1">
+                        <input type="radio" name="checkbox-color">
+                        <label><i class="ion-ios-arrow-right icon-mr-ch"></i>With 2 Bedroom</label>
+                    </div>
+                    <span class="pull-right">105</span>
+                </div>
+                <span class="sidebar-header d-block">Sliders</span>
+                <section class="mb-4">
+                    <h6 class="mb-2">Room Count</h6>
+                    <div id="room-slider"></div>
+                    <div class="handles fs-6-plus mt-3 d-flex justify-content-center">
+                        <div class="text-right pr-2 brw-1 bc-body">
+                            <span class="d-block fs-7">Min</span>
+                            <span class="d-block handle-0 fs-6 c-body-inverse"></span>
+                        </div>
+                        <div class="text-left pl-2">
+                            <span class="d-block fs-7">Max</span>
+                            <span class="d-block handle-1 fs-6 c-body-inverse"></span>
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-4">
+                    <h6 class="mb-2">Construction Date</h6>
+                    <div id="construction-slider"></div>
+                    <div class="handles fs-6-plus mt-3 d-flex justify-content-center">
+                        <div class="text-right pr-2 brw-1 bc-body">
+                            <span class="d-block fs-7">Min</span>
+                            <span class="d-block handle-0 fs-6 c-body-inverse"></span>
+                        </div>
+                        <div class="text-left pl-2">
+                            <span class="d-block fs-7">Max</span>
+                            <span class="d-block handle-1 fs-6 c-body-inverse"></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+{{/block}}
+

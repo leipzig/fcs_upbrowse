@@ -1,0 +1,11 @@
+{
+    "title": "Cytovas File Browser",
+    "version": "1.0.1",
+    "menu": [
+        {"header": "User Interface"},
+
+        {"name": "Tables", "icon": "fa fa-th", "label": "", "labelColor": "", "href": "", "menu": [
+            {"name": "FCS File Browser", "icon": "", "label": "", "labelColor": "", "href": "fcs-file-browser"}
+        ]}
+    ]
+}

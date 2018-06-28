@@ -1,0 +1,56 @@
+{{#extend "layout-1" current="product-list"}}
+{{! append html code into the content block declared in the layout partial }}
+
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid">
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Products
+                            </h2>
+                            {{#embed 'panel-icons' slide='1'}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-0">
+                            <div class="page-size-table">
+                                <div class="d-none product-list-checkbox">
+                                    <label class="custom-control custom-checkbox"></label>
+                                    <span class="custom-control-indicator"></span>
+                                </div>
+                                <div id="toolbar">
+                                    <button id="new-table-row" class="btn btn-default"><i class="fa fa-file-o icon-mr c-primary"></i>New</button>
+                                    <button id="remove-table-row" class="btn btn-default" disabled><i class="icon-trash icon-mr c-danger"></i>Delete</button>
+                                </div>
+                                <table id="product-list-table" class="product-list-table page-size-table card-view-no-edit"
+                                       data-search="true"
+                                       data-classes="table table-no-bordered"
+                                       data-pagination="true"
+                                       data-side-pagination="client"
+                                       data-url="/assets/data.json"
+                                       data-show-refresh="true"
+                                       data-show-toggle="true"
+                                       data-show-columns="true"
+                                       data-show-export="true"
+                                       data-detail-view="true"
+                                       data-minimum-count-columns="2"
+                                       data-show-footer="false"
+                                       data-show-pagination-switch="true"
+                                       data-id-field="id"
+                                       data-toolbar="#toolbar">
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/prod');
+        </script>
+    {{/content}}
+{{/extend}}

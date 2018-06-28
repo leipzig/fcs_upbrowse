@@ -1,0 +1,22 @@
+<!--Start panel icons-->
+{{#block "panel-icons"}}
+    <div class="panel-icons{{#ifc slide '==' 1}} panel-icon-slide{{/ifc}}{{#if hover}} show-on-hover{{/if}} {{class}}">
+        <ul>
+            {{#ifc slide '==' 1}}
+            <li><a href=""><i class="fa fa-angle-left"></i></a>
+                <ul>
+            {{/ifc}}
+            <li><a class="panel-refresh-btn" href=""><i class="fa fa-refresh"></i></a></li>
+            <li><a class="panel-pin-btn" href=""><i data-icon="icon-login icon-logout" class="icon-logout"></i></a></li>
+            <li><a class="panel-full-btn" href=""><i data-icon="icon-size-actual icon-size-fullscreen" class="fs-7 icon-size-fullscreen fw-bold"></i></a></li>
+            <li><a class="panel-maximize-btn" href=""><i data-icon="ion-android-contract ion-android-expand" class="fs-5 ion-android-expand fw-bold"></i></a></li>
+            <li><a class="panel-collapse-btn" href=""><i data-icon="ion-android-add ion-android-remove" class="fs-4 ion-android-remove"></i></a></li>
+            <li><a class="panel-close-btn" href=""><i class="fs-4 ion-android-close"></i></a></li>
+            {{#ifc slide '==' 1}}
+                </ul>
+            </li>
+            {{/ifc}}
+        </ul>
+    </div>
+{{/block}}
+<!--End panel icons-->

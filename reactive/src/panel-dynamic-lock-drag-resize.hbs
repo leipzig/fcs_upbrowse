@@ -1,0 +1,247 @@
+{{#extend "layout-1" current='panel-dynamic-lock-drag-resize'}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack">
+                <section class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item grid-stack-item" data-gs-locked="true" data-gs-no-resize="true" data-gs-no-move="true">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark pb-3">
+                        <div class="panel-header clearfix  bgc-white-darkest panel-header-lg">
+                            <h2 class="pull-left">
+                                Drag & Resize
+                            </h2>
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p>Draggability and Resizability are controllable through HTML <code>data-gs-*</code> attributes</p>
+                            <p><code>data-gs-no-resize, data-gs-no-move, data-gs-locked</code> attributes are supported to disable resizing, dragging and for locking panels respectively</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-locked="Yes"  data-gs-height="40" class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Locked Panel
+                            </h2>
+                            <div class="hidden-xs-down ui custom-select-dropdown select-dropdown lh-6">
+                                <div class="text">Do something</div>
+                                <i class="select-dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item">New</div>
+                                    <div class="item">
+                                        <span class="description">ctrl + o</span>
+                                        Open...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + s</span>
+                                        Save as...
+                                    </div>
+                                    <div class="item">
+                                        <span class="description">ctrl + r</span>
+                                        Rename
+                                    </div>
+                                    <div class="item">Make a copy</div>
+                                    <div class="item">
+                                        <i class="fa fa-folder icon"></i>
+                                        Move to folder
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-trash icon"></i>
+                                        Move to trash
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="item">Download As...</div>
+                                    <div class="item">
+                                        <i class="select-dropdown icon"></i>
+                                        Publish To Web
+                                        <div class="menu">
+                                            <div class="item">Google Docs</div>
+                                            <div class="item">Google Drive</div>
+                                            <div class="item">Dropbox</div>
+                                            <div class="item">Adobe Creative Cloud</div>
+                                            <div class="item">Private FTP</div>
+                                            <div class="item">Another Service...</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">E-mail Collaborators</div>
+                                </div>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest bgc-active-dark-trans"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <p class="mb-0 panel-body-p">This panel is locked in its position. Other panels could not move it during dragging or resizing</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-no-move="Yes" data-gs-height="30" class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Is't Draggable
+                            </h2>
+                            <div class="dropdown pull-left hidden-xs-down">
+                                <a href="" class="panel-header-link" id="panelDropdownMenu1" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <span>Drop Down</span><i class="fa fa-angle-down icon-ml"></i>
+                                </a>
+                                <div class="dropdown-menu lh-5" aria-labelledby="panelDropdownMenu1">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="">Action</a>
+                                        <a class="dropdown-item" href="">Another action</a>
+                                        <a class="dropdown-item" href="">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed "panel-icons" slide="1"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p>This panel could not be dragged</p>
+                            <p class="mb-0">Other panels could change its position</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="40" class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel
+                            </h2>
+                            <div class="hidden-xs-down ui floating select-dropdown btn-labeled-icon left search simple-select btn btn-default btn-sm">
+                                <i class="icon fa fa-fort-awesome"></i>
+                                <span class="text">Select State</span>
+                                <div class="menu">
+                                    <div class="item" data-value="">State</div>
+                                    <div class="item" data-value="AL">Alabama</div>
+                                    <div class="item" data-value="AK">Alaska</div>
+                                    <div class="item" data-value="AZ">Arizona</div>
+                                    <div class="item" data-value="AR">Arkansas</div>
+                                    <div class="item" data-value="CA">California</div>
+                                    <div class="item" data-value="CO">Colorado</div>
+                                    <div class="item" data-value="CT">Connecticut</div>
+                                    <div class="item" data-value="DE">Delaware</div>
+                                    <div class="item" data-value="DC">District Of Columbia</div>
+                                    <div class="item" data-value="FL">Florida</div>
+                                    <div class="item" data-value="GA">Georgia</div>
+                                    <div class="item" data-value="HI">Hawaii</div>
+                                    <div class="item" data-value="ID">Idaho</div>
+                                    <div class="item" data-value="IL">Illinois</div>
+                                    <div class="item" data-value="IN">Indiana</div>
+                                    <div class="item" data-value="IA">Iowa</div>
+                                    <div class="item" data-value="KS">Kansas</div>
+                                    <div class="item" data-value="KY">Kentucky</div>
+                                    <div class="item" data-value="LA">Louisiana</div>
+                                    <div class="item" data-value="ME">Maine</div>
+                                    <div class="item" data-value="MD">Maryland</div>
+                                    <div class="item" data-value="MA">Massachusetts</div>
+                                    <div class="item" data-value="MI">Michigan</div>
+                                    <div class="item" data-value="MN">Minnesota</div>
+                                    <div class="item" data-value="MS">Mississippi</div>
+                                    <div class="item" data-value="MO">Missouri</div>
+                                    <div class="item" data-value="MT">Montana</div>
+                                    <div class="item" data-value="NE">Nebraska</div>
+                                    <div class="item" data-value="NV">Nevada</div>
+                                    <div class="item" data-value="NH">New Hampshire</div>
+                                    <div class="item" data-value="NJ">New Jersey</div>
+                                    <div class="item" data-value="NM">New Mexico</div>
+                                    <div class="item" data-value="NY">New York</div>
+                                    <div class="item" data-value="NC">North Carolina</div>
+                                    <div class="item" data-value="ND">North Dakota</div>
+                                    <div class="item" data-value="OH">Ohio</div>
+                                    <div class="item" data-value="OK">Oklahoma</div>
+                                    <div class="item" data-value="OR">Oregon</div>
+                                    <div class="item" data-value="PA">Pennsylvania</div>
+                                    <div class="item" data-value="RI">Rhode Island</div>
+                                    <div class="item" data-value="SC">South Carolina</div>
+                                    <div class="item" data-value="SD">South Dakota</div>
+                                    <div class="item" data-value="TN">Tennessee</div>
+                                    <div class="item" data-value="TX">Texas</div>
+                                    <div class="item" data-value="UT">Utah</div>
+                                    <div class="item" data-value="VT">Vermont</div>
+                                    <div class="item" data-value="VA">Virginia</div>
+                                    <div class="item" data-value="WA">Washington</div>
+                                    <div class="item" data-value="WV">West Virginia</div>
+                                    <div class="item" data-value="WI">Wisconsin</div>
+                                    <div class="item" data-value="WY">Wyoming</div>
+                                </div>
+                            </div>
+                            {{#embed "panel-icons" slide="1"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <p class="mb-0 panel-body-p">This is a panel with no constraints</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="30" class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel
+                            </h2>
+                            <div class="hidden-xs-down panel-input pull-left hidden-xs-down">
+                                <input class="form-control form-control-sm" type="text" placeholder="Search">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed "panel-icons" slide="1"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0">This a panel with no constraints</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-no-resize="true" data-gs-height="30" class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Isn't Resizable
+                            </h2>
+                            <div class="hidden-xs-down panel-input pull-left">
+                                <input class="form-control form-control-sm" type="text" placeholder="Search">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed "panel-icons" slide="1"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="">This panel could not be resized. Other panels could change its position.</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="30" class="col-sm-12 col-md-12 col-lg-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p grid-stack-handle bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Panel
+                            </h2>
+                            <div class="panel-input pull-left hidden-xs-down">
+                                <input class="form-control form-control-sm" type="text" placeholder="Search">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed "panel-icons" slide="1"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="mb-0">This a panel with no constraints</p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/app');
+        </script>
+    {{/content}}
+{{/extend}}
+

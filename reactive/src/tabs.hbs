@@ -1,0 +1,1128 @@
+{{#extend "layout-1" current="tabs"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap o-hidden">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                TABS
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <!-- Nav tabs -->
+                            <div class="mb-5">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content p-3 bw-1 bc-gray-lighter">
+                                    <div class="tab-pane active" id="home" role="tabpanel">
+                                        <p class="m-0 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. The point of
+                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.</p>
+                                    </div>
+                                    <div class="tab-pane" id="profile" role="tabpanel">
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                    <div class="tab-pane" id="messages" role="tabpanel">
+                                        <p class="m-0 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. The point of
+                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.</p>
+                                    </div>
+                                    <div class="tab-pane" id="settings" role="tabpanel">
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <p class="mb-2 fs-7">Add <code>.nav-semi-border</code> to remove the top borders</p>
+                                <ul class="nav nav-tabs nav-semi-border" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home-semi-1" role="tab">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#profile-semi-1" role="tab">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#messages-semi-1" role="tab">Messages</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#settings-semi-1" role="tab">Settings</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content p-3 bbw-1 bc-gray-lighter">
+                                    <div class="tab-pane active" id="home-semi-1" role="tabpanel">
+                                        <p class="m-0 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. The point of
+                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.</p>
+                                    </div>
+                                    <div class="tab-pane" id="profile-semi-1" role="tabpanel">
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                    <div class="tab-pane" id="messages-semi-1" role="tabpanel">
+                                        <p class="m-0 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. The point of
+                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.</p>
+                                    </div>
+                                    <div class="tab-pane" id="settings-semi-1" role="tabpanel">
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <h4 class="mb-4">Vertical Tabs</h4>
+                                <div class="vertical-tabs">
+                                    <ul class="nav nav-tabs flex-column" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#home-5"
+                                               role="tab">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#profile-5"
+                                               role="tab">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#messages-5"
+                                               role="tab">Messages</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#settings-5"
+                                               role="tab">Settings</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content p-3 bw-1 bc-gray-lighter">
+                                        <div class="tab-pane active" id="home-5" role="tabpanel">
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                            <p class="text-indent">The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using 'Content here,
+                                                content here' of passages of Lorem Ipsum available, but the majority have
+                                                suffered alteration in some form, by injected humour, or randomised
+                                                words which don't look even slightly believable.</p>
+                                        </div>
+                                        <div class="tab-pane" id="profile-5" role="tabpanel">
+                                            <p class="text-indent">Will be distracted by the readable content of layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using 'Content here,
+                                                content here', making it look like readable English. There are many
+                                                variations of passages, but the majority have
+                                                suffered alteration in some form, by injected humour, or randomised
+                                                words which don't look even slightly believable.</p>
+                                        </div>
+                                        <div class="tab-pane" id="messages-5" role="tabpanel">
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using 'Content here,
+                                                content here', making it look like readable English. There are many
+                                                variations of, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly believable.</p>
+                                        </div>
+                                        <div class="tab-pane" id="settings-5" role="tabpanel">
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using. There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <p class="mb-2 fs-7">Add <code>.nav-semi-border</code> to remove the left borders</p>
+                                <div class="vertical-tabs">
+                                    <ul class="nav nav-tabs nav-semi-border flex-column" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#home-semi-2"
+                                               role="tab">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#profile-semi-2"
+                                               role="tab">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#messages-semi-2"
+                                               role="tab">Messages</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#settings-semi-2"
+                                               role="tab">Settings</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content bbw-1 bc-gray-lighter p-3">
+                                        <div class="tab-pane active" id="home-semi-2" role="tabpanel">
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                            <p class="text-indent">The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using 'Content here,
+                                                content here' of passages of Lorem Ipsum available, but the majority have
+                                                suffered alteration in some form, by injected humour, or randomised
+                                                words which don't look even slightly believable.</p>
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                        </div>
+                                        <div class="tab-pane" id="profile-semi-2" role="tabpanel">
+                                            <p class="text-indent">Will be distracted by the readable content of layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using 'Content here,
+                                                content here', making it look like readable English. There are many
+                                                variations of passages, but the majority have
+                                                suffered alteration in some form, by injected humour, or randomised
+                                                words which don't look even slightly believable.</p>
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                        </div>
+                                        <div class="tab-pane" id="messages-semi-2" role="tabpanel">
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using 'Content here,
+                                                content here', making it look like readable English. There are many
+                                                variations of, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly believable.</p>
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                        </div>
+                                        <div class="tab-pane" id="settings-semi-2" role="tabpanel">
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using. There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised.</p>
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="vertical-tabs bw-1 bc-gray-lighter">
+                                    <ul class="nav nav-tabs nav-semi-border flex-column" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#home-semi-3"
+                                               role="tab">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#profile-semi-3"
+                                               role="tab">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#messages-semi-3"
+                                               role="tab">Messages</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#settings-semi-3"
+                                               role="tab">Settings</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content p-3">
+                                        <div class="tab-pane active" id="home-semi-3" role="tabpanel">
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                            <p class="text-indent">The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using 'Content here,
+                                                content here' of passages of Lorem Ipsum available, but the majority have
+                                                suffered alteration in some form, by injected humour, or randomised
+                                                words which don't look even slightly believable.</p>
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                        </div>
+                                        <div class="tab-pane" id="profile-semi-3" role="tabpanel">
+                                            <p class="text-indent">Will be distracted by the readable content of layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using 'Content here,
+                                                content here', making it look like readable English. There are many
+                                                variations of passages, but the majority have
+                                                suffered alteration in some form, by injected humour, or randomised
+                                                words which don't look even slightly believable.</p>
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                        </div>
+                                        <div class="tab-pane" id="messages-semi-3" role="tabpanel">
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using 'Content here,
+                                                content here', making it look like readable English. There are many
+                                                variations of, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly believable.</p>
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                        </div>
+                                        <div class="tab-pane" id="settings-semi-3" role="tabpanel">
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                                opposed to using. There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised.</p>
+                                            <p class="text-indent">It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Pills
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <!-- Nav tabs -->
+                            <div class="mb-7">
+                                <ul class="nav nav-pills" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home-1" role="tab">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#profile-1" role="tab">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#messages-1" role="tab">Messages</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#settings-1" role="tab">Settings</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" data-toggle="dropdown" href="#"
+                                           role="button" aria-haspopup="true" aria-expanded="false">Dropdown<i class="fa fa-angle-down icon-ml"></i></a>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown-menu-content">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active bgc-primary p-3" id="home-1" role="tabpanel">
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                    <div class="tab-pane bgc-warning p-3" id="profile-1" role="tabpanel">
+                                        <p class="m-0 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. The point of
+                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.</p>
+                                    </div>
+                                    <div class="tab-pane bgc-danger p-3" id="messages-1" role="tabpanel">
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                    <div class="tab-pane bgc-info p-3" id="settings-1" role="tabpanel">
+                                        <p class="m-0 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. The point of
+                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-7">
+                                <h5 class="mb-3">With animation</h5>
+                                <ul class="nav nav-pills bgc-active-danger mb-2" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home-2" role="tab"><i
+                                            class="fa fa-home icon-mr"></i>Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#profile-2" role="tab"><i
+                                            class="fa fa-suitcase icon-mr"></i>Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#messages-2" role="tab"><i
+                                            class="fa fa-envelope icon-mr"></i>Messages</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content py-3 bbw-2 btw-2 bc-danger c-danger o-hidden">
+                                    <div class="tab-pane active transition scale in" id="home-2" role="tabpanel">
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                    <div class="tab-pane transition fly right in" id="profile-2" role="tabpanel">
+                                        <p class="m-0 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. The point of
+                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.</p>
+                                    </div>
+                                    <div class="tab-pane transition fly left in" id="messages-2" role="tabpanel">
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-7">
+                                <ul class="nav nav-pills nav-justified bgc-warning bgc-active-dark-trans" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="c-white-dark nav-link active" data-toggle="tab" href="#home-3" role="tab">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="c-white-dark nav-link" data-toggle="tab" href="#profile-3" role="tab">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="c-white-dark nav-link" data-toggle="tab" href="#messages-3" role="tab">Messages</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content p-3 bbw-1 bc-warning">
+                                    <div class="tab-pane active clearfix" id="home-3" role="tabpanel">
+                                        <a href="assets/img/binoculars.jpg" class="pull-right ml-3 mb-0 w-50">
+                                            <img class="p-1 bc-warning bw-1 img-fluid" src="assets/img/binoculars.jpg" alt="img">
+                                            <span class="fs-7 mt-1 d-block c-gray-dark">Some text</span>
+                                        </a>
+                                        <h4 class="mb-2">Real Facts</h4>
+                                        <p class="mb-3 text-indent">It is a long established fact that a reader will be distracted
+                                            by the readable content of a page when looking at its layout.
+                                            <br>The point of
+                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, making it look like readable English.
+                                        </p>
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised words which don't look even slightly believable.</p>
+                                    </div>
+                                    <div class="tab-pane" id="profile-3" role="tabpanel">
+                                        <p>It is a long established fact that a reader will be distracted by the
+                                            readable content of a page when looking at its layout. The point of using
+                                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                            opposed to using 'Content here,
+                                            content here'.</p>
+                                        <p>
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                    <div class="tab-pane" id="messages-3" role="tabpanel">
+                                        <p>It is a long established fact that a reader will be distracted by the
+                                            readable content of a page when looking at its layout. The point of using
+                                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                            opposed to using 'Content here,
+                                            content here'.</p>
+                                        <p>
+                                        <p class="m-0 text-indent">There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected humour,
+                                            or randomised
+                                            words which don't look even slightly believable.</p>
+                                    </div>
+                                </div>
+                                <ul class="nav nav-pills nav-justified bgc-warning bgc-active-dark-trans" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="c-white-dark nav-link active" data-toggle="tab" href="#home-3" role="tab">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="c-white-dark nav-link" data-toggle="tab" href="#profile-3" role="tab">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="c-white-dark nav-link" data-toggle="tab" href="#messages-3" role="tab">Messages</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4 class="mb-4">With Icons</h4>
+                            <div class="vertical-tabs bbw-sm-1 bc-gray-lighter d-sm-flex">
+                                <ul class="nav nav-pills flex-column brw-sm-1 bbw-2 bbw-sm-0 px-0 px-sm-2 bc-gray-lighter" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#general" role="tab"><i
+                                            class="fa fa-list-alt icon-mr icon-width"></i>General</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#shipping" role="tab"><i
+                                            class="fa fa-truck icon-mr icon-width"></i>Shipping</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#inventory" role="tab"><i
+                                            class="fa fa-sitemap icon-mr icon-width"></i>Inventory</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#meta-fields" role="tab"><i
+                                            class="fa fa-tags icon-mr icon-width"></i>Meta fields</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#cross-sells" role="tab"><i
+                                            class="fa fa-exchange icon-mr icon-width"></i>Cross Sells</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#up-sells" role="tab"><i
+                                            class="fa fa-bolt icon-mr icon-width"></i>Up Sells</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content pl-3 py-3 blw-sm-1 bc-gray-lighter">
+                                    <div class="tab-pane active" id="general" role="tabpanel">
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-price">Price</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-price" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-qty">Qty</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-qty" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-enable-increments">Enable Increments</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="product-enable-increments" class="ui simple-select select-dropdown">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-max-qty">Max Qty in the Cart</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-max-qty" class="spin form-control" value="14"
+                                                       placeholder="Enter Number">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-min-qty">Min Qty in the Cart</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-min-qty" class="form-control spin" value="0"
+                                                       placeholder="Enter Number">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <strong><i class="fa fa-warning icon-mr fs-5"></i></strong>Contrary to
+                                            popular belief this is just random text.
+                                        </div>
+                                        <small><b>Note:</b> Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.
+                                        </small>
+                                    </div>
+                                    <div class="tab-pane" id="shipping" role="tabpanel">
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-weight">Weight</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-weight" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-length">Length</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-length" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-width">Width</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-width" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-height">Height</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-height" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                    </div>
+                                    <div class="tab-pane" id="inventory" role="tabpanel">
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-sku">SKU</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-sku" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-enable-increments2">Stock Availability</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="product-enable-increments2" class="ui simple-select select-dropdown">
+                                                    <option value="1">In Stock</option>
+                                                    <option value="0">Empty</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-qty2">Qty</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="product-qty2" class="spin form-control" value="30" placeholder="Enter Number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="meta-fields" role="tabpanel">
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="custom-input">Custom Input</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <input id="custom-input" class="form-control" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group mb-4">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-3 text-right">
+                                                    <label for="custom-textarea">Custom Text Area</label>
+                                                </div>
+                                                <div class="col-xs-12 col-9">
+                                                    <textarea id="custom-textarea" class="form-control" placeholder=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4 bbw-1 bc-gray-lighter"></div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="product-enable-increments3">Custom Select</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="product-enable-increments3" class="ui simple-select select-dropdown">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group mb-4">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-3 text-right">
+                                                    <label for="custom-textarea2">Custom Text Area</label>
+                                                </div>
+                                                <div class="col-xs-12 col-9">
+                                                    <textarea id="custom-textarea2" class="form-control" placeholder=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <!-- Start form-group-->
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-3 text-right">
+                                                    <label for="custom-spin">Custom Spin</label>
+                                                </div>
+                                                <div class="col-xs-12 col-9">
+                                                    <input id="custom-spin" class="spin form-control" value="" placeholder="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                    </div>
+                                    <div class="tab-pane" id="cross-sells" role="tabpanel">
+                                        <p class="m-5 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. <br>
+                                            The point ofusing Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.
+                                        </p>
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label>Cross Sells</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <div class="ui fluid multiple search selection tags-allow-select select-dropdown">
+                                                    <input name="tags" type="hidden" id="cross-select">
+                                                    <i class="select-dropdown icon"></i>
+                                                    <div class="default text">Skills</div>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="angular">Angular</div>
+                                                        <div class="item" data-value="css">CSS</div>
+                                                        <div class="item" data-value="design">Graphic Design</div>
+                                                        <div class="item" data-value="ember">Ember</div>
+                                                        <div class="item" data-value="html">HTML</div>
+                                                        <div class="item" data-value="ia">Information Architecture</div>
+                                                        <div class="item" data-value="javascript">Javascript</div>
+                                                        <div class="item" data-value="mech">Mechanical Engineering</div>
+                                                        <div class="item" data-value="meteor">Meteor</div>
+                                                        <div class="item" data-value="node">NodeJS</div>
+                                                        <div class="item" data-value="plumbing">Plumbing</div>
+                                                        <div class="item" data-value="python">Python</div>
+                                                        <div class="item" data-value="rails">Rails</div>
+                                                        <div class="item" data-value="react">React</div>
+                                                        <div class="item" data-value="repair">Kitchen Repair</div>
+                                                        <div class="item" data-value="ruby">Ruby</div>
+                                                        <div class="item" data-value="ui">UI Design</div>
+                                                        <div class="item" data-value="ux">User Experience</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="custom-select-cross">Custom Select</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="custom-select-cross" class="form-control ui simple-select select-dropdown">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                    </div>
+                                    <div class="tab-pane" id="up-sells" role="tabpanel">
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label>Up Sells</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <div class="ui fluid multiple search selection tags-allow-select select-dropdown">
+                                                    <input name="tags" type="hidden" id="up-sells-input">
+                                                    <i class="select-dropdown icon"></i>
+                                                    <div class="default text">Skills</div>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="angular">Angular</div>
+                                                        <div class="item" data-value="css">CSS</div>
+                                                        <div class="item" data-value="design">Graphic Design</div>
+                                                        <div class="item" data-value="ember">Ember</div>
+                                                        <div class="item" data-value="html">HTML</div>
+                                                        <div class="item" data-value="ia">Information Architecture</div>
+                                                        <div class="item" data-value="javascript">Javascript</div>
+                                                        <div class="item" data-value="mech">Mechanical Engineering</div>
+                                                        <div class="item" data-value="meteor">Meteor</div>
+                                                        <div class="item" data-value="node">NodeJS</div>
+                                                        <div class="item" data-value="plumbing">Plumbing</div>
+                                                        <div class="item" data-value="python">Python</div>
+                                                        <div class="item" data-value="rails">Rails</div>
+                                                        <div class="item" data-value="react">React</div>
+                                                        <div class="item" data-value="repair">Kitchen Repair</div>
+                                                        <div class="item" data-value="ruby">Ruby</div>
+                                                        <div class="item" data-value="ui">UI Design</div>
+                                                        <div class="item" data-value="ux">User Experience</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Start form-group-->
+                                        <div class="form-group row mb-4">
+                                            <div class="col-xs-12 col-3 text-right">
+                                                <label for="custom-select-up">Custom Select</label>
+                                            </div>
+                                            <div class="col-xs-12 col-9">
+                                                <select id="custom-select-up" class="ui simple-select select-dropdown">
+                                                    <option value="yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- End form-group-->
+                                        <p class="m-5 text-indent">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. <br>
+                                            The point ofusing Lorem Ipsum is that it has a more-or-less normal distribution of
+                                            letters, as opposed to using 'Content here,
+                                            content here', making it look like readable English.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                ACCORDION
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div id="accordion" class="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="card mb-1">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                               href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <i class="fa fa-heartbeat icon-mr"></i>Reviews
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="card-body">
+                                            <div class="reviews">
+                                                <div class="review clearfix">
+                                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                                    <div class="content">
+                                                        <a class="author" href="">Reece Collins</a>
+                                                        <div class="star rating rating-disable fs-5 float-sm-right" data-rating="3"
+                                                             data-max-rating="5"></div>
+                                                    </div>
+                                                    <div class="content text text-indent">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry.
+                                                    </div>
+                                                    <div class="content metadata">
+                                                        <span class="date">Sep 15, 2020</span>
+                                                        <span class="hour">10:28 Am</span>
+                                                    </div>
+                                                </div>
+                                                <div class="review clearfix">
+                                                    <div class="avatar pull-left"><i class="icon-user"></i></div>
+                                                    <div class="content">
+                                                        <a class="author" href="">James Foster</a>
+                                                        <div class="star rating rating-disable fs-5 float-sm-right" data-rating="4"
+                                                             data-max-rating="5"></div>
+                                                    </div>
+                                                    <div class="content text text-indent">
+                                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                                                        Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry.
+                                                    </div>
+                                                    <div class="content metadata">
+                                                        <span class="date">Sep 14, 2020</span>
+                                                        <span class="hour">13:21 Am</span>
+                                                    </div>
+                                                </div>
+                                                <form class="new-review clearfix">
+                                                    <div class="mb-3">
+                                                        <div class="star rating rating-enable small mb-2" data-max-rating="5"></div>
+                                                        <textarea class="form-control"></textarea>
+                                                    </div>
+                                                    <a href="" class="btn btn-default pull-right">Add Review</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-1">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                               aria-expanded="true" aria-controls="collapseTwo">
+                                                <span class="fa fa-life-bouy icon-mr"></span>Questions<span
+                                                class="badge badge-pill badge-danger ml-1">+ 1</span>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse show" role="tabpanel"
+                                         aria-labelledby="headingTwo">
+                                        <div class="card-body p-0 table-responsive">
+                                            <table class="table m-0">
+                                                <thead>
+                                                <tr class="fs-7">
+                                                    <th class="text-center">Source</th>
+                                                    <th>Subject<i class="fa fa-angle-down icon-ml"></i></th>
+                                                    <th>Status</th>
+                                                    <th>Message</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-center"><i style="color: #1da1f2" class="fa fa-twitter-square"></i></td>
+                                                    <td>Sed ut perspiciatis unde omnis iste natus?</td>
+                                                    <td>Open</td>
+                                                    <td>1</td>
+                                                    <td>Today</td>
+                                                </tr>
+                                                <tr class="text-muted">
+                                                    <td class="text-center"><i style="color: #3b5998" class="fa fa-facebook-square"></i></td>
+                                                    <td>Nemo enim ipsam?</td>
+                                                    <td>Closed</td>
+                                                    <td>3</td>
+                                                    <td>1 day ago</td>
+                                                </tr>
+                                                <tr class="text-muted">
+                                                    <td class="text-center"><i style="color: #dd4b39" class="fa fa-envelope"></i></td>
+                                                    <td>Nisi ut aliquid ex ea.</td>
+                                                    <td>Closed</td>
+                                                    <td>13</td>
+                                                    <td>2 day ago</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                               href="#collapseThree" aria-expanded="false"
+                                               aria-controls="collapseThree">
+                                                <i class="fa icon-mr fa-history"></i>Revisions
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" role="tabpanel"
+                                         aria-labelledby="headingThree">
+                                        <div class="card-body">
+                                            <div class="time-line threaded">
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-primary"><i class="fa fa-envelope"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Today</span>
+                                                            <span class="hour">10:30 PM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-danger"><i class="fa fa-exclamation-circle"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Yesterday</span>
+                                                            <span class="hour">23:33 AM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Consectetur adipiscing elit.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-warning"><i class="fa fa-life-bouy"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Sep 2, 2016</span>
+                                                            <span class="hour">13:20 PM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                                            doloremque laudantium
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-info"><i class="fa fa-bitbucket"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Aug 25, 2016</span>
+                                                            <span class="hour">05:56 PM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tm-line-item">
+                                                    <div class="tm-icon c-primary"><i class="fa fa-shopping-bag"></i></div>
+                                                    <div class="content">
+                                                        <div class="metadata">
+                                                            <span class="date">Jul 5, 2016</span>
+                                                            <span class="hour">11:10 AM</span>
+                                                        </div>
+                                                        <p class="text">
+                                                            Sed quia non numquam eius
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Toggle
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div id="accordion2" class="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="card mb-1">
+                                    <div class="card-header" role="tab" id="headingOne2">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse"
+                                               href="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                                                <i class="fa fa-heartbeat icon-mr"></i>Reviews
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOne2" class="collapse" role="tabpanel" aria-labelledby="headingOne2">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt aliqua put a bird
+                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                            keffiyeh helvetica
+                                            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                            probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-1">
+                                    <div class="card-header" role="tab" id="headingTwo2">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse"  href="#collapseTwo2"
+                                               aria-expanded="true" aria-controls="collapseTwo2">
+                                                <span class="fa fa-life-bouy icon-mr"></span>Questions<span
+                                                class="badge badge-pill badge-danger ml-1">+ 1</span>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo2" class="collapse show" role="tabpanel"
+                                         aria-labelledby="headingTwo2">
+                                        <div class="card-body">
+                                            It squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                            proident. Ad vegan excepteur butcher vice lomo.
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt aliqua put a bird Ad vegan excepteur butcher vice lomo.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree2">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse"
+                                               href="#collapseThree2" aria-expanded="false"
+                                               aria-controls="collapseThree2">
+                                                <i class="fa icon-mr fa-history"></i>Revisions
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree2" class="collapse" role="tabpanel"
+                                         aria-labelledby="headingThree2">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Nihil anim
+                                            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                            proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                            probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/tabs');
+        </script>
+    {{/content}}
+{{/extend}}

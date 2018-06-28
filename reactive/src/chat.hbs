@@ -1,0 +1,243 @@
+{{#extend "layout-1" current="chat"}}
+    {{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack" id="panel-grid">
+                <section data-gs-height="80" data-smart-icon="ion-ios-people fs-3" class="hidden-lg-down col-sm-12 col-md-12 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel chat-profile-about bgc-white-dark">
+                        <div class="panel-header clearfix bgc-white-dark panel-header-p grid-stack-handle panel-header-md">
+                            <div class="panel-input pull-left">
+                                <input class="form-control form-control-sm search-control" type="text" placeholder="Search" data-list=".chat-members-list">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="chat-members panel-body-p">
+                                <div class="list m-0 chat-members-list">
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line">3</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic6.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">" Sed ut perspiciatis un ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">10 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line">2</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic5.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">The master-builder of ca ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">20 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line">2</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header"><span class="c-gray-dark font-weight-bold">Taylor Fletcher</span></a>
+                                            <div class="description">All this mistaken idea g ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">1 hour</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Rhys Brooks</a>
+                                            <div class="description">Denouncing pleasure and ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">2 hour</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line">1</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic2.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">Expound the actual tea ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">1 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Brock Giles</a>
+                                            <div class="description">Praising pain was born ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">1 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic6.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Dariel Wallace</a>
+                                            <div class="description">Will give you a complete ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">2 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic5.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jared Allison</a>
+                                            <div class="description">Expound the actual teachi ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">3 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">Praising pain was born  ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">4 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item p-0">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Hunter Atkins</a>
+                                            <div class="description">The great explorer of th ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">4 day</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="80" class="col-sm-12 col-md-12 col-lg-12 col-xl-9 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix  bgc-white-dark panel-header-p grid-stack-handle panel-header-md">
+                            <h2 class="pull-left hidden-xs-down">
+                                Chat Room
+                            </h2>
+                            <div class="panel-input pull-left">
+                                <input class="form-control form-control-sm search-control" type="text" placeholder="Search" data-list=".chat-messages">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="chat-room">
+                                <div class="chat-messages">
+                                    <div class="chat-message">
+                                        <div class="avatar">
+                                            <i class="icon-user rounded-circle bgc-white-darkest image"></i>
+                                        </div>
+                                        <div class="content">
+                                            <div class="metadata d-inline-block">
+                                                <span class="date">Yesterday</span>
+                                                <span class="hour">12:20 Am</span>
+                                            </div>
+                                            <div class="text py-2 px-3 bgc-white-darkest">
+                                                <p class="mb-0">Nor again is there anyone who loves or pursues or desires to obtain pain
+                                                    of itself. But because occasionally circumstances occur in which toil
+                                                    and pain can procure him great pleasure </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-message text-right my-message">
+                                        <div class="pull-right">
+                                            <div class="avatar">
+                                                <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <div class="metadata d-inline-block">
+                                                    <span class="date">Yesterday</span>
+                                                    <span class="hour">12:21 Am</span>
+                                                </div>
+                                                <div class="text py-2 px-3 bgc-white-darkest">
+                                                    <p class="mb-0">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                                                        and I will give you... </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-message-divider">
+                                        <span class="fs-7 c-gray">Yesterday</span>
+                                        <div class="btw-1 bc-gray-lighter"></div>
+                                    </div>
+                                    <div class="chat-message">
+                                        <div class="avatar">
+                                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="metadata d-inline-block">
+                                                <span class="hour">4 hours ago</span>
+                                            </div>
+                                            <div class="text py-2 px-3 bgc-white-darkest">
+                                                <p class="mb-0">To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+                                                    from it? Nor again is there anyone who loves or pursues or desires to obtain pain of itself.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-message">
+                                        <div class="avatar">
+                                            <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="metadata d-inline-block">
+                                                <span class="hour">Now</span>
+                                            </div>
+                                            <div class="text spinner py-1 px-3 bgc-white-darkest">
+                                                <div class="mt-1">
+                                                    <div class="circle circ1"></div>
+                                                    <div class="circle circ2"></div>
+                                                    <div class="circle circ3"></div>
+                                                    <div class="circle circ4"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-reply bc-gray-lighter btw-1 pt-3">
+                                    <div class="pull-right textarea-group">
+                                        <div class="form-control chat-reply-area"></div>
+                                        <div class="chat-textarea-addon">
+                                            <a href="" class="c-gray chat-textarea-addon-file"><i class="fa fa-paperclip"></i></a>
+                                            <a href="" class="pull-right btn-icon rounded-circle btn-info"><i class="fa fa-paper-plane"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/chat');
+        </script>
+    {{/content}}
+{{/extend}}

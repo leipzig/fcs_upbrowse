@@ -1,0 +1,52 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: project
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.project-list {
+    > .item { @include clearfix(); padding-left: 2rem; padding-right: 2rem;
+        .content { width: calc( 100% - 50px - 3rem); display: inline-block !important; padding-right: 2rem; padding-left: 2rem;
+            .header { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+        }
+        .image { display: inline-block; float: left; margin-right: 0; text-align: center; height: 50px; line-height: 50px; font-size: $font-size-3; color: clr(body-inverse-light); background: $brand-body; }
+        .controls { position: absolute; right: 0rem; top: 1rem;
+            .priority { width: 10px; height: 10px; border-radius: 10em; display: inline-block; margin: 0 1rem 1px 0; }
+            .project-list-more { color: $gray; }
+        }
+    }
+}
+.project-task-list {
+    .controls { position: absolute; right: 0rem; top: 1rem;
+        .priority { width: 10px; height: 10px; border-radius: 10em; display: inline-block; margin: 0 1rem 1px 0; }
+        .project-list-more { color: $gray; }
+    }
+    > .item { padding-right: 2rem; padding-left: 2rem; cursor: pointer; }
+}
+.panel-wrap[max-width~="732px"] {
+    .project-task-list > .item,
+    .project-list > .item { padding-right: 1.3rem; padding-left: 1.3rem; }
+}
+.project-task-header { width: calc( 100% - 3.5rem ); display: inline-block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.project-header {
+    span.project-date { white-space: nowrap; }
+    .list.horizontal.participant {
+        .item { margin: 0 -1.3rem 0 0; line-height: 48px; padding: 0; cursor: pointer;
+            .image { width: 50px; height: 50px; color: $gray; text-align: center; background: $white-dark; border: 2px solid $white-darkest; margin: 0; transition: color .3s;
+                &:hover { color: $gray-dark; }
+            }
+            img.image + span { position: absolute; left: 0; top: 0; right: 0; bottom: 0; color:$white-dark; cursor: pointer;
+                z-index: 1; background: transparentize($gray-dark, .1); opacity: 0; transition: opacity .3s; text-align: center; border-radius: 100rem; }
+            img.image + span:hover { opacity: 1; }
+        }
+    }
+}
+.team-members-list.list .item {
+    .image { margin-right: 0; width: 45px; }
+    .header { line-height: 1; margin-bottom: .5rem; }
+    .controls { position: absolute; right: 0; top: 20px;}
+}
+
+
+

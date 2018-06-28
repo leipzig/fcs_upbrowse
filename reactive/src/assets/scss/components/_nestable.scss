@@ -1,0 +1,56 @@
+/*!
+ * @version: 1.1.1
+ * @name: nestable
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+$nestable-item-max-width: 500px;
+
+.nestable { position: relative; display: block; font-size: $font-size-6-plus; }
+.dd-list { @extend .list-group }
+.dd-list .dd-list { padding-left: 30px; margin: 0 }
+.dd-empty,
+.dd-placeholder { @extend .list-group-item; }
+.dd-item,
+.dd-empty,
+.dd-placeholder { margin: .8rem 0 0; display: inline-block; padding: 0; border: none; }
+.dd-handle { min-height: 43px; position: relative; display: block; padding: 0.75rem 1.25rem; font-weight: bold; background: $white-dark; @include border-radius($border-radius); box-sizing: border-box; border: 1px solid $gray-lighter; max-width: $nestable-item-max-width; }
+.dd-handle:hover { background: $white-darker; }
+.dd-item > button { position: relative; z-index: 1; cursor: pointer; float: left; width: 30px; padding: 15px 0; white-space: nowrap; overflow: hidden; border: 0; background: transparent; line-height: 1; text-align: center; font-weight: bold; }
+.nestable-handles {
+    .dd-item-handle { position: absolute; width: 35px; color: $gray; background: $gray-lighter; left: 0; height: 100%; top: 0; text-align: center; line-height: 40px; font-size: $font-size-5;
+        &:after { font-family: "Ionicons"; content: '\f20d'; }
+        + span { margin-left: 35px; }
+    }
+    .dd-item > button { margin-left: 40px;
+        ~ .dd-handle {
+            .dd-item-handle + span { margin-left: 0; }
+        }
+    }
+}
+[data-action="expand"] { display: none; }
+.dd-collapsed {
+    [data-action="collapse"] { display: none; }
+    [data-action="expand"] { display: block; }
+}
+.dd-expand { display: none; }
+.dd-collapsed .dd-list,
+.dd-collapsed .dd-collapse { display: none; }
+.dd-collapsed .dd-expand { display: block; }
+.dd-empty,
+.dd-placeholder { margin: 5px 0; padding: 0; min-height: 30px; background: #f2fbff; border: 1px dashed $gray-light; box-sizing: border-box; max-width: $nestable-item-max-width; }
+.dd-empty { border: 1px dashed #bbb; min-height: 100px; background-size: 60px 60px; background-position: 0 0, 30px 30px; }
+.dd-dragel { position: absolute; pointer-events: none; z-index: 9999; }
+.dd-dragel > .dd-item .dd-handle { margin-top: 0; }
+.dd-dragel .dd-handle { box-shadow: 2px 4px 6px 0 rgba(0,0,0,.1); }
+
+.dd-nochildren .dd-placeholder { display: none; }
+.dd-drop { float: right; cursor: pointer; font-weight: normal; font-size: $font-size-7;
+    &:after { content: '\f106'; font-family: 'FontAwesome'; float: right; margin-left: 1ch;}
+    &.collapsed:after { content: '\f107'; }
+}
+.dd-drop-menu { max-width: $nestable-item-max-width }
+@include media-breakpoint-down(sm) {
+    .dd-list .dd-list { padding-left: 5px; }
+}

@@ -1,0 +1,252 @@
+{{#extend "layout-1" current="form-wizard"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <section class="col-sm-12 col-md-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Navigation by Buttons
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="step-animate wizard-buttons">
+                                <h3>Keyboard</h3>
+                                <section class="px-2">
+                                    <p class="mb-0">Try the keyboard navigation by clicking arrow left or right!</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, sapiente.</p>
+                                </section>
+                                <h3>Effects</h3>
+                                <section class="px-2">
+                                    <p class="mb-0">Wonderful transition effects.</p>
+                                </section>
+                                <h3>Pager</h3>
+                                <section class="px-2">
+                                    <p class="mb-0">The next and previous buttons help you to navigate through your content.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Navigate by Steps
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="wizard-navigation step-animate">
+                                <h3>Keyboard</h3>
+                                <section class="px-2">
+                                    <p class="mb-0">Navigate by clicking on the steps</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, sapiente.</p>
+                                </section>
+                                <h3>Effects</h3>
+                                <section class="px-2">
+                                    <p class="mb-0">Wonderful transition effects.</p>
+                                </section>
+                                <h3>Pager</h3>
+                                <section class="px-2">
+                                    <p class="mb-0">The next and previous buttons help you to navigate through your content.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                With Form
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-step-validation">
+                                <div class="step-animate wizard-navigation">
+                                    <h3>Keyboard</h3>
+                                    <section class="px-2">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control required" id="exampleInputEmail1" aria-describedby="emailHelp1" placeholder="Enter email" name="email">
+                                            <small id="emailHelp1" class="form-text text-muted">We'll never share your email with
+                                                anyone else.
+                                            </small>
+                                        </div>
+                                    </section>
+                                    <h3>Effects</h3>
+                                    <section class="px-2">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                                        </div>
+                                    </section>
+                                    <h3>Pager</h3>
+                                    <section class="px-2">
+                                        <div class="form-check form-group">
+                                            <label class="custom-control custom-checkbox ui checkbox d-block">
+                                                <input type="checkbox" class="form-control custom-control-input" name="checked">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description ml-2">Agree to the terms and conditions</span>
+                                            </label>
+                                        </div>
+                                    </section>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Tab Control
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-step-validation">
+                                <div class="wizard-navigation-tabs">
+                                    <h3>Keyboard</h3>
+                                    <section class="p-3">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail2">Email address</label>
+                                            <input type="email" class="form-control required" id="exampleInputEmail2" aria-describedby="emailHelp2" placeholder="Enter email" name="email">
+                                            <small id="emailHelp2" class="form-text text-muted">We'll never share your email with
+                                                anyone else.
+                                            </small>
+                                        </div>
+                                    </section>
+                                    <h3>Effects</h3>
+                                    <section class="p-3">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword2">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" name="password">
+                                        </div>
+                                    </section>
+                                    <h3>Pager</h3>
+                                    <section class="p-3">
+                                        <div class="form-check form-group">
+                                            <label class="custom-control custom-checkbox ui checkbox d-block">
+                                                <input type="checkbox" class="form-control custom-control-input" name="checked">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description ml-2">Agree to the terms and conditions</span>
+                                            </label>
+                                        </div>
+                                    </section>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Vertical Steps
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-step-validation">
+                                <div class="step-animate wizard-navigation-vertical">
+                                    <h3>Keyboard</h3>
+                                    <section class="pl-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail3">Email address</label>
+                                            <input type="email" class="form-control required" id="exampleInputEmail3" aria-describedby="emailHelp3" placeholder="Enter email" name="email">
+                                            <small id="emailHelp3" class="form-text text-muted">We'll never share your email with
+                                                anyone else.
+                                            </small>
+                                        </div>
+                                    </section>
+                                    <h3>Effects</h3>
+                                    <section class="pl-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword3">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password" name="password">
+                                        </div>
+                                    </section>
+                                    <h3>Pager</h3>
+                                    <section class="pl-md-4">
+                                        <div class="form-check form-group">
+                                            <label class="custom-control custom-checkbox ui checkbox d-block">
+                                                <input type="checkbox" class="form-control custom-control-input" name="checked">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description ml-2">Agree to the terms and conditions</span>
+                                            </label>
+                                        </div>
+                                    </section>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-xl-12 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark b-shadow-none">
+                        <div class="panel-header clearfix  panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                With Icons
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <form class="form-step-validation">
+                                <div class="step-animate wizard-navigation-icons">
+                                    <h3><i class="icon-list icon-mr"></i>Keyboard</h3>
+                                    <section class="px-2">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail4">Email address</label>
+                                            <input type="email" class="form-control required" id="exampleInputEmail4" aria-describedby="emailHelp4" placeholder="Enter email" name="email">
+                                            <small id="emailHelp4" class="form-text text-muted">We'll never share your email with
+                                                anyone else.
+                                            </small>
+                                        </div>
+                                    </section>
+                                    <h3><i class="icon-magic-wand icon-mr"></i>Effects</h3>
+                                    <section class="px-2">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword4">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password" name="password">
+                                        </div>
+                                    </section>
+                                    <h3><i class="icon-control-play icon-mr"></i>Pager</h3>
+                                    <section class="px-2">
+                                        <div class="form-check form-group">
+                                            <label class="custom-control custom-checkbox ui checkbox d-block">
+                                                <input type="checkbox" class="form-control custom-control-input" name="checked">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description ml-2">Agree to the terms and conditions</span>
+                                            </label>
+                                        </div>
+                                    </section>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/form-addon');
+        </script>
+    {{/content}}
+{{/extend}}

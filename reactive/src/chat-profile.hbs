@@ -1,0 +1,394 @@
+{{#extend "layout-1" current="chat-profile"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack">
+                <section data-gs-max-height="35" data-gs-height="35" class="col-sm-12 col-md-12 col-lg-12 col-xl-9 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel chat-profile-image c-white-dark pb-0">
+                        <div class="panel-header panel-header-p clearfix grid-stack-handle panel-header-sm">
+                            <a href="" class="panel-header-link pull-right"><i class="fa-edit fa icon-mr"></i>Edit
+                                Profile</a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="profile-details bgc-white-dark panel-body-p pb-4">
+                                <div class="row">
+                                    <div class="col-lg-7 details">
+                                        <div class="profile-image pl-lg-2 pl-0">
+                                            <a href="">
+                                                <img alt="" src="assets/img/profile-image.jpg" class="rounded-circle img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="profile-name pl-lg-3 pl-0">
+                                            <h3>Taylor Fletcher</h3>
+                                            <h6>Web Designer at <a href="">Creative LLC</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="statistic">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="text-center">
+                                                        <h6 class="lh-3">Posts</h6>
+                                                        <span class="fs-3">1860</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="text-center">
+                                                        <h6 class="lh-3">Replies</h6>
+                                                        <span class="fs-3">2540</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="text-center">
+                                                        <h6 class="lh-3">Views</h6>
+                                                        <span class="fs-3 counter" data-counter="42018"><span class="fs-5">Counting ...</span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-smart-icon="ion-ios-people fs-3" class="hidden-lg-down col-sm-12 col-md-12 col-lg-6 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel chat-profile-about bgc-white-dark">
+                        <div class="panel-header clearfix bgc-white-dark panel-header-p grid-stack-handle panel-header-md">
+                            <div class="panel-input pull-left">
+                                <input class="form-control form-control-sm search-control" type="text" placeholder="Search" data-list=".chat-members-list">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="chat-members panel-body-p">
+                                <div class="list m-0 chat-members-list">
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line">3</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic6.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">" Sed ut perspiciatis un ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">10 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line">2</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic5.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">The master-builder of ca ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">20 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line">2</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header"><span class="c-gray-dark font-weight-bold">Taylor Fletcher</span></a>
+                                            <div class="description">All this mistaken idea g ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">1 hour</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Rhys Brooks</a>
+                                            <div class="description">Denouncing pleasure and ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">2 hour</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line">1</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic2.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">Expound the actual tea ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">1 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count on-line"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Brock Giles</a>
+                                            <div class="description">Praising pain was born ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">1 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic6.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Dariel Wallace</a>
+                                            <div class="description">Will give you a complete ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">2 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic5.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jared Allison</a>
+                                            <div class="description">Expound the actual teachi ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">3 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">Praising pain was born  ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">4 day</span>
+                                        </div>
+                                    </div>
+                                    <div class="item p-0">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                        <div class="content pl-2">
+                                            <a class="header">Hunter Atkins</a>
+                                            <div class="description">The great explorer of th ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="fs-7">4 day</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-smart-icon="ion-person" class="hidden-lg-down col-sm-12 col-md-12 col-lg-6 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel chat-profile-about bgc-white-dark">
+                        <div class="panel-header panel-header-p clearfix  bgc-white-dark grid-stack-handle panel-header-sm">
+                            <h2 class="pull-left">
+                                About Me
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-1">
+                            <p class="text-indent fs-6-plus">It is a long established fact that a reader will
+                                be distracted by the readable content of a page
+                                when looking at its layout:))))</p>
+                            <p class="text-indent fs-6-plus">The point of using
+                                Lorem Ipsum is that it has a more-or-less normal
+                                distribution of letters.!!</p>
+                            <div class="pt-1">
+                                <h6 class="fs-7"><strong>Interests</strong></h6>
+                                <span class="badge badge-pill fs-7 badge-info">Traveling</span>
+                                <span class="badge badge-pill fs-7 badge-warning">Jogging</span>
+                                <span class="badge badge-pill fs-7 badge-danger">Sport</span>
+                            </div>
+                            <div class="pt-3">
+                                <h6 class="fs-7 mb-1"><strong>Mastery</strong></h6>
+                                <div class="mb-2">
+                                    <div class="fs-7">Finance</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info progress-bar-xs progress-bar-striped progress-bar-animated" style="width: 90%;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <div class="fs-7">Management</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning progress-bar-xs progress-bar-striped progress-bar-animated" style="width: 85%;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="fs-7">Marketing</div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger progress-bar-xs progress-bar-striped progress-bar-animated" style="width: 95%;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p clearfix bgc-white-dark grid-stack-handle panel-header-md">
+                            <h2 class="pull-left hidden-xs-down">
+                                Stream
+                            </h2>
+                            <div class="panel-input pull-left">
+                                <input class="form-control form-control-sm search-control" type="text" placeholder="Search" data-list=".stream">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p pt-0">
+                            <div class="stream">
+                                <div class="stream-item d-hover-parent clearfix bbw-1 bc-gray-lighter pb-3 pt-3">
+                                    <div class="avatar pull-left">
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <form class="reply clearfix">
+                                            <div class="mb-2">
+                                                <textarea class="form-control" placeholder="write new post"></textarea>
+                                            </div>
+                                            <a href="" class="btn btn-primary mr-5">Create Post</a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="stream-item d-hover-parent clearfix">
+                                    <div class="avatar pull-left">
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="d-inline-block">One task, one test ...</h5>
+                                        <a href="" class="pull-right d-hover"><i class="fa-edit fa icon-mr"></i>Edit</a>
+                                        <div class="clearfix">
+                                            <div class="author pr-3">By <a class="d-inline-block" href="">Reece Collins</a></div>
+                                            <div class="metadata d-inline-block">
+                                                <span class="date">Sep 15, 2020</span>
+                                                <span class="hour">10:28 Am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content text">
+                                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                                            and I will give you a complete account of the system, and expound the actual teachings of the great
+                                            explorer of... <a href="" class="fs-7">Show All</a></p>
+                                    </div>
+                                    <div class="content actions clearfix">
+                                        <div class="pull-left">
+                                            <div class="action"><a href=""><i class="fa fa-comments-o icon-mr-ch"></i><span class="text">Comments</span> 102</a></div>
+                                            <div class="action">
+                                                <a href=""><i class="fa fa-thumbs-o-up icon-mr-ch"></i>25<i class="fa fa-thumbs-o-down icon-ml-ch"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="action"><a href=""><i class="fa fa-reply icon-mr-ch"></i><span class="text">Reply</span></a></div>
+                                            <div class="action"><a href=""><i class="fa fa-star-o icon-mr-ch"></i><span class="text">Favorite</span></a></div>
+                                            <div class="action ui icon top right pointing simple-select select-dropdown">
+                                                <i class="fa icon"></i>
+                                                <span class="text"><i class="icon-options icon-mr-ch"></i></span>
+                                                <div class="menu">
+                                                    <div class="item">Settings</div>
+                                                    <div class="item">Manage Apps</div>
+                                                    <div class="item">Keyboard Shortcuts</div>
+                                                    <div class="item">Help</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stream-item d-hover-parent clearfix">
+                                    <div class="avatar pull-left">
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="d-inline-block">New system account</h5>
+                                        <a href="" class="pull-right d-hover"><i class="fa-edit fa icon-mr"></i>Edit</a>
+                                        <div class="clearfix">
+                                            <div class="author pr-3">By <a class="d-inline-block" href="">Reece Collins</a></div>
+                                            <div class="metadata d-inline-block">
+                                                <span class="date">Sep 15, 2020</span>
+                                                <span class="hour">10:28 Am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content text">
+                                        <p><img src="assets/img/map.jpg" alt="" class="img-fluid"></p>
+                                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                                            and I will give you... <a href="" class="fs-7">Show All</a></p>
+                                    </div>
+                                    <div class="content actions clearfix">
+                                        <div class="pull-left">
+                                            <div class="action"><a href=""><i class="fa fa-comments-o icon-mr-ch"></i><span class="text">Comments</span> 102</a></div>
+                                            <div class="action">
+                                                <a href=""><i class="fa fa-thumbs-o-up icon-mr-ch"></i>25<i class="fa fa-thumbs-o-down icon-ml-ch"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="action"><a href=""><i class="fa fa-reply icon-mr-ch"></i><span class="text">Reply</span></a></div>
+                                            <div class="action"><a href=""><i class="fa fa-star-o icon-mr-ch"></i><span class="text">Favorite</span></a></div>
+                                            <div class="action ui icon top right pointing simple-select select-dropdown">
+                                                <i class="fa icon"></i>
+                                                <span class="text"><i class="icon-options icon-mr-ch"></i></span>
+                                                <div class="menu">
+                                                    <div class="item">Settings</div>
+                                                    <div class="item">Manage Apps</div>
+                                                    <div class="item">Keyboard Shortcuts</div>
+                                                    <div class="item">Help</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark chat-contact">
+                        <div class="panel-header panel-header-p clearfix  bgc-white-dark grid-stack-handle panel-header-sm">
+                            <h2 class="pull-left">
+                                Contact Details
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="fs-6-plus mb-2">
+                                <span class="c-gray">Tel:</span>
+                                <span class="pull-right"><a href="">562 56481 5464</a></span>
+                            </div>
+                            <div class="fs-6-plus mb-2">
+                                <span class="c-gray">Mail:</span>
+                                <span class="pull-right"><a href="">john@example.com</a></span>
+                            </div>
+                            <div class="fs-6-plus mb-2">
+                                <span class="c-gray">Website:</span>
+                                <span class="pull-right"><a href="">https://www.johndoe.me</a></span>
+                            </div>
+                            <div class="fs-6-plus mb-4">
+                                <span class="c-gray">Address:</span>
+                                <span class="pull-right"><a href="">New York, Brooklyn</a></span>
+                            </div>
+                            <textarea class="form-control mb-4"></textarea>
+                            <a href="" class="btn btn-info pull-right"><i class="fa fa-envelope icon-mr"></i>Send</a>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/chat');
+        </script>
+    {{/content}}
+{{/extend}}

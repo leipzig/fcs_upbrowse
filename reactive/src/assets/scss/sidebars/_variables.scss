@@ -1,0 +1,22 @@
+/*!
+ * @version: 1.1.1
+ * @name: _variables
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+$sidebar-theme-default: (
+    open-width: 252px,
+    compact-width: 65px,
+);
+$sidebar-bg-default: (
+    // sidebar
+    bg: clr( body-dark ),
+    links-bg: $brand-body,
+    links-color:  clr( body-inverse-dark ),
+    links-link-bg: clr( body-dark ),
+    details-bg: clr( body-dark )
+);
+$sidebar-bg-one: (
+    links-color:  clr( body-inverse-dark ),
+);

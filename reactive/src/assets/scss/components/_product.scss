@@ -1,0 +1,15 @@
+
+/*!
+ * @version: 1.1.1
+ * @name: products
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+.product-list-image { width: 120px; }
+.product-images .tab-content { white-space: nowrap; overflow-x: auto; vertical-align: middle; position: relative; overflow-y: hidden;
+    img { margin-right: 15px; cursor: pointer;
+        &:last-child {  margin-right: 0 }
+    }
+}
+.product-list-table .card-view .title { min-width: 30% !important; }
+

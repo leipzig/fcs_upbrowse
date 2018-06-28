@@ -1,0 +1,118 @@
+/*!
+ * @version: 1.1.1
+ * @name: theme1
+ *
+ * @author: https://themeforest.net/user/flexlayers
+ */
+
+.sidebar-option-theme1 {
+    &.sidebar-bg-default { @include sidebar-bg-default(map_merge($sidebar-bg-default, (
+        links-bg: clr( body-darker ),
+        links-link-bg: darken(clr(body-dark), 2%),
+        details-bg: null
+    )));
+        .sidebar-wrap { background: clr(body-dark);
+            .sidebar-content { background: clr( body-dark ); }
+            .profile { @include sidebar-profile-with-pic(); }
+        }
+    }
+    &.sidebar-bg-one { @include sidebar-bg-one($sidebar-bg-one); }
+    @include media-breakpoint-up(md) {
+        @include sidebar-def-state(map_merge($sidebar-theme-default, (open-width: 382px, compact-width: 102px)));
+        &.sidebar-type-slide.sidebar-def-state-close > .sidebar-wrap.velocity-animating .tab-links { position: absolute; }
+        &.sidebar-state-open { @include sidebar-state-open(map_merge($sidebar-theme-default, (open-width: 382px, compact-width: 102px)));  }
+        &.sidebar-state-compact { @include sidebar-state-compact(map_merge($sidebar-theme-default, (open-width: 382px, compact-width: 102px)));
+            > .sidebar-wrap { width: 382px;
+                &:after { width: 382px; }
+                .sidebar-content { width: 102px; }
+                .profile,
+                .tab-content {
+                    width: 280px;
+                }
+            }
+        }
+        &.sidebar-state-close { @include sidebar-state-close(map_merge($sidebar-theme-default, (open-width: 382px, compact-width: 102px))); }
+
+        .sidebar-wrap {
+            &:after,
+            .sidebar-content { width: 382px; }
+            .tab-content,
+            .profile { margin-left: 102px }
+            .tab-links { width: 102px; @include tab-links-side();
+                li { padding: 20px 20px 10px; }
+                a[data-toggle="tab"] { width: 63px; height: 61px; line-height: 61px;
+                    i { font-size: 20px; margin-top: 7px }
+                }
+                .badge { top: 10px; right: 10px; }
+                .tab-link-add { display: block; }
+            }
+        }
+
+    }
+
+    @include media-breakpoint-down(sm) {
+        @include sidebar-def-state($sidebar-theme-default);
+        &.sidebar-state-open { @include sidebar-state-open($sidebar-theme-default);
+            .sidebar-wrap { width: 252px;
+                &:after { width: 252px; }
+                .sidebar-menu li.footer { width: 252px; }
+            }
+        }
+        &.sidebar-state-compact { @include sidebar-state-compact($sidebar-theme-default);
+            > .sidebar-wrap { width: 320px;
+                &:after,
+                .sidebar-content { width: 65px; }
+            }
+        }
+        &.sidebar-state-close { @include sidebar-state-close($sidebar-theme-default);  }
+        .sidebar-wrap {
+            .sidebar-content { width: 252px; }
+            .tab-links {
+                ul { justify-content: space-around; }
+                a[data-toggle="tab"] { min-width: 63px; height: 58px; line-height: 58px;
+                    i { font-size: 18px; }
+                }
+                .badge { top: 8px; right: 10px; }
+            }
+        }
+    }
+    .sidebar-menu li.footer { width: 280px; }
+    &.sidebar-bg-one {
+        .sidebar-wrap {
+            .tab-links {
+                a[data-toggle="tab"] { oborder-bottom-width: 0; transition: border-bottom-width .1s;
+                    &:hover,
+                    &:active,
+                    &.active { background: none; border-bottom-width: 4px; }
+                    i { font-size: 20px; }
+                }
+            }
+            .profile {
+                .details { padding: 23px; position: relative;
+                    .about { margin-top: 20px; font-size: 1rem; float: none; text-align: center; color: clr( body-inverse-dark );
+                        h3 { color: clr( body-inverse-light );}
+                    }
+                    .sbg-settings { display: inline-block; position: absolute; top: 10px; right: 14px;}
+                    .sbg-title { display: block; }
+                    .settings { display: none; }
+
+                }
+                .picture { border: 1px solid clr(body-inverse); margin: 0 auto; display: block; }
+
+            }
+            @include media-breakpoint-up(md) {
+                .tab-links { border-right: 1px solid clr(body-darker); }
+                .profile {
+                    .about h3 { font-size: $font-size-5; }
+                    .picture { width: 100px; height: 100px; float: none; }
+                }
+            }
+            @include media-breakpoint-down(sm) {
+                .profile {
+                    .about h3 { font-size: $font-size-6; }
+                    .picture { width: 55px; height: 55px; }
+                }
+            }
+        }
+    }
+}

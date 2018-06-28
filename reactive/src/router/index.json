@@ -1,0 +1,100 @@
+{
+    "title": "Dashboard",
+    "version": "1.0.1",
+    "menu": [
+        {"header": "User Interface"},
+        {"name": "Dashboard", "icon": "fa fa-dashboard", "label": "+1", "labelColor": "info", "href": "", "menu": [
+            {"name": "Dashboard 1", "icon": "", "label": "", "labelColor": "", "href": "dashboard-1"},
+            {"name": "Dashboard 2", "icon": "", "label": "", "labelColor": "", "href": "dashboard-2"}
+        ]},
+        {"name": "Layouts", "icon": "fa fa-gear icon-spin fs-4-plus", "label": "New", "labelColor": "warning", "dataAside": "#aside",
+            "dataToggle": "tab", "class": "js-custom-click", "linkClass": "aside-trigger", "anchor": true, "href": "#aside-settings"},
+        {"name": "Apps", "icon": "fa fa-folder-open-o", "label": "", "labelColor": "", "href": "", "menu": [
+            {"name": "Chat", "icon": "fa fa-comments-o", "label": "", "labelColor": "", "href": "", "menu": [
+                {"name": "Chat Profile", "icon": "", "label": "", "labelColor": "", "href": "chat-profile"},
+                {"name": "Chat", "icon": "", "label": "", "labelColor": "", "href": "chat"}
+            ]},
+            {"name": "Mail", "icon": "fa fa-envelope-o", "label": "+10", "labelColor": "primary", "href": "", "menu": [
+                {"name": "Mail Inbox", "icon": "", "label": "", "labelColor": "", "href": "mail-inbox"},
+                {"name": "Mail Compose", "icon": "", "label": "", "labelColor": "", "href": "mail-compose"},
+                {"name": "Mail Reply", "icon": "", "label": "", "labelColor": "", "href": "mail-reply"}
+            ]},
+            {"name": "Commerce", "icon": "fa fa-shopping-bag", "label": "", "labelColor": "", "href": "", "menu": [
+                {"name": "Product List", "icon": "", "label": "", "labelColor": "", "href": "product-list"},
+                {"name": "Single Product", "icon": "", "label": "", "labelColor": "", "href": "product-single"}
+            ]},
+            {"name": "Projects", "icon": "fa fa-recycle", "label": "", "labelColor": "", "href": "", "menu": [
+                {"name": "Project", "icon": "", "label": "", "labelColor": "", "href": "project"},
+                {"name": "Project Task", "icon": "", "label": "", "labelColor": "", "href": "project-task"}
+            ]},
+            {"name": "Task Board", "icon": "fa fa-bookmark-o", "label": "", "labelColor": "", "href": "task"},
+            {"name": "Contacts", "icon": "fa fa-book", "label": "", "labelColor": "", "href": "contacts"},
+            {"name": "Photo Editor", "icon": "icon-picture", "label": "", "labelColor": "", "href": "photo-editor"}
+        ]},
+        {"name": "Pages", "icon": "fa fa-laptop", "label": "", "labelColor": "", "href": "", "menu": [
+            {"name": "Starter Pages", "icon": "", "label": "", "labelColor": "", "href": "page-starter"},
+            {"name": "Login", "icon": "", "label": "", "labelColor": "", "href": "page-login"},
+            {"name": "Register", "icon": "", "label": "", "labelColor": "", "href": "page-register"},
+            {"name": "Recover Password", "icon": "", "label": "", "labelColor": "", "href": "page-recover"},
+            {"name": "404 Page", "icon": "", "label": "", "labelColor": "", "href": "page-404"},
+            {"name": "500 Page", "icon": "", "label": "", "labelColor": "", "href": "page-500"}
+        ]},
+        {"header": "UI Kit"},
+        {"name": "Charts", "icon": "fa fa-bar-chart", "label": "", "labelColor": "", "href": "charts"},
+        {"name": "Widgets", "icon": "icon-grid", "label": "Special", "labelColor": "danger", "href": "", "menu": [
+            {"name": "Widgets 1", "icon": "", "label": "", "labelColor": "", "href": "widgets"},
+            {"name": "Widgets 2", "icon": "", "label": "", "labelColor": "", "href": "widgets-2"}
+        ]},
+        {"name": "Builder Blocks", "icon": "fa fa-puzzle-piece", "label": "", "labelColor": "", "href": "", "menu": [
+            {"name": "Color Palette", "icon": "", "label": "", "labelColor": "", "href": "colors"},
+            {"name": "Buttons & Dropdowns", "icon": "", "label": "", "labelColor": "", "href": "buttons"},
+            {"name": "Typography", "icon": "", "label": "", "labelColor": "", "href": "typography"},
+            {"name": "Progress & Badges", "icon": "", "label": "", "labelColor": "", "href": "progress-bars"},
+            {"name": "Nestable", "icon": "", "label": "", "labelColor": "", "href": "nestable"},
+            {"name": "Tabs", "icon": "", "label": "", "labelColor": "", "href": "tabs"},
+            {"name": "Animations", "icon": "", "label": "", "labelColor": "", "href": "animations"},
+            {"name": "Icons", "icon": "", "label": "", "labelColor": "", "href": "icons"}
+        ]},
+        {"name": "Forms", "icon": "fa fa-edit", "label": "", "labelColor": "", "href": "", "menu": [
+            {"name": "Form Elements", "icon": "", "label": "", "labelColor": "", "href": "forms"},
+            {"name": "Form Add-ons", "icon": "", "label": "", "labelColor": "", "href": "form-add-ons"},
+            {"name": "Form Validation", "icon": "", "label": "", "labelColor": "", "href": "form-validation"},
+            {"name": "Form Wizards", "icon": "", "label": "", "labelColor": "", "href": "form-wizard"}
+        ]},
+        {"name": "Tables", "icon": "fa fa-th", "label": "", "labelColor": "", "href": "", "menu": [
+            {"name": "Static Tables", "icon": "", "label": "", "labelColor": "", "href": "tables-static"},
+            {"name": "Editable Rows", "icon": "", "label": "", "labelColor": "", "href": "tables-editable-rows"},
+            {"name": "Editable Columns", "icon": "", "label": "", "labelColor": "", "href": "tables-editable-columns"},
+            {"name": "New In Modal", "icon": "", "label": "", "labelColor": "", "href": "tables-new-in-modal"},
+            {"name": "Advanced Filters", "icon": "", "label": "", "labelColor": "", "href": "tables-advanced-filters"},
+            {"name": "FCS File Browser", "icon": "", "label": "", "labelColor": "", "href": "fcs-file-browser"}
+        ]},
+        {"name": "Panels", "icon": "fa fa-object-ungroup", "label": "", "labelColor": "", "href": "", "menu": [
+            {"name": "Static Features", "icon": "", "label": "", "labelColor": "", "href": "panel-static"},
+            {"name": "Initial Dimension", "icon": "", "label": "", "labelColor": "", "href": "panel-dynamic-initial"},
+            {"name": "Max & Min Dimension", "icon": "", "label": "", "labelColor": "", "href": "panel-dynamic-min-max"},
+            {"name": "Lock, Drag & Resize", "icon": "", "label": "", "labelColor": "", "href": "panel-dynamic-lock-drag-resize"},
+            {"name": "Pin Responsive Panels", "icon": "", "label": "", "labelColor": "", "href": "panel-pin-responsive"}
+        ]},
+        {"header": "Custom Links"},
+        {"name": "Users", "icon": "icon-user", "label": "", "labelColor": "", "href": "settings-user"},
+        {"name": "Menu Levels", "icon": "icon-layers", "label": "", "labelColor": "", "href": "", "menu": [
+            {"name": "Menu Level 1", "icon": "", "label": "", "labelColor": "", "href": "", "menu": [
+                {"name": "Menu Level 2", "icon": "", "label": "", "labelColor": "", "href": "", "menu": [
+                    {"name": "Menu Level 3", "icon": "", "label": "", "labelColor": "", "href": "", "menu": [
+                        {"name": "Menu Level 4", "icon": "", "label": "", "labelColor": "", "href": ""}
+                    ]}
+                ]}
+            ]}
+        ]},
+        {"name": "Documents v.1.1.0", "icon": "icon-question", "label": "", "labelColor": "", "href": "documents"},
+        {"name": "Settings", "icon": "fa fa-gear", "class": "footer", "label": "", "labelColor": "", "href": "", "menu": [
+            {"name": "Documents v.1.1.0", "icon": "icon-question", "label": "", "labelColor": "", "href": "documents"},
+            {"name": "Disabled Link", "icon": "icon-equalizer", "class": "disabled", "label": "", "labelColor": "", "href": ""},
+            {"header": "Grid Settings"},
+            {"name": "Restore Grid", "icon": "fa fa-refresh", "class": "has-button js-custom-click restore-grid", "label": "", "labelColor": "", "href": ""},
+            {"name": "Destroy Grid", "icon": "fa fa-close", "class": "has-button js-custom-click destroy-grid", "label": "", "labelColor": "", "href": ""},
+            {"name": "Remove Data", "icon": "icon-trash", "class": "has-button js-custom-click remove-data", "label": "", "labelColor": "", "href": ""}
+        ]}
+    ]
+}

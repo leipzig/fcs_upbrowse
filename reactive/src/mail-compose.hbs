@@ -1,0 +1,422 @@
+{{#extend "layout-1" current="mail-compose"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid grid-stack" id="panel-grid">
+                <section data-gs-height="80" data-smart-icon="fa fa-inbox" class="hidden-md-down col-sm-12 col-md-12 col-lg-4 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header clearfix panel-header-p grid-stack-handle bgc-white-dark panel-header-md">
+                            <button class="btn btn-primary px-5"><i class="fa fa-edit icon-mr-ch"></i>Compose</button>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="mail-folders panel-body-p pt-0 mr-1 mt-4 pb-0 mb-4">
+                                <div class="list mb-4">
+                                    <div class="item mb-2">
+                                        <i class="fa fa-inbox icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header gray">
+                                                <span class="c-gray-dark font-weight-bold">Inbox</span>
+                                                <span class="badge badge-pill badge-info pull-right">150</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-paper-plane icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header"><span class="c-gray-dark">Sent</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-star icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header"><span class="c-gray-dark">Starred</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-exclamation-circle icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header">
+                                                <span class="c-gray-dark">Important</span>
+                                                <span class="badge badge-pill badge-danger pull-right">105</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-files-o icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header"><span class="c-gray-dark">Drafts</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-2">
+                                        <i class="fa fa-ban icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header">
+                                                <span class="c-gray-dark">Spam</span>
+                                                <span class="badge badge-pill badge-default pull-right">2</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fa fa-trash icon"></i>
+                                        <div class="content">
+                                            <a href="" class="header"><span class="c-gray-dark">Trash</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <a class="fs-5clearfix" data-toggle="collapse" href="#collapseLabels" aria-expanded="true" aria-controls="collapseLabels">
+                                        <span class="c-gray fw-light">Labels</span>
+                                        <i class="fa fa-angle-down pull-right"></i>
+                                    </a>
+                                    <div class="collapse show" id="collapseLabels">
+                                        <div class="list pt-3">
+                                            <div class="item mb-2">
+                                                <i class="fa fa-tags icon c-danger"></i>
+                                                <div class="content">
+                                                    <a href="" class="header gray"><span class="c-gray-dark">Friends</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-2">
+                                                <i class="fa fa-tags icon c-primary"></i>
+                                                <div class="content">
+                                                    <a href="" class="header"><span class="c-gray-dark">Family</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="item mb-2">
+                                                <i class="fa fa-tags icon c-warning"></i>
+                                                <div class="content">
+                                                    <a href="" class="header"><span class="c-gray-dark">Work</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="fa fa-gear icon c-gray"></i>
+                                                <div class="content">
+                                                    <a href="" class="header"><span class="c-gray">Manage Labels</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="fs-5 clearfix" data-toggle="collapse" href="#collapseFolders" aria-expanded="true" aria-controls="collapseFolders">
+                                    <span class="c-gray fw-light">Folders</span>
+                                    <i class="fa fa-angle-down pull-right"></i>
+                                </a>
+                                <div class="collapse show" id="collapseFolders">
+                                    <div class="list pt-3">
+                                        <div class="item mb-2">
+                                            <i class="fa fa-ban icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header gray"><span class="c-gray-dark">Spam</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item mb-2">
+                                            <i class="fa fa-folder icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">Yahoo Mail</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item mb-2">
+                                            <i class="fa fa-folder icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">Gmail</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item mb-2">
+                                            <i class="fa fa-folder icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">Company</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item mb-2">
+                                            <i class="fa fa-folder icon"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">From Conference</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa fa-gear icon c-gray"></i>
+                                            <div class="content">
+                                                <a href="" class="header"><span class="c-gray-dark">Manage Folders</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="80" class="col-sm-12 col-md-12 col-lg-8 col-xl-6 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark mail-compose">
+                        <div class="panel-header clearfix grid-stack-handle bgc-white-dark panel-header-md bbw-1 bc-white-darkest">
+                            <a href="" class="panel-header-link hidden-xl-up"><i class="fa fa-file-o icon-mr"></i><span class="text">New</span></a>
+                            <a href="" class="panel-header-link"><i class="fa fa-ban icon-mr"></i><span class="text">Spam</span></a>
+                            <a href="" class="panel-header-link"><i class="fa fa-trash icon-mr"></i><span class="text">Delete</span></a>
+                            <a href="" class="panel-header-link"><i class="fa fa-reply icon-mr"></i><span class="text">Reply</span></a>
+                            <a href="" class="panel-header-link"><i class="fa fa-mail-forward icon-mr"></i><span class="text">Forward</span></a>
+                            <div class="dropdown d-inline-block">
+                                <a href="#" class="panel-header-link" id="panelDropdownMenu3" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-options"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right lh-5" aria-labelledby="panelDropdownMenu3">
+                                    <div class="dropdown-menu-content">
+                                        <a class="dropdown-item" href="#"><i class="fa fa-folder icon-mr"></i>Move</a>
+                                        <a class="dropdown-item" href="#"><i class="fa fa-gear icon-mr"></i>Settings</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="mail-reply panel-body-p">
+                                <form>
+                                    <div class="form-group mb-4 mail-to">
+                                        <!--<label for="inputEmailTo" class="col-lg-1 mt-1 col-form-label text-right sr-only">To:</label>-->
+                                        <div id="inputEmailTo" class="ui fluid multiple search selection tags-allow-select select-dropdown">
+                                            <input name="tags" type="hidden">
+                                            <span class="select-dropdown icon">
+                                                <span class="btn-group">
+                                                    <button class="btn btn-xs btn-info" data-target="#collapseCc" aria-controls="collapseCc">Cc</button>
+                                                    <button class="btn btn-xs btn-info" data-target="#collapseBcc" aria-controls="collapseBcc">Bcc</button>
+                                                </span>
+                                            </span>
+                                            <div class="default text"><i class="c-gray">To:</i></div>
+                                            <div class="menu">
+                                                <div class="item" data-value="Ainslee@proxy.com"><img src="assets/img/picture/pic1.jpg" alt="">Ainslee Boxhall</div>
+                                                <div class="item" data-value="Park@proxy.com"><img src="assets/img/picture/pic2.jpg" alt="">Park Tumbelty</div>
+                                                <div class="item" data-value="Oliy@proxy.com"><img src="assets/img/picture/pic3.jpg" alt="">Oliy Dyzart</div>
+                                                <div class="item" data-value="Andrea@proxy.com"><img src="assets/img/picture/pic4.jpg" alt="">Andrea Streader</div>
+                                                <div class="item" data-value="Martie@proxy.com"><img src="assets/img/picture/pic5.jpg" alt="">Martie Rosenfelder</div>
+                                                <div class="item" data-value="Deva@proxy.com"><img src="assets/img/picture/pic6.jpg" alt="">Deva Grosier</div>
+                                                <div class="item" data-value="Alidia@proxy.com"><img src="assets/img/picture/pic1.jpg" alt="">Alidia Abramcik</div>
+                                                <div class="item" data-value="Jillane@proxy.com"><img src="assets/img/picture/pic2.jpg" alt="">Jillane Fuentez</div>
+                                                <div class="item" data-value="Claire@proxy.com"><img src="assets/img/picture/pic3.jpg" alt="">Claire Demschke</div>
+                                                <div class="item" data-value="Bastian@proxy.com"><img src="assets/img/picture/pic4.jpg" alt="">Bastian Ornelas</div>
+                                                <div class="item" data-value="Terrie@proxy.com"><img src="assets/img/picture/pic5.jpg" alt="">Terrie Bricksey</div>
+                                                <div class="item" data-value="Aguie@proxy.com"><img src="assets/img/picture/pic6.jpg" alt="">Aguie Bassindale</div>
+                                                <div class="item" data-value="Ruthanne@proxy.com"><img src="assets/img/picture/pic1.jpg" alt="">Ruthanne McMearty</div>
+                                                <div class="item" data-value="Cori@proxy.com"><img src="assets/img/picture/pic2.jpg" alt="">Cori Pucknell</div>
+                                                <div class="item" data-value="Melantha@proxy.com"><img src="assets/img/picture/pic3.jpg" alt="">Melantha Geroldo</div>
+                                                <div class="item" data-value="Lorinda@proxy.com"><img src="assets/img/picture/pic4.jpg" alt="">Lorinda Astell</div>
+                                                <div class="item" data-value="Edeline@proxy.com"><img src="assets/img/picture/pic5.jpg" alt="">Edeline Trimble</div>
+                                                <div class="item" data-value="Zora@proxy.com"><img src="assets/img/picture/pic6.jpg" alt="">Zora Pehrsson</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group collapse mb-4" id="collapseCc">
+                                        <!--<label for="inputEmailCC" class="col-lg-1 mt-1 col-form-label text-right sr-only">Cc:</label>-->
+                                        <div id="inputEmailCC" class="ui fluid multiple search selection tags-allow-select select-dropdown">
+                                            <input name="tags" type="hidden">
+                                            <span class="select-dropdown icon"></span>
+                                            <div class="default text"><i class="c-gray">Cc:</i></div>
+                                            <div class="menu">
+                                                <div class="item" data-value="Ainslee@proxy.com"><img src="assets/img/picture/pic1.jpg" alt="">Ainslee Boxhall</div>
+                                                <div class="item" data-value="Park@proxy.com"><img src="assets/img/picture/pic2.jpg" alt="">Park Tumbelty</div>
+                                                <div class="item" data-value="Oliy@proxy.com"><img src="assets/img/picture/pic3.jpg" alt="">Oliy Dyzart</div>
+                                                <div class="item" data-value="Andrea@proxy.com"><img src="assets/img/picture/pic4.jpg" alt="">Andrea Streader</div>
+                                                <div class="item" data-value="Martie@proxy.com"><img src="assets/img/picture/pic5.jpg" alt="">Martie Rosenfelder</div>
+                                                <div class="item" data-value="Deva@proxy.com"><img src="assets/img/picture/pic6.jpg" alt="">Deva Grosier</div>
+                                                <div class="item" data-value="Alidia@proxy.com"><img src="assets/img/picture/pic1.jpg" alt="">Alidia Abramcik</div>
+                                                <div class="item" data-value="Jillane@proxy.com"><img src="assets/img/picture/pic2.jpg" alt="">Jillane Fuentez</div>
+                                                <div class="item" data-value="Claire@proxy.com"><img src="assets/img/picture/pic3.jpg" alt="">Claire Demschke</div>
+                                                <div class="item" data-value="Bastian@proxy.com"><img src="assets/img/picture/pic4.jpg" alt="">Bastian Ornelas</div>
+                                                <div class="item" data-value="Terrie@proxy.com"><img src="assets/img/picture/pic5.jpg" alt="">Terrie Bricksey</div>
+                                                <div class="item" data-value="Aguie@proxy.com"><img src="assets/img/picture/pic6.jpg" alt="">Aguie Bassindale</div>
+                                                <div class="item" data-value="Ruthanne@proxy.com"><img src="assets/img/picture/pic1.jpg" alt="">Ruthanne McMearty</div>
+                                                <div class="item" data-value="Cori@proxy.com"><img src="assets/img/picture/pic2.jpg" alt="">Cori Pucknell</div>
+                                                <div class="item" data-value="Melantha@proxy.com"><img src="assets/img/picture/pic3.jpg" alt="">Melantha Geroldo</div>
+                                                <div class="item" data-value="Lorinda@proxy.com"><img src="assets/img/picture/pic4.jpg" alt="">Lorinda Astell</div>
+                                                <div class="item" data-value="Edeline@proxy.com"><img src="assets/img/picture/pic5.jpg" alt="">Edeline Trimble</div>
+                                                <div class="item" data-value="Zora@proxy.com"><img src="assets/img/picture/pic6.jpg" alt="">Zora Pehrsson</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group collapse mb-4" id="collapseBcc">
+                                        <!--<label for="inputEmailBcc" class="col-lg-1 mt-1 col-form-label text-right sr-only">Bcc:</label>-->
+                                        <div id="inputEmailBcc" class="ui fluid multiple search selection tags-allow-select select-dropdown">
+                                            <input name="tags" type="hidden">
+                                            <span class="select-dropdown icon"></span>
+                                            <div class="default text"><i class="c-gray">Bcc:</i></div>
+                                            <div class="menu">
+                                                <div class="item" data-value="Ainslee@proxy.com"><img src="assets/img/picture/pic1.jpg" alt="">Ainslee Boxhall</div>
+                                                <div class="item" data-value="Park@proxy.com"><img src="assets/img/picture/pic2.jpg" alt="">Park Tumbelty</div>
+                                                <div class="item" data-value="Oliy@proxy.com"><img src="assets/img/picture/pic3.jpg" alt="">Oliy Dyzart</div>
+                                                <div class="item" data-value="Andrea@proxy.com"><img src="assets/img/picture/pic4.jpg" alt="">Andrea Streader</div>
+                                                <div class="item" data-value="Martie@proxy.com"><img src="assets/img/picture/pic5.jpg" alt="">Martie Rosenfelder</div>
+                                                <div class="item" data-value="Deva@proxy.com"><img src="assets/img/picture/pic6.jpg" alt="">Deva Grosier</div>
+                                                <div class="item" data-value="Alidia@proxy.com"><img src="assets/img/picture/pic1.jpg" alt="">Alidia Abramcik</div>
+                                                <div class="item" data-value="Jillane@proxy.com"><img src="assets/img/picture/pic2.jpg" alt="">Jillane Fuentez</div>
+                                                <div class="item" data-value="Claire@proxy.com"><img src="assets/img/picture/pic3.jpg" alt="">Claire Demschke</div>
+                                                <div class="item" data-value="Bastian@proxy.com"><img src="assets/img/picture/pic4.jpg" alt="">Bastian Ornelas</div>
+                                                <div class="item" data-value="Terrie@proxy.com"><img src="assets/img/picture/pic5.jpg" alt="">Terrie Bricksey</div>
+                                                <div class="item" data-value="Aguie@proxy.com"><img src="assets/img/picture/pic6.jpg" alt="">Aguie Bassindale</div>
+                                                <div class="item" data-value="Ruthanne@proxy.com"><img src="assets/img/picture/pic1.jpg" alt="">Ruthanne McMearty</div>
+                                                <div class="item" data-value="Cori@proxy.com"><img src="assets/img/picture/pic2.jpg" alt="">Cori Pucknell</div>
+                                                <div class="item" data-value="Melantha@proxy.com"><img src="assets/img/picture/pic3.jpg" alt="">Melantha Geroldo</div>
+                                                <div class="item" data-value="Lorinda@proxy.com"><img src="assets/img/picture/pic4.jpg" alt="">Lorinda Astell</div>
+                                                <div class="item" data-value="Edeline@proxy.com"><img src="assets/img/picture/pic5.jpg" alt="">Edeline Trimble</div>
+                                                <div class="item" data-value="Zora@proxy.com"><img src="assets/img/picture/pic6.jpg" alt="">Zora Pehrsson</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <!--<label for="mailSubject" class="col-lg-1 mt-1 col-form-label text-right sr-only">Subject</label>-->
+                                        <input class="form-control" id="mailSubject" placeholder="Subject:">
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <!--<label for="mailContent" class="col-lg-1 mt-1 col-form-label text-right sr-only">Content</label>-->
+                                        <div class="form-control mail-reply-area" id="mailContent"></div>
+                                    </div>
+                                    <div class="form-group mb-0 text-right">
+                                        <button type="submit" class="btn btn-default">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+                <section data-gs-height="80" data-smart-icon="ion-android-person" class="hidden-lg-down col-sm-12 col-md-12 col-lg-12 col-xl-3 panel-wrap panel-grid-item grid-stack-item">
+                    <!--Start Panel-->
+                    <div class="panel mail-profile-about bgc-white-dark">
+                        <div class="panel-header clearfix bgc-white-dark panel-header-p panel-header-md grid-stack-handle">
+                            <div class="panel-input pull-left">
+                                <input class="form-control form-control-sm search-control" data-list=".mail-members-list" type="text" placeholder="Search">
+                                <a href="" class="clear-style"><i class="fa fa-search"></i></a>
+                            </div>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="mail-members mt-3 panel-body-p py-0 mb-4">
+                                <div class="list m-0 mail-members-list">
+                                    <div class="item mb-5 p-0 d-hover-parent">
+                                        <span class="message-count on-line">3</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic6.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">" Sed ut perspiciatis un ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0 d-hover-parent">
+                                        <span class="message-count on-line">2</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic5.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">The master-builder of ca ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0 d-hover-parent">
+                                        <span class="message-count on-line">2</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header"><span class="c-gray-dark font-weight-bold">Taylor Fletcher</span></a>
+                                            <div class="description">All this mistaken idea g ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0 d-hover-parent">
+                                        <span class="message-count on-line"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header">Rhys Brooks</a>
+                                            <div class="description">Denouncing pleasure and ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0 d-hover-parent">
+                                        <span class="message-count on-line">1</span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic2.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">Expound the actual tea ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0 d-hover-parent">
+                                        <span class="message-count on-line"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic1.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header">Brock Giles</a>
+                                            <div class="description">Praising pain was born ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0 d-hover-parent">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic6.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header">Dariel Wallace</a>
+                                            <div class="description">Will give you a complete ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0 d-hover-parent">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic5.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header">Jared Allison</a>
+                                            <div class="description">Expound the actual teachi ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                    <div class="item mb-5 p-0 d-hover-parent">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic4.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header">Jamie Jones</a>
+                                            <div class="description">Praising pain was born  ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                    <div class="item p-0 d-hover-parent">
+                                        <span class="message-count"></span>
+                                        <img class="rounded-circle bgc-white-darkest image" alt="" src="assets/img/picture/pic3.jpg">
+                                        <div class="content pl-1">
+                                            <a class="header">Hunter Atkins</a>
+                                            <div class="description">The great explorer of th ...</div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="" class="d-hover new-message btn btn-sm btn-default">New</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </section>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/mail');
+        </script>
+    {{/content}}
+{{/extend}}

@@ -1,0 +1,322 @@
+<!--<div class="easy-pie" data-percent="78" data-options="easyPie1">-->
+<!--<span class="percent c-gray"></span>-->
+<!--</div>-->
+{{#extend "layout-1" current="charts"}}
+{{! append html code into the content block declared in the layout partial }}
+    {{#content "content" mode="append"}}
+        <div class="container-fluid content-wrap">
+            <div class="row panel-grid" id="panel-grid">
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                E-Commerce Chart
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'Lorem ipsum' will uncover many web sites still in their infancy.</p>
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="ecommerce" height="200"></canvas>
+                            </div>
+                            <div class="clearfix mt-4">
+                                <div class="list horizontal chart-labels">
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-primary"></span>Sales</div>
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-success"></span>Orders</div>
+                                </div>
+                                <div class="btn-group pull-right">
+                                    <button type="button" class="btn btn-default">Action</button>
+                                    <button type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Product Selling Chart
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'Lorem ipsum' will uncover many web sites still in their infancy.</p>
+                            <div class="clearfix py-3 fs-7">
+                                <span>Comes from sections 1.10.32 and 1.10.33! </span>
+                                <div class="list horizontal chart-labels pull-right">
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-primary"></span><span id="min"></span></div>
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-danger"></span><span id="max"></span></div>
+                                </div>
+                            </div>
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="productStatistic" height="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Sold Products
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.</p>
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="soldProds" height="300"></canvas>
+                            </div>
+                            <div class="clearfix mt-4">
+                                <div class="list horizontal chart-labels">
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-warning"></span>Returned</div>
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-danger"></span>Sold</div>
+                                </div>
+                                <div class="btn-group pull-right">
+                                    <button type="button" class="btn btn-default">Action</button>
+                                    <button type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Ordered Products
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="text-indent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.</p>
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="statistic" height="300"></canvas>
+                            </div>
+                            <div class="clearfix mt-4">
+                                <div class="list horizontal chart-labels">
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-warning"></span>Orders</div>
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-danger"></span>Sold</div>
+                                    <div class="item"><span class="badge badge-empty mr-1 bgc-body"></span>Returned</div>
+                                </div>
+                                <div class="btn-group pull-right">
+                                    <button type="button" class="btn btn-default">Action</button>
+                                    <button type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="">Action</a>
+                                            <a class="dropdown-item" href="">Another action</a>
+                                            <a class="dropdown-item" href="">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Test Results
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="text-indent mb-3 fs-7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.
+                            </p>
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="testResults" height="250"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Visits
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <p class="text-indent fs-7 mb-3">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'Lorem ipsum' will uncover many web sites still in their infancy.</p>
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="visits" height="250"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Office Time
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="officeTime2" height="280"></canvas>
+                            </div>
+                            <p class="text-indent fs-7 mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Radar Chart
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="officeTime4" height="280"></canvas>
+                            </div>
+                            <p class="text-indent fs-7 mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Pie Chart
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="officeTime5" height="300"></canvas>
+                            </div>
+                            <p class="text-indent fs-7 mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-dark panel-header-sm">
+                            <h2 class="pull-left">
+                                Bubble Chart
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-dark"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="bubbleChart" height="300"></canvas>
+                            </div>
+                            <p class="text-indent fs-7 mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Office Time
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="officeTime1" height="350"></canvas>
+                            </div>
+                            <p class="text-indent fs-7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 panel-wrap panel-grid-item">
+                    <!--Start Panel-->
+                    <div class="panel bgc-white-dark">
+                        <div class="panel-header panel-header-p bgc-white-darkest panel-header-sm">
+                            <h2 class="pull-left">
+                                Office Time
+                            </h2>
+                            {{#embed "panel-icons" slide="1" class="bgc-white-darkest"}}{{/embed}}
+                        </div>
+                        <div class="panel-body panel-body-p">
+                            <div class="chart-wrap">
+                                <canvas class="chart-js" data-options="officeTime3" height="300"></canvas>
+                            </div>
+                            <div id="office-time3-legend"></div>
+                            <p class="text-indent fs-7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s and popularised in the 1960s.
+                            </p>
+                            <div class="clearfix mt-4">
+                                <div class="list horizontal chart-labels">
+                                    <div class="item"><span class="badge badge-empty mr-1 bgc-gray"></span>Planning</div>
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-warning"></span>Designing</div>
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-success"></span>Coding</div>
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-primary"></span>Testing</div>
+                                    <div class="item"><span class="badge badge-empty mr-1 bg-danger"></span>Deploying</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Panel-->
+                </div>
+            </div>
+        </div>
+    {{/content}}
+    {{#content "foot" mode="append"}}
+        <script>
+            SystemJS.import('scripts/chart');
+        </script>
+    {{/content}}
+{{/extend}}
